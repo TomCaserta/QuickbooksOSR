@@ -1,0 +1,55 @@
+<nav class="sidebar">
+  <form class="well well-sm">
+     <div class="formgroup">
+        <label for="sdkCommandReq">Requests</label>
+        
+        <select id="sdkCommandReq" class="form-control">
+           <option ng-repeat="request in sidebar.requests">{{request}}</option>
+        </select>
+      </div>
+       <div class="formgroup">
+        <label for="sdkCommandResp">Responses</label>
+        
+        <select id="sdkCommandResp]" class="form-control">
+           <option ng-repeat="request in sidebar.responses">{{request}}</option>
+        </select>
+      </div>
+  </form>
+  <form class="well well-sm form-horizontal">
+    <fieldset>
+      <div class="formgroup">
+        <label class="col-sm-7" for="sdkVersion">Max SDK Version</label>
+        
+        <div class="col-sm-5">
+        <select ng-model="sidebar.version" id="sdkVersion" class="form-control">
+           <option ng-repeat="version in sidebar.versions">{{version}}</option>
+        </select>
+        </div>
+      </div>
+    </fieldset>
+    <fieldset class="row">
+      <div class="formgroup col-sm-6">
+        <label class="col-sm-6" for="qbXML">qbXML</label>
+        <div class="col-sm-6">
+        <input type="radio" name="qbType[]" id="qbXML" ng-model="sidebar.qbXML" class="form-control" />
+        </div>
+      </div>
+      <div class="formgroup col-sm-6">
+        <label class="col-sm-6" for="qbFC">QBFC</label>
+        <div class="col-sm-6">
+        <input type="radio" name="qbType[]" id="qbFC" ng-model="sidebar.qbFC"  class="form-control" />
+        </div>
+      </div>
+    </fieldset>
+    <fieldset>
+      <div class="formgroup" ng-repeat="country in sidebar.countries">
+        <label class="col-sm-7" for="{{country.country}}Version">{{country.country}} Version</label>
+        <div class="col-sm-5">
+        <input id="{{country.country}}Version" class="form-control" ng-model="country.use"  type="checkbox" />
+        </div>
+      </div>
+    </fieldset>
+    
+    
+  </form>
+</nav>

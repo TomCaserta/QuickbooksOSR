@@ -8,8 +8,12 @@
     <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
     <link href="css/main.css" rel="stylesheet" media="screen">
   </head>
-  <body ng-app>
+  <body ng-app class="row">
+    <sidebar class="col-md-2"></sidebar>
     
+    <ng-view class="col-md-10">
+          
+    </ng-view>
     <script type="application/dart" src="main.dart"></script>
     <script src="packages/browser/dart.js"></script>
     <script src="js/jquery.min.js"></script>
