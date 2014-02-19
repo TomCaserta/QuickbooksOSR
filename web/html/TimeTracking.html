@@ -1,0 +1,19 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<link rel="stylesheet" href="styleguide.css" type="text/css" />
+<title>TimeTracking.html</title>
+</head>
+<body>
+<b><i>TimeTrackingAdd</i></b><br />
+This request adds a time tracking transaction to QuickBooks, mirroring the time-tracking feature available in the QuickBooks UI. The time tracking feature allows a QuickBooks user to base payroll or invoices on time worked. You can add time-tracking information to any vendor, employee, or person on the Other Names list in QuickBooks.<br />
+<br />
+
+If IsBillable is set to true, both CustomerRef and ItemServiceRef are required.<br />
+<br />
+There is no link between an invoice and the time entries. However when you do the invoicing from QuickBooks, QuickBooks does mark the time entries as "billed." If you don't record the time entries as billed properly, then you get into a user workflow issue where everytime the user creates an invoice for a customer, QB pops up a dialog asking if they want to bill the unbilled time (which you already billed from your app). That's why beginning with QB2007 and qbXML spec 6.0 we added support for the "BillableStatus" field *and* add TimeTrackingMod so that you can mark the time as billed when you create an invoice for it. 
+
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+  <link rel="stylesheet" href="styleguide.css" type="text/css" />
+  <title>IQBIDType.html</title>
+</head>
+<body>
+
+<pre>
+<b><i>IQBIDType</i></b>
+ 
+' VB6 methods
+SetValue(val As String)
+GetValue() As String
+SetValueUseMacro(val As String)
+GetValueUseMacro() As String
+IsSetUseMacro() As Boolean
+IsSet ( ) As Boolean
+IsEmpty ( ) As Boolean
+Unset ( )
+SetEmpty ( )
+ 
+// C++ Wrapper methods for error-handling
+HRESULT SetValue ( _bstr_t val );
+_bstr_t GetValue ( );
+HRESULT SetValueUseMacro ( _bstr_t val );
+_bstr_t GetValueUseMacro ( );
+VARIANT_BOOL IsSetUseMacro ( );
+VARIANT_BOOL IsSet ( );
+VARIANT_BOOL IsEmpty ( );
+HRESULT Unset ( );
+HRESULT SetEmpty ( );
+ 
+// IDL Definition
+HRESULT SetValue(BSTR val);
+HRESULT GetValue([out, retval] BSTR *pVal);
+HRESULT SetValueUseMacro(BSTR val);
+HRESULT GetValueUseMacro([out, retval] BSTR *pVal);
+HRESULT IsSetUseMacro([out, retval] VARIANT_BOOL *pVal);
+HRESULT IsSet([out, retval] VARIANT_BOOL* pVal);
+HRESULT IsEmpty([out, retval] VARIANT_BOOL* pVal);
+HRESULT Unset();
+HRESULT SetEmpty();
+</pre>
+</body></html> 

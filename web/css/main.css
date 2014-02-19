@@ -1,0 +1,14 @@
+/*
+* BASE STYLES
+*/
+
+body { padding-top: 70px; }
+.ng-hide, 
+.ng-show {
+   display: none !important;
+}
+
+[ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+  display: none !important;
+}
+

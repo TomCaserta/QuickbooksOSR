@@ -1,0 +1,22 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+  <link rel="stylesheet" href="styleguide.css" type="text/css" />
+  <title>PaidStatus.html.xp</title>
+</head>
+<body>
+<p><b><i>PaidStatus</i></b><br />
+  Allows you to filter for transactions according to whether or not they are paid. <br />
+<br />
+Notice that if a line is paid, PaidStatus == "X".  If a line is not paid, no entry for PaidStatus is returned.<br />
+However, in the same report run within the QB GUI, the following behavior is observed:
+This differs from the UI, where if the line is paid, an entry of "Paid" is displayed and
+if the line is not paid, an entry of "Unpaid" is displayed.
+</p>
+
+$$include.ENUM.PaidStatus$$
+
+</body>
+</html>

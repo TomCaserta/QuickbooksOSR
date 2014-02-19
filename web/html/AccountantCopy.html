@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <link rel="stylesheet" href="styleguide.css" type="text/css" />
+  <title>AccountantCopy.html</title>
+</head>
+<body>
+<b><i>AccountantCopy</i></b><br />
+Aggregate containing information about accountant copy.<br />
+<br />
+An Accountant's Copy is a version of your company file your accountant can use to make changes while
+the original company file continues to be used for <i>most</i> normal operations. The key part of the
+accountant copy "protocol" is the <i>dividing date</i> which defines the fiscal period within which the
+accountant will be working.<br />
+<br />
+Dividing date is key because there are enforced restrictions against certain types
+of operations on data that fall within the fiscal period the accountant is working on.continue to work. The
+restrictions are listed below: <br />
+<br />
+
+<b>Transactions:</b><br />
+You can work only on transactions dated after the dividing date. <br />
+<br />
+<b>Accounts: </b><br />
+<ul>
+<li>You can add a new account, but you cannot add a new subaccount to an existing account. </li>
+<li>Existing accounts: You cannot edit, merge, or make an existing account inactive. </li>
+<li>New accounts: You can edit an account or make any account inactive that you created while your accountant
+has the Accountant's Copy. </li>
+</ul><br />
+
+<b>Lists (other than Chart of Accounts): </b><br />
+
+<ul>
+<li>You can edit, sort, and make list items inactive. </li>
+<li>You cannot delete or merge list items. </li>
+</ul><br />
+
+<b>Reconciling:</b><br />
+<ul>
+<li>You can reconcile your accounts while your accountant has an Accountant's Copy. </li>
+<li>All reconciliations that include transactions in the current period (after the dividing date) are saved and will not be undone.</li>
+<li>To prevent conflicts with your accountant's changes, reconciliations that include transactions dated on or before the
+dividing date will be undone when you import your accountant's changes. </li>
+<li>If your accountant has reconciled or undone a reconciliation for any period, any reconciliations you did will be
+undone when you import your accountant's changes. </li>
+</ul>
+</body>
+</html>

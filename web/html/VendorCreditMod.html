@@ -1,0 +1,22 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+  <link rel="stylesheet" href="styleguide.css" type="text/css" />
+  <title>VendorCreditMod.html</title>
+</head>
+<body>
+<b><i>VendorCreditMod</i></b><br />
+Modifies a vendor credit.  Be careful! If you modify ANY line item, you must fully re-construct the line item table as you want it
+because if you edit even a single line item, any line item that is NOT in the vendor credit mod will be omitted. For full details,
+see the QB SDK Programmer's Guide chapter on modifying and deleting transactions and list objects.<br />
+<br />
+A vendor credit is also known as a "bill credit". That is, it is a credit that
+<i>a vendor owes you</i> because you overpaid your bill, returned merchandise, or for some other reason.
+The VendorCredit is referenced in a BilPayment transaction,  inside the SetCredit aggregate. <br />
+<br />
+A VendorCredit should not be confused with a Credit Memo, which is something <i>you owe your customer</i> and which
+is referenced in a ReceivePayment request.
+</body>
+</html>

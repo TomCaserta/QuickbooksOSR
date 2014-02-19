@@ -1,0 +1,7 @@
+{"xmlName":"PayrollLastPeriodQueryRq","xmlNameHtml":"PayrollLastPeriodQuery.html",
+ "xmlType":"Aggregate",
+ "fcName":"IPayrollLastPeriodQuery","fcNameHtml":"PayrollLastPeriodQuery.html",
+ "fcType":"nothing",
+ "minVerUS":"8",
+ "supports":{"US":false,"CA":false,"UK":false,"AU":false,"OE":true},
+ "required":false}

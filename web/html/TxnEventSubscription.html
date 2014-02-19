@@ -1,0 +1,28 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+  <link rel="stylesheet" href="styleguide.css" type="text/css" />
+  <title>TxnEventSubscription.html</title>
+</head>
+<body>
+<b><i>TxnEventSubscription</i></b><br />
+A subscription to a QuickBooks transaction event. TxnEventType and TxnEventOperation 
+can be repeated to subscribe to different combinations of transaction event type 
+and operation. For example, to subscribe to Invoice add and modify, Bill add and 
+modify, and Bill delete, you could use the following two qbXML TxnEventSubscription 
+aggregates: 
+<p>&lt;TxnEventSubscription&gt;<br />
+    &lt;TxnEventType&gt;Invoice&lt;/TxnEventType&gt;<br />
+    &lt;TxnEventType&gt;Bill&lt;/TxnEventType&gt;<br />
+    &lt;TxnEventOperation&gt;Add&lt;/TxnEventOperation&gt;<br />
+    &lt;TxnEventOperation&gt;Modify&lt;/TxnEventOperation&gt;<br />
+  &lt;/TxnEventSubscription&gt;</p>
+<p>&lt;TxnEventSubscription&gt;<br />
+    &lt;TxnEventType&gt;Bill&lt;/TxnEventType&gt;<br />
+    &lt;TxnEventOperation&gt;Delete&lt;/TxnEventOperation&gt;<br />
+  &lt;/TxnEventSubscription&gt;<br />
+</p>
+</body>
+</html>

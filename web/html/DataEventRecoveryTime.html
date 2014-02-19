@@ -1,0 +1,19 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+  <link rel="stylesheet" href="styleguide.css" type="text/css" />
+  <title>DataEventRecoveryTime.html</title>
+</head>
+<body>
+<p><b><i>DataEventRecoveryTime</i></b><br />
+  The time when the callback application starts losing data events. QuickBooks 
+  will not track any DataEventRecoveryTime information for a callback application 
+  unless TrackLostEvents was set to All in its subscription. The application can 
+  recover from lost data events and get data changes it missed by sending query 
+  requests with the time given by DataEventRecoveryTime as part of the time range 
+  filter. For example, an application can use this time as the FromModifiedDate 
+  and the FromDeletedDate to get missing added, changed, and deleted data. </p>
+</body>
+</html>

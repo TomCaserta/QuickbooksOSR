@@ -1,0 +1,23 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+  <link rel="stylesheet" href="styleguide.css" type="text/css" />
+  <title>SpecialAccountAdd.html</title>
+</head>
+<body>
+<p><b><i>SpecialAccountAdd</i></b><br /></p>
+<p>
+Adds a special account of the specified type to QuickBooks.  A special account is an account normally created automatically as needed within the QuickBooks UI, or in the SDK via
+the SpecialAccountAdd request.
+Notice that default names for each account type are used, so there is no
+provision for a name field here.
+</p>
+<p>
+If a special account of the type you are trying to add already exists in the QuickBooks company, the response will return a warning and the account will not be added. </p>
+<p>
+Notice that the Ret object for this request is AccountRet. Also, notice that you use AccountQuery to get accounts, including special accounts.
+</p>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+  <link rel="stylesheet" href="styleguide.css" type="text/css" />
+  <title>AccountQuery.html</title>
+</head>
+<body>
+<b><i>AccountQuery</i></b><br />
+<br />
+<p>AccountQuery is a list query that returns data for all accounts that match the provided filter criteria. Notice that it returns only data internal to the account itself. It does not return any data about transactions involving the account. It does, however, return the parent account, if there is one. You can search across all accounts or you can specify an account type and search only those.
+</p>
+<p>
+If you are querying for an account whose FullName contains a number, the query  might return an account that has a matching <i>account number</i> rather than a matching FullName. For example, if you are querying for an account named 12345, and 12345 happens to be the account number of a totally different account, the query will not return what you asked for (the account named 12345), but instead will return the account with the account number 12345. 
+</p>
+<p>This problem will not happen if:<br /></p>
+<ul>
+  <li>the &#147;show account numbers&#148; preference is turned off in the QuickBooks file, or</li>
+  <li>the account name exactly matches the account number. (In this case, query would return the correct account either way.)</li>
+</ul>
+<p>To avoid this problem:<br /></p>
+<ul>
+<li>Do not name an account using a number unless the number exactly matches the account&#146;s account number. </li>
+  <li>If an account name must contain a number that does not match its own account number, have the QuickBooks user change the account&#146;s name slightly, for example to 12345a. </li>
+</ul>
+</body>
+</html>

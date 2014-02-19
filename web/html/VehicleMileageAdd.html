@@ -1,0 +1,45 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+  <link rel="stylesheet" href="styleguide.css" type="text/css" />
+  <title>VehicleMileageAdd.html</title>
+</head>
+<body>
+<b><i>VehicleMileageAdd</i></b><br />
+Adds a VehicleMileage transaction involving the specified vehicle for 
+the specified total miles or optionally for the QuickBooks calculated total miles
+if you supply the odometer start and end.
+<br />
+<br />
+Notice that only dates are supported for vehicle mileage, so make sure you enter any datetime values with dates only, no time values. That is, 2002-02-02 will work for trip end date or start date, but 2002-02-02T12:20:20 will not work.
+<br />
+<br />
+The mileage contained in this transaction is multiplied by the standard mileage rate 
+allowed by the tax authority and entered by the QuickBooks user in the Enter
+Vehicle Mileage form. If you're curious to see what this rate currently is, and the
+allowable tax expense resulting from this transaction, those are contained in the 
+StandardMileageRate and StandardMileageTotalAmount fields in the response to this request.
+The Mileage By Vehicle detail and summary reports track this vehicle expense.
+<br />
+<br />
+The customer, item, class reference fields are mainly used if a customer is to be 
+charged for mileage, in which case the BillableStatus is set to Billable. In this usage,
+customer and item references are required, class is optional. The mileage transaction will
+consequently appear as an outstanding billable time and cost charge for the customer when you 
+create an invoice for that customer. (If class tracking is turned on in QuickBooks, and you
+supply a class in this transaction, the class will automatically appear in the invoice.)
+This aspect of the mileage transaction is tracked
+in the Mileage By Job detail and summary reports.
+<br />
+<br />
+<b><i>Important: </i></b>currently, only the QuickBooks user can put these outstanding charges
+in the invoice. The SDK does not support this.
+<br />
+<br />
+If you specify HasBeenBilled in the BillableStatus field, the transaction shows up as Billed
+in the Mileage By Job reports, but not on the list of outstanding billable 
+customer time and cost charges when an invoice is created. 
+</body>
+</html>

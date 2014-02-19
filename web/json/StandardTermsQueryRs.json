@@ -1,0 +1,351 @@
+{
+    "xmlName" : "StandardTermsQueryRs",
+    "Width" : 0,
+    "TopLeftX" : 0,
+    "supports" : {
+        "US" : true,
+        "OE" : true,
+        "CA" : true,
+        "UK" : true,
+        "AU" : true
+    },
+    "TopLeftY" : 0,
+    "required" : false,
+    "fcType" : "nothing",
+    "xmlType" : "Aggregate",
+    "attributes" : [
+        {
+            "fcTypeHtml" : "IQBIntType.html",
+            "xmlName" : "statusCode",
+            "xmlTypeHtml" : "INTTYPE.html",
+            "supports" : {
+                "US" : true,
+                "OE" : true,
+                "CA" : true,
+                "UK" : true,
+                "AU" : true
+            },
+            "required" : true,
+            "fcType" : "IQBIntType",
+            "xmlType" : "INTTYPE",
+            "fcNameHtml" : "statusCode.html",
+            "xmlNameHtml" : "statusCode.html",
+            "fcName" : "StatusCode"
+        },
+        {
+            "fcTypeHtml" : "IQBStringType.html",
+            "xmlName" : "statusSeverity",
+            "xmlTypeHtml" : "STRTYPE.html",
+            "supports" : {
+                "US" : true,
+                "OE" : true,
+                "CA" : true,
+                "UK" : true,
+                "AU" : true
+            },
+            "required" : true,
+            "fcType" : "IQBStringType",
+            "xmlType" : "STRTYPE",
+            "fcNameHtml" : "statusSeverity.html",
+            "xmlNameHtml" : "statusSeverity.html",
+            "fcName" : "StatusSeverity"
+        },
+        {
+            "fcTypeHtml" : "IQBStringType.html",
+            "xmlName" : "statusMessage",
+            "xmlTypeHtml" : "STRTYPE.html",
+            "supports" : {
+                "US" : true,
+                "OE" : true,
+                "CA" : true,
+                "UK" : true,
+                "AU" : true
+            },
+            "required" : true,
+            "fcType" : "IQBStringType",
+            "xmlType" : "STRTYPE",
+            "fcNameHtml" : "statusMessage.html",
+            "xmlNameHtml" : "statusMessage.html",
+            "fcName" : "StatusMessage"
+        },
+        {
+            "fcTypeHtml" : "IQBIntType.html",
+            "xmlName" : "retCount",
+            "xmlTypeHtml" : "INTTYPE.html",
+            "supports" : {
+                "US" : true,
+                "OE" : false,
+                "CA" : false,
+                "UK" : false,
+                "AU" : false
+            },
+            "required" : false,
+            "fcType" : "IQBIntType",
+            "minVerUS" : 4,
+            "xmlType" : "INTTYPE",
+            "fcNameHtml" : "retCount.html",
+            "xmlNameHtml" : "retCount.html",
+            "fcName" : "retCount"
+        }
+    ],
+    "MasterImage" : "None",
+    "elements" : [
+        {
+            "fcTypeHtml" : "QBFC-IStandardTermsRetList.html",
+            "xmlName" : "StandardTermsRet",
+            "Width" : 0,
+            "TopLeftX" : 0,
+            "supports" : {
+                "US" : true,
+                "OE" : true,
+                "CA" : true,
+                "UK" : true,
+                "AU" : true
+            },
+            "TopLeftY" : 0,
+            "required" : false,
+            "fcType" : "IStandardTermsRetList",
+            "xmlType" : "Aggregate",
+            "count" : "0 - n",
+            "MasterImage" : "None",
+            "elements" : [
+                {
+                    "fcTypeHtml" : "IQBIDType.html",
+                    "xmlName" : "ListID",
+                    "Width" : 0,
+                    "TopLeftX" : 0,
+                    "xmlTypeHtml" : "IDTYPE.html",
+                    "supports" : {
+                        "US" : true,
+                        "OE" : true,
+                        "CA" : true,
+                        "UK" : true,
+                        "AU" : true
+                    },
+                    "TopLeftY" : 0,
+                    "required" : true,
+                    "fcType" : "IQBIDType",
+                    "xmlType" : "IDTYPE",
+                    "count" : 1,
+                    "MasterImage" : "None",
+                    "fcNameHtml" : "ListID.html",
+                    "Height" : 0,
+                    "xmlNameHtml" : "ListID.html",
+                    "fcName" : "ListID"
+                },
+                {
+                    "fcTypeHtml" : "IQBDateTimeType.html",
+                    "xmlName" : "TimeCreated",
+                    "Width" : 0,
+                    "TopLeftX" : 0,
+                    "xmlTypeHtml" : "DATETIMETYPE.html",
+                    "supports" : {
+                        "US" : true,
+                        "OE" : true,
+                        "CA" : true,
+                        "UK" : true,
+                        "AU" : true
+                    },
+                    "TopLeftY" : 0,
+                    "required" : true,
+                    "fcType" : "IQBDateTimeType",
+                    "xmlType" : "DATETIMETYPE",
+                    "count" : 1,
+                    "MasterImage" : "None",
+                    "fcNameHtml" : "TimeCreated.html",
+                    "Height" : 0,
+                    "xmlNameHtml" : "TimeCreated.html",
+                    "fcName" : "TimeCreated"
+                },
+                {
+                    "fcTypeHtml" : "IQBDateTimeType.html",
+                    "xmlName" : "TimeModified",
+                    "Width" : 0,
+                    "TopLeftX" : 0,
+                    "xmlTypeHtml" : "DATETIMETYPE.html",
+                    "supports" : {
+                        "US" : true,
+                        "OE" : true,
+                        "CA" : true,
+                        "UK" : true,
+                        "AU" : true
+                    },
+                    "TopLeftY" : 0,
+                    "required" : true,
+                    "fcType" : "IQBDateTimeType",
+                    "xmlType" : "DATETIMETYPE",
+                    "count" : 1,
+                    "MasterImage" : "None",
+                    "fcNameHtml" : "TimeModified.html",
+                    "Height" : 0,
+                    "xmlNameHtml" : "TimeModified.html",
+                    "fcName" : "TimeModified"
+                },
+                {
+                    "fcTypeHtml" : "IQBStringType.html",
+                    "xmlName" : "EditSequence",
+                    "maxCA" : 16,
+                    "Width" : 0,
+                    "TopLeftX" : 0,
+                    "xmlTypeHtml" : "STRTYPE.html",
+                    "supports" : {
+                        "US" : true,
+                        "OE" : true,
+                        "CA" : true,
+                        "UK" : true,
+                        "AU" : true
+                    },
+                    "TopLeftY" : 0,
+                    "required" : true,
+                    "fcType" : "IQBStringType",
+                    "xmlType" : "STRTYPE",
+                    "count" : 1,
+                    "MasterImage" : "None",
+                    "maxUK" : 16,
+                    "maxAU" : 16,
+                    "fcNameHtml" : "EditSequence.html",
+                    "maxDT" : 16,
+                    "Height" : 0,
+                    "xmlNameHtml" : "EditSequence.html",
+                    "maxOE" : 10,
+                    "fcName" : "EditSequence"
+                },
+                {
+                    "fcTypeHtml" : "IQBStringType.html",
+                    "xmlName" : "Name",
+                    "maxCA" : 31,
+                    "Width" : 150,
+                    "TopLeftX" : 50,
+                    "xmlTypeHtml" : "STRTYPE.html",
+                    "supports" : {
+                        "US" : true,
+                        "OE" : true,
+                        "CA" : true,
+                        "UK" : true,
+                        "AU" : true
+                    },
+                    "TopLeftY" : 39,
+                    "required" : true,
+                    "fcType" : "IQBStringType",
+                    "xmlType" : "STRTYPE",
+                    "count" : 1,
+                    "MasterImage" : "standardterms.jpg",
+                    "maxUK" : 31,
+                    "maxAU" : 31,
+                    "fcNameHtml" : "Name.html",
+                    "maxDT" : 31,
+                    "Height" : 17,
+                    "xmlNameHtml" : "Name.html",
+                    "maxOE" : 100,
+                    "fcName" : "Name"
+                },
+                {
+                    "fcTypeHtml" : "IQBBoolType.html",
+                    "xmlName" : "IsActive",
+                    "Width" : 95,
+                    "TopLeftX" : 249,
+                    "xmlTypeHtml" : "BOOLTYPE.html",
+                    "supports" : {
+                        "US" : true,
+                        "OE" : false,
+                        "CA" : true,
+                        "UK" : true,
+                        "AU" : true
+                    },
+                    "TopLeftY" : 96,
+                    "required" : false,
+                    "fcType" : "IQBBoolType",
+                    "xmlType" : "BOOLTYPE",
+                    "count" : "0 - 1",
+                    "MasterImage" : "standardterms.jpg",
+                    "fcNameHtml" : "IsActive.html",
+                    "Height" : 18,
+                    "xmlNameHtml" : "IsActive.html",
+                    "fcName" : "IsActive"
+                },
+                {
+                    "fcTypeHtml" : "IQBIntType.html",
+                    "xmlName" : "StdDueDays",
+                    "Width" : 47,
+                    "TopLeftX" : 82,
+                    "xmlTypeHtml" : "INTTYPE.html",
+                    "supports" : {
+                        "US" : true,
+                        "OE" : true,
+                        "CA" : true,
+                        "UK" : true,
+                        "AU" : true
+                    },
+                    "TopLeftY" : 93,
+                    "required" : false,
+                    "fcType" : "IQBIntType",
+                    "xmlType" : "INTTYPE",
+                    "count" : "0 - 1",
+                    "MasterImage" : "standardterms.jpg",
+                    "fcNameHtml" : "StdDueDays.html",
+                    "Height" : 17,
+                    "xmlNameHtml" : "StdDueDays.html",
+                    "fcName" : "StdDueDays"
+                },
+                {
+                    "fcTypeHtml" : "IQBIntType.html",
+                    "xmlName" : "StdDiscountDays",
+                    "Width" : 47,
+                    "TopLeftX" : 133,
+                    "xmlTypeHtml" : "INTTYPE.html",
+                    "supports" : {
+                        "US" : true,
+                        "OE" : true,
+                        "CA" : true,
+                        "UK" : true,
+                        "AU" : true
+                    },
+                    "TopLeftY" : 143,
+                    "required" : false,
+                    "fcType" : "IQBIntType",
+                    "xmlType" : "INTTYPE",
+                    "count" : "0 - 1",
+                    "MasterImage" : "standardterms.jpg",
+                    "fcNameHtml" : "StdDiscountDays.html",
+                    "Height" : 17,
+                    "xmlNameHtml" : "StdDiscountDays.html",
+                    "fcName" : "StdDiscountDays"
+                },
+                {
+                    "fcTypeHtml" : "IQBPercentType.html",
+                    "xmlName" : "DiscountPct",
+                    "Width" : 47,
+                    "TopLeftX" : 138,
+                    "xmlTypeHtml" : "PERCENTTYPE.html",
+                    "supports" : {
+                        "US" : true,
+                        "OE" : true,
+                        "CA" : true,
+                        "UK" : true,
+                        "AU" : true
+                    },
+                    "TopLeftY" : 118,
+                    "required" : false,
+                    "fcType" : "IQBPercentType",
+                    "xmlType" : "PERCENTTYPE",
+                    "count" : "0 - 1",
+                    "MasterImage" : "standardterms.jpg",
+                    "fcNameHtml" : "StandardTerms-DiscountPct.html",
+                    "Height" : 17,
+                    "xmlNameHtml" : "StandardTerms-DiscountPct.html",
+                    "fcName" : "DiscountPct"
+                }
+            ],
+            "Height" : 0,
+            "xmlNameHtml" : "StandardTerms.html",
+            "fcListOf" : {
+                "fcType" : "IStandardTermsRet"
+            },
+            "fcName" : "Detail"
+        }
+    ],
+    "fcNameHtml" : "StandardTermsQuery.html",
+    "Height" : 0,
+    "xmlNameHtml" : "StandardTermsQuery.html",
+    "fcName" : "IResponse"
+}

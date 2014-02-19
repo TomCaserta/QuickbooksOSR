@@ -1,0 +1,5 @@
+name: QuickbooksOSR
+description: An alternative to the abomnination that is the Quickbooks OSR
+dependencies:
+  angular: any
+  browser: any

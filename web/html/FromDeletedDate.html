@@ -1,0 +1,21 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+  <link rel="stylesheet" href="styleguide.css" type="text/css" />
+  <title>FromDeletedDate.html</title>
+</head>
+<body>
+<b><i>FromDeletedDate</i></b><br />
+Selects objects deleted on or after this date. Both FromDeletedDate and ToDeletedDate 
+must be between 1970-01-01 and 2038-01-19T03:14:07 (2038-01-18T19:14:07-08:00 
+PST). (But note that ListDeletedQuery requests will only return records deleted 
+within the last 90 days, even if the specified FromDeletedDate is earlier.)<br />
+<br />
+If FromDeletedDate includes a date but not a time (for example, if you set it 
+to 2002-02-14), the time is assumed to be zero (2003-02-14T00:00:00). If you omit 
+FromDeletedDate, it will be set to 1970-01-01T00:00:00 (1969-12-31T16:00:00-08:00 
+PST). 
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<link rel="stylesheet" href="styleguide.css" type="text/css" />
+<title>DataExt-OwnerID.html</title>
+</head>
+<body>
+<p><b><i>OwnerID</i></b><br />
+  OwnerID refers to the owner of a data extension, and must be 0 or a valid GUID. 
+  (Custom fields, which are visible in the QuickBooks UI, always have an OwnerID 
+  of 0. )<br />
+  <br />
+  Usually you would keep your application's GUID confidential to prevent other 
+  applications from accessing your data extensions. But if you want to share data 
+  extensions with another application, the applications need to use the same GUID. 
+  In this case, each application could use two GUIDs, one for shared data extensions 
+  and one for confidential data extensions. (An application can have any number 
+  of GUIDs.)<br />
+  <br />
+  When you share a data extension with another application, the other application 
+  must know both the OwnerID and the DataExtName, as these together form a data 
+  extension's unique name. </p>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+  <link rel="stylesheet" href="styleguide.css" type="text/css" />
+  <title>ItemSalesTaxAdd.html</title>
+</head>
+<body>
+<b><i>ItemSalesTaxAdd</i></b><br />
+Adds a sales-tax item, which is an item used to calculate a single sales tax that is collected at 
+a specified rate and paid to a single agency. (Compare with the ItemSalesTaxGroupAdd 
+message.) An <i>ItemSalesTaxRef</i> aggregate refers to an item on this list. 
+In a request, if an ItemSalesTaxRef aggregate includes both FullName and ListID, FullName will 
+be ignored. 
+<br />
+<br />
+<b>Taxes can be reflected in transaction line items</b> <br />
+The following information refers to invoices specifically, but it also applies to sales receipts. Generally its best to assign a tax item or tax group item to an invoice and allow QuickBooks to apply the same tax to all taxable items on the invoice. However in some situations multiple tax combinations are required, so this method doesn’t work. In this case one must use techniques to apply the taxes in the invoice itself as line items. Using lines to apply taxes isn’t always straight forward. <br />
+<br />
+
+When applying taxes as line items, only single tax items can be used, tax groups can only be used for the entire invoice. If you have multiple taxes which apply to all taxable items, and one or more other taxes that only apply to some of the items on an invoice its better to use a tax group which applies to the entire invoice for the taxes which applies to all taxable items and then apply the other taxes in the invoice itself. One applies a tax or tax group to an entire invoice by using the ItemSalesTaxRef aggregate.<br />
+<br />
+
+One can use subtotals to apply a single tax line to multiple items in an invoice, but the tax is only applied automatically for the first tax line after the subtotal line. Any other tax lines which need to be applied to the subtotal line must supply their own amount. If you don’t supply an amount the amount comes out as zero and the tax line is useless. When one does supply an amount, the amount of tax on the subtotal also shows up in the rate column for that tax line. There isn’t any way for the rate to show up as anything other than the amount of the tax. <br />
+
+If you have a complicated tax situation where no single tax applies to all taxable items on the invoice, you must choose a zero percent tax to apply for the entire invoice. It is recommended to name such a tax item “Tax Calculated On Invoice” so that it’s clear that the tax is not being applied by QuickBooks on the entire invoice. 
+</body>
+</html>

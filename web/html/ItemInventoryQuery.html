@@ -1,0 +1,21 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+  <link rel="stylesheet" href="styleguide.css" type="text/css" />
+  <title>ItemInventoryQuery.html</title>
+</head>
+<body>
+<b><i>ItemInventoryQuery</i></b><br />
+Queries for the specified inventory item or set of items. Notice that certain modifications to the item can be caused by other transactions, such as ItemReceipts where the item's on hand quantity is increased. Modifications through these transactions do not result in changing the TimeModified stamp (only the Mod operation will do that), but those changes will be detected when you use the FromModifiedDate/ToModifiedDate filters in your query. <br />
+<br />
+
+Notice that you cannot get an inventory asset value from QuickBooks using this query. Instead, you need to use the General Summary Report query (which currently doesn't include Assembly Items). <br />
+<br />
+Suppose you needed a way to search for the amount on hand of items that have had their amount changed since a certain date.  Again, you would not use this query, but a GeneralDetailReportQuery that has its GeneralDetailReportType set to "InventoryValuationDetail."  This will tell you which items changed by how much. 
+<br />
+<br />
+Also, suppose you wanted the on-hand quantity from QB as of a specific date. You would use a General Summary Report of the type Inventory Valuation Summary. (Again, this report doesn't include Inventory Assemblies.)
+</body>
+</html>

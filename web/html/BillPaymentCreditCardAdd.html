@@ -1,0 +1,34 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+  <link rel="stylesheet" href="styleguide.css" type="text/css" />
+  <title>BillPaymentCreditCardAdd.html</title>
+</head>
+<body>
+<b><i>BillPaymentCreditCardAdd</i></b><br />
+A BillPaymentCreditCardAdd request must include either PaymentAmount, SetCredit, 
+or DiscountAmount (or more than one of these). If none of these three is included, 
+the SDK will return an error. <br />
+<br />
+BillPaymentCreditCardAdd provides functionality found in the Pay Bills form in the QuickBooks UI.
+You can reach this form by selecting Retail->Pay Bills from the main QuickBooks menubar.
+BillPayment is described in detail in the chapter on handling receive payment and
+bill payment in the QB SDK Programmer's Guide. Notice that the request requires one (but not more than one!) BillPaymentCreditCardAdd 
+sub aggregate, which is provided to support the SDK macro feature in this request. (See the 
+QB SDK Programmer's Guide for more information about macros.) Notice that you can supply only
+one of these sub aggregates in the request. If you want to pay multiple bills, you must issue a 
+separate request for each bill pay. <br />
+<br />
+If you are using more than one A/P account, make sure that the APAccountRef in the BillPaymentCreditCardAdd
+matches the APAccountRef that was used when the Bill was originally added. That is, the Bill was
+entered in a particular account payable: use that same account payable when you pay the bill using
+this request. Notice that although you can set the IsToBePrinted flag, you cannot print checks 
+using the SDK.<br />
+<br /> 
+Finally, notice that it is possible to issue this request using only SetCredit to apply an existing
+credit to the bill. However, if you do this, you should be aware that no transaction ID is generated.
+The credit and the bill simply are linked. See the QB SDK Programmer's Guide for details.
+</body>
+</html>

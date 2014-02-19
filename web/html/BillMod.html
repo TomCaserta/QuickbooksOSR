@@ -1,0 +1,58 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+  <link rel="stylesheet" href="styleguide.css" type="text/css" />
+  <title>BillMod.html</title>
+</head>
+<body>
+<b><i>BillMod</i></b><br /><br />
+BillMod allows you to edit an existing Bill, similar to editing a Bill in the Enter Bills form
+in the QuickBooks UI.<br />
+
+Notice that you cannot link a PurchaseOrder to an existing Bill using the BillMod request.
+You can link to a PurchaseOrder only in new Bills, using BillAdd.
+<br />
+Notice also that some fields in a BillMod request cannot be cleared. If any of the following fields 
+is included in a bill modify request, it must contain a value:
+<br />
+  <ul> 
+    <li>VendorRef</li>
+
+    <li>APAccountRef</li>
+
+    <li>TxnDate</li>
+  
+    <li>DueDate</li>
+
+    <li>ClearExpenseLines</li>
+
+    <li>ClearItemLines</li>
+  </ul>
+Within ExpenseLineMod:<br />
+<ul>
+    <li>Amount</li>
+
+    <li>BillableStatus</li>
+</ul>
+Within ItemLineMod or ItemGroupMod:<br />
+  <ul> 
+    <li>ItemRef</li>
+
+    <li>Quantity</li>
+ 
+    <li>Cost</li>
+
+
+    <li>Amount</li>
+
+    <li>BillableStatus</li>
+ 
+    <li>OverrideItemAccountRef</li>
+  </ul>
+
+(For more details about what it means for a field to be clearable or not clearable, 
+see the QB SDK <i>Programmer's Guide</i>.) 
+</body>
+</html>

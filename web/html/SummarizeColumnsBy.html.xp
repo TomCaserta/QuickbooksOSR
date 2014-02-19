@@ -1,0 +1,18 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+  <link rel="stylesheet" href="styleguide.css" type="text/css" />
+  <title>SummarizeColumnsBy.html.xp</title>
+</head>
+<body>
+<p><b><i>SummarizeColumnsBy</i></b><br />
+SummarizeColumnsBy determines which data the report calculates and how the columns will be labeled across the top of the report. For example, 
+  if you set the value to TwoWeek, the report's column labels might be &quot;Feb 
+  10-23, 02,&quot; &quot;Feb 24-Mar9, 02,&quot; and so on.</p>
+
+$$include.ENUM.SummarizeColumnsBy$$
+
+</body>
+</html>

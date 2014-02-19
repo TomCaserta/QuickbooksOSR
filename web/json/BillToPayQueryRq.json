@@ -1,0 +1,332 @@
+{
+    "xmlName" : "BillToPayQueryRq",
+    "Width" : 0,
+    "TopLeftX" : 0,
+    "supports" : {
+        "US" : true,
+        "OE" : false,
+        "CA" : true,
+        "UK" : true,
+        "AU" : true
+    },
+    "TopLeftY" : 0,
+    "required" : false,
+    "fcType" : "nothing",
+    "minVerUS" : 2,
+    "xmlType" : "Aggregate",
+    "attributes" : [
+        {
+            "fcTypeHtml" : "QBFC-IQBENmetaDataType.html",
+            "xmlName" : "metaData",
+            "xmlTypeHtml" : "ENUMTYPE.html",
+            "supports" : {
+                "US" : true,
+                "OE" : false,
+                "CA" : false,
+                "UK" : false,
+                "AU" : false
+            },
+            "required" : false,
+            "fcType" : "IQBENmetaDataType",
+            "minVerUS" : 4,
+            "xmlType" : "ENUMTYPE",
+            "fcNameHtml" : "metaData.html",
+            "xmlNameHtml" : "metaData.html",
+            "fcName" : "metaData"
+        }
+    ],
+    "MasterImage" : "None",
+    "elements" : [
+        {
+            "xmlName" : "PayeeEntityRef",
+            "Width" : 0,
+            "TopLeftX" : 0,
+            "supports" : {
+                "US" : true,
+                "OE" : true,
+                "CA" : true,
+                "UK" : true,
+                "AU" : true
+            },
+            "TopLeftY" : 0,
+            "required" : true,
+            "fcType" : "IQBBaseRef",
+            "xmlType" : "Aggregate",
+            "count" : 1,
+            "MasterImage" : "None",
+            "elements" : [
+                {
+                    "fcTypeHtml" : "IQBIDType.html",
+                    "xmlName" : "ListID",
+                    "Width" : 0,
+                    "TopLeftX" : 0,
+                    "xmlTypeHtml" : "IDTYPE.html",
+                    "supports" : {
+                        "US" : true,
+                        "OE" : true,
+                        "CA" : true,
+                        "UK" : true,
+                        "AU" : true
+                    },
+                    "TopLeftY" : 0,
+                    "required" : false,
+                    "fcType" : "IQBIDType",
+                    "xmlType" : "IDTYPE",
+                    "count" : "0 - 1",
+                    "MasterImage" : "None",
+                    "fcNameHtml" : "ListID.html",
+                    "Height" : 0,
+                    "xmlNameHtml" : "ListID.html",
+                    "fcName" : "ListID"
+                },
+                {
+                    "fcTypeHtml" : "IQBStringType.html",
+                    "xmlName" : "FullName",
+                    "maxCA" : 209,
+                    "Width" : 48,
+                    "TopLeftX" : 108,
+                    "xmlTypeHtml" : "STRTYPE.html",
+                    "supports" : {
+                        "US" : true,
+                        "OE" : true,
+                        "CA" : true,
+                        "UK" : true,
+                        "AU" : true
+                    },
+                    "TopLeftY" : 114,
+                    "required" : false,
+                    "fcType" : "IQBStringType",
+                    "xmlType" : "STRTYPE",
+                    "count" : "0 - 1",
+                    "MasterImage" : "BilltoPay.jpg",
+                    "maxUK" : 209,
+                    "maxAU" : 209,
+                    "fcNameHtml" : "FullName.html",
+                    "maxDT" : 209,
+                    "Height" : 17,
+                    "xmlNameHtml" : "FullName.html",
+                    "maxOE" : 1000,
+                    "fcName" : "FullName"
+                }
+            ],
+            "fcNameHtml" : "PayeeEntity.html",
+            "Height" : 0,
+            "xmlNameHtml" : "PayeeEntity.html",
+            "fcName" : "PayeeEntityRef"
+        },
+        {
+            "xmlName" : "APAccountRef",
+            "Width" : 0,
+            "TopLeftX" : 0,
+            "supports" : {
+                "US" : true,
+                "OE" : true,
+                "CA" : true,
+                "UK" : true,
+                "AU" : true
+            },
+            "TopLeftY" : 0,
+            "required" : false,
+            "fcType" : "IQBBaseRef",
+            "xmlType" : "Aggregate",
+            "count" : "0 - 1",
+            "MasterImage" : "None",
+            "elements" : [
+                {
+                    "fcTypeHtml" : "IQBIDType.html",
+                    "xmlName" : "ListID",
+                    "Width" : 0,
+                    "TopLeftX" : 0,
+                    "xmlTypeHtml" : "IDTYPE.html",
+                    "supports" : {
+                        "US" : true,
+                        "OE" : true,
+                        "CA" : true,
+                        "UK" : true,
+                        "AU" : true
+                    },
+                    "TopLeftY" : 0,
+                    "required" : false,
+                    "fcType" : "IQBIDType",
+                    "xmlType" : "IDTYPE",
+                    "count" : "0 - 1",
+                    "MasterImage" : "None",
+                    "fcNameHtml" : "ListID.html",
+                    "Height" : 0,
+                    "xmlNameHtml" : "ListID.html",
+                    "fcName" : "ListID"
+                },
+                {
+                    "fcTypeHtml" : "IQBStringType.html",
+                    "xmlName" : "FullName",
+                    "maxCA" : 159,
+                    "Width" : 0,
+                    "TopLeftX" : 0,
+                    "xmlTypeHtml" : "STRTYPE.html",
+                    "supports" : {
+                        "US" : true,
+                        "OE" : true,
+                        "CA" : true,
+                        "UK" : true,
+                        "AU" : true
+                    },
+                    "TopLeftY" : 0,
+                    "required" : false,
+                    "fcType" : "IQBStringType",
+                    "xmlType" : "STRTYPE",
+                    "count" : "0 - 1",
+                    "MasterImage" : "None",
+                    "maxUK" : 159,
+                    "maxAU" : 159,
+                    "fcNameHtml" : "FullName.html",
+                    "maxDT" : 159,
+                    "Height" : 0,
+                    "xmlNameHtml" : "FullName.html",
+                    "maxOE" : 1000,
+                    "fcName" : "FullName"
+                }
+            ],
+            "fcNameHtml" : "APAccount.html",
+            "Height" : 0,
+            "xmlNameHtml" : "APAccount.html",
+            "fcName" : "APAccountRef"
+        },
+        {
+            "fcTypeHtml" : "IQBDateType.html",
+            "xmlName" : "DueDate",
+            "Width" : 64,
+            "TopLeftX" : 45,
+            "xmlTypeHtml" : "DATETYPE.html",
+            "supports" : {
+                "US" : true,
+                "OE" : true,
+                "CA" : true,
+                "UK" : true,
+                "AU" : true
+            },
+            "TopLeftY" : 115,
+            "required" : false,
+            "fcType" : "IQBDateType",
+            "xmlType" : "DATETYPE",
+            "count" : "0 - 1",
+            "MasterImage" : "BilltoPay.jpg",
+            "fcNameHtml" : "DueDate.html",
+            "Height" : 17,
+            "xmlNameHtml" : "DueDate.html",
+            "fcName" : "DueDate"
+        },
+        {
+            "xmlName" : "CurrencyFilter",
+            "supports" : {
+                "US" : true,
+                "OE" : false,
+                "CA" : true,
+                "UK" : true,
+                "AU" : true
+            },
+            "required" : false,
+            "fcType" : "ICurrencyFilter",
+            "minVerUS" : 8,
+            "xmlType" : "Aggregate",
+            "count" : "0 - 1",
+            "elements" : [
+                {
+                    "fcTypeHtml" : "QBFC-IORCurrencyFilter.html",
+                    "xmlName" : "OR",
+                    "supports" : {
+                        "US" : true,
+                        "OE" : true,
+                        "CA" : true,
+                        "UK" : true,
+                        "AU" : true
+                    },
+                    "required" : true,
+                    "fcType" : "IORCurrencyFilter",
+                    "xmlType" : "OR",
+                    "count" : 1,
+                    "elements" : [
+                        {
+                            "fcTypeHtml" : "IBSTRList.html",
+                            "xmlName" : "ListID",
+                            "xmlTypeHtml" : "IDTYPE.html",
+                            "supports" : {
+                                "US" : true,
+                                "OE" : true,
+                                "CA" : true,
+                                "UK" : true,
+                                "AU" : true
+                            },
+                            "required" : false,
+                            "fcType" : "IBSTRList",
+                            "xmlType" : "IDTYPE",
+                            "count" : "0 - n",
+                            "fcNameHtml" : "QBFC-ListIDList.html",
+                            "xmlNameHtml" : "ListID.html",
+                            "fcName" : "ListIDList"
+                        },
+                        {
+                            "fcTypeHtml" : "IBSTRList.html",
+                            "xmlName" : "FullName",
+                            "maxCA" : 64,
+                            "xmlTypeHtml" : "STRTYPE.html",
+                            "supports" : {
+                                "US" : true,
+                                "OE" : true,
+                                "CA" : true,
+                                "UK" : true,
+                                "AU" : true
+                            },
+                            "required" : false,
+                            "fcType" : "IBSTRList",
+                            "xmlType" : "STRTYPE",
+                            "count" : "0 - n",
+                            "maxUK" : 64,
+                            "maxAU" : 64,
+                            "fcNameHtml" : "QBFC-FullNameList.html",
+                            "maxDT" : 64,
+                            "xmlNameHtml" : "FullName.html",
+                            "fcName" : "FullNameList"
+                        }
+                    ],
+                    "fcName" : "ORCurrencyFilter"
+                }
+            ],
+            "fcNameHtml" : "CurrencyFilter.html",
+            "xmlNameHtml" : "CurrencyFilter.html",
+            "fcName" : "CurrencyFilter"
+        },
+        {
+            "fcTypeHtml" : "IBSTRList.html",
+            "xmlName" : "IncludeRetElement",
+            "maxCA" : 50,
+            "Width" : 0,
+            "TopLeftX" : 0,
+            "xmlTypeHtml" : "STRTYPE.html",
+            "supports" : {
+                "US" : true,
+                "OE" : false,
+                "CA" : true,
+                "UK" : true,
+                "AU" : true
+            },
+            "TopLeftY" : 0,
+            "required" : false,
+            "fcType" : "IBSTRList",
+            "minVerUS" : 4,
+            "xmlType" : "STRTYPE",
+            "count" : "0 - n",
+            "MasterImage" : "None",
+            "maxUK" : 50,
+            "maxAU" : 50,
+            "fcNameHtml" : "QBFC-IncludeRetElementList.html",
+            "maxDT" : 50,
+            "Height" : 0,
+            "xmlNameHtml" : "IncludeRetElement.html",
+            "fcName" : "IncludeRetElementList"
+        }
+    ],
+    "fcNameHtml" : "BillToPayQuery.html",
+    "Height" : 0,
+    "xmlNameHtml" : "BillToPayQuery.html",
+    "fcName" : "IBillToPayQuery"
+}

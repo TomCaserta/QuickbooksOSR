@@ -1,0 +1,29 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<link rel="stylesheet" href="styleguide.css" type="text/css" />
+<title>AppliedToTxn.html</title>
+</head>
+<body>
+<p><b><i>AppliedToTxn</i></b><br />
+  In a <em>ReceivePayment</em> message, each AppliedToTxn aggregate represents
+  the transaction to which this part of the payment is being applied.
+  Four types of transactions can
+    receive
+    payments in QuickBooks: invoices, statement charges (though not through the
+    SDK), general journal debits, and checks.
+  (For 
+  example, a customer job might receive a payment reimbursing a check that was
+   written for an expense for that customer job.)<br />
+   <br />
+   In a <em>BillPayment</em> message, each AppliedToTxn aggregate represents
+   the bill transaction to which this part of the  payment is being applied. <br />
+   <br />
+  If you
+    include AppliedToTxnAdd aggregates with duplicate
+  TxnIDs in the same Add request, 
+you will receive an error. </p>
+</body>
+</html>

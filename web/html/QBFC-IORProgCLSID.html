@@ -1,0 +1,7 @@
+<html><head><link rel="stylesheet" href="styleguide.css" type="text/css"></link></head>
+<body><table><tr><td><b><i>IORProgCLSID</i></b></td></tr>
+<tr><td>typedef enum {orpclsidNA, orpclsidProgID, orpclsidCLSID} ENORProgCLSID</td></tr>
+<tr><td> </td></tr><tr><td>'VB6 Methods and Properties</td></tr><tr><td>ortype As ENORProgCLSID</td></tr><tr><td>ProgID As IIQBStringType</td></tr><tr><td>CLSID As IIQBGUIDType</td></tr><tr><td>Type As IObjectType</td></tr>
+<tr><td> </td></tr><tr><td>// C++ Wrapper methods for error-handling and Property data</td></tr><tr><td>enum ENORProgCLSID ortype;</td></tr><tr><td>enum ENORProgCLSID Getortype ( );</td></tr><tr><td>IProgIDPtr ProgID;</td></tr><tr><td>IProgIDPtr GetProgID ( );</td></tr><tr><td>ICLSIDPtr CLSID;</td></tr><tr><td>ICLSIDPtr GetCLSID ( );</td></tr><tr><td>IObjectTypePtr Type;</td></tr><tr><td>IObjectTypePtr GetType ( );</td></tr>
+<tr><td> </td></tr><tr><td>// IDL Definition</td></tr><tr><td>HRESULT ortype([out, retval] ENORProgCLSID* pVal) </td></tr><tr><td>HRESULT ProgID([out, retval] IIQBStringType** pVal)</td></tr><tr><td>HRESULT CLSID([out, retval] IIQBGUIDType** pVal)</td></tr><tr><td>HRESULT Type([out, retval] IObjectType **pVal);</td></tr>
+</table></body></html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<link rel="stylesheet" href="styleguide.css" type="text/css" />
+<title>IncludeRetElement.html</title>
+</head>
+<body>
+<b><i>IncludeRetElement</i></b><br />
+You use this tag in the request to limit the data that will be returned in the response. 
+Inside this tag you specify the name of the top-level element or aggregate that is to be returned in the 
+response to the request. You cannot specify fields within an aggregate, for example, you cannot
+specify a City within an Address: you must specify Address and will get the entire address.<br />
+<br />
+
+Each element must be specified in a separate IncludeRetElement line. The specified tag name
+is not parsed, so you must be especially careful to supply a valid tag, properly cased, because
+no error is returned in the status code if you specify an invalid tag name.<br />
+<br />
+Notice that if you want to return custom data or private data extensions, you must specify DataExtRet inside an IncludeRetElement tag pair, and you must supply the OwnerID tags set to either a value of 0 (custom data) or the GUID for the private data.
+</body>
+</html>

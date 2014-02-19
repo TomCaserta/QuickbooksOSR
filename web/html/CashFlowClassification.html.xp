@@ -1,0 +1,19 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+  <link rel="stylesheet" href="styleguide.css" type="text/css" />
+  <title>CashFlowClassification.html.xp</title>
+</head>
+<body>
+<p><b><i>CashFlowClassification</i></b><br />
+Indicates how this account is classified for cash flow reporting. If the value is None, 
+the account has not been classified. If the value is NotApplicable, the account does not 
+qualify to be classified. (For example, a bank account that tracks cash transactions is 
+not part of a cash flow report.)</p>
+
+$$include.ENUM.CashFlowClassification$$
+
+</body>
+</html>

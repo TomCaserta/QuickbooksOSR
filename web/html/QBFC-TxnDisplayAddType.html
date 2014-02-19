@@ -1,0 +1,15 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+  <link rel="stylesheet" href="styleguide.css" type="text/css" />
+  <title>QBFC-TxnDisplayAddType.html</title>
+</head>
+<body>
+<b><i>TxnDisplayAddType</i></b><br />
+Specifies the type of QuickBooks transaction for which to open an edit form in the QuickBooks UI.<br />
+<br />
+Notice that some transaction types do not support the entity reference that "prefills" the form because it would make no sense to do this for certain forms. Accordingly, BillPayment does not support the entity reference, nor does Deposit, Charge, SalesTaxPaymentCheck, JournalEntry, or InventoryAdjustment. If you add an entity reference for those elements that don't support it, you will get a "conflicting parameter" error at runtime.  
+</body>
+</html>

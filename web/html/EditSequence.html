@@ -1,0 +1,20 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<link rel="stylesheet" href="styleguide.css" type="text/css" />
+<title>EditSequence.html</title>
+</head>
+<body>
+<p><b><i>EditSequence</i></b><br />
+  A number that the server generates and assigns to this object. Every time the 
+  object is changed, the server will change its EditSequence value. When you try 
+  to modify a list object, you must provide its EditSequence. The server compares 
+  the EditSequence you provide with the EditSequence in memory to make sure you 
+  are dealing with the latest copy of the object. If you are not, the server will 
+  reject the request and return an error. </p>
+<p>Because EditSequence is only used to check whether two objects match, there 
+  is no reason to interpret its value. </p>
+</body>
+</html>

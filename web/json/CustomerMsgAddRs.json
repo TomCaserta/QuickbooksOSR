@@ -1,0 +1,410 @@
+{
+    "xmlName" : "CustomerMsgAddRs",
+    "Width" : 0,
+    "TopLeftX" : 0,
+    "supports" : {
+        "US" : true,
+        "OE" : false,
+        "CA" : true,
+        "UK" : true,
+        "AU" : true
+    },
+    "TopLeftY" : 0,
+    "required" : false,
+    "fcType" : "nothing",
+    "xmlType" : "Aggregate",
+    "attributes" : [
+        {
+            "fcTypeHtml" : "IQBIntType.html",
+            "xmlName" : "statusCode",
+            "xmlTypeHtml" : "INTTYPE.html",
+            "supports" : {
+                "US" : true,
+                "OE" : true,
+                "CA" : true,
+                "UK" : true,
+                "AU" : true
+            },
+            "required" : true,
+            "fcType" : "IQBIntType",
+            "xmlType" : "INTTYPE",
+            "fcNameHtml" : "statusCode.html",
+            "xmlNameHtml" : "statusCode.html",
+            "fcName" : "StatusCode"
+        },
+        {
+            "fcTypeHtml" : "IQBStringType.html",
+            "xmlName" : "statusSeverity",
+            "xmlTypeHtml" : "STRTYPE.html",
+            "supports" : {
+                "US" : true,
+                "OE" : true,
+                "CA" : true,
+                "UK" : true,
+                "AU" : true
+            },
+            "required" : true,
+            "fcType" : "IQBStringType",
+            "xmlType" : "STRTYPE",
+            "fcNameHtml" : "statusSeverity.html",
+            "xmlNameHtml" : "statusSeverity.html",
+            "fcName" : "StatusSeverity"
+        },
+        {
+            "fcTypeHtml" : "IQBStringType.html",
+            "xmlName" : "statusMessage",
+            "xmlTypeHtml" : "STRTYPE.html",
+            "supports" : {
+                "US" : true,
+                "OE" : true,
+                "CA" : true,
+                "UK" : true,
+                "AU" : true
+            },
+            "required" : true,
+            "fcType" : "IQBStringType",
+            "xmlType" : "STRTYPE",
+            "fcNameHtml" : "statusMessage.html",
+            "xmlNameHtml" : "statusMessage.html",
+            "fcName" : "StatusMessage"
+        }
+    ],
+    "MasterImage" : "None",
+    "elements" : [
+        {
+            "xmlName" : "CustomerMsgRet",
+            "Width" : 0,
+            "TopLeftX" : 0,
+            "supports" : {
+                "US" : true,
+                "OE" : true,
+                "CA" : true,
+                "UK" : true,
+                "AU" : true
+            },
+            "TopLeftY" : 0,
+            "required" : false,
+            "fcType" : "ICustomerMsgRet",
+            "xmlType" : "Aggregate",
+            "count" : "0 - 1",
+            "MasterImage" : "None",
+            "elements" : [
+                {
+                    "fcTypeHtml" : "IQBIDType.html",
+                    "xmlName" : "ListID",
+                    "Width" : 0,
+                    "TopLeftX" : 0,
+                    "xmlTypeHtml" : "IDTYPE.html",
+                    "supports" : {
+                        "US" : true,
+                        "OE" : true,
+                        "CA" : true,
+                        "UK" : true,
+                        "AU" : true
+                    },
+                    "TopLeftY" : 0,
+                    "required" : true,
+                    "fcType" : "IQBIDType",
+                    "xmlType" : "IDTYPE",
+                    "count" : 1,
+                    "MasterImage" : "None",
+                    "fcNameHtml" : "ListID.html",
+                    "Height" : 0,
+                    "xmlNameHtml" : "ListID.html",
+                    "fcName" : "ListID"
+                },
+                {
+                    "fcTypeHtml" : "IQBDateTimeType.html",
+                    "xmlName" : "TimeCreated",
+                    "Width" : 0,
+                    "TopLeftX" : 0,
+                    "xmlTypeHtml" : "DATETIMETYPE.html",
+                    "supports" : {
+                        "US" : true,
+                        "OE" : true,
+                        "CA" : true,
+                        "UK" : true,
+                        "AU" : true
+                    },
+                    "TopLeftY" : 0,
+                    "required" : true,
+                    "fcType" : "IQBDateTimeType",
+                    "xmlType" : "DATETIMETYPE",
+                    "count" : 1,
+                    "MasterImage" : "None",
+                    "fcNameHtml" : "TimeCreated.html",
+                    "Height" : 0,
+                    "xmlNameHtml" : "TimeCreated.html",
+                    "fcName" : "TimeCreated"
+                },
+                {
+                    "fcTypeHtml" : "IQBDateTimeType.html",
+                    "xmlName" : "TimeModified",
+                    "Width" : 0,
+                    "TopLeftX" : 0,
+                    "xmlTypeHtml" : "DATETIMETYPE.html",
+                    "supports" : {
+                        "US" : true,
+                        "OE" : true,
+                        "CA" : true,
+                        "UK" : true,
+                        "AU" : true
+                    },
+                    "TopLeftY" : 0,
+                    "required" : true,
+                    "fcType" : "IQBDateTimeType",
+                    "xmlType" : "DATETIMETYPE",
+                    "count" : 1,
+                    "MasterImage" : "None",
+                    "fcNameHtml" : "TimeModified.html",
+                    "Height" : 0,
+                    "xmlNameHtml" : "TimeModified.html",
+                    "fcName" : "TimeModified"
+                },
+                {
+                    "fcTypeHtml" : "IQBStringType.html",
+                    "xmlName" : "EditSequence",
+                    "maxCA" : 16,
+                    "Width" : 0,
+                    "TopLeftX" : 0,
+                    "xmlTypeHtml" : "STRTYPE.html",
+                    "supports" : {
+                        "US" : true,
+                        "OE" : true,
+                        "CA" : true,
+                        "UK" : true,
+                        "AU" : true
+                    },
+                    "TopLeftY" : 0,
+                    "required" : true,
+                    "fcType" : "IQBStringType",
+                    "xmlType" : "STRTYPE",
+                    "count" : 1,
+                    "MasterImage" : "None",
+                    "maxUK" : 16,
+                    "maxAU" : 16,
+                    "fcNameHtml" : "EditSequence.html",
+                    "maxDT" : 16,
+                    "Height" : 0,
+                    "xmlNameHtml" : "EditSequence.html",
+                    "maxOE" : 10,
+                    "fcName" : "EditSequence"
+                },
+                {
+                    "fcTypeHtml" : "IQBStringType.html",
+                    "xmlName" : "Name",
+                    "maxCA" : 101,
+                    "Width" : 304,
+                    "TopLeftX" : 28,
+                    "xmlTypeHtml" : "STRTYPE.html",
+                    "supports" : {
+                        "US" : true,
+                        "OE" : true,
+                        "CA" : true,
+                        "UK" : true,
+                        "AU" : true
+                    },
+                    "TopLeftY" : 97,
+                    "required" : true,
+                    "fcType" : "IQBStringType",
+                    "xmlType" : "STRTYPE",
+                    "count" : 1,
+                    "MasterImage" : "customermessage.jpg",
+                    "maxUK" : 101,
+                    "maxAU" : 101,
+                    "fcNameHtml" : "Name.html",
+                    "maxDT" : 101,
+                    "Height" : 34,
+                    "xmlNameHtml" : "Name.html",
+                    "fcName" : "Name"
+                },
+                {
+                    "fcTypeHtml" : "IQBBoolType.html",
+                    "xmlName" : "IsActive",
+                    "Width" : 88,
+                    "TopLeftX" : 335,
+                    "xmlTypeHtml" : "BOOLTYPE.html",
+                    "supports" : {
+                        "US" : true,
+                        "OE" : true,
+                        "CA" : true,
+                        "UK" : true,
+                        "AU" : true
+                    },
+                    "TopLeftY" : 154,
+                    "required" : false,
+                    "fcType" : "IQBBoolType",
+                    "xmlType" : "BOOLTYPE",
+                    "count" : "0 - 1",
+                    "MasterImage" : "customermessage.jpg",
+                    "fcNameHtml" : "IsActive.html",
+                    "Height" : 31,
+                    "xmlNameHtml" : "IsActive.html",
+                    "fcName" : "IsActive"
+                }
+            ],
+            "Height" : 0,
+            "xmlNameHtml" : "CustomerMsg.html",
+            "fcName" : "Detail"
+        },
+        {
+            "xmlName" : "ErrorRecovery",
+            "supports" : {
+                "US" : true,
+                "OE" : true,
+                "CA" : true,
+                "UK" : true,
+                "AU" : true
+            },
+            "required" : false,
+            "fcType" : "IErrorRecovery",
+            "minVerUS" : 11,
+            "xmlType" : "Aggregate",
+            "count" : "0 - 1",
+            "elements" : [
+                {
+                    "fcTypeHtml" : "QBFC-IORListOwnerTxn.html",
+                    "xmlName" : "OR",
+                    "supports" : {
+                        "US" : true,
+                        "OE" : true,
+                        "CA" : true,
+                        "UK" : true,
+                        "AU" : true
+                    },
+                    "required" : true,
+                    "fcType" : "IORListOwnerTxn",
+                    "xmlType" : "OR",
+                    "count" : 1,
+                    "elements" : [
+                        {
+                            "fcTypeHtml" : "IQBIDType.html",
+                            "xmlName" : "ListID",
+                            "xmlTypeHtml" : "IDTYPE.html",
+                            "supports" : {
+                                "US" : true,
+                                "OE" : true,
+                                "CA" : true,
+                                "UK" : true,
+                                "AU" : true
+                            },
+                            "required" : false,
+                            "fcType" : "IQBIDType",
+                            "xmlType" : "IDTYPE",
+                            "count" : "0 - 1",
+                            "fcNameHtml" : "ListID.html",
+                            "xmlNameHtml" : "ListID.html",
+                            "fcName" : "ListID"
+                        },
+                        {
+                            "fcTypeHtml" : "IQBGUIDType.html",
+                            "xmlName" : "OwnerID",
+                            "xmlTypeHtml" : "GUIDTYPE.html",
+                            "supports" : {
+                                "US" : true,
+                                "OE" : true,
+                                "CA" : true,
+                                "UK" : true,
+                                "AU" : true
+                            },
+                            "required" : false,
+                            "fcType" : "IQBGUIDType",
+                            "xmlType" : "GUIDTYPE",
+                            "count" : "0 - 1",
+                            "fcNameHtml" : "OwnerID.html",
+                            "xmlNameHtml" : "OwnerID.html",
+                            "fcName" : "OwnerID"
+                        },
+                        {
+                            "fcTypeHtml" : "IQBIDType.html",
+                            "xmlName" : "TxnID",
+                            "xmlTypeHtml" : "IDTYPE.html",
+                            "supports" : {
+                                "US" : true,
+                                "OE" : true,
+                                "CA" : true,
+                                "UK" : true,
+                                "AU" : true
+                            },
+                            "required" : false,
+                            "fcType" : "IQBIDType",
+                            "xmlType" : "IDTYPE",
+                            "count" : "0 - 1",
+                            "fcNameHtml" : "TxnID.html",
+                            "xmlNameHtml" : "TxnID.html",
+                            "fcName" : "TxnID"
+                        }
+                    ],
+                    "fcName" : "ORListOwnerTxn"
+                },
+                {
+                    "fcTypeHtml" : "IQBIntType.html",
+                    "xmlName" : "TxnNumber",
+                    "xmlTypeHtml" : "INTTYPE.html",
+                    "supports" : {
+                        "US" : true,
+                        "OE" : true,
+                        "CA" : true,
+                        "UK" : true,
+                        "AU" : true
+                    },
+                    "required" : false,
+                    "fcType" : "IQBIntType",
+                    "xmlType" : "INTTYPE",
+                    "count" : "0 - 1",
+                    "fcNameHtml" : "TxnNumber.html",
+                    "xmlNameHtml" : "TxnNumber.html",
+                    "fcName" : "TxnNumber"
+                },
+                {
+                    "fcTypeHtml" : "IQBStringType.html",
+                    "xmlName" : "EditSequence",
+                    "maxCA" : 16,
+                    "xmlTypeHtml" : "STRTYPE.html",
+                    "supports" : {
+                        "US" : true,
+                        "OE" : true,
+                        "CA" : true,
+                        "UK" : true,
+                        "AU" : true
+                    },
+                    "required" : false,
+                    "fcType" : "IQBStringType",
+                    "xmlType" : "STRTYPE",
+                    "count" : "0 - 1",
+                    "maxUK" : 16,
+                    "maxAU" : 16,
+                    "fcNameHtml" : "EditSequence.html",
+                    "maxDT" : 16,
+                    "xmlNameHtml" : "EditSequence.html",
+                    "fcName" : "EditSequence"
+                },
+                {
+                    "fcTypeHtml" : "IQBGUIDType.html",
+                    "xmlName" : "ExternalGUID",
+                    "xmlTypeHtml" : "GUIDTYPE.html",
+                    "supports" : {
+                        "US" : true,
+                        "OE" : true,
+                        "CA" : true,
+                        "UK" : true,
+                        "AU" : true
+                    },
+                    "required" : false,
+                    "fcType" : "IQBGUIDType",
+                    "xmlType" : "GUIDTYPE",
+                    "count" : "0 - 1",
+                    "fcNameHtml" : "ExternalGUID.html",
+                    "xmlNameHtml" : "ExternalGUID.html",
+                    "fcName" : "ExternalGUID"
+                }
+            ],
+            "xmlNameHtml" : "ErrorRecovery.html",
+            "fcName" : "Detail"
+        }
+    ],
+    "fcNameHtml" : "CustomerMsgAdd.html",
+    "Height" : 0,
+    "xmlNameHtml" : "CustomerMsgAdd.html",
+    "fcName" : "IResponse"
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+  <link rel="stylesheet" href="styleguide.css" type="text/css" />
+  <title>IQBDateType.html</title>
+</head>
+<body><pre>
+<b><i>IQBDateType</i></b>
+ 
+' VB6 methods
+SetValue(val As Date)
+GetValue() As Date
+IsSet ( ) As Boolean
+IsEmpty ( ) As Boolean
+Unset ( )
+SetEmpty ( )
+ 
+// C++ Wrapper methods for error-handling
+HRESULT SetValue ( DATE val );
+DATE GetValue ( );
+VARIANT_BOOL IsSet ( );
+VARIANT_BOOL IsEmpty ( );
+HRESULT Unset ( );
+HRESULT SetEmpty ( );
+ 
+// IDL Definition
+HRESULT SetValue(DATE val);
+HRESULT GetValue([out, retval] DATE *pVal);
+HRESULT IsSet([out, retval] VARIANT_BOOL* pVal);
+HRESULT IsEmpty([out, retval] VARIANT_BOOL* pVal);
+HRESULT Unset();
+HRESULT SetEmpty();
+</pre></body></html>

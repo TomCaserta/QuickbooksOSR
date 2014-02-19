@@ -1,0 +1,17 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+  <link rel="stylesheet" href="styleguide.css" type="text/css" />
+  <title>retCount.html</title>
+</head>
+<body>
+<b><i>retCount</i></b><br /><br />
+The retCount is returned in a query if in the query request you specified the metaData attribute with a value of MetaDataOnly (in which case the retCount is the only data returned in the query response) or MetaDataAndResponseData (the query response contains object data AND the approximate count). The retCount value contains the approximate count of the objects that could be expected to be returned from the query.
+A common use of this feature is to specify a count with no data in order to determine how many objects to expect from the actual query.<br />
+<br />
+You should be aware that the count returned in retCount is not guaranteed to be exact: it could be off slightly due to new object creation or deletions. 
+ 
+</body>
+</html>

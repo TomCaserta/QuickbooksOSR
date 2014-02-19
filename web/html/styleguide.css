@@ -1,0 +1,75 @@
+a {
+		color: #6666FF; 
+		text-decoration:none}
+
+a:hover {
+		color: #6666FF; 
+		text-decoration: underline}
+
+
+.clsChooseTop { font-family: Meta, Verdana, Arial, Helvetica, sans-serif; font-size: 14px; font-weight: bold; color:#FFFFFF; background-color:#7F99CC }
+.clsChoosePrompt { font-family: Meta, Verdana, Arial, Helvetica, sans-serif; font-size: 14px; color:#333333; font-weight: bold}
+.clsChooseLink { font-family: Meta, Verdana, Arial, Helvetica, sans-serif; font-size: 14px; font-weight: bold}
+
+.pageTitle {
+	FONT: bold 10pt Meta, Verdana, Arial, Helvetica, sans-serif; COLOR: #FFFFFF; BACKGROUND-COLOR: #7F99CC
+}
+.pageTitle A {
+      color: #FFFFFF }
+
+.headerTable {
+	FONT: 8pt MetaPlusNormal, Verdana, Arial, Helvetica, sans-serif; color: #999999; BACKGROUND-COLOR: white
+}
+
+.mainTableAltRow {
+	FONT: 8pt MetaPlusNormal, Verdana, Arial, Helvetica, sans-serif; COLOR: black; BACKGROUND-COLOR: #E5E5E5
+}
+
+body, table
+{
+	font-family: Meta, Verdana, Arial, Helvetica, sans-serif;
+	font-size: 8pt;
+	color: #000000;
+}
+
+.disclaimer
+{
+	font-family: MetaPlusNormal, Verdana, Arial, Helvetica, sans-serif;
+	font: bold 6pt;
+	color: #999999;
+	border-bottom-color: red
+}
+
+.mainTableHeader
+{
+	background-color: white;
+	font-family: MetaPlusNormal, Verdana, Arial, Helvetica, sans-serif;
+	font: 8pt;
+	font-weight: bold;
+	color: black;
+}
+
+.mainTableRow
+{
+	background-color: white;
+	font-family: Meta, Verdana, Arial, Helvetica, sans-serif;
+	font: 8pt;
+	color: black;
+}
+
+.mainTableBold
+{
+	font: bold 8pt;
+}
+
+.mainTableRow A, .mainTableAltRow A, .mainTableBold A
+{
+	color: #6666FF; 
+}
+
+.footerCopyright {
+		font-family: "Verdana", "Helvetica", "Arial";
+		color: black;
+		font-size: 10px;
+		font-weight: Normal;
+    	}

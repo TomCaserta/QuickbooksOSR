@@ -1,0 +1,21 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+  <link rel="stylesheet" href="styleguide.css" type="text/css" />
+  <title>IsToBeEmailed.html</title>
+</head>
+<body>
+<b><i>IsToBeEmailed</i></b><br /><br />
+If this is set to true, at runtime the customer referenced in this transaction will be checked for a valid email
+address. If there is no valid email address, the request will fail. If there is a valid email address currently in QuickBooks for the customer, and the request succeeds,
+the transaction will be added to QuickBook's list of forms to be emailed, possibly in a batch. 
+<br />
+<br />
+Notice that setting this field to true does not actually perform the emailing. Only the QuickBooks user can
+do that from within QuickBooks. This cannot be done from the SDK. Setting this field to false does not prevent the
+QuickBooks user from emailing the transaction later. It simply results in the transaction NOT being placed in
+the list of transactions to be emailed.
+</body>
+</html>

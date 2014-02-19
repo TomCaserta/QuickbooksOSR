@@ -1,0 +1,18 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+  <link rel="stylesheet" href="styleguide.css" type="text/css" />
+  <title>metaData.html</title>
+</head>
+<body>
+<b><i>metaData</i></b><br /><br />
+This is used in a query to cause a count of query objects to be returned.  You can specify that the count of query objects is to be returned with the returned objects, or you can specify that only a count and no data is returned. (The default is that no count is returned.) A common use of this feature is to specify a count with no data in order to determine how many objects to expect from the actual query.<br />
+<br />
+If you don't want a query to return a count, either don't use this feature, or specify the value NoMetaData. If you want only a count, specify the value MetaDataOnly. If you want data and a count, specify MetaDataAndResponseData.<br />
+<br />
+You should be aware that the count returned via this setting is not guaranteed to be exact: it could be off slightly due to new object creation or deletions.
+ 
+</body>
+</html>

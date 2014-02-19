@@ -1,0 +1,38 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+  <link rel="stylesheet" href="styleguide.css" type="text/css" />
+  <title>ReceivePaymentToDepositQuery.html</title>
+</head>
+<body>
+<p>This query returns information about payments that have been received and are 
+  ready to deposit. You can use any returned TxnID and TxnLineID elements as PaymentTxnID 
+  and PaymentTxnLineID elements in subsequent DespositAdd requests. <b>Note:</b> 
+  If you include an explicit end tag in a ReceivePaymentToDepositQuery request, 
+  you will receive an error if there is any space between the opening tag and 
+  the end tag. The following table shows valid and invalid ways of constructing 
+  this request:</p>
+<table width="90%" border="1" cellspacing="3" cellpadding="3">
+  <tr> 
+    <td>Valid</td>
+    <td>&lt;ReceivePaymentToDepositQueryRq&gt;&lt;/ReceivePaymentToDepositQueryRq&gt;<br />
+      <i>(no space between opening and closing tags)</i></td>
+  </tr>
+  <tr> 
+    <td>Valid</td>
+    <td> 
+      <p>&lt;ReceivePaymentToDepositQueryRq /&gt;<br />
+        <i>(combined opening and closing tag)</i></p>
+    </td>
+  </tr>
+  <tr> 
+    <td>Invalid</td>
+    <td>&lt;ReceivePaymentToDepositQueryRq&gt;<br />
+      &lt;/ReceivePaymentToDepositQueryRq&gt;<br />
+      <i>(space between opening and closing tags)</i></td>
+  </tr>
+</table>
+</body>
+</html>

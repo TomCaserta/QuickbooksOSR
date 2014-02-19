@@ -1,0 +1,28 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+  <link rel="stylesheet" href="styleguide.css" type="text/css" />
+  <title>TimeLastProcessed.html</title>
+</head>
+<body>
+<b><i>TimeLastProcessed</i></b><br /><br />
+
+  <ul> 
+   
+    <li><b>For data and UI events:</b> TimeLastProcessed will be present if this 
+      subscription has been processed by at least one company file. It indicates 
+      the last time that this subscription is propagated to a company file.</li>
+
+    <li><b>For UI extensions:</b> TimeLastProcessed indicates when the extension 
+      was processed for an installation of QuickBooks (not for a company file, 
+      as with events). UI extensions are processed by each installation of QuickBooks 
+      the first time QuickBooks is started after a UI extension is added. No additional 
+      processing of the subscription is done as data files are opened. (Each data 
+      file has to grant access to the extension, but this does not affect the 
+      TimeLastProcessed.)</li>
+  </ul>
+
+</body>
+</html>

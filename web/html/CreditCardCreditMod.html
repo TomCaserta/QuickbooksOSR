@@ -1,0 +1,27 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+  <link rel="stylesheet" href="styleguide.css" type="text/css" />
+  <title>CreditCardCreditMod.html</title>
+</head>
+<body>
+<b><i>CreditCardCreditMod</i></b>
+ <p>The Credit Card credit mod request allows you to modify an existing credit card credit transaction using the SDK. You can modify most of the fields that can be modified in the QuickBooks UI. That is, this request can be used to modify Purchased from, date, credit card and modify lines from the item table and the expense table. </p>
+ <p>The following list describes what you can and cannot due with this request:</p>
+<ul>
+<li>You can modify or clear the following fields: Ref Num and Memo</li>
+<li>You can modify (not clear) transaction date</li>
+<li>You can change the credit card account to support the scenario where the credit card transaction was created and posted to the wrong credit card account (impacts your accounting).</li>
+<li>You can modify the Purchase from field (Payee Name) to change the Payee Name on the credit card transaction to a different name (employee, job, customer, vendor, other name). This field cannot be cleared since it is required by QB business logic</li>
+<li>You cannot modify the amount due directly! (However the amount due will change when you modify the transaction lines.)</li>
+<li>You cannot change a Credit to a Charge.</li>
+<li>You cannot Void the credit. Use TxnVoid instead.</li>
+<li>You can clear the entire expense table or the entire item table, but you <i>cannot</i> clear both tables at the same time.</li>
+<li></li>
+<li></li>
+</ul>
+
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+  <link rel="stylesheet" href="styleguide.css" type="text/css" />
+  <title>DATETIMETYPE.html</title>
+</head>
+<body>
+<p><b><i>DATETIMETYPE</i></b><br />
+  The format for specifying date and time (including a time zone) is <br />
+      <i>CCCC-MM-DD</i>T<i>hh:mm:ss</i>+<i>hh:mm</i><br />
+  or<br />
+      <i>CCCC-MM-DD</i>T<i>hh:mm:ss</i>-<i>hh:mm</i><br />
+  where<br />
+      <i>CCCC</i> is the four-digit year<br />
+      <i>MM</i> is the month,<br />
+      <i>DD</i> is the day,<br />
+      the character T is a separator, <br />
+      <i>hh</i> is the hour,<br />
+      <i>mm</i> is the minute,<br />
+      <i>ss</i> is the second, and<br />
+      <i>hh:mm</i> is the difference between the local time 
+  of the client and UTC <br />
+          (Universal Coordinated Time). <br />
+</p>
+<p>The following table shows examples of valid DATETIMETYPE constructs:</p>
+<table width="85%" border="1" cellspacing="3" cellpadding="3">
+  <tr> 
+    <td>Value:</td>
+    <td>Meaning:</td>
+  </tr>
+  <tr> 
+    <td>2002-06-05</td>
+    <td>June 5, 2002</td>
+  </tr>
+  <tr> 
+    <td>2002-06-05T10</td>
+    <td>June 5, 2002, 10:00 a.m.</td>
+  </tr>
+  <tr> 
+    <td>2002-06-05T10:21</td>
+    <td>June 5, 2002, 10:21 a.m.</td>
+  </tr>
+  <tr> 
+    <td>2002-06-05T10:21:10</td>
+    <td>June 5, 2002, 10:21:10 a.m.</td>
+  </tr>
+  <tr> 
+    <td>2002-06-05T10:21:10-08:00</td>
+    <td>June 5, 2002, 10:21:10 a.m. Pacific time</td>
+  </tr>
+</table>
+<p>
+<b>Note:</b> The DATETIMETYPE does not take daylight saving time into account.   Returned time values always use "standard" time. 
+</p>
+</body>
+</html>

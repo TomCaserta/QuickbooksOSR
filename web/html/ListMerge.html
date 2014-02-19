@@ -1,0 +1,22 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+  <link rel="stylesheet" href="styleguide.css" type="text/css" />
+  <title>ListMerge.html</title>
+</head>
+<body>
+This request merges one list object into another list object of the same type. Currently you can merge customers/jobs, or vendors, or accounts. The consequence of the merge is that only the merge-to object remains. The merge-from object goes away and all transactions that reference that merge-from object now reference only the merge-to object. <br />
+<br />
+The request itself is very simple: you just need the ListID and EditSequence for the two objects to be merged. However, you may have to do some preliminary work on the objects themselves before the merge. For accounts, you must make sure they have the same AccountType, and must stop if they don't. (You cannot change the AccountType!) You must also check the Sublevel of the two accounts and change one of them to match the other before, by making the ParentRef point to the same parent
+account or by getting rid of the ParentRef, if you need to set the Sublevel to 0.<br />
+<br />
+For customers, you must make sure only one of the customers/jobs has child jobs. If both have 
+child jobs, you must move the jobs first to the merge-to customer or delete the jobs.<br />
+<br />
+You can only merge two list objects from a QuickBooks company file if the file is 
+open in <i>single-user</i> mode. If the file is open in multiuser mode, your application 
+will receive an error.  
+</body>
+</html>

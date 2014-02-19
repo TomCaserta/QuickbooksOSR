@@ -1,0 +1,38 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+  <link rel="stylesheet" href="styleguide.css" type="text/css" />
+  <title>CompanyQuery.html</title>
+</head>
+<body>
+<p>A CompanyQueryRq request message returns detailed information about a QuickBooks 
+  company file, such as the company&#146;s address and legal name, certain preferences that are set, and any services that the company is subscribed to, such as payroll, QuickBooks Merchant Services, and so forth. Company information 
+  cannot be added or modified through the SDK, only through the QuickBooks user 
+  interface.<b> Note:</b> If you include an explicit end tag in a CompanyQueryRq 
+  request, you will receive an error if there is any space between the opening 
+  tag and the end tag. The following table shows valid and invalid ways of constructing 
+  this request:</p>
+<table width="80%" border="1" cellspacing="3" cellpadding="3">
+  <tr> 
+    <td>Valid</td>
+    <td>&lt;CompanyQueryRq&gt;&lt;/CompanyQueryRq&gt;<br />
+      <i>(no space between opening and closing tags)</i></td>
+  </tr>
+  <tr> 
+    <td>Valid</td>
+    <td> 
+      <p>&lt;CompanyQueryRq /&gt;<br />
+        <i>(combined opening and closing tag)</i></p>
+    </td>
+  </tr>
+  <tr> 
+    <td>Invalid</td>
+    <td>&lt;CompanyQueryRq&gt;<br />
+      &lt;/CompanyQueryRq&gt;<br />
+      <i>(space between opening and closing tags)</i></td>
+  </tr>
+</table>
+</body>
+</html>

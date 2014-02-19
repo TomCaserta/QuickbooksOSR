@@ -1,0 +1,19 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+  <link rel="stylesheet" href="styleguide.css" type="text/css" />
+  <title>QBFC-RateEntryList.html</title>
+</head>
+<body>
+<b><i>RateEntryList</i></b><br />
+A RateEntry consists of one rate and one effective date. You can have as many rate entries as you like, but you must add each one to the RateEntry list like this:<br />
+<br />
+Dim MyRateEntry As IRateEntry
+Set MyRateEntry = My_IWorkersCompCodeAdd_object.RateEntryList.Append
+MyRateEntry.EffectiveDate.SetValue #7/7/2007 9:35:00 AM#"
+MyRateEntry.Rate.SetValue 1#
+
+</body>
+</html>

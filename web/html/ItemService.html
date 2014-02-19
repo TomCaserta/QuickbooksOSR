@@ -1,0 +1,21 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<link rel="stylesheet" href="styleguide.css" type="text/css" />
+<title>ItemService.html</title>
+</head>
+<body>
+<p><b><i>ItemService</i></b><br />
+  A service item refers to services that a business charges for or purchases. 
+  Examples include specialized labor, consulting hours, and professional fees. 
+  An <i>ItemServiceRef</i> aggregate refers to an item on the ItemService list. 
+  In a request, if an ItemServiceRef aggregate includes both FullName and ListID, FullName will 
+  be ignored. </p>
+<p>In a <i>TimeTracking</i> message, ItemServiceRef refers to the type of work. 
+  If no CustomerRef is specified, then ItemServiceRef is not needed. If IsBillable 
+  is set to true, then TimeTrackingAdd must include both ItemServiceRef and CustomerRef. 
+</p>
+</body>
+</html>

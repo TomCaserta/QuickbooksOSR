@@ -1,0 +1,20 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+  <link rel="stylesheet" href="styleguide.css" type="text/css" />
+  <title>CreditCardTxnType.html</title>
+</head>
+<body>
+<b><i>CreditCardTxnType</i></b><br />
+Used in a Sales Receipt, Receive Payment, or ARRefundCreditCard request to indicate the QBMS transaction from which the data in this CreditCardTxnInfo block originated, for example, from a QBMS Charge, Authorization, Capture, Refund, or VoiceAuthorization. One main use of this is for QuickBooks to recognize a ReceivePaymentAdd to know whether the transaction is an Auth, in which case the ReceivePayment is non posting, or a Charge, in which case the ReceivePayment is posted.<br />
+<br />
+The CreditCardTxnType that can be used for each supported transaction is enforced by the business logic layer, not by the qbXML spec. The logic imposes the following limitations:<br /><br />
+<i>ARRefundCreditCardAdd</i> allows only Refund. <br /> 
+<i>ReceivePaymentAdd/Mod</i> allows Authorization, Capture, Charge, and VoiceAuthorization.<br />
+<i>SalesReceiptAdd</i> allows types Charge, Refund, and VoiceAuthorization ( Refund is allowed because line items can represent a Refund)<br />
+<br />
+This field is optional, but if not supplied, the default for the transaction will be used. For example, in ARRefundCreditCard transactions, the default is Refund, for SalesReceipt the default is Charge.
+</body>
+</html>

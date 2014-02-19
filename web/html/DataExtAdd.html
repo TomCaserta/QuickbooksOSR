@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+  <link rel="stylesheet" href="styleguide.css" type="text/css" />
+  <title>DataExtAdd.html</title>
+</head>
+<body>
+<b><i>DataExtAdd</i></b><br />
+Writes data to <i>one</i> data extension.<br />
+<br />
+This request can only be invoked if a data extension definition has already been defined 
+for the target object type. That is, before you can perform the DataExtAdd
+on a particular customer, say John Henry, the data extension must already be defined for 
+the Customer object. Notice
+that a data extension definition can be defined in either of two ways: via DataExtDefAdd
+as already described, or via the QuickBooks UI by the user specifying a custom field. Only
+custom fields can be defined through the UI, not private data extensions.<br />
+<br />
+DataExtAdd adds a custom field (if OwnerID is set to 0) or a private data extension 
+(if OwnerID is set to a GUID) containing the specified value. The custom field or 
+private data extension and value is added to the specified list object, or 
+transaction, or transaction line item.<br />
+<br />
+DataExtAdd will return error 3180 if you invoke this on a custom data ext definition
+that has been deleted and then re-added from the UI. (You can't re-add a deleted data 
+ext def via the SDK.)  However, you can use DataExtMod to write data to that re-added
+data ext def.<br />
+<br />
+<b>Important:</b> If you want to perform a DataExtAdd on a transaction line item, you should use custom
+fields instead of private data extensions because only custom field data will be returned
+in queries. Currently, private data is not returned.<br />
+<br />
+Both DataExtAdd and DataExtMod cause a Modify event to be generated for the parent object.
+For example invoking one of these on a Customer causes a Customer Modify event. The Time Modified
+value for that parent object is also updated.
+
+</body>
+</html>

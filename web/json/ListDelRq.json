@@ -1,0 +1,23 @@
+{"xmlName":"ListDelRq","xmlNameHtml":"ListDel.html",
+ "xmlType":"Aggregate",
+ "fcName":"IListDel","fcNameHtml":"ListDel.html",
+ "fcType":"nothing",
+ "minVerUS":"1.1",
+ "supports":{"US":true,"CA":true,"UK":true,"AU":true,"OE":false},
+ "required":false,
+ "elements":[
+    {"xmlName":"ListDelType","xmlNameHtml":"ListDelType.html",
+     "xmlType":"ENUMTYPE","xmlTypeHtml":"ENUMTYPE.html",
+     "xmlEnumValues":["Account","BillingRate","Class","Currency","Customer","CustomerMsg","CustomerType","DateDrivenTerms","Employee","InventorySite","ItemDiscount","ItemFixedAsset","ItemGroup","ItemInventory","ItemInventoryAssembly","ItemNonInventory","ItemOtherCharge","ItemPayment","ItemSalesTax","ItemSalesTaxGroup","ItemService","ItemSubtotal","JobType","OtherName","PaymentMethod","PayrollItemNonWage","PayrollItemWage","PriceLevel","SalesRep","SalesTaxCode","ShipMethod","StandardTerms","ToDo","UnitOfMeasureSet","Vehicle","Vendor","VendorType","WorkersCompCode"],
+     "fcName":"ListDelType","fcNameHtml":"QBFC-ListDelType.html",
+     "fcType":"IQBENListDelTypeType","fcTypeHtml":"QBFC-IQBENListDelTypeType.html",
+     "fcEnumValues":["ldtAccount","ldtBillingRate","ldtClass","ldtCurrency","ldtCustomer","ldtCustomerMsg","ldtCustomerType","ldtDateDrivenTerms","ldtEmployee","ldtInventorySite","ldtItemDiscount","ldtItemFixedAsset","ldtItemGroup","ldtItemInventory","ldtItemInventoryAssembly","ldtItemNonInventory","ldtItemOtherCharge","ldtItemPayment","ldtItemSalesTax","ldtItemSalesTaxGroup","ldtItemService","ldtItemSubtotal","ldtJobType","ldtOtherName","ldtPaymentMethod","ldtPayrollItemNonWage","ldtPayrollItemWage","ldtPriceLevel","ldtSalesRep","ldtSalesTaxCode","ldtShipMethod","ldtStandardTerms","ldtToDo","ldtUnitOfMeasureSet","ldtVehicle","ldtVendor","ldtVendorType","ldtWorkersCompCode"],
+     "supports":{"US":true,"CA":true,"UK":true,"AU":true,"OE":true},
+     "required":true,"count":"1"},
+    {"xmlName":"ListID","xmlNameHtml":"ListID.html",
+     "xmlType":"IDTYPE","xmlTypeHtml":"IDTYPE.html",
+     "fcName":"ListID","fcNameHtml":"ListID.html",
+     "fcType":"IQBIDType","fcTypeHtml":"IQBIDType.html",
+     "supports":{"US":true,"CA":true,"UK":true,"AU":true,"OE":true},
+     "required":true,"count":"1"}
+ ]}

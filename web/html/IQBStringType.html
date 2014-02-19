@@ -1,0 +1,41 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+  <link rel="stylesheet" href="styleguide.css" type="text/css" />
+  <title>IQBStringType.html</title>
+</head>
+<body><pre>
+<b><i>IQBStringType</i></b>
+  
+
+' VB6 methods
+SetValue ( val As String )
+GetValue ( ) As String
+GetMaxLength ( ) As String
+IsSet ( ) As Boolean
+IsEmpty ( ) As Boolean
+Unset ( )
+SetEmpty ( )
+  
+
+// C++ Wrapper methods for error-handling
+HRESULT SetValue (_bstr_t val );
+_bstr_t GetValue ( );
+_bstr_t GetMaxLength ( );
+VARIANT_BOOL IsSet ( );
+VARIANT_BOOL IsEmpty ( );
+HRESULT Unset ( );
+HRESULT SetEmpty ( );
+  
+
+// IDL Definition
+HRESULT SetValue(BSTR val);
+HRESULT GetValue([out, retval] BSTR* pVal);
+HRESULT GetMaxLength([out, retval] BSTR* pVal);
+HRESULT IsSet([out, retval] VARIANT_BOOL* pVal);
+HRESULT IsEmpty([out, retval] VARIANT_BOOL* pVal);
+HRESULT Unset();
+HRESULT SetEmpty();
+</pre></body></html>

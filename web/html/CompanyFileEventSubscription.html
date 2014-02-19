@@ -1,0 +1,37 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+  <link rel="stylesheet" href="styleguide.css" type="text/css" />
+  <title>CompanyFileEventSubscription.html</title>
+</head>
+<body>
+<p><b><i>CompanyFileEventSubscription</i></b><br />
+  A subscription to a company-file event, of which there are two: file open and 
+  file close. Note that company-file close event is special in the following three 
+  ways:</p>
+<ol>
+  <li>Applications are not guaranteed to receive a company-file close event. If 
+    it takes too long for QuickBooks to deliver the close event to one application, 
+    QuickBooks will simply close the company file without sending the event to 
+    other applications.<br />
+  </li>
+  <li>Applications might receive multiple company-file close events before the 
+    company file actually closes. QuickBooks will only close a company file when 
+    there are no more outstanding open SDK sessions to it (it will prompt the 
+    user to close the offending application), and the file-close event is sent 
+    <i>before</i> the check for outstanding open SDK sessions. Thus applications 
+    can receive multiple company-file close events before the file can actually 
+    close, as many times as the user attempts to close the company file.<br />
+  </li>
+  <li>Your application should keep its company-file close event handling short, 
+    without making any requests to QuickBooks. This is because QuickBooks waits 
+    for an application to return from a company-file close event callback up to 
+    a certain time-out and will go on closing the company file even if the application 
+    hasn't returned from the callback. </li>
+</ol>
+<p>Please refer to the &quot;Event Notification&quot; chapter in the QB SDK <i>Programmer's Guide</i> for more details.<br />
+</p>
+</body>
+</html>

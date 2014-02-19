@@ -1,0 +1,15 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+  <link rel="stylesheet" href="styleguide.css" type="text/css" />
+  <title>TransactionDetailLevelFilter.html.xp</title>
+</head>
+<body>
+<b><i>TransactionDetailLevelFilter</i></b><br />
+Allows you to specify the detail level of the query results. You can specify all, summary only (the default), or all except summary. Summary only refers to the transaction as a whole, whereas all except summary refers to the transaction lines.<br />
+$$include.ENUM.TransactionDetailLevelFilter$$
+
+</body>
+</html>

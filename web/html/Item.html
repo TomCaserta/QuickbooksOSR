@@ -1,0 +1,31 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<link rel="stylesheet" href="styleguide.css" type="text/css" />
+<title>Item.html</title>
+</head>
+<body>
+<b><i>ItemRef</i></b><br />
+ Depending on the request containing it, ItemRef can refer to an item on any Item list such as ItemDiscount, ItemInventory, and so forth, or it may accept only a subset of item types.
+<br />
+<br />
+For example, here are some requests that impose limits on what items ItemRef can refer to.
+<ul>
+<li>For PurchaseOrder and Bill requests, ItemRef cannot refer to discount items or sales-tax items</li>
+<li>For VehicleMilageAdd requests, the ItemRef must refer to a service item or an other charge item.</li>
+<li>For BillingRateAdd requests, the ItemRef must refer to a service item.</li>
+</ul>  
+You can use an <i>ItemQuery</i> request to get information about all the items that are 
+set up in the QuickBooks file. &quot;Items&quot; are line items used for fast entry on sales and 
+  purchase forms. They include services and goods that a business buys and sells, 
+  as well as special items that perform calculations--for example, subtotal, discount, 
+  and sales-tax items.  
+<br />
+<br />
+ <b><i>Note: </i></b>In a request, if an ItemRef aggregate includes both FullName and ListID, FullName 
+  will be ignored. 
+
+</body>
+</html>

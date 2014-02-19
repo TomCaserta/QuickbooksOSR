@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+  <link rel="stylesheet" href="styleguide.css" type="text/css" />
+  <title>AccountAdd.html</title>
+</head>
+<body>
+<b><i>AccountAdd</i></b><br />
+<br />
+This message allows you to perform the same activities as a user does in the QB New Account form, 
+which can be accessed in QB by selecting Lists->Chart of Accounts->Accounts->New.<br />
+<br />
+If you want the account to be a subaccount to an existing account, similar to using the SubAccount 
+checkbox and selection list drop down in the New Account form, you use the ParentRef aggregate.
+Notice that the ParentRef can take either the parent account's ListID or FullName. It is important
+to note that the parent account specified in the ParentRef must have the same account type (AccountType) of 
+the child account that you are creating. (The AccountType field maps to the Type pulldown menu in the 
+New Accounts field.) <br />
+<br />
+The AccountNumber is NOT the account number assigned by your bank or other entity. (That number is 
+specified in the BankNumber field.) The account number is simply part of a numbering scheme
+used by accounting systems to help provide a visual hierarchy and ordering of all of the accounts 
+in a Chart of Accounts. QuickBooks provides this functionality for those who need or want it, 
+but by default has this functionality turned off.<br />
+<br />
+The AccountNumber field maps to the Number field in the New
+Account form, which appears only if the Accounting preferences for the company have been set to 
+use account numbering. By default, account numbers are not used.
+In the SDK, you can set the account numbers if you want, even if the preference for it has been
+turned off. The numbers would then appear later if the user turned this preference on.<br />
+<br />
+In the OpenBalance field for certain types of new Accounts, you may want to leave the opening balance
+at 0 if you are going to fund the account from another account. That process will effectively 
+create the opening balance.<br />
+<br />
+<b>How do you increase and decrease amounts in bank accounts?</b><br />
+The following requests increase the balance in a bank account:<br />
+Deposit Add <br />
+ReceivePaymentAdd <br /> 
+Journal Entry Add  <br />
+Sales ReceiptAdd  <br />
+<br />
+The following requests decrease the balance in a bank account:<br />
+CheckAdd  <br />
+Bill PaymentCheckAdd  <br />
+JournalEntryAdd 
+</body>
+</html>

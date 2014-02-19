@@ -1,0 +1,22 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+  <link rel="stylesheet" href="styleguide.css" type="text/css" />
+  <title>QBFC-RefNumberList.html</title>
+</head>
+<body>
+<b><i>RefNumberList</i></b><br />
+A list of one or more RefNumber values. A RefNumber is a string of characters 
+that refers to a transaction and that can be arbitrarily changed by the QuickBooks 
+user. <strong><br />
+<br />
+Note (especially relevant to CheckAdd requests): </strong>When RefNumber is left 
+blank in an SDK transaction add request, the RefNumber will be left blank in QuickBooks. 
+This behavior is new as of QBFC3. It used to select the next sequential reference 
+number since the last one used by QuickBooks, as though no RefNumber had been 
+provided. This is especially relevant to CheckAdd requests because with the current 
+behavior, you will not know the number until the check is printed. 
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<link rel="stylesheet" href="styleguide.css" type="text/css" />
+<title>AssignToObject.html.xp</title>
+</head>
+<body>
+<b><i>AssignToObject</i></b><br />
+If this is a private data extension definition 
+(the OwnerID value is a non-zero GUID), then AssignToObject is optional 
+and any of the enumerated 
+objects listed below can be specified for AssignToObject. <br />
+<br />
+If this is a custom field definition 
+(the OwnerID value is 0), then AssignToObject is required.<br />
+
+If this data ext definition is for a custom field, then only Customer, Employee, 
+Vendor, or Item can be specified in AssignToObject. Notice that assigning to Customer or Item 
+results in automatic propagation (assigning) to the following objects, where the custom
+field is available at the transaction level or transaction line item level:
+<ul>
+<li>CreditMemo
+</li> 
+<li>Estimate 
+</li>
+<li>Invoice 
+</li>
+<li>PurchaseOrder (only if AssigntoObject is set to Item)
+</li>
+<li>SalesOrder</li>
+<li>SalesReceipt   
+</li>
+</ul>
+
+$$include.ENUM.AssignToObject$$
+
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+  <link rel="stylesheet" href="styleguide.css" type="text/css" />
+  <title>ItemInventoryAssemblyMod.html</title>
+</head>
+<body>
+<b><i>ItemInventoryAssemblyMod</i></b><br />
+Modifies an inventory assembly item. If you are adding components to the assembly, remember that
+the component items and/or assemblies that make up the assembly are limited in number. For Premier, an assembly can have a
+maximum of 100 components. For Enterprise, the maximum is 500 components. <br />
+<br />
+Starting with qbXML spec 7.0, you can modify the income account ref, using the IncomeAccountRef aggregate and the  ApplyIncomeAccountRefToExistingTxns boolean.  You need to use the ApplyIncomeAccountRefToExistingTxns boolean because the QuickBooks UI displays a prompt asking whether the change should apply to existing transactions or not.  Specifying True for the boolean basically dismisses this with a "Yes" answer, allowing your changes to be made and changes any existing transactions that use the item with that AccountRef.  Specifying "False" means that the mod will not take affect if there are existing transactions.<br />
+<br />
+
+ Setting this to "True" should be used with caution and normally only after some user has indicated that they want those changes made to all those existing transactions!<br />
+<br  />
+
+ If any affected transactions are protected by a closing date and password, the IncomeAccountRef changes will not be made and so the Mod request will return an error without making the requested Mod.
+</body>
+</html>

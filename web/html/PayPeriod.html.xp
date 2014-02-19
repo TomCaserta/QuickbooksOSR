@@ -1,0 +1,17 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<link rel="stylesheet" href="styleguide.css" type="text/css" />
+<title>PayPeriod.html.xp</title>
+</head>
+<body>
+<p><b><i>PayPeriod</i></b><br />
+  Indicates how often employees are paid. If you include a blank PayPeriod element 
+  in an EmployeeMod message, you'll receive an error. The default value is whatever the QuickBooks user has set in the QuickBooks Employee Preferences.</p>
+
+$$include.ENUM.PayPeriod$$
+
+</body>
+</html>

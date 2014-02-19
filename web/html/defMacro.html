@@ -1,0 +1,32 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+  <link rel="stylesheet" href="styleguide.css" type="text/css" />
+  <title>defMacro.html</title>
+</head>
+<body>
+<p><b><i>defMacro</i></b><br />
+  Note that defMacro was introduced with <strong>SDK 2.0</strong>, so it only
+  works with 2.0 and higher requests. You can use the defMacro attribute to assign
+  a name to the TxnID or TxnListID that this aggregate will return. This way you
+  can refer to the transaction by name in a later request. For example, if you
+  were using the qbXML API and you defined an invoice add request with the name
+  TxnID:RecvPmt1234, as shown below, then you could refer to that invoice by name
+  in a later receive payment add request:</p>
+<p>&lt;InvoiceAddRq&gt;<br />
+      &lt;InvoiceAdd defMacro= &quot;TxnID:RecvPmt1234&quot;&gt;<br />
+          . . .<br />
+  &lt;ReceivePaymentAddRq&gt;<br />
+      &lt;ReceivePaymentAdd&gt;<br />
+          . . .<br />
+          &lt;TxnID useMacro=&quot;TxnID:RecvPmt1234&quot;/&gt;<br />
+          . . .</p>
+  <b>If you use macros with QBOE...</b><br />
+  There may be a bug in the QBOE implementation of this feature. If this feature is not working for you
+  in QBOE, try stripping the prefix "TxnID:" from the name of the useMacro.
+   For example, defMacro="TxnID:RecvPmt1234"  and
+useMacro="RecvPmt1234"
+</body>
+</html>

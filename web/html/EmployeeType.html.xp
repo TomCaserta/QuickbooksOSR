@@ -1,0 +1,20 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<link rel="stylesheet" href="styleguide.css" type="text/css" />
+<title>EmployeeType.html.xp</title>
+</head>
+<body>
+<b><i>EmployeeType</i></b><br />
+EmployeeType can affect payroll taxes for an employee. A statutory employee is 
+a person who is defined as an employee by statute. Usually an owner or partner 
+will be on the Other Names list, but if they are on the Employee list, their EmployeeType 
+will be Owner.<br />
+<br />
+
+$$include.ENUM.EmployeeType$$
+
+</body>
+</html>

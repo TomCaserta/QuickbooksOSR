@@ -1,0 +1,20 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+  <link rel="stylesheet" href="styleguide.css" type="text/css" />
+  <title>BuildAssemblyAdd.html</title>
+</head>
+<body>
+<b><i>BuildAssemblyAdd</i></b><br />
+Adds a build assembly transaction to QuickBooks, where the specified quantity of the 
+specified inventory assembly item is built. If there are 
+insufficient quantities of items required for the build, you can have the build marked as a pending build by using setting MarkPendingIfRequired to True. (If you don't and theren't enough quantities on hand for the build, this request will fail.)  If successful, this request
+results in the decrementing of the quantities on hand amounts of each item used in the build, 
+and the incrementing of the on hand quantities of the built assembly item.
+<br />
+<br />
+This request is supported only in Premier and Enterprise. 
+</body>
+</html>

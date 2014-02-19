@@ -1,0 +1,20 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<link rel="stylesheet" href="styleguide.css" type="text/css" />
+<title>ColType.html.xp</title>
+</head>
+<body>
+<b><i>ColType</i></b><br />
+The type of data that this column contains. (ColType does <i>not</i> refer to 
+the type of information shown in the ColTitle.) ColType values are formatted qbXML 
+types. (Percent values, for example, must have digits after the decimal points, 
+and Addr1 values must be of type STRTYPE.)<br />
+<br />
+
+$$include.ENUM.ColType$$
+
+</body>
+</html>

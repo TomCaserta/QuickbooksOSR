@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+  <link rel="stylesheet" href="styleguide.css" type="text/css" />
+  <title>IBSTRList.html</title>
+</head>
+<body>
+<pre>
+<b><i>IBSTRList</i></b>
+  
+' VB6 Methods and Properties
+Add ( addValue As String )
+Count As Long
+GetAt ( index As Long ) As String
+GetMaxLength ( ) As String
+Type As IObjectType
+ 
+// C++ Wrapper methods for error-handling and Property data
+long Count;
+HRESULT Add ( _bstr_t addValue );
+long GetCount ( );
+_bstr_t GetAt ( long index );
+_bstr_t GetMaxLength ( );
+IObjectTypePtr Type;
+IObjectTypePtr GetType ( );
+ 
+// IDL Definition
+HRESULT Add(BSTR addValue);
+HRESULT Count([out, retval] long *pVal);
+HRESULT GetAt(long index, [out, retval] BSTR* retVal);
+HRESULT GetMaxLength([out, retval] BSTR *pVal);
+HRESULT Type([out, retval] IObjectType **pVal);
+</pre>
+</body></html>

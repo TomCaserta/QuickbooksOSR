@@ -1,0 +1,31 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<link rel="stylesheet" href="styleguide.css" type="text/css" />
+<title>BudgetSummaryReportQuery.html</title>
+</head>
+<body>
+<b><i>BudgetSummaryReportQuery</i></b><br />
+Generates budget reports similar to the budget report functionality that is available within the QuickBooks UI. (From the main QB menubar select <b>Reports->Budgets &amp; Forecasts</b>.)  <b><i>Note:</i></b> the graphing functionality, forecasts, and memorized reports that available through the UI are not supported by the SDK.  Notice that if you simply use the default instead of specifying the Fiscal Year, the ReportPeriod defaults to "year to date." You cannot change the default to "This Fiscal Year."   <br />
+<br />
+There can only be one balance sheet budget for each fiscal year, one profit and loss (P&amp;L) by account budget per fiscal year, and one profit and loss (P&amp;L) by account and customer budget per fiscal year. Hence the FiscalYear element is key in specifying which budget you want. Notice that there are two "views" into each of the two budget categories: the Overview, which shows the budget itself, and the Actual, which shows how expenditures are currently running against the budget.<br />
+<br />  
+
+All of the budget reports supported in the UI are supported in the SDK, although the UI and SDK nomenclature differs slightly. The UI shows Budget Overview and Budget Vs Actual as choices in the selection list, with Balance Sheet and P&amp;L as subchoices in a subsequent selection list, already filtered by Accounts, or Accounts and Classes, or Accounts and Customers, if these are available. <br />
+<br />
+In comparison, you choose the budget view you want via the SDK BudgetSummaryType element, which has these possible values:<br />
+<ul>
+<li>BalanceSheetBudgetOverview</li>
+<li>BalanceSheetBudgetVsActual</li>
+<li>ProfitAndLossBudgetOverview</li>
+<li>ProfitAndLossBudgetVsActual</li>
+</ul>
+<br />
+Then you specify any additional filtering by the Budget Criterion value you specify (Accounts, AccountsAndCustomers, or AccountsAndClasses).
+
+
+Notice that before you can obtain a Budget report, the "target" budget must be defined in QuickBooks, via the UI, because you cannot create a budget via the SDK.
+</body>
+</html>

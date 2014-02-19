@@ -1,0 +1,30 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+  <link rel="stylesheet" href="styleguide.css" type="text/css" />
+  <title>QBFC-ReportBasis.html</title>
+</head>
+<body>
+<b><i>ReportBasis</i></b><br /><br />
+If ReportBasis is
+
+  <ul>
+    
+    <li><em>rbCash</em>, the report bases income and expenses 
+      on the dates when money changed hands.</li>
+
+    <li><em>rbAccrual</em>, the report bases income on the dates 
+      when customers were invoiced and bases expenses on the dates when bills 
+      were entered.</li>
+ 
+    <li><em>rbNone</em>, the report uses the default ReportBasis, 
+      which is either the QuickBooks Preference setting or the QuickBooks default 
+      for a given type of report. In a report response, the SDK returns rbNone 
+      for reports that do not support ReportBasis. (The 1099 report, for example, 
+      has its own basis for generation.)</li>
+  </ul>
+
+</body>
+</html>

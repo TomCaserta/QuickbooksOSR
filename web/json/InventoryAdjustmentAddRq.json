@@ -1,0 +1,1269 @@
+{
+    "xmlName" : "InventoryAdjustmentAddRq",
+    "Width" : 0,
+    "TopLeftX" : 0,
+    "supports" : {
+        "US" : true,
+        "OE" : false,
+        "CA" : true,
+        "UK" : true,
+        "AU" : true
+    },
+    "TopLeftY" : 0,
+    "required" : false,
+    "fcType" : "nothing",
+    "minVerUS" : 2,
+    "xmlType" : "Aggregate",
+    "attributes" : [
+        {
+            "fcTypeHtml" : "IQBStringType.html",
+            "xmlName" : "nothing",
+            "supports" : {
+                "US" : true,
+                "OE" : true,
+                "CA" : true,
+                "UK" : true,
+                "AU" : true
+            },
+            "required" : false,
+            "fcType" : "IQBStringType",
+            "minVerUS" : 2,
+            "xmlType" : "skip",
+            "fcNameHtml" : "defMacro.html",
+            "fcName" : "defMacro"
+        }
+    ],
+    "MasterImage" : "None",
+    "elements" : [
+        {
+            "xmlName" : "InventoryAdjustmentAdd",
+            "Width" : 0,
+            "TopLeftX" : 0,
+            "supports" : {
+                "US" : true,
+                "OE" : true,
+                "CA" : true,
+                "UK" : true,
+                "AU" : true
+            },
+            "TopLeftY" : 0,
+            "required" : true,
+            "fcType" : "skip",
+            "xmlType" : "Aggregate",
+            "count" : 1,
+            "attributes" : [
+                {
+                    "xmlName" : "defMacro",
+                    "xmlTypeHtml" : "MACROTYPE.html",
+                    "supports" : {
+                        "US" : true,
+                        "OE" : true,
+                        "CA" : true,
+                        "UK" : true,
+                        "AU" : true
+                    },
+                    "required" : false,
+                    "fcType" : "skip",
+                    "minVerUS" : 2,
+                    "xmlType" : "MACROTYPE",
+                    "xmlNameHtml" : "defMacro.html",
+                    "fcName" : "nothing"
+                }
+            ],
+            "MasterImage" : "None",
+            "elements" : [
+                {
+                    "xmlName" : "AccountRef",
+                    "Width" : 0,
+                    "TopLeftX" : 0,
+                    "supports" : {
+                        "US" : true,
+                        "OE" : true,
+                        "CA" : true,
+                        "UK" : true,
+                        "AU" : true
+                    },
+                    "TopLeftY" : 0,
+                    "required" : true,
+                    "fcType" : "IQBBaseRef",
+                    "xmlType" : "Aggregate",
+                    "count" : 1,
+                    "MasterImage" : "None",
+                    "elements" : [
+                        {
+                            "fcTypeHtml" : "IQBIDType.html",
+                            "xmlName" : "ListID",
+                            "Width" : 0,
+                            "TopLeftX" : 0,
+                            "xmlTypeHtml" : "IDTYPE.html",
+                            "supports" : {
+                                "US" : true,
+                                "OE" : true,
+                                "CA" : true,
+                                "UK" : true,
+                                "AU" : true
+                            },
+                            "TopLeftY" : 0,
+                            "required" : false,
+                            "fcType" : "IQBIDType",
+                            "xmlType" : "IDTYPE",
+                            "count" : "0 - 1",
+                            "MasterImage" : "None",
+                            "fcNameHtml" : "ListID.html",
+                            "Height" : 0,
+                            "xmlNameHtml" : "ListID.html",
+                            "fcName" : "ListID"
+                        },
+                        {
+                            "fcTypeHtml" : "IQBStringType.html",
+                            "xmlName" : "FullName",
+                            "maxCA" : 159,
+                            "Width" : 149,
+                            "TopLeftX" : 111,
+                            "xmlTypeHtml" : "STRTYPE.html",
+                            "supports" : {
+                                "US" : true,
+                                "OE" : true,
+                                "CA" : true,
+                                "UK" : true,
+                                "AU" : true
+                            },
+                            "TopLeftY" : 120,
+                            "required" : false,
+                            "fcType" : "IQBStringType",
+                            "xmlType" : "STRTYPE",
+                            "count" : "0 - 1",
+                            "MasterImage" : "inventory_adjustment.jpg",
+                            "maxUK" : 159,
+                            "maxAU" : 159,
+                            "fcNameHtml" : "FullName.html",
+                            "maxDT" : 159,
+                            "Height" : 17,
+                            "xmlNameHtml" : "FullName.html",
+                            "maxOE" : 1000,
+                            "fcName" : "FullName"
+                        }
+                    ],
+                    "fcNameHtml" : "Account.html",
+                    "Height" : 0,
+                    "xmlNameHtml" : "Account.html",
+                    "fcName" : "AccountRef"
+                },
+                {
+                    "fcTypeHtml" : "IQBDateType.html",
+                    "xmlName" : "TxnDate",
+                    "Width" : 80,
+                    "TopLeftX" : 111,
+                    "xmlTypeHtml" : "DATETYPE.html",
+                    "supports" : {
+                        "US" : true,
+                        "OE" : true,
+                        "CA" : true,
+                        "UK" : true,
+                        "AU" : true
+                    },
+                    "TopLeftY" : 69,
+                    "required" : false,
+                    "fcType" : "IQBDateType",
+                    "xmlType" : "DATETYPE",
+                    "count" : "0 - 1",
+                    "MasterImage" : "inventory_adjustment.jpg",
+                    "fcNameHtml" : "TxnDate.html",
+                    "Height" : 17,
+                    "xmlNameHtml" : "TxnDate.html",
+                    "fcName" : "TxnDate"
+                },
+                {
+                    "fcTypeHtml" : "IQBStringType.html",
+                    "xmlName" : "RefNumber",
+                    "maxCA" : 11,
+                    "Width" : 62,
+                    "TopLeftX" : 111,
+                    "xmlTypeHtml" : "STRTYPE.html",
+                    "supports" : {
+                        "US" : true,
+                        "OE" : true,
+                        "CA" : true,
+                        "UK" : true,
+                        "AU" : true
+                    },
+                    "TopLeftY" : 94,
+                    "required" : false,
+                    "fcType" : "IQBStringType",
+                    "xmlType" : "STRTYPE",
+                    "count" : "0 - 1",
+                    "MasterImage" : "inventory_adjustment.jpg",
+                    "maxUK" : 11,
+                    "maxAU" : 11,
+                    "fcNameHtml" : "RefNumber.html",
+                    "maxDT" : 11,
+                    "Height" : 17,
+                    "xmlNameHtml" : "RefNumber.html",
+                    "fcName" : "RefNumber"
+                },
+                {
+                    "xmlName" : "InventorySiteRef",
+                    "supports" : {
+                        "US" : true,
+                        "OE" : false,
+                        "CA" : true,
+                        "UK" : true,
+                        "AU" : false
+                    },
+                    "required" : false,
+                    "fcType" : "IQBBaseRef",
+                    "minVerUS" : 10,
+                    "xmlType" : "Aggregate",
+                    "count" : "0 - 1",
+                    "elements" : [
+                        {
+                            "fcTypeHtml" : "IQBIDType.html",
+                            "xmlName" : "ListID",
+                            "xmlTypeHtml" : "IDTYPE.html",
+                            "supports" : {
+                                "US" : true,
+                                "OE" : true,
+                                "CA" : true,
+                                "UK" : true,
+                                "AU" : true
+                            },
+                            "required" : false,
+                            "fcType" : "IQBIDType",
+                            "xmlType" : "IDTYPE",
+                            "count" : "0 - 1",
+                            "fcNameHtml" : "ListID.html",
+                            "xmlNameHtml" : "ListID.html",
+                            "fcName" : "ListID"
+                        },
+                        {
+                            "fcTypeHtml" : "IQBStringType.html",
+                            "xmlName" : "FullName",
+                            "maxCA" : 31,
+                            "xmlTypeHtml" : "STRTYPE.html",
+                            "supports" : {
+                                "US" : true,
+                                "OE" : true,
+                                "CA" : true,
+                                "UK" : true,
+                                "AU" : true
+                            },
+                            "required" : false,
+                            "fcType" : "IQBStringType",
+                            "xmlType" : "STRTYPE",
+                            "count" : "0 - 1",
+                            "maxUK" : 31,
+                            "maxAU" : 31,
+                            "fcNameHtml" : "FullName.html",
+                            "maxDT" : 31,
+                            "xmlNameHtml" : "FullName.html",
+                            "fcName" : "FullName"
+                        }
+                    ],
+                    "fcNameHtml" : "InventorySite.html",
+                    "xmlNameHtml" : "InventorySite.html",
+                    "fcName" : "InventorySiteRef"
+                },
+                {
+                    "xmlName" : "CustomerRef",
+                    "Width" : 0,
+                    "TopLeftX" : 0,
+                    "supports" : {
+                        "US" : true,
+                        "OE" : true,
+                        "CA" : true,
+                        "UK" : true,
+                        "AU" : true
+                    },
+                    "TopLeftY" : 0,
+                    "required" : false,
+                    "fcType" : "IQBBaseRef",
+                    "xmlType" : "Aggregate",
+                    "count" : "0 - 1",
+                    "MasterImage" : "None",
+                    "elements" : [
+                        {
+                            "fcTypeHtml" : "IQBIDType.html",
+                            "xmlName" : "ListID",
+                            "Width" : 0,
+                            "TopLeftX" : 0,
+                            "xmlTypeHtml" : "IDTYPE.html",
+                            "supports" : {
+                                "US" : true,
+                                "OE" : true,
+                                "CA" : true,
+                                "UK" : true,
+                                "AU" : true
+                            },
+                            "TopLeftY" : 0,
+                            "required" : false,
+                            "fcType" : "IQBIDType",
+                            "xmlType" : "IDTYPE",
+                            "count" : "0 - 1",
+                            "MasterImage" : "None",
+                            "fcNameHtml" : "ListID.html",
+                            "Height" : 0,
+                            "xmlNameHtml" : "ListID.html",
+                            "fcName" : "ListID"
+                        },
+                        {
+                            "fcTypeHtml" : "IQBStringType.html",
+                            "xmlName" : "FullName",
+                            "maxCA" : 209,
+                            "Width" : 149,
+                            "TopLeftX" : 358,
+                            "xmlTypeHtml" : "STRTYPE.html",
+                            "supports" : {
+                                "US" : true,
+                                "OE" : true,
+                                "CA" : true,
+                                "UK" : true,
+                                "AU" : true
+                            },
+                            "TopLeftY" : 94,
+                            "required" : false,
+                            "fcType" : "IQBStringType",
+                            "xmlType" : "STRTYPE",
+                            "count" : "0 - 1",
+                            "MasterImage" : "inventory_adjustment.jpg",
+                            "maxUK" : 209,
+                            "maxAU" : 209,
+                            "fcNameHtml" : "FullName.html",
+                            "maxDT" : 209,
+                            "Height" : 17,
+                            "xmlNameHtml" : "FullName.html",
+                            "maxOE" : 1000,
+                            "fcName" : "FullName"
+                        }
+                    ],
+                    "fcNameHtml" : "Customer.html",
+                    "Height" : 0,
+                    "xmlNameHtml" : "Customer.html",
+                    "fcName" : "CustomerRef"
+                },
+                {
+                    "xmlName" : "ClassRef",
+                    "Width" : 0,
+                    "TopLeftX" : 0,
+                    "supports" : {
+                        "US" : true,
+                        "OE" : true,
+                        "CA" : true,
+                        "UK" : true,
+                        "AU" : true
+                    },
+                    "TopLeftY" : 0,
+                    "required" : false,
+                    "fcType" : "IQBBaseRef",
+                    "xmlType" : "Aggregate",
+                    "count" : "0 - 1",
+                    "MasterImage" : "None",
+                    "elements" : [
+                        {
+                            "fcTypeHtml" : "IQBIDType.html",
+                            "xmlName" : "ListID",
+                            "Width" : 0,
+                            "TopLeftX" : 0,
+                            "xmlTypeHtml" : "IDTYPE.html",
+                            "supports" : {
+                                "US" : true,
+                                "OE" : true,
+                                "CA" : true,
+                                "UK" : true,
+                                "AU" : true
+                            },
+                            "TopLeftY" : 0,
+                            "required" : false,
+                            "fcType" : "IQBIDType",
+                            "xmlType" : "IDTYPE",
+                            "count" : "0 - 1",
+                            "MasterImage" : "None",
+                            "fcNameHtml" : "ListID.html",
+                            "Height" : 0,
+                            "xmlNameHtml" : "ListID.html",
+                            "fcName" : "ListID"
+                        },
+                        {
+                            "fcTypeHtml" : "IQBStringType.html",
+                            "xmlName" : "FullName",
+                            "maxCA" : 159,
+                            "Width" : 149,
+                            "TopLeftX" : 358,
+                            "xmlTypeHtml" : "STRTYPE.html",
+                            "supports" : {
+                                "US" : true,
+                                "OE" : true,
+                                "CA" : true,
+                                "UK" : true,
+                                "AU" : true
+                            },
+                            "TopLeftY" : 121,
+                            "required" : false,
+                            "fcType" : "IQBStringType",
+                            "xmlType" : "STRTYPE",
+                            "count" : "0 - 1",
+                            "MasterImage" : "inventory_adjustment.jpg",
+                            "maxUK" : 159,
+                            "maxAU" : 159,
+                            "fcNameHtml" : "FullName.html",
+                            "maxDT" : 159,
+                            "Height" : 17,
+                            "xmlNameHtml" : "FullName.html",
+                            "maxOE" : 1000,
+                            "fcName" : "FullName"
+                        }
+                    ],
+                    "fcNameHtml" : "Class.html",
+                    "Height" : 0,
+                    "xmlNameHtml" : "Class.html",
+                    "fcName" : "ClassRef"
+                },
+                {
+                    "fcTypeHtml" : "IQBStringType.html",
+                    "xmlName" : "Memo",
+                    "maxCA" : 4095,
+                    "Width" : 312,
+                    "TopLeftX" : 213,
+                    "xmlTypeHtml" : "STRTYPE.html",
+                    "supports" : {
+                        "US" : true,
+                        "OE" : true,
+                        "CA" : true,
+                        "UK" : true,
+                        "AU" : true
+                    },
+                    "TopLeftY" : 344,
+                    "required" : false,
+                    "fcType" : "IQBStringType",
+                    "xmlType" : "STRTYPE",
+                    "count" : "0 - 1",
+                    "MasterImage" : "inventory_adjustment.jpg",
+                    "maxUK" : 4095,
+                    "maxAU" : 4095,
+                    "fcNameHtml" : "Memo.html",
+                    "maxDT" : 4095,
+                    "Height" : 17,
+                    "xmlNameHtml" : "Memo.html",
+                    "fcName" : "Memo"
+                },
+                {
+                    "fcTypeHtml" : "IQBGUIDType.html",
+                    "xmlName" : "ExternalGUID",
+                    "xmlTypeHtml" : "GUIDTYPE.html",
+                    "supports" : {
+                        "US" : true,
+                        "OE" : false,
+                        "CA" : true,
+                        "UK" : true,
+                        "AU" : true
+                    },
+                    "required" : false,
+                    "fcType" : "IQBGUIDType",
+                    "minVerUS" : 9,
+                    "xmlType" : "GUIDTYPE",
+                    "count" : "0 - 1",
+                    "fcNameHtml" : "ExternalGUID.html",
+                    "xmlNameHtml" : "ExternalGUID.html",
+                    "fcName" : "ExternalGUID"
+                },
+                {
+                    "fcTypeHtml" : "QBFC-IInventoryAdjustmentLineAddList.html",
+                    "xmlName" : "InventoryAdjustmentLineAdd",
+                    "Width" : 0,
+                    "TopLeftX" : 0,
+                    "supports" : {
+                        "US" : true,
+                        "OE" : true,
+                        "CA" : true,
+                        "UK" : true,
+                        "AU" : true
+                    },
+                    "TopLeftY" : 0,
+                    "required" : true,
+                    "fcType" : "IInventoryAdjustmentLineAddList",
+                    "xmlType" : "Aggregate",
+                    "count" : "1 - n",
+                    "MasterImage" : "None",
+                    "elements" : [
+                        {
+                            "xmlName" : "ItemRef",
+                            "Width" : 0,
+                            "TopLeftX" : 0,
+                            "supports" : {
+                                "US" : true,
+                                "OE" : true,
+                                "CA" : true,
+                                "UK" : true,
+                                "AU" : true
+                            },
+                            "TopLeftY" : 0,
+                            "required" : true,
+                            "fcType" : "IQBBaseRef",
+                            "xmlType" : "Aggregate",
+                            "count" : 1,
+                            "MasterImage" : "None",
+                            "elements" : [
+                                {
+                                    "fcTypeHtml" : "IQBIDType.html",
+                                    "xmlName" : "ListID",
+                                    "Width" : 0,
+                                    "TopLeftX" : 0,
+                                    "xmlTypeHtml" : "IDTYPE.html",
+                                    "supports" : {
+                                        "US" : true,
+                                        "OE" : true,
+                                        "CA" : true,
+                                        "UK" : true,
+                                        "AU" : true
+                                    },
+                                    "TopLeftY" : 0,
+                                    "required" : false,
+                                    "fcType" : "IQBIDType",
+                                    "xmlType" : "IDTYPE",
+                                    "count" : "0 - 1",
+                                    "MasterImage" : "None",
+                                    "fcNameHtml" : "ListID.html",
+                                    "Height" : 0,
+                                    "xmlNameHtml" : "ListID.html",
+                                    "fcName" : "ListID"
+                                },
+                                {
+                                    "fcTypeHtml" : "IQBStringType.html",
+                                    "xmlName" : "FullName",
+                                    "Width" : 77,
+                                    "TopLeftX" : 11,
+                                    "xmlTypeHtml" : "STRTYPE.html",
+                                    "supports" : {
+                                        "US" : true,
+                                        "OE" : true,
+                                        "CA" : true,
+                                        "UK" : true,
+                                        "AU" : true
+                                    },
+                                    "TopLeftY" : 161,
+                                    "required" : false,
+                                    "fcType" : "IQBStringType",
+                                    "xmlType" : "STRTYPE",
+                                    "count" : "0 - 1",
+                                    "MasterImage" : "inventory_adjustment.jpg",
+                                    "fcNameHtml" : "FullName.html",
+                                    "Height" : 17,
+                                    "xmlNameHtml" : "FullName.html",
+                                    "fcName" : "FullName"
+                                }
+                            ],
+                            "fcNameHtml" : "Item.html",
+                            "Height" : 0,
+                            "xmlNameHtml" : "Item.html",
+                            "fcName" : "ItemRef"
+                        },
+                        {
+                            "fcTypeHtml" : "QBFC-IORTypeAdjustment.html",
+                            "xmlName" : "OR",
+                            "Width" : 0,
+                            "TopLeftX" : 0,
+                            "supports" : {
+                                "US" : true,
+                                "OE" : true,
+                                "CA" : true,
+                                "UK" : true,
+                                "AU" : true
+                            },
+                            "TopLeftY" : 0,
+                            "required" : true,
+                            "fcType" : "IORTypeAdjustment",
+                            "xmlType" : "OR",
+                            "count" : 1,
+                            "MasterImage" : "None",
+                            "elements" : [
+                                {
+                                    "xmlName" : "QuantityAdjustment",
+                                    "Width" : 0,
+                                    "TopLeftX" : 0,
+                                    "supports" : {
+                                        "US" : true,
+                                        "OE" : true,
+                                        "CA" : true,
+                                        "UK" : true,
+                                        "AU" : true
+                                    },
+                                    "TopLeftY" : 0,
+                                    "required" : false,
+                                    "fcType" : "IQuantityAdjustment",
+                                    "xmlType" : "Aggregate",
+                                    "count" : "0 - 1",
+                                    "MasterImage" : "None",
+                                    "elements" : [
+                                        {
+                                            "fcTypeHtml" : "QBFC-IORQuantityAdjustment.html",
+                                            "xmlName" : "OR",
+                                            "Width" : 0,
+                                            "TopLeftX" : 0,
+                                            "supports" : {
+                                                "US" : true,
+                                                "OE" : true,
+                                                "CA" : true,
+                                                "UK" : true,
+                                                "AU" : true
+                                            },
+                                            "TopLeftY" : 0,
+                                            "required" : true,
+                                            "fcType" : "IORQuantityAdjustment",
+                                            "xmlType" : "OR",
+                                            "count" : 1,
+                                            "MasterImage" : "None",
+                                            "elements" : [
+                                                {
+                                                    "fcTypeHtml" : "IQBQuanType.html",
+                                                    "xmlName" : "NewQuantity",
+                                                    "Width" : 90,
+                                                    "TopLeftX" : 288,
+                                                    "xmlTypeHtml" : "QUANTYPE.html",
+                                                    "supports" : {
+                                                        "US" : true,
+                                                        "OE" : true,
+                                                        "CA" : true,
+                                                        "UK" : true,
+                                                        "AU" : true
+                                                    },
+                                                    "TopLeftY" : 161,
+                                                    "required" : false,
+                                                    "fcType" : "IQBQuanType",
+                                                    "xmlType" : "QUANTYPE",
+                                                    "count" : "0 - 1",
+                                                    "MasterImage" : "inventory_adjustment.jpg",
+                                                    "fcNameHtml" : "NewQuantity.html",
+                                                    "Height" : 17,
+                                                    "xmlNameHtml" : "NewQuantity.html",
+                                                    "fcName" : "NewQuantity"
+                                                },
+                                                {
+                                                    "fcTypeHtml" : "IQBQuanType.html",
+                                                    "xmlName" : "QuantityDifference",
+                                                    "Width" : 115,
+                                                    "TopLeftX" : 379,
+                                                    "xmlTypeHtml" : "QUANTYPE.html",
+                                                    "supports" : {
+                                                        "US" : true,
+                                                        "OE" : true,
+                                                        "CA" : true,
+                                                        "UK" : true,
+                                                        "AU" : true
+                                                    },
+                                                    "TopLeftY" : 161,
+                                                    "required" : false,
+                                                    "fcType" : "IQBQuanType",
+                                                    "xmlType" : "QUANTYPE",
+                                                    "count" : "0 - 1",
+                                                    "MasterImage" : "inventory_adjustment.jpg",
+                                                    "fcNameHtml" : "QuantityDifference.html",
+                                                    "Height" : 17,
+                                                    "xmlNameHtml" : "QuantityDifference.html",
+                                                    "fcName" : "QuantityDifference"
+                                                }
+                                            ],
+                                            "Height" : 0,
+                                            "fcName" : "ORQuantityAdjustment"
+                                        },
+                                        {
+                                            "fcTypeHtml" : "QBFC-IORSerialLotNumber.html",
+                                            "xmlName" : "OR",
+                                            "supports" : {
+                                                "US" : true,
+                                                "OE" : true,
+                                                "CA" : true,
+                                                "UK" : true,
+                                                "AU" : true
+                                            },
+                                            "required" : false,
+                                            "fcType" : "IORSerialLotNumber",
+                                            "minVerUS" : 11,
+                                            "xmlType" : "OR",
+                                            "count" : "0 - 1",
+                                            "elements" : [
+                                                {
+                                                    "fcTypeHtml" : "IQBStringType.html",
+                                                    "xmlName" : "SerialNumber",
+                                                    "maxCA" : 4095,
+                                                    "xmlTypeHtml" : "STRTYPE.html",
+                                                    "supports" : {
+                                                        "US" : true,
+                                                        "OE" : false,
+                                                        "CA" : true,
+                                                        "UK" : true,
+                                                        "AU" : false
+                                                    },
+                                                    "required" : false,
+                                                    "fcType" : "IQBStringType",
+                                                    "xmlType" : "STRTYPE",
+                                                    "count" : "0 - 1",
+                                                    "maxUK" : 4095,
+                                                    "maxAU" : 4095,
+                                                    "fcNameHtml" : "SerialNumber.html",
+                                                    "maxDT" : 4095,
+                                                    "xmlNameHtml" : "SerialNumber.html",
+                                                    "fcName" : "SerialNumber"
+                                                },
+                                                {
+                                                    "fcTypeHtml" : "IQBStringType.html",
+                                                    "xmlName" : "LotNumber",
+                                                    "maxCA" : 40,
+                                                    "xmlTypeHtml" : "STRTYPE.html",
+                                                    "supports" : {
+                                                        "US" : true,
+                                                        "OE" : false,
+                                                        "CA" : true,
+                                                        "UK" : true,
+                                                        "AU" : false
+                                                    },
+                                                    "required" : false,
+                                                    "fcType" : "IQBStringType",
+                                                    "xmlType" : "STRTYPE",
+                                                    "count" : "0 - 1",
+                                                    "maxUK" : 40,
+                                                    "maxAU" : 40,
+                                                    "fcNameHtml" : "LotNumber.html",
+                                                    "maxDT" : 40,
+                                                    "xmlNameHtml" : "LotNumber.html",
+                                                    "fcName" : "LotNumber"
+                                                }
+                                            ],
+                                            "fcName" : "ORSerialLotNumber"
+                                        },
+                                        {
+                                            "xmlName" : "InventorySiteLocationRef",
+                                            "supports" : {
+                                                "US" : true,
+                                                "OE" : false,
+                                                "CA" : true,
+                                                "UK" : true,
+                                                "AU" : false
+                                            },
+                                            "required" : false,
+                                            "fcType" : "IQBBaseRef",
+                                            "minVerUS" : 12,
+                                            "xmlType" : "Aggregate",
+                                            "count" : "0 - 1",
+                                            "elements" : [
+                                                {
+                                                    "fcTypeHtml" : "IQBIDType.html",
+                                                    "xmlName" : "ListID",
+                                                    "xmlTypeHtml" : "IDTYPE.html",
+                                                    "supports" : {
+                                                        "US" : true,
+                                                        "OE" : true,
+                                                        "CA" : true,
+                                                        "UK" : true,
+                                                        "AU" : true
+                                                    },
+                                                    "required" : false,
+                                                    "fcType" : "IQBIDType",
+                                                    "xmlType" : "IDTYPE",
+                                                    "count" : "0 - 1",
+                                                    "fcNameHtml" : "ListID.html",
+                                                    "xmlNameHtml" : "ListID.html",
+                                                    "fcName" : "ListID"
+                                                },
+                                                {
+                                                    "fcTypeHtml" : "IQBStringType.html",
+                                                    "xmlName" : "FullName",
+                                                    "maxCA" : 31,
+                                                    "xmlTypeHtml" : "STRTYPE.html",
+                                                    "supports" : {
+                                                        "US" : true,
+                                                        "OE" : true,
+                                                        "CA" : true,
+                                                        "UK" : true,
+                                                        "AU" : true
+                                                    },
+                                                    "required" : false,
+                                                    "fcType" : "IQBStringType",
+                                                    "xmlType" : "STRTYPE",
+                                                    "count" : "0 - 1",
+                                                    "maxUK" : 31,
+                                                    "maxAU" : 31,
+                                                    "fcNameHtml" : "FullName.html",
+                                                    "maxDT" : 31,
+                                                    "xmlNameHtml" : "FullName.html",
+                                                    "fcName" : "FullName"
+                                                }
+                                            ],
+                                            "fcNameHtml" : "InventorySiteLocation.html",
+                                            "xmlNameHtml" : "InventorySiteLocation.html",
+                                            "fcName" : "InventorySiteLocationRef"
+                                        },
+                                        {
+                                            
+                                        }
+                                    ],
+                                    "fcNameHtml" : "QuantityAdjustment.html",
+                                    "Height" : 0,
+                                    "xmlNameHtml" : "QuantityAdjustment.html",
+                                    "fcName" : "QuantityAdjustment"
+                                },
+                                {
+                                    "xmlName" : "ValueAdjustment",
+                                    "Width" : 0,
+                                    "TopLeftX" : 0,
+                                    "supports" : {
+                                        "US" : true,
+                                        "OE" : true,
+                                        "CA" : true,
+                                        "UK" : true,
+                                        "AU" : true
+                                    },
+                                    "TopLeftY" : 0,
+                                    "required" : false,
+                                    "fcType" : "IValueAdjustment",
+                                    "xmlType" : "Aggregate",
+                                    "count" : "0 - 1",
+                                    "MasterImage" : "None",
+                                    "elements" : [
+                                        {
+                                            "fcTypeHtml" : "QBFC-IORQuantityAdjustment.html",
+                                            "xmlName" : "OR",
+                                            "supports" : {
+                                                "US" : true,
+                                                "OE" : true,
+                                                "CA" : true,
+                                                "UK" : true,
+                                                "AU" : true
+                                            },
+                                            "required" : true,
+                                            "fcType" : "IORQuantityAdjustment",
+                                            "xmlType" : "OR",
+                                            "count" : 1,
+                                            "elements" : [
+                                                {
+                                                    "fcTypeHtml" : "IQBQuanType.html",
+                                                    "xmlName" : "NewQuantity",
+                                                    "xmlTypeHtml" : "QUANTYPE.html",
+                                                    "supports" : {
+                                                        "US" : true,
+                                                        "OE" : true,
+                                                        "CA" : true,
+                                                        "UK" : true,
+                                                        "AU" : true
+                                                    },
+                                                    "required" : false,
+                                                    "fcType" : "IQBQuanType",
+                                                    "xmlType" : "QUANTYPE",
+                                                    "count" : "0 - 1",
+                                                    "fcNameHtml" : "NewQuantity.html",
+                                                    "xmlNameHtml" : "NewQuantity.html",
+                                                    "fcName" : "NewQuantity"
+                                                },
+                                                {
+                                                    "fcTypeHtml" : "IQBQuanType.html",
+                                                    "xmlName" : "QuantityDifference",
+                                                    "xmlTypeHtml" : "QUANTYPE.html",
+                                                    "supports" : {
+                                                        "US" : true,
+                                                        "OE" : true,
+                                                        "CA" : true,
+                                                        "UK" : true,
+                                                        "AU" : true
+                                                    },
+                                                    "required" : false,
+                                                    "fcType" : "IQBQuanType",
+                                                    "minVerUS" : 10,
+                                                    "xmlType" : "QUANTYPE",
+                                                    "count" : "0 - 1",
+                                                    "fcNameHtml" : "QuantityDifference.html",
+                                                    "xmlNameHtml" : "QuantityDifference.html",
+                                                    "fcName" : "QuantityDifference"
+                                                }
+                                            ],
+                                            "fcName" : "ORQuantityAdjustment"
+                                        },
+                                        {
+                                            "fcTypeHtml" : "QBFC-IORValueAdjustment.html",
+                                            "xmlName" : "OR",
+                                            "supports" : {
+                                                "US" : true,
+                                                "OE" : true,
+                                                "CA" : true,
+                                                "UK" : true,
+                                                "AU" : true
+                                            },
+                                            "required" : false,
+                                            "fcType" : "IORValueAdjustment",
+                                            "xmlType" : "OR",
+                                            "count" : "0 - 1",
+                                            "elements" : [
+                                                {
+                                                    "fcTypeHtml" : "IQBAmountType.html",
+                                                    "xmlName" : "NewValue",
+                                                    "xmlTypeHtml" : "AMTTYPE.html",
+                                                    "supports" : {
+                                                        "US" : true,
+                                                        "OE" : true,
+                                                        "CA" : true,
+                                                        "UK" : true,
+                                                        "AU" : true
+                                                    },
+                                                    "required" : false,
+                                                    "fcType" : "IQBAmountType",
+                                                    "xmlType" : "AMTTYPE",
+                                                    "count" : "0 - 1",
+                                                    "fcNameHtml" : "NewValue.html",
+                                                    "xmlNameHtml" : "NewValue.html",
+                                                    "fcName" : "NewValue"
+                                                },
+                                                {
+                                                    "fcTypeHtml" : "IQBAmountType.html",
+                                                    "xmlName" : "ValueDifference",
+                                                    "xmlTypeHtml" : "AMTTYPE.html",
+                                                    "supports" : {
+                                                        "US" : true,
+                                                        "OE" : true,
+                                                        "CA" : true,
+                                                        "UK" : true,
+                                                        "AU" : true
+                                                    },
+                                                    "required" : false,
+                                                    "fcType" : "IQBAmountType",
+                                                    "minVerUS" : 10,
+                                                    "xmlType" : "AMTTYPE",
+                                                    "count" : "0 - 1",
+                                                    "fcNameHtml" : "ValueDifference.html",
+                                                    "xmlNameHtml" : "ValueDifference.html",
+                                                    "fcName" : "ValueDifference"
+                                                }
+                                            ],
+                                            "fcName" : "ORValueAdjustment"
+                                        },
+                                        {
+                                            
+                                        }
+                                    ],
+                                    "fcNameHtml" : "ValueAdjustment.html",
+                                    "Height" : 0,
+                                    "xmlNameHtml" : "ValueAdjustment.html",
+                                    "fcName" : "ValueAdjustment"
+                                },
+                                {
+                                    "xmlName" : "SerialNumberAdjustment",
+                                    "supports" : {
+                                        "US" : true,
+                                        "OE" : false,
+                                        "CA" : true,
+                                        "UK" : true,
+                                        "AU" : false
+                                    },
+                                    "required" : false,
+                                    "fcType" : "ISerialNumberAdjustment",
+                                    "minVerUS" : 11,
+                                    "xmlType" : "Aggregate",
+                                    "count" : "0 - 1",
+                                    "elements" : [
+                                        {
+                                            "fcTypeHtml" : "QBFC-IORSerialNumberAdjustment.html",
+                                            "xmlName" : "OR",
+                                            "supports" : {
+                                                "US" : true,
+                                                "OE" : true,
+                                                "CA" : true,
+                                                "UK" : true,
+                                                "AU" : true
+                                            },
+                                            "required" : true,
+                                            "fcType" : "IORSerialNumberAdjustment",
+                                            "xmlType" : "OR",
+                                            "count" : 1,
+                                            "elements" : [
+                                                {
+                                                    "fcTypeHtml" : "IQBStringType.html",
+                                                    "xmlName" : "AddSerialNumber",
+                                                    "maxCA" : 4095,
+                                                    "xmlTypeHtml" : "STRTYPE.html",
+                                                    "supports" : {
+                                                        "US" : true,
+                                                        "OE" : false,
+                                                        "CA" : true,
+                                                        "UK" : true,
+                                                        "AU" : false
+                                                    },
+                                                    "required" : false,
+                                                    "fcType" : "IQBStringType",
+                                                    "xmlType" : "STRTYPE",
+                                                    "count" : "0 - 1",
+                                                    "maxUK" : 4095,
+                                                    "maxAU" : 4095,
+                                                    "fcNameHtml" : "AddSerialNumber.html",
+                                                    "maxDT" : 4095,
+                                                    "xmlNameHtml" : "AddSerialNumber.html",
+                                                    "fcName" : "AddSerialNumber"
+                                                },
+                                                {
+                                                    "fcTypeHtml" : "IQBStringType.html",
+                                                    "xmlName" : "RemoveSerialNumber",
+                                                    "maxCA" : 4095,
+                                                    "xmlTypeHtml" : "STRTYPE.html",
+                                                    "supports" : {
+                                                        "US" : true,
+                                                        "OE" : false,
+                                                        "CA" : true,
+                                                        "UK" : true,
+                                                        "AU" : false
+                                                    },
+                                                    "required" : false,
+                                                    "fcType" : "IQBStringType",
+                                                    "xmlType" : "STRTYPE",
+                                                    "count" : "0 - 1",
+                                                    "maxUK" : 4095,
+                                                    "maxAU" : 4095,
+                                                    "fcNameHtml" : "RemoveSerialNumber.html",
+                                                    "maxDT" : 4095,
+                                                    "xmlNameHtml" : "RemoveSerialNumber.html",
+                                                    "fcName" : "RemoveSerialNumber"
+                                                }
+                                            ],
+                                            "fcName" : "ORSerialNumberAdjustment"
+                                        },
+                                        {
+                                            "xmlName" : "InventorySiteLocationRef",
+                                            "supports" : {
+                                                "US" : true,
+                                                "OE" : false,
+                                                "CA" : true,
+                                                "UK" : true,
+                                                "AU" : false
+                                            },
+                                            "required" : false,
+                                            "fcType" : "IQBBaseRef",
+                                            "minVerUS" : 12,
+                                            "xmlType" : "Aggregate",
+                                            "count" : "0 - 1",
+                                            "elements" : [
+                                                {
+                                                    "fcTypeHtml" : "IQBIDType.html",
+                                                    "xmlName" : "ListID",
+                                                    "xmlTypeHtml" : "IDTYPE.html",
+                                                    "supports" : {
+                                                        "US" : true,
+                                                        "OE" : true,
+                                                        "CA" : true,
+                                                        "UK" : true,
+                                                        "AU" : true
+                                                    },
+                                                    "required" : false,
+                                                    "fcType" : "IQBIDType",
+                                                    "xmlType" : "IDTYPE",
+                                                    "count" : "0 - 1",
+                                                    "fcNameHtml" : "ListID.html",
+                                                    "xmlNameHtml" : "ListID.html",
+                                                    "fcName" : "ListID"
+                                                },
+                                                {
+                                                    "fcTypeHtml" : "IQBStringType.html",
+                                                    "xmlName" : "FullName",
+                                                    "maxCA" : 31,
+                                                    "xmlTypeHtml" : "STRTYPE.html",
+                                                    "supports" : {
+                                                        "US" : true,
+                                                        "OE" : true,
+                                                        "CA" : true,
+                                                        "UK" : true,
+                                                        "AU" : true
+                                                    },
+                                                    "required" : false,
+                                                    "fcType" : "IQBStringType",
+                                                    "xmlType" : "STRTYPE",
+                                                    "count" : "0 - 1",
+                                                    "maxUK" : 31,
+                                                    "maxAU" : 31,
+                                                    "fcNameHtml" : "FullName.html",
+                                                    "maxDT" : 31,
+                                                    "xmlNameHtml" : "FullName.html",
+                                                    "fcName" : "FullName"
+                                                }
+                                            ],
+                                            "fcNameHtml" : "InventorySiteLocation.html",
+                                            "xmlNameHtml" : "InventorySiteLocation.html",
+                                            "fcName" : "InventorySiteLocationRef"
+                                        }
+                                    ],
+                                    "fcNameHtml" : "SerialNumberAdjustment.html",
+                                    "xmlNameHtml" : "SerialNumberAdjustment.html",
+                                    "fcName" : "SerialNumberAdjustment"
+                                },
+                                {
+                                    "xmlName" : "LotNumberAdjustment",
+                                    "supports" : {
+                                        "US" : true,
+                                        "OE" : false,
+                                        "CA" : true,
+                                        "UK" : true,
+                                        "AU" : false
+                                    },
+                                    "required" : false,
+                                    "fcType" : "ILotNumberAdjustment",
+                                    "minVerUS" : 11,
+                                    "xmlType" : "Aggregate",
+                                    "count" : "0 - 1",
+                                    "elements" : [
+                                        {
+                                            "fcTypeHtml" : "IQBStringType.html",
+                                            "xmlName" : "LotNumber",
+                                            "maxCA" : 40,
+                                            "xmlTypeHtml" : "STRTYPE.html",
+                                            "supports" : {
+                                                "US" : true,
+                                                "OE" : false,
+                                                "CA" : true,
+                                                "UK" : true,
+                                                "AU" : false
+                                            },
+                                            "required" : false,
+                                            "fcType" : "IQBStringType",
+                                            "xmlType" : "STRTYPE",
+                                            "count" : "0 - 1",
+                                            "maxUK" : 40,
+                                            "maxAU" : 40,
+                                            "fcNameHtml" : "LotNumber.html",
+                                            "maxDT" : 40,
+                                            "xmlNameHtml" : "LotNumber.html",
+                                            "fcName" : "LotNumber"
+                                        },
+                                        {
+                                            "fcTypeHtml" : "IQBIntType.html",
+                                            "xmlName" : "CountAdjustment",
+                                            "xmlTypeHtml" : "INTTYPE.html",
+                                            "supports" : {
+                                                "US" : true,
+                                                "OE" : false,
+                                                "CA" : true,
+                                                "UK" : true,
+                                                "AU" : false
+                                            },
+                                            "required" : false,
+                                            "fcType" : "IQBIntType",
+                                            "xmlType" : "INTTYPE",
+                                            "count" : "0 - 1",
+                                            "fcNameHtml" : "CountAdjustment.html",
+                                            "xmlNameHtml" : "CountAdjustment.html",
+                                            "fcName" : "CountAdjustment"
+                                        },
+                                        {
+                                            "xmlName" : "InventorySiteLocationRef",
+                                            "supports" : {
+                                                "US" : true,
+                                                "OE" : false,
+                                                "CA" : true,
+                                                "UK" : true,
+                                                "AU" : false
+                                            },
+                                            "required" : false,
+                                            "fcType" : "IQBBaseRef",
+                                            "minVerUS" : 12,
+                                            "xmlType" : "Aggregate",
+                                            "count" : "0 - 1",
+                                            "elements" : [
+                                                {
+                                                    "fcTypeHtml" : "IQBIDType.html",
+                                                    "xmlName" : "ListID",
+                                                    "xmlTypeHtml" : "IDTYPE.html",
+                                                    "supports" : {
+                                                        "US" : true,
+                                                        "OE" : true,
+                                                        "CA" : true,
+                                                        "UK" : true,
+                                                        "AU" : true
+                                                    },
+                                                    "required" : false,
+                                                    "fcType" : "IQBIDType",
+                                                    "xmlType" : "IDTYPE",
+                                                    "count" : "0 - 1",
+                                                    "fcNameHtml" : "ListID.html",
+                                                    "xmlNameHtml" : "ListID.html",
+                                                    "fcName" : "ListID"
+                                                },
+                                                {
+                                                    "fcTypeHtml" : "IQBStringType.html",
+                                                    "xmlName" : "FullName",
+                                                    "maxCA" : 31,
+                                                    "xmlTypeHtml" : "STRTYPE.html",
+                                                    "supports" : {
+                                                        "US" : true,
+                                                        "OE" : true,
+                                                        "CA" : true,
+                                                        "UK" : true,
+                                                        "AU" : true
+                                                    },
+                                                    "required" : false,
+                                                    "fcType" : "IQBStringType",
+                                                    "xmlType" : "STRTYPE",
+                                                    "count" : "0 - 1",
+                                                    "maxUK" : 31,
+                                                    "maxAU" : 31,
+                                                    "fcNameHtml" : "FullName.html",
+                                                    "maxDT" : 31,
+                                                    "xmlNameHtml" : "FullName.html",
+                                                    "fcName" : "FullName"
+                                                }
+                                            ],
+                                            "fcNameHtml" : "InventorySiteLocation.html",
+                                            "xmlNameHtml" : "InventorySiteLocation.html",
+                                            "fcName" : "InventorySiteLocationRef"
+                                        }
+                                    ],
+                                    "fcNameHtml" : "LotNumberAdjustment.html",
+                                    "xmlNameHtml" : "LotNumberAdjustment.html",
+                                    "fcName" : "LotNumberAdjustment"
+                                },
+                                {
+                                    
+                                }
+                            ],
+                            "Height" : 0,
+                            "fcName" : "ORTypeAdjustment"
+                        }
+                    ],
+                    "fcNameHtml" : "QBFC-InventoryAdjustmentLineList.html",
+                    "Height" : 0,
+                    "xmlNameHtml" : "InventoryAdjustmentLine.html",
+                    "fcListOf" : {
+                        "fcType" : "IInventoryAdjustmentLineAdd"
+                    },
+                    "fcName" : "InventoryAdjustmentLineAddList"
+                }
+            ],
+            "Height" : 0,
+            "xmlNameHtml" : "InventoryAdjustment.html",
+            "fcName" : "nothing"
+        },
+        {
+            "fcTypeHtml" : "IBSTRList.html",
+            "xmlName" : "IncludeRetElement",
+            "maxCA" : 50,
+            "Width" : 0,
+            "TopLeftX" : 0,
+            "xmlTypeHtml" : "STRTYPE.html",
+            "supports" : {
+                "US" : true,
+                "OE" : false,
+                "CA" : true,
+                "UK" : true,
+                "AU" : true
+            },
+            "TopLeftY" : 0,
+            "required" : false,
+            "fcType" : "IBSTRList",
+            "minVerUS" : 4,
+            "xmlType" : "STRTYPE",
+            "count" : "0 - n",
+            "MasterImage" : "None",
+            "maxUK" : 50,
+            "maxAU" : 50,
+            "fcNameHtml" : "QBFC-IncludeRetElementList.html",
+            "maxDT" : 50,
+            "Height" : 0,
+            "xmlNameHtml" : "IncludeRetElement.html",
+            "fcName" : "IncludeRetElementList"
+        }
+    ],
+    "fcNameHtml" : "InventoryAdjustmentAdd.html",
+    "Height" : 0,
+    "xmlNameHtml" : "InventoryAdjustmentAdd.html",
+    "fcName" : "IInventoryAdjustmentAdd"
+}

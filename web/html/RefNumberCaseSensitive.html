@@ -1,0 +1,17 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+  <link rel="stylesheet" href="styleguide.css" type="text/css" />
+  <title>RefNumberCaseSensitive.html</title>
+</head>
+<body>
+<b><i>RefNumberCaseSensitive</i></b><br /><br />
+A string of characters that refers to this transaction and that can be arbitrarily changed by the QuickBooks user. <br /><br />
+
+Prior to SDK 5.0, this tag was used rather than the older RefNumber tag, because it provides much better performance in certain circumstances, such as if the refNumber value contains 
+letters, not just digits. As of SDK 5.0, both the RefNumber tag and this tag yield the same good performance in all these scenarios. However, you can still use this tag if you want to do a case-sensitive search, 
+because RefNumber does a case-insensitive search.  
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+  <link rel="stylesheet" href="styleguide.css" type="text/css" />
+  <title>IQBDateTimeType.html</title>
+</head>
+<body><pre>
+<b><i>IQBDateTimeType</i></b>
+ 
+' VB6 methods
+SetValue(val As Date, asDateOnly As Boolean)
+GetValue() As Date
+SetTimeZone(hours As Integer, minutes As Integer)
+GetTimeZone(hours As Integer, minutes As Integer)
+IsSet ( ) As Boolean
+IsEmpty ( ) As Boolean
+Unset ( )
+SetEmpty ( )
+ 
+// C++ Wrapper methods for error-handling
+HRESULT SetValue ( DATE val, VARIANT_BOOL asDateOnly );
+DATE GetValue ( );
+HRESULT SetTimeZone ( short hours, short minutes );
+HRESULT GetTimeZone ( short * hours, short * minutes );
+VARIANT_BOOL IsSet ( );
+VARIANT_BOOL IsEmpty ( );
+HRESULT Unset ( );
+HRESULT SetEmpty ( );
+ 
+// IDL Definition
+HRESULT SetValue(DATE val, VARIANT_BOOL asDateOnly);
+HRESULT GetValue([out, retval] DATE *pVal);
+HRESULT SetTimeZone(short hours, short minutes);
+HRESULT GetTimeZone([out] short *hours, [out] short *minutes);
+HRESULT IsSet([out, retval] VARIANT_BOOL* pVal);
+HRESULT IsEmpty([out, retval] VARIANT_BOOL* pVal);
+HRESULT Unset();
+HRESULT SetEmpty();
+</pre></body></html>

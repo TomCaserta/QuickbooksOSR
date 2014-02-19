@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+  <link rel="stylesheet" href="styleguide.css" type="text/css" />
+  <title>SalesReceipt.html</title>
+</head>
+<body>
+<b><i>SalesReceipt</i></b><br />
+Sales receipts are used to record point-of-sale payments. Sales receipts include 
+payments by cash, check, or credit card.<b> Note:</b> If full payment is not received 
+at the time of the sale, do not use a sales receipt. Instead, use an invoice transaction 
+and record the partial payment using a payment item. <br />
+<br />
+<b><i>IMPORTANT</i></b><br />
+In a SalesReceiptAdd or ReceivePaymentAdd request that contains credit card transaction data supplied from QBMS transaction responses, you must specify the payment method (using the PaymentMethodRef aggregate). 
+
+<br />
+<br />
+<b>The Life Cycle of Inventory Items and Effects of Sales and Purchases </b> <br />
+The value of inventory is set when an inventory item is created or bought. QuickBooks uses cost averaging and decreases the value of the inventory asset account at the price when the sale is recorded. <br /><br />
+
+So, lets say a company starts carrying widgets as inventory items. First the inventory item must be created in QuickBooks. If the widgets are already in inventory based on a purchase made that will not be recorded in QuickBooks, the user or application would add the inventory item description along with the quantity on hand and the value (total purchase price) of the quantity on hand. <br /><br />
+
+If the purchase is to be recorded in QuickBooks the inventory item would be created with quantity and value of 0 (zero). Then a bill would be added to QB which would increase the inventory quantity and value. Lets say we bought 10 widgets for $100. QuickBooks would then consider each widget to be worth $10. <br /><br />
+
+The next day a customer buys 5 widgets for $20 each. A <b>sales receipt</b> or invoice is created for the purchase, the quantity of widgets is reduced by 5, to 5 and the value is reduced by $50 to $50. The inventory asset account is reduced by $50 and the undeposited funds or accounts receivable account is increased by $100. <br /><br />
+
+It appears that widgets will be a big seller, so the small business owner goes out and buys 10 more widgets. However, the supplier has also noticed a widget buying trend, so he's increased the price to $25 each. So now our quantity is increased from 5 to 15 and the value is increased from $50 to $300, so they are considered to be worth $20 each. <br /><br />
+
+After purchasing the widgets another customer decides to buy 10 widgets but the price has been raised to $50 each. After the sales receipt or invoice is entered, the inventory is reduced to 5 and the value is reduced to $100. The inventory asset account is reduced by $200 and the undeposited funds or accounts receivable account is increased by $500.
+<br />
+<br />
+<b>Taxes can be reflected in transaction line items</b> <br />
+The following information refers to invoices specifically, but it also applies to sales receipts. Generally its best to assign a tax item or tax group item to an invoice and allow QuickBooks to apply the same tax to all taxable items on the invoice. However in some situations multiple tax combinations are required, so this method doesn’t work. In this case one must use techniques to apply the taxes in the invoice itself as line items. Using lines to apply taxes isn’t always straight forward. <br />
+<br />
+
+When applying taxes as line items, only single tax items can be used, tax groups can only be used for the entire invoice. If you have multiple taxes which apply to all taxable items, and one or more other taxes that only apply to some of the items on an invoice its better to use a tax group which applies to the entire invoice for the taxes which applies to all taxable items and then apply the other taxes in the invoice itself. One applies a tax or tax group to an entire invoice by using the ItemSalesTaxRef aggregate.<br />
+<br />
+
+One can use subtotals to apply a single tax line to multiple items in an invoice, but the tax is only applied automatically for the first tax line after the subtotal line. Any other tax lines which need to be applied to the subtotal line must supply their own amount. If you don’t supply an amount the amount comes out as zero and the tax line is useless. When one does supply an amount, the amount of tax on the subtotal also shows up in the rate column for that tax line. There isn’t any way for the rate to show up as anything other than the amount of the tax. <br />
+
+If you have a complicated tax situation where no single tax applies to all taxable items on the invoice, you must choose a zero percent tax to apply for the entire invoice. It is recommended to name such a tax item “Tax Calculated On Invoice” so that it’s clear that the tax is not being applied by QuickBooks on the entire invoice. 
+</body>
+</html>

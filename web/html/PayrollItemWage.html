@@ -1,0 +1,28 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<link rel="stylesheet" href="styleguide.css" type="text/css" />
+<title>PayrollItemWage.html</title>
+</head>
+<body>
+<b><i>PayrollItemWage</i></b><br />
+  Each payroll wage item describes and names a payment scheme, for example, Regular 
+  Pay or Overtime Pay. A PayrollItemWageRef aggregate refers to one of these wage 
+  items. In a request, if a PayrollItemWageRef aggregate includes both FullName 
+  and ListID, FullName will be ignored.<br />
+  <br />
+  Within QuickBooks, a timesheet can specify a payroll wage item only if the following 
+  criteria are met:<br />
+
+  <ul> 
+
+    <li> The name on the timesheet (which corresponds to the EntityRef in the 
+      TimeTracking object) is on the QuickBooks Employee list, and </li>
+
+    <li> The &#147;Use time data to create paychecks&#148; preference is turned on 
+      in the QuickBooks Payroll Info window that provides detailed employee information employee.</li>
+  </ul>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<link rel="stylesheet" href="styleguide.css" type="text/css" />
+<title>TrackLostEvents.html.xp</title>
+</head>
+<body>
+If you set the TrackLostEvents field in the data event subscription request to 
+All, QuickBooks will record DataEventRecoveryTime when the first data event 
+  is lost. 
+You can check in either of two ways whether any data events have been lost and 
+need to be recovered: You can examine the event callback to see whether DataEventRecoveryTime 
+is present for any data events, or you can send a DataEventRecoveryInfoQuery request. The default is None. <br />
+$$include.ENUM.TrackLostEvents$$
+
+</body>
+</html>

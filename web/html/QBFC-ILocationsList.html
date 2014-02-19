@@ -1,0 +1,23 @@
+<html><head><link rel="stylesheet" href="styleguide.css" type="text/css"></link></head>
+<body><table><tr><td><b><i>ILocationsList</i></b></td></tr>
+<tr><td> </td></tr>
+<tr><td>'VB6 Methods and Properties</td></tr>
+<tr><td>Count As Long</td></tr>
+<tr><td>GetAt ( index As Long ) As ILocations</td></tr>
+<tr><td>Append ( ) As ILocations</td></tr>
+<tr><td>Type As IObjectType</td></tr>
+<tr><td> </td></tr>
+<tr><td>// C++ Wrapper methods for error-handling and Property data</td></tr>
+<tr><td>long Count;</td></tr>
+<tr><td>long GetCount ( );</td></tr>
+<tr><td>ILocationsPtr GetAt ( long index );</td></tr>
+<tr><td>ILocationsPtr Append ( );</td></tr>
+<tr><td>IObjectTypePtr Type;</td></tr>
+<tr><td>IObjectTypePtr GetType ( );</td></tr>
+<tr><td> </td></tr>
+<tr><td>// IDL Definition</td></tr>
+<tr><td>HRESULT GetAt(long index, [out, retval] ILocations** retVal)</td></tr>
+<tr><td>HRESULT Count([out, retval] long* pVal)</td></tr>
+<tr><td>HRESULT Append([out, retval] ILocations** newValue)</td></tr>
+<tr><td>HRESULT Type([out, retval] IObjectType **pVal);</td></tr>
+</table></body></html>

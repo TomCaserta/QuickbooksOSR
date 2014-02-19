@@ -1,0 +1,26 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+  <link rel="stylesheet" href="styleguide.css" type="text/css" />
+  <title>ListDeletedQuery.html</title>
+</head>
+<body>
+A ListDeletedQuery will return all list elements deleted within the last 90 days, grouped according to object type. <br /><br />If you are synchronizing deletes, you might want to specify ListDelType elements in order of <i>dependency</i> in a ListDeletedQuery request; for example, first specify a ListDelType of Item, then specify a ListDelType of Vendor. This way the SDK will return Item deletes before Vendor deletes (both in order of real delete times). Item depends on (refers to) to Vendor, so by having the Item deletes returned first you avoid a dependency problem.
+<br /><br />
+By default, the records of each type are returned in ascending order, according 
+to the "real" delete time. For example:<br />
+
+  <ul> 
+
+    <li>If list object A is deleted at 10 a.m. and list object B is deleted at 
+      11 a.m., the query request will return A first, then B.</li>
+
+    <li>However, if the QuickBooks user moves the clock back before deleting B 
+      (for example, B is deleted at 9 a.m.), the query will still return first 
+      A then B, because B was deleted after A in "real" time.</li>
+  </ul>
+
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <link rel="stylesheet" href="styleguide.css" type="text/css" />
+  <title>UIEventSubscription.html</title>
+</head>
+<body>
+<b><i>UIEventSubscription</i></b><br />
+<p>Subscribes the specified application to receive notification about UI events, such as the company file opening or
+closing. Subsequent to this subscription, your application will receive
+the subscribed-to events, which are returned to your callback in a QBXMLEvents message. Make sure you record the
+SubscriberID because you'll need it to remove the subscription later, using the SubscriptionDel message.
+To delete a subscription, use the SubscriptionDel message. </p>
+
+<p>Be aware that the qbXML version used to subscribe to an event must be used in subsequent subscription queries. That is, if you
+construct a subscription query using qbXML 4.0, and then do a subscription query using qbXML 5.0, your 4.0 subscription will
+not be returned in the query.</p>
+
+<p>This request must be invoked using the request processor method ProcessSubscription(), if you use qbXML.
+
+If you use QBFC, this request must be appended to an ISubscriptionMsgSetRequest object instantiated by the
+QBSessionManager method CreateSubscriptionMsgSetRequest() and invoked by the method DoSubscriptionRequests().</p>
+
+For details about the event-notification
+feature, see the chapter called &quot;Event Notification&quot; and the one called
+&quot;Integrating
+with the QuickBooks UI&quot; in the QB SDK <i>Programmer's Guide</i>.
+</body>
+</html>

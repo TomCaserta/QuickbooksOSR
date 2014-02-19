@@ -1,0 +1,16 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+  <link rel="stylesheet" href="styleguide.css" type="text/css" />
+  <title>BillingRateType.html.xp</title>
+</head>
+<body>
+<b><i>BillingRateType</i></b><br /><br />
+Indicates whether the billing rate is a fixed rate or applies to specific service items.
+
+$$include.ENUM.BillingRateType$$
+
+</body>
+</html>

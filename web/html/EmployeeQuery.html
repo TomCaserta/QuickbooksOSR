@@ -1,0 +1,23 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+  <link rel="stylesheet" href="styleguide.css" type="text/css" />
+  <title>EmployeeQuery.html</title>
+</head>
+<body>
+<b><i>EmployeeQuery</i></b><br />
+Returns employee data. Notice that prior to qbXML spec 4.0, an EmployeeQueryRq would return a permissions
+error if the currently logged in QuickBooks user did not have "Payroll and Employees" permission. This
+would occur even if you only needed data that was not restricted.<br />
+<br />
+However, because of IncludeRetElement (beginning with qbXML spec 4.0), the situation has changed somewhat. You can use
+that new element to specify fields in the EmployeeRet object that do not require "Payroll and Employees"
+permissions.  Such a query would return the unrestricted data (such as Name) from 
+an EmployeeQueryRq even if the logged in user lacks "Payroll and Employees"
+permissions.
+
+
+</body>
+</html>

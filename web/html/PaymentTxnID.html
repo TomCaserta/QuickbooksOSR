@@ -1,0 +1,26 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+  <link rel="stylesheet" href="styleguide.css" type="text/css" />
+  <title>PaymentTxnID.html</title>
+</head>
+<body>
+<b><i>PaymentTxnID</i></b><br />
+For the PaymentTxnID, use either of these two values:<br />
+
+  <ul> 
+
+    <li>A TxnID value exactly as it is returned by the ReceivePaymentToDepositQuery 
+      request, or </li>
+
+    <li>A TxnID value exactly as it is returned in a ReceivePaymentAdd response. 
+    </li>
+  </ul>
+
+If you do not include a PaymentTxnLineID and include a PaymentTxnID for a transaction 
+  that includes payment lines, only the first payment line from that transaction 
+  will be deposited. 
+</body>
+</html>

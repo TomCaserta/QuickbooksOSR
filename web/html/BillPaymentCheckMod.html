@@ -1,0 +1,35 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+  <link rel="stylesheet" href="styleguide.css" type="text/css" />
+  <title>BillPaymentCheckMod.html</title>
+</head>
+<body>
+Note:  the AppliedToTxnMod aggregate needs both the TxnID and the payment amount if you are not using the SetCredit sub-aggregate or QuickBooks won't have an amount to apply. If you are using the SetCredit sub-aggregate, you'll need to set the amount in the AppliedAmount field.<br /> 
+<br />
+Generally, this is what you can do with BillPaymentCheckMod: 
+<ul>
+<li>Modify or clear the RefNumber or Memo. </li>
+<li>Modify (not clear) the TxnDate. </li>
+<li>Modify (not clear) the BankAccountRef </li>
+<li>Modify (not clear) the IsToBePrinted flag. </li>
+<li>For a bill payment check transaction that has been applied to several existing bills, redistribute the payment amounts applied to the bills. </li>
+<li>Change the discount amount applied to particular bill. </li>
+<li>You CANNOT change the credit amount applied to a particular bill. NOT SUPPORTED! </li>
+<li>Apply the payment amount to a different bill. Apply a discount, and a credit. The existing distribution is cleared, except for any credit that may have been applied. </li>
+<li>Use a BillPaymentCheckMod to simply apply an additional credit to a bill. 
+Additional payment amount is available as a credit </li>
+</ul>
+
+Other things you need to know: <br />
+<br />
+
+When a BillPaymentCheckMod request is processed, if the AppliedToTxnMod aggregate is specified, then the existing payments and discounts will be cleared (but not the credits). The original payment amount will be redistributed according to the AppliedToTxnMod aggregates (0 or more) contained in the BillPaymentCheckMod request. The AppliedToTxnMod aggregate may specify discounts, just as does the AppliedToTxnAdd aggregate. These discounts will replace any original discounts. Credits may also be specified. But if so, then the credits will be additional credits, and will not affect any credits that were originally applied. The existing payments and discounts will be cleared only if AppliedToTxnMod is specified in the request. This will allow clients to modify other information without modifying the distribution of the payment. <br />
+<br />
+
+In summary, in the BillPaymentCheckMod request, in the AppliedToTxnMod aggregate, discounts replace those given in the original payment. However credits simply add to any credits that may have been applied before. 
+
+</body>
+</html>

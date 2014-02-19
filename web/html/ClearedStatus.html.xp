@@ -1,0 +1,18 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+  <link rel="stylesheet" href="styleguide.css" type="text/css" />
+  <title>ClearedStatus.html.xp</title>
+</head>
+<body>
+<b><i>ClearedStatus</i></b><br />
+The ClearedStatusMod object is used to change the cleared status of a transaction. 
+The ClearedStatus ENUMTYPE element indicates whether a transaction or transaction 
+line has been cleared.<br />
+
+$$include.ENUM.ClearedStatus$$
+
+</body>
+</html>

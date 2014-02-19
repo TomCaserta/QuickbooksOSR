@@ -1,0 +1,19 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<link rel="stylesheet" href="styleguide.css" type="text/css" />
+<title>AccountType.html.xp</title>
+</head>
+<body>
+<b><i>AccountType</i></b><br />
+The type of QuickBooks account. You cannot create or modify a non-posting account 
+  through the SDK, because QuickBooks creates these accounts behind the scenes. 
+  This means that you cannot send an AccountAdd request with an AccountType of 
+  NonPosting.
+
+$$include.ENUM.AccountType$$
+
+</body>
+</html>

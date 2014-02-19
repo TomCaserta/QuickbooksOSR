@@ -1,0 +1,23 @@
+{"xmlName":"ListDisplayModRq","xmlNameHtml":"ListDisplayMod.html",
+ "xmlType":"Aggregate",
+ "fcName":"IListDisplayMod","fcNameHtml":"ListDisplayMod.html",
+ "fcType":"nothing",
+ "minVerUS":"3",
+ "supports":{"US":true,"CA":true,"UK":true,"AU":true,"OE":false},
+ "required":false,
+ "elements":[
+    {"xmlName":"ListDisplayModType","xmlNameHtml":"ListDisplayModType.html",
+     "xmlType":"ENUMTYPE","xmlTypeHtml":"ENUMTYPE.html",
+     "xmlEnumValues":["Account","Customer","Employee","Item","OtherName","Vendor"],
+     "fcName":"ListDisplayModType","fcNameHtml":"QBFC-ListDisplayModType.html",
+     "fcType":"IQBENListDisplayModTypeType","fcTypeHtml":"QBFC-IQBENListDisplayModTypeType.html",
+     "fcEnumValues":["ldmtAccount","ldmtCustomer","ldmtEmployee","ldmtItem","ldmtOtherName","ldmtVendor"],
+     "supports":{"US":true,"CA":true,"UK":true,"AU":true,"OE":true},
+     "required":true,"count":"1"},
+    {"xmlName":"ListID","xmlNameHtml":"ListID.html",
+     "xmlType":"IDTYPE","xmlTypeHtml":"IDTYPE.html",
+     "fcName":"ListID","fcNameHtml":"ListID.html",
+     "fcType":"IQBIDType","fcTypeHtml":"IQBIDType.html",
+     "supports":{"US":true,"CA":true,"UK":true,"AU":true,"OE":true},
+     "required":true,"count":"1"}
+ ]}

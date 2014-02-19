@@ -1,0 +1,21 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<link rel="stylesheet" href="styleguide.css" type="text/css" />
+<title>TxnDelType.html.xp</title>
+</head>
+<body>
+<p><b><i>TxnDelType</i></b><br />
+  The type of transaction that is being deleted or that has been deleted.</p>
+
+$$include.ENUM.TxnDelType$$
+
+<p>About InventoryAdjustment:<br />
+The inventory adjustment form must be closed in the QuickBooks user interface 
+  before you can delete an inventory adjustment through the SDK.<br />
+  <br />
+</p>
+</body>
+</html>

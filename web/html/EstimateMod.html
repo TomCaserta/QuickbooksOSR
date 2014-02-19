@@ -1,0 +1,49 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+  <link rel="stylesheet" href="styleguide.css" type="text/css" />
+  <title>EstimateMod.html</title>
+</head>
+<body>
+Some fields in an EstimateMod request cannot be cleared. If any of the following 
+fields is included in an estimate modify request, it must contain a value:<br />
+
+  <ul> 
+
+    <li>CustomerRef</li>
+
+    <li>TemplateRef</li>
+
+    <li>TxnDate</li>
+
+    <li>IsActive</li>
+
+    <li>CreateChangeOrder</li>
+
+    <li>DueDate</li>
+ 
+    <li>ItemSalesTaxRef</li>
+  </ul>
+
+Within EstimateLineMod or EstimateLineGroupMod:<br />
+
+  <ul> 
+
+    <li>ItemRef</li>
+
+    <li>Quantity</li>
+
+    <li>Rate</li>
+
+    <li>Amount</li>
+
+    <li>SalesTaxCodeRef</li>
+
+    <li>Markup</li>
+  </ul>
+(For more details about what it means for a field to be clearable or not clearable, 
+see the <i>QuickBooks SDK Programmer's Guide</i>.) 
+</body>
+</html>

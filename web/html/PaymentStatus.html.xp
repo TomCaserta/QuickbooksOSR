@@ -1,0 +1,16 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+  <link rel="stylesheet" href="styleguide.css" type="text/css" />
+  <title>PaymentStatus.html.xp</title>
+</head>
+<body>
+<b><i>PaymentStatus</i></b><br /><br />
+Indicates whether the transaction is known to have been successfully processed by the card issuer, with the value "Completed" indicating success. That is, there was a response sent to QBMS and from QBMS to the application indicating success. The value "Unknown" indicates that such a response was not received. If "Unknown" is returned, the transaction may have been successfully or unsuccessfully processed at the card issuer: there simply was no response (possibly due to network errors).
+
+$$include.ENUM.PaymentStatus$$
+
+</body>
+</html>

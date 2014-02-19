@@ -1,0 +1,544 @@
+{
+    "xmlName" : "PriceLevelModRq",
+    "Width" : 0,
+    "TopLeftX" : 0,
+    "supports" : {
+        "US" : true,
+        "OE" : false,
+        "CA" : true,
+        "UK" : true,
+        "AU" : true
+    },
+    "TopLeftY" : 0,
+    "required" : false,
+    "fcType" : "nothing",
+    "minVerUS" : 4,
+    "xmlType" : "Aggregate",
+    "MasterImage" : "None",
+    "elements" : [
+        {
+            "xmlName" : "PriceLevelMod",
+            "Width" : 0,
+            "TopLeftX" : 0,
+            "supports" : {
+                "US" : true,
+                "OE" : true,
+                "CA" : true,
+                "UK" : true,
+                "AU" : true
+            },
+            "TopLeftY" : 0,
+            "required" : true,
+            "fcType" : "skip",
+            "xmlType" : "Aggregate",
+            "count" : 1,
+            "MasterImage" : "None",
+            "elements" : [
+                {
+                    "fcTypeHtml" : "IQBIDType.html",
+                    "xmlName" : "ListID",
+                    "Width" : 0,
+                    "TopLeftX" : 0,
+                    "xmlTypeHtml" : "IDTYPE.html",
+                    "supports" : {
+                        "US" : true,
+                        "OE" : true,
+                        "CA" : true,
+                        "UK" : true,
+                        "AU" : true
+                    },
+                    "TopLeftY" : 0,
+                    "required" : true,
+                    "fcType" : "IQBIDType",
+                    "xmlType" : "IDTYPE",
+                    "count" : 1,
+                    "MasterImage" : "None",
+                    "fcNameHtml" : "ListID.html",
+                    "Height" : 0,
+                    "xmlNameHtml" : "ListID.html",
+                    "fcName" : "ListID"
+                },
+                {
+                    "fcTypeHtml" : "IQBStringType.html",
+                    "xmlName" : "EditSequence",
+                    "maxCA" : 16,
+                    "Width" : 0,
+                    "TopLeftX" : 0,
+                    "xmlTypeHtml" : "STRTYPE.html",
+                    "supports" : {
+                        "US" : true,
+                        "OE" : true,
+                        "CA" : true,
+                        "UK" : true,
+                        "AU" : true
+                    },
+                    "TopLeftY" : 0,
+                    "required" : true,
+                    "fcType" : "IQBStringType",
+                    "xmlType" : "STRTYPE",
+                    "count" : 1,
+                    "MasterImage" : "None",
+                    "maxUK" : 16,
+                    "maxAU" : 16,
+                    "fcNameHtml" : "EditSequence.html",
+                    "maxDT" : 16,
+                    "Height" : 0,
+                    "xmlNameHtml" : "EditSequence.html",
+                    "fcName" : "EditSequence"
+                },
+                {
+                    "fcTypeHtml" : "IQBStringType.html",
+                    "xmlName" : "Name",
+                    "maxCA" : 31,
+                    "Width" : 199,
+                    "TopLeftX" : 105,
+                    "xmlTypeHtml" : "STRTYPE.html",
+                    "supports" : {
+                        "US" : true,
+                        "OE" : true,
+                        "CA" : true,
+                        "UK" : true,
+                        "AU" : true
+                    },
+                    "TopLeftY" : 42,
+                    "required" : false,
+                    "fcType" : "IQBStringType",
+                    "xmlType" : "STRTYPE",
+                    "count" : "0 - 1",
+                    "MasterImage" : "pricelevel_peritem.jpg",
+                    "maxUK" : 31,
+                    "maxAU" : 31,
+                    "fcNameHtml" : "Name.html",
+                    "maxDT" : 31,
+                    "Height" : 19,
+                    "xmlNameHtml" : "Name.html",
+                    "fcName" : "Name"
+                },
+                {
+                    "fcTypeHtml" : "IQBBoolType.html",
+                    "xmlName" : "IsActive",
+                    "Width" : 125,
+                    "TopLeftX" : 446,
+                    "xmlTypeHtml" : "BOOLTYPE.html",
+                    "supports" : {
+                        "US" : true,
+                        "OE" : true,
+                        "CA" : true,
+                        "UK" : true,
+                        "AU" : true
+                    },
+                    "TopLeftY" : 42,
+                    "required" : false,
+                    "fcType" : "IQBBoolType",
+                    "xmlType" : "BOOLTYPE",
+                    "count" : "0 - 1",
+                    "MasterImage" : "pricelevel_peritem.jpg",
+                    "fcNameHtml" : "IsActive.html",
+                    "Height" : 18,
+                    "xmlNameHtml" : "IsActive.html",
+                    "fcName" : "IsActive"
+                },
+                {
+                    "fcTypeHtml" : "QBFC-IORPriceLevel.html",
+                    "xmlName" : "OR",
+                    "Width" : 0,
+                    "TopLeftX" : 0,
+                    "supports" : {
+                        "US" : true,
+                        "OE" : true,
+                        "CA" : true,
+                        "UK" : true,
+                        "AU" : true
+                    },
+                    "TopLeftY" : 0,
+                    "required" : false,
+                    "fcType" : "IORPriceLevel",
+                    "xmlType" : "OR",
+                    "count" : "0 - 1",
+                    "MasterImage" : "None",
+                    "elements" : [
+                        {
+                            "fcTypeHtml" : "IQBPercentType.html",
+                            "xmlName" : "PriceLevelFixedPercentage",
+                            "Width" : 49,
+                            "TopLeftX" : 262,
+                            "xmlTypeHtml" : "PERCENTTYPE.html",
+                            "supports" : {
+                                "US" : true,
+                                "OE" : true,
+                                "CA" : true,
+                                "UK" : true,
+                                "AU" : true
+                            },
+                            "TopLeftY" : 131,
+                            "required" : false,
+                            "fcType" : "IQBPercentType",
+                            "xmlType" : "PERCENTTYPE",
+                            "count" : "0 - 1",
+                            "MasterImage" : "pricelevel_fixed.jpg",
+                            "fcNameHtml" : "PriceLevelFixedPercentage.html",
+                            "Height" : 17,
+                            "xmlNameHtml" : "PriceLevelFixedPercentage.html",
+                            "fcName" : "PriceLevelFixedPercentage"
+                        },
+                        {
+                            "xmlName" : "nothing",
+                            "supports" : {
+                                "US" : true,
+                                "OE" : true,
+                                "CA" : true,
+                                "UK" : true,
+                                "AU" : true
+                            },
+                            "required" : false,
+                            "fcType" : "IPriceLevelPerItemCurrency",
+                            "xmlType" : "skip",
+                            "count" : "0 - 1",
+                            "elements" : [
+                                {
+                                    "fcTypeHtml" : "QBFC-IPriceLevelPerItemList.html",
+                                    "xmlName" : "PriceLevelPerItem",
+                                    "supports" : {
+                                        "US" : true,
+                                        "OE" : true,
+                                        "CA" : true,
+                                        "UK" : true,
+                                        "AU" : true
+                                    },
+                                    "required" : false,
+                                    "fcType" : "IPriceLevelPerItemList",
+                                    "xmlType" : "Aggregate",
+                                    "count" : "0 - n",
+                                    "elements" : [
+                                        {
+                                            "xmlName" : "ItemRef",
+                                            "supports" : {
+                                                "US" : true,
+                                                "OE" : true,
+                                                "CA" : true,
+                                                "UK" : true,
+                                                "AU" : true
+                                            },
+                                            "required" : true,
+                                            "fcType" : "IQBBaseRef",
+                                            "xmlType" : "Aggregate",
+                                            "count" : 1,
+                                            "elements" : [
+                                                {
+                                                    "fcTypeHtml" : "IQBIDType.html",
+                                                    "xmlName" : "ListID",
+                                                    "xmlTypeHtml" : "IDTYPE.html",
+                                                    "supports" : {
+                                                        "US" : true,
+                                                        "OE" : true,
+                                                        "CA" : true,
+                                                        "UK" : true,
+                                                        "AU" : true
+                                                    },
+                                                    "required" : false,
+                                                    "fcType" : "IQBIDType",
+                                                    "xmlType" : "IDTYPE",
+                                                    "count" : "0 - 1",
+                                                    "fcNameHtml" : "ListID.html",
+                                                    "xmlNameHtml" : "ListID.html",
+                                                    "fcName" : "ListID"
+                                                },
+                                                {
+                                                    "fcTypeHtml" : "IQBStringType.html",
+                                                    "xmlName" : "FullName",
+                                                    "xmlTypeHtml" : "STRTYPE.html",
+                                                    "supports" : {
+                                                        "US" : true,
+                                                        "OE" : true,
+                                                        "CA" : true,
+                                                        "UK" : true,
+                                                        "AU" : true
+                                                    },
+                                                    "required" : false,
+                                                    "fcType" : "IQBStringType",
+                                                    "xmlType" : "STRTYPE",
+                                                    "count" : "0 - 1",
+                                                    "fcNameHtml" : "FullName.html",
+                                                    "xmlNameHtml" : "FullName.html",
+                                                    "fcName" : "FullName"
+                                                }
+                                            ],
+                                            "fcNameHtml" : "Item.html",
+                                            "xmlNameHtml" : "Item.html",
+                                            "fcName" : "ItemRef"
+                                        },
+                                        {
+                                            "fcTypeHtml" : "QBFC-IORPriceLevelPrice.html",
+                                            "xmlName" : "OR",
+                                            "supports" : {
+                                                "US" : true,
+                                                "OE" : true,
+                                                "CA" : true,
+                                                "UK" : true,
+                                                "AU" : true
+                                            },
+                                            "required" : true,
+                                            "fcType" : "IORPriceLevelPrice",
+                                            "xmlType" : "OR",
+                                            "count" : 1,
+                                            "elements" : [
+                                                {
+                                                    "xmlName" : "nothing",
+                                                    "supports" : {
+                                                        "US" : true,
+                                                        "OE" : true,
+                                                        "CA" : true,
+                                                        "UK" : true,
+                                                        "AU" : true
+                                                    },
+                                                    "required" : false,
+                                                    "fcType" : "IORCustomPrice",
+                                                    "xmlType" : "skip",
+                                                    "count" : "0 - 1",
+                                                    "elements" : [
+                                                        {
+                                                            "fcTypeHtml" : "QBFC-IORORCustomPrice.html",
+                                                            "xmlName" : "OR",
+                                                            "supports" : {
+                                                                "US" : true,
+                                                                "OE" : true,
+                                                                "UK" : true,
+                                                                "CA" : true,
+                                                                "AU" : true
+                                                            },
+                                                            "required" : true,
+                                                            "fcType" : "IORORCustomPrice",
+                                                            "xmlType" : "OR",
+                                                            "count" : 1,
+                                                            "elements" : [
+                                                                {
+                                                                    "fcTypeHtml" : "IQBPriceType.html",
+                                                                    "xmlName" : "CustomPrice",
+                                                                    "xmlTypeHtml" : "PRICETYPE.html",
+                                                                    "supports" : {
+                                                                        "US" : true,
+                                                                        "UK" : true,
+                                                                        "CA" : true,
+                                                                        "AU" : true,
+                                                                        "OE" : true
+                                                                    },
+                                                                    "fcNameHtml" : "CustomPrice.html",
+                                                                    "required" : false,
+                                                                    "fcType" : "IQBPriceType",
+                                                                    "xmlType" : "PRICETYPE",
+                                                                    "xmlNameHtml" : "CustomPrice.html",
+                                                                    "count" : "0 - 1",
+                                                                    "fcName" : "CustomPrice"
+                                                                },
+                                                                {
+                                                                    "fcTypeHtml" : "IQBPercentType.html",
+                                                                    "xmlName" : "CustomPricePercent",
+                                                                    "xmlTypeHtml" : "PERCENTTYPE.html",
+                                                                    "supports" : {
+                                                                        "US" : true,
+                                                                        "UK" : true,
+                                                                        "CA" : true,
+                                                                        "AU" : true,
+                                                                        "OE" : true
+                                                                    },
+                                                                    "fcNameHtml" : "CustomPricePercent.html",
+                                                                    "required" : false,
+                                                                    "fcType" : "IQBPercentType",
+                                                                    "xmlType" : "PERCENTTYPE",
+                                                                    "xmlNameHtml" : "CustomPricePercent.html",
+                                                                    "count" : "0 - 1",
+                                                                    "fcName" : "CustomPricePercent"
+                                                                }
+                                                            ],
+                                                            "fcName" : "ORORCustomPrice"
+                                                        }
+                                                    ],
+                                                    "fcNameHtml" : "ORCustomPrice.html",
+                                                    "fcName" : "ORCustomPrice"
+                                                },
+                                                {
+                                                    "xmlName" : "nothing",
+                                                    "supports" : {
+                                                        "US" : true,
+                                                        "OE" : true,
+                                                        "CA" : true,
+                                                        "UK" : true,
+                                                        "AU" : true
+                                                    },
+                                                    "required" : false,
+                                                    "fcType" : "IPriceLevelAdjustment",
+                                                    "xmlType" : "skip",
+                                                    "count" : "0 - 1",
+                                                    "elements" : [
+                                                        {
+                                                            "fcTypeHtml" : "IQBPercentType.html",
+                                                            "xmlName" : "AdjustPercentage",
+                                                            "xmlTypeHtml" : "PERCENTTYPE.html",
+                                                            "supports" : {
+                                                                "US" : true,
+                                                                "OE" : true,
+                                                                "UK" : true,
+                                                                "CA" : true,
+                                                                "AU" : true
+                                                            },
+                                                            "required" : true,
+                                                            "fcType" : "IQBPercentType",
+                                                            "xmlType" : "PERCENTTYPE",
+                                                            "count" : 1,
+                                                            "fcNameHtml" : "AdjustPercentage.html",
+                                                            "xmlNameHtml" : "AdjustPercentage.html",
+                                                            "fcName" : "AdjustPercentage"
+                                                        },
+                                                        {
+                                                            "fcTypeHtml" : "QBFC-IQBENAdjustRelativeToType.html",
+                                                            "xmlName" : "AdjustRelativeTo",
+                                                            "xmlTypeHtml" : "ENUMTYPE.html",
+                                                            "supports" : {
+                                                                "US" : true,
+                                                                "OE" : true,
+                                                                "UK" : true,
+                                                                "CA" : true,
+                                                                "AU" : true
+                                                            },
+                                                            "required" : true,
+                                                            "fcType" : "IQBENAdjustRelativeToType",
+                                                            "xmlType" : "ENUMTYPE",
+                                                            "xmlEnumValues" : [
+                                                                "StandardPrice",
+                                                                "Cost",
+                                                                "CurrentCustomPrice"
+                                                            ],
+                                                            "count" : 1,
+                                                            "fcNameHtml" : "QBFC-AdjustRelativeTo.html",
+                                                            "fcEnumValues" : [
+                                                                "artStandardPrice",
+                                                                "artCost",
+                                                                "artCurrentCustomPrice"
+                                                            ],
+                                                            "xmlNameHtml" : "AdjustRelativeTo.html",
+                                                            "fcName" : "AdjustRelativeTo"
+                                                        }
+                                                    ],
+                                                    "fcNameHtml" : "PriceLevelAdjustment.html",
+                                                    "fcName" : "PriceLevelAdjustment"
+                                                }
+                                            ],
+                                            "fcName" : "ORPriceLevelPrice"
+                                        }
+                                    ],
+                                    "fcNameHtml" : "QBFC-PriceLevelPerItemList.html",
+                                    "xmlNameHtml" : "PriceLevelPerItem.html",
+                                    "fcListOf" : {
+                                        "fcType" : "IPriceLevelPerItem"
+                                    },
+                                    "fcName" : "PriceLevelPerItemList"
+                                },
+                                {
+                                    "xmlName" : "CurrencyRef",
+                                    "supports" : {
+                                        "US" : true,
+                                        "OE" : false,
+                                        "CA" : true,
+                                        "UK" : true,
+                                        "AU" : true
+                                    },
+                                    "required" : false,
+                                    "fcType" : "IQBBaseRef",
+                                    "minVerUS" : 8,
+                                    "xmlType" : "Aggregate",
+                                    "count" : "0 - 1",
+                                    "elements" : [
+                                        {
+                                            "fcTypeHtml" : "IQBIDType.html",
+                                            "xmlName" : "ListID",
+                                            "xmlTypeHtml" : "IDTYPE.html",
+                                            "supports" : {
+                                                "US" : true,
+                                                "OE" : true,
+                                                "CA" : true,
+                                                "UK" : true,
+                                                "AU" : true
+                                            },
+                                            "required" : false,
+                                            "fcType" : "IQBIDType",
+                                            "xmlType" : "IDTYPE",
+                                            "count" : "0 - 1",
+                                            "fcNameHtml" : "ListID.html",
+                                            "xmlNameHtml" : "ListID.html",
+                                            "fcName" : "ListID"
+                                        },
+                                        {
+                                            "fcTypeHtml" : "IQBStringType.html",
+                                            "xmlName" : "FullName",
+                                            "maxCA" : 64,
+                                            "xmlTypeHtml" : "STRTYPE.html",
+                                            "supports" : {
+                                                "US" : true,
+                                                "OE" : true,
+                                                "CA" : true,
+                                                "UK" : true,
+                                                "AU" : true
+                                            },
+                                            "required" : false,
+                                            "fcType" : "IQBStringType",
+                                            "xmlType" : "STRTYPE",
+                                            "count" : "0 - 1",
+                                            "maxUK" : 64,
+                                            "maxAU" : 64,
+                                            "fcNameHtml" : "FullName.html",
+                                            "maxDT" : 64,
+                                            "xmlNameHtml" : "FullName.html",
+                                            "fcName" : "FullName"
+                                        }
+                                    ],
+                                    "fcNameHtml" : "Currency.html",
+                                    "xmlNameHtml" : "Currency.html",
+                                    "fcName" : "CurrencyRef"
+                                }
+                            ],
+                            "fcNameHtml" : "PriceLevelPerItemCurrency.html",
+                            "fcName" : "PriceLevelPerItemCurrency"
+                        }
+                    ],
+                    "Height" : 0,
+                    "fcName" : "ORPriceLevel"
+                }
+            ],
+            "Height" : 0,
+            "xmlNameHtml" : "PriceLevel.html",
+            "fcName" : "nothing"
+        },
+        {
+            "fcTypeHtml" : "IBSTRList.html",
+            "xmlName" : "IncludeRetElement",
+            "maxCA" : 50,
+            "Width" : 0,
+            "TopLeftX" : 0,
+            "xmlTypeHtml" : "STRTYPE.html",
+            "supports" : {
+                "US" : true,
+                "OE" : true,
+                "CA" : true,
+                "UK" : true,
+                "AU" : true
+            },
+            "TopLeftY" : 0,
+            "required" : false,
+            "fcType" : "IBSTRList",
+            "xmlType" : "STRTYPE",
+            "count" : "0 - n",
+            "MasterImage" : "None",
+            "maxUK" : 50,
+            "maxAU" : 50,
+            "fcNameHtml" : "QBFC-IncludeRetElementList.html",
+            "maxDT" : 50,
+            "Height" : 0,
+            "xmlNameHtml" : "IncludeRetElement.html",
+            "fcName" : "IncludeRetElementList"
+        }
+    ],
+    "fcNameHtml" : "PriceLevelMod.html",
+    "Height" : 0,
+    "xmlNameHtml" : "PriceLevelMod.html",
+    "fcName" : "IPriceLevelMod"
+}

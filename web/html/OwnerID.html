@@ -1,0 +1,31 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<link rel="stylesheet" href="styleguide.css" type="text/css" />
+<title>OwnerID.html</title>
+</head>
+<body>
+<b><i>OwnerID</i></b><br />
+  Refers to the owner of a data extension:<br />
+
+  <ul> 
+
+    <li>If OwnerID is 0, this is a public data extension, also known as a custom 
+      field. Custom fields appear in the QuickBooks UI.</li>
+
+    <li>If OwnerID is a GUID, for example {6B063959-81B0-4622-85D6-F548C8CCB517}, 
+      this field is a private data extension defined by an integrated application. 
+      Private data extensions do not appear in the QuickBooks UI. </li>
+  </ul>
+
+Note that OwnerID values are not case-sensitive, meaning that if you enter an 
+OwnerID value with lower-case letters, the value will be saved and returned with 
+upper-case letters. <br />
+<br />
+When you share a private data extension with another application, the other application 
+must know both the OwnerID and the DataExtName, as these together form a data 
+extension's unique name. 
+</body>
+</html>

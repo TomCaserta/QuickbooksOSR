@@ -1,0 +1,488 @@
+<?xml version="1.0" ?>
+<!DOCTYPE DocExceptions SYSTEM "docexceptions.dtd">
+<DocExceptions>
+
+
+<!--====================-->
+<!--	SSN element   	    -->
+<!--====================-->
+	<ElementException>
+		<Element>SSN</Element>
+		<Aggregate>Employee</Aggregate>
+	</ElementException>
+
+<!--====================-->
+<!--	IsManuallyClosed element   	    -->
+<!--====================-->
+	<ElementException>
+		<Element>IsManuallyClosed</Element>
+		<Aggregate>SalesOrderLine</Aggregate>
+	</ElementException>
+	<ElementException>
+		<Element>IsManuallyClosed</Element>
+		<Aggregate>SalesOrder</Aggregate>
+	</ElementException>
+	<ElementException>
+		<Element>IsManuallyClosed</Element>
+		<Aggregate>PurchaseOrderLine</Aggregate>
+	</ElementException>
+	<ElementException>
+		<Element>IsManuallyClosed</Element>
+		<Aggregate>PurchaseOrder</Aggregate>
+	</ElementException>
+
+<!--====================-->
+<!--	OwnerID element	-->
+<!--====================-->
+	<ElementException>
+		<Element>OwnerID</Element>
+		<Aggregate>DataExt</Aggregate>
+	</ElementException>
+	<ElementException>
+		<Element>OwnerID</Element>
+		<Aggregate>DataExtDef</Aggregate>
+	</ElementException>
+
+<!--====================-->
+<!--	Amount element	-->
+<!--====================-->
+	<ElementException>
+		<Element>Amount</Element>
+		<Aggregate>Check</Aggregate>
+	</ElementException>
+	<ElementException>
+		<Element>Amount</Element>
+		<Aggregate>TotalBalanceFilter</Aggregate>
+	</ElementException>
+	<ElementException>
+		<Element>Amount</Element>
+		<Aggregate>CreditCardCredit</Aggregate>
+	</ElementException>
+	<ElementException>
+		<Element>Amount</Element>
+		<Aggregate>CreditCardCharge</Aggregate>
+	</ElementException>
+	
+<!--====================-->
+<!--	Balance element	-->	
+<!--====================-->
+	<ElementException>
+		<Element>Balance</Element>
+		<Aggregate>Vendor</Aggregate>
+	</ElementException>
+	<ElementException>
+		<Element>Balance</Element>
+		<Aggregate>Customer</Aggregate>
+	</ElementException>
+	<ElementException>
+		<Element>Balance</Element>
+		<Aggregate>Account</Aggregate>
+	</ElementException>
+	
+<!--====================-->
+<!--	AppliedAmount element	-->
+<!--====================-->
+	<ElementException>
+		<Element>AppliedAmount</Element>
+		<Aggregate>Invoice</Aggregate>
+	</ElementException>
+	<ElementException>
+		<Element>AppliedAmount</Element>
+		<Aggregate>PaymentLine</Aggregate>
+	</ElementException>
+
+<!--====================-->
+<!--	Cost element	-->
+<!--====================-->
+	<ElementException>
+		<Element>Cost</Element>
+		<Aggregate>Check</Aggregate>
+	</ElementException>
+
+<!--====================-->
+<!--	Desc element	-->
+<!--====================-->
+	<ElementException>
+		<Element>Desc</Element>
+		<Aggregate>PurchaseOrderLineGroup</Aggregate>
+	</ElementException>
+	<ElementException>
+		<Element>Desc</Element>
+		<Aggregate>PurchaseOrderLine</Aggregate>
+	</ElementException>
+	<ElementException>
+		<Element>Desc</Element>
+		<Aggregate>SalesTaxCode</Aggregate>
+	</ElementException>
+
+<!--====================-->
+<!--	DiscountPct element	-->
+<!--====================-->
+	<ElementException>
+		<Element>DiscountPct</Element>
+		<Aggregate>DateDrivenTerms</Aggregate>
+	</ElementException>
+	<ElementException>
+		<Element>DiscountPct</Element>
+		<Aggregate>StandardTerms</Aggregate>
+	</ElementException>
+
+<!--====================-->
+<!--	DueDate element	-->
+<!--====================-->
+	<ElementException>
+		<Element>DueDate</Element>
+		<Aggregate>Invoice</Aggregate>
+	</ElementException>
+	<ElementException>
+		<Element>DueDate</Element>
+		<Aggregate>SalesReceipt</Aggregate>
+	</ElementException>
+
+<!--====================-->
+<!--	IsPending element	-->
+<!--====================-->
+	<ElementException>
+		<Element>IsPending</Element>
+		<Aggregate>Invoice</Aggregate>
+	</ElementException>	
+	<ElementException>
+		<Element>IsPending</Element>
+		<Aggregate>SalesReceipt</Aggregate>
+	</ElementException>	
+	<ElementException>
+		<Element>IsPending</Element>
+		<Aggregate>CreditMemo</Aggregate>
+	</ElementException>
+
+<!--====================-->
+<!--	DueDate element	-->
+<!--====================-->
+	<ElementException>
+		<Element>DueDate</Element>
+		<Aggregate>BillToPay</Aggregate>
+	</ElementException>		
+
+<!--====================-->
+<!--	Memo element ... 11 exceptions	-->
+<!--====================-->
+	<ElementException>
+		<Element>Memo</Element>
+		<Aggregate>DepositLine</Aggregate>
+	</ElementException>		
+	<ElementException>
+		<Element>Memo</Element>
+		<Aggregate>ExpenseLine</Aggregate>
+	</ElementException>		
+	<ElementException>
+		<Element>Memo</Element>
+		<Aggregate>CreditMemo</Aggregate>
+	</ElementException>		
+	<ElementException>
+		<Element>Memo</Element>
+		<Aggregate>Invoice</Aggregate>
+	</ElementException>		
+	<ElementException>
+		<Element>Memo</Element>
+		<Aggregate>ReceivePayment</Aggregate>
+	</ElementException>		
+	<ElementException>
+		<Element>Memo</Element>
+		<Aggregate>Check</Aggregate>
+	</ElementException>		
+	<ElementException>
+		<Element>Memo</Element>
+		<Aggregate>Bill</Aggregate>
+	</ElementException>		
+	<ElementException>
+		<Element>Memo</Element>
+		<Aggregate>VendorCredit</Aggregate>
+	</ElementException>		
+	<ElementException>
+		<Element>Memo</Element>
+		<Aggregate>Estimate</Aggregate>
+	</ElementException>		
+	<ElementException>
+		<Element>Memo</Element>
+		<Aggregate>PurchaseOrder</Aggregate>
+	</ElementException>		
+	<ElementException>
+		<Element>Memo</Element>
+		<Aggregate>SalesReceipt</Aggregate>
+	</ElementException>
+	
+<!--====================-->
+<!--	Name element	-->
+<!--====================-->
+	<ElementException>
+		<Element>Name</Element>
+		<Aggregate>SalesTaxCode</Aggregate>
+	</ElementException>		
+	<ElementException>
+		<Element>Name</Element>
+		<Aggregate>NameFilter</Aggregate>
+	</ElementException>		
+	<ElementException>
+		<Element>Name</Element>
+		<Aggregate>Class</Aggregate>
+	</ElementException>		
+	<ElementException>
+		<Element>Name</Element>
+		<Aggregate>Employee</Aggregate>
+	</ElementException>		
+	<ElementException>
+		<Element>Name</Element>
+		<Aggregate>PayrollItemWage</Aggregate>
+	</ElementException>		
+
+<!--====================-->
+<!--	OpenBalance element	-->
+<!--====================-->
+	<ElementException>
+		<Element>OpenBalance</Element>
+		<Aggregate>Account</Aggregate>
+	</ElementException>		
+	<ElementException>
+		<Element>OpenBalance</Element>
+		<Aggregate>Customer</Aggregate>
+	</ElementException>		
+	<ElementException>
+		<Element>OpenBalance</Element>
+		<Aggregate>Vendor</Aggregate>
+	</ElementException>		
+		
+<!--====================-->
+<!--	OpenBalanceDate element	-->
+<!--====================-->
+	<ElementException>
+		<Element>OpenBalanceDate</Element>
+		<Aggregate>Account</Aggregate>
+	</ElementException>		
+	<ElementException>
+		<Element>OpenBalanceDate</Element>
+		<Aggregate>Customer</Aggregate>
+	</ElementException>		
+	<ElementException>
+		<Element>OpenBalanceDate</Element>
+		<Aggregate>Vendor</Aggregate>
+	</ElementException>	
+	
+<!--====================-->
+<!--	State element	-->
+<!--====================-->
+	<ElementException>
+		<Element>State</Element>
+		<Aggregate>EmployeeAddress</Aggregate>
+	</ElementException>			
+
+<!--====================-->
+<!--	TxnDate element	-->
+<!--====================-->
+	<ElementException>
+		<Element>TxnDate</Element>
+		<Aggregate>Invoice</Aggregate>
+	</ElementException>			
+	<ElementException>
+		<Element>TxnDate</Element>
+		<Aggregate>Check</Aggregate>
+	</ElementException>			
+	<ElementException>
+		<Element>TxnDate</Element>
+		<Aggregate>SalesReceipt</Aggregate>
+	</ElementException>			
+	<ElementException>
+		<Element>TxnDate</Element>
+		<Aggregate>CreditCardCharge</Aggregate>
+	</ElementException>			
+
+<!--====================-->
+<!--	TotalBalance element	-->
+<!--====================-->
+	<ElementException>
+		<Element>TotalBalance</Element>
+		<Aggregate>Customer</Aggregate>
+	</ElementException>			
+
+<!--====================-->
+<!--	PurchaseDesc element	-->
+<!--====================-->
+	<ElementException>
+		<Element>PurchaseDesc</Element>
+		<Aggregate>ItemInventory</Aggregate>
+	</ElementException>			
+			
+<!--====================-->
+<!--	Rate element	-->
+<!--====================-->
+<!--	Rate exceptions for desktop QB.	(These two have identical text.)	-->
+	<ElementException>
+		<Element>Rate</Element>
+		<Aggregate>TimeTracking</Aggregate>
+		<Product>QBD</Product>
+	</ElementException>
+	<ElementException>
+		<Element>Rate</Element>
+		<Aggregate>TimeTracking</Aggregate>
+		<Product>QBC</Product>
+	</ElementException>
+
+<!--	Rate exception for QBOE	--> 
+	<ElementException>
+		<Element>Rate</Element>
+		<Aggregate>TimeTracking</Aggregate>
+		<Product>QBO</Product>
+	</ElementException>
+
+<!--	Product-independent Rate exceptions.	-->
+	<ElementException>
+		<Element>Rate</Element>
+		<Aggregate>CreditMemoLine</Aggregate>
+	</ElementException>
+	<ElementException>
+		<Element>Rate</Element>
+		<Aggregate>InvoiceLine</Aggregate>
+	</ElementException>
+	<ElementException>
+		<Element>Rate</Element>
+		<Aggregate>EstimateLine</Aggregate>
+	</ElementException>
+	<ElementException>
+		<Element>Rate</Element>
+		<Aggregate>PurchaseOrderLine</Aggregate>
+	</ElementException>
+		<ElementException>
+		<Element>Rate</Element>
+		<Aggregate>SalesOrderLine</Aggregate>
+	</ElementException>
+		<ElementException>
+		<Element>Rate</Element>
+		<Aggregate>SalesReceiptLine</Aggregate>
+	</ElementException>
+
+<!--====================-->
+<!--	Subtotal element	-->
+<!--====================-->
+	<ElementException>
+		<Element>Subtotal</Element>
+		<Aggregate>CreditMemo</Aggregate>
+	</ElementException>			
+	<ElementException>
+		<Element>Subtotal</Element>
+		<Aggregate>Invoice</Aggregate>
+	</ElementException>			
+	<ElementException>
+		<Element>Subtotal</Element>
+		<Aggregate>Estimate</Aggregate>
+	</ElementException>			
+	<ElementException>
+		<Element>Subtotal</Element>
+		<Aggregate>SalesReceipt</Aggregate>
+	</ElementException>			
+
+<!--====================-->
+<!--	EmployeeAddress aggregate	-->
+<!--====================-->
+	<AggregateException>
+		<Aggregate>EmployeeAddress</Aggregate>
+		<Product>QBD</Product>
+	</AggregateException>
+	<AggregateException>
+		<Aggregate>EmployeeAddress</Aggregate>
+		<Product>QBC</Product>
+	</AggregateException>
+				
+<!--====================-->
+<!--	Addr2 element	-->
+<!--====================-->
+<!--	QBD Addr2 text has version info that doesn't apply to QBC, so QBC	-->
+<!--	doesn't have a corresponding exception here as it normally would.	-->
+	<ElementException>
+		<Element>Addr2</Element>
+		<Product>QBD</Product>
+	</ElementException>
+	
+<!--====================-->
+<!--	Employee "object"	-->
+<!--====================-->
+<!--	QBD Employee text has version info that doesn't apply to QBC, so QBC	-->
+<!--	doesn't have a corresponding exception here as it normally would.	-->
+	<AggregateException>
+		<Aggregate>Employee</Aggregate>
+		<Product>QBD</Product>
+	</AggregateException>
+
+<!--====================-->
+<!--	TotalAmount element	-->
+<!--====================-->
+	<ElementException>
+		<Element>TotalAmount</Element>
+		<Aggregate>CreditMemo</Aggregate>
+	</ElementException>
+	<ElementException>
+		<Element>TotalAmount</Element>
+		<Aggregate>ReceivePayment</Aggregate>
+	</ElementException>
+	<ElementException>
+		<Element>TotalAmount</Element>
+		<Aggregate>Estimate</Aggregate>
+	</ElementException>
+	<ElementException>
+		<Element>TotalAmount</Element>
+		<Aggregate>PurchaseOrder</Aggregate>
+	</ElementException>
+	<ElementException>
+		<Element>TotalAmount</Element>
+		<Aggregate>SalesReceipt</Aggregate>
+	</ElementException>
+
+<!--====================-->
+<!--	Notes element	-->
+<!--====================-->
+	<ElementException>
+		<Element>Notes</Element>
+		<Aggregate>Customer</Aggregate>
+	</ElementException>
+	<ElementException>
+		<Element>Notes</Element>
+		<Aggregate>Vendor</Aggregate>
+	</ElementException>
+	
+<!-- =================================== -->
+<!--	Exceptions special to Canada	 -->
+<!-- =================================== -->
+
+<!--	TxnType element	-->
+	<ElementException>
+		<Element>TxnType</Element>
+		<Product>QBC</Product>
+	</ElementException>	
+
+<!--	ListDelType element	-->
+	<ElementException>
+		<Element>ListDelType</Element>
+		<Product>QBC</Product>
+	</ElementException>	
+
+<!--	TxnDelType element	-->
+	<ElementException>
+		<Element>TxnDelType</Element>
+		<Product>QBC</Product>
+	</ElementException>
+	
+<!--	TxnVoidType element	-->
+	<ElementException>
+		<Element>TxnVoidType</Element>
+		<Product>QBC</Product>
+	</ElementException>
+		
+<!--	Country element	within Currency messages -->
+	<ElementException>
+		<Element>Country</Element>
+		<Aggregate>Currency</Aggregate>
+		<Product>QBC</Product>
+	</ElementException>		
+
+
+</DocExceptions>
+
+

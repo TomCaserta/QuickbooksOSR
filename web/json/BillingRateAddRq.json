@@ -1,0 +1,446 @@
+{
+    "xmlName" : "BillingRateAddRq",
+    "Width" : 0,
+    "TopLeftX" : 0,
+    "supports" : {
+        "US" : true,
+        "OE" : false,
+        "CA" : true,
+        "UK" : true,
+        "AU" : true
+    },
+    "TopLeftY" : 0,
+    "required" : false,
+    "fcType" : "nothing",
+    "minVerUS" : 6,
+    "xmlType" : "Aggregate",
+    "MasterImage" : "None",
+    "elements" : [
+        {
+            "xmlName" : "BillingRateAdd",
+            "Width" : 0,
+            "TopLeftX" : 0,
+            "supports" : {
+                "US" : true,
+                "OE" : true,
+                "CA" : true,
+                "UK" : true,
+                "AU" : true
+            },
+            "TopLeftY" : 0,
+            "required" : true,
+            "fcType" : "skip",
+            "xmlType" : "Aggregate",
+            "count" : 1,
+            "MasterImage" : "None",
+            "elements" : [
+                {
+                    "fcTypeHtml" : "IQBStringType.html",
+                    "xmlName" : "Name",
+                    "maxCA" : 31,
+                    "Width" : 200,
+                    "TopLeftX" : 136,
+                    "xmlTypeHtml" : "STRTYPE.html",
+                    "supports" : {
+                        "US" : true,
+                        "OE" : true,
+                        "CA" : true,
+                        "UK" : true,
+                        "AU" : true
+                    },
+                    "TopLeftY" : 52,
+                    "required" : true,
+                    "fcType" : "IQBStringType",
+                    "xmlType" : "STRTYPE",
+                    "count" : 1,
+                    "MasterImage" : "billingrate_fixed.jpg",
+                    "maxUK" : 31,
+                    "maxAU" : 31,
+                    "fcNameHtml" : "Name.html",
+                    "maxDT" : 31,
+                    "Height" : 17,
+                    "xmlNameHtml" : "Name.html",
+                    "fcName" : "Name"
+                },
+                {
+                    "fcTypeHtml" : "QBFC-IORBillingRate.html",
+                    "xmlName" : "OR",
+                    "Width" : 0,
+                    "TopLeftX" : 0,
+                    "supports" : {
+                        "US" : true,
+                        "OE" : true,
+                        "CA" : true,
+                        "UK" : true,
+                        "AU" : true
+                    },
+                    "TopLeftY" : 0,
+                    "required" : true,
+                    "fcType" : "IORBillingRate",
+                    "xmlType" : "OR",
+                    "count" : 1,
+                    "MasterImage" : "None",
+                    "elements" : [
+                        {
+                            "fcTypeHtml" : "IQBPriceType.html",
+                            "xmlName" : "FixedBillingRate",
+                            "Width" : 87,
+                            "TopLeftX" : 89,
+                            "xmlTypeHtml" : "PRICETYPE.html",
+                            "supports" : {
+                                "US" : true,
+                                "OE" : true,
+                                "CA" : true,
+                                "UK" : true,
+                                "AU" : true
+                            },
+                            "TopLeftY" : 156,
+                            "required" : false,
+                            "fcType" : "IQBPriceType",
+                            "xmlType" : "PRICETYPE",
+                            "count" : "0 - 1",
+                            "MasterImage" : "billingrate_fixed.jpg",
+                            "fcNameHtml" : "FixedBillingRate.html",
+                            "Height" : 17,
+                            "xmlNameHtml" : "FixedBillingRate.html",
+                            "fcName" : "FixedBillingRate"
+                        },
+                        {
+                            "fcTypeHtml" : "QBFC-IBillingRatePerItemList.html",
+                            "xmlName" : "BillingRatePerItem",
+                            "Width" : 0,
+                            "TopLeftX" : 0,
+                            "supports" : {
+                                "US" : true,
+                                "OE" : true,
+                                "CA" : true,
+                                "UK" : true,
+                                "AU" : true
+                            },
+                            "TopLeftY" : 0,
+                            "required" : false,
+                            "fcType" : "IBillingRatePerItemList",
+                            "xmlType" : "Aggregate",
+                            "count" : "0 - n",
+                            "MasterImage" : "None",
+                            "elements" : [
+                                {
+                                    "xmlName" : "ItemRef",
+                                    "Width" : 0,
+                                    "TopLeftX" : 0,
+                                    "supports" : {
+                                        "US" : true,
+                                        "OE" : true,
+                                        "CA" : true,
+                                        "UK" : true,
+                                        "AU" : true
+                                    },
+                                    "TopLeftY" : 0,
+                                    "required" : true,
+                                    "fcType" : "IQBBaseRef",
+                                    "xmlType" : "Aggregate",
+                                    "count" : 1,
+                                    "MasterImage" : "None",
+                                    "elements" : [
+                                        {
+                                            "fcTypeHtml" : "IQBIDType.html",
+                                            "xmlName" : "ListID",
+                                            "Width" : 0,
+                                            "TopLeftX" : 0,
+                                            "xmlTypeHtml" : "IDTYPE.html",
+                                            "supports" : {
+                                                "US" : true,
+                                                "OE" : true,
+                                                "CA" : true,
+                                                "UK" : true,
+                                                "AU" : true
+                                            },
+                                            "TopLeftY" : 0,
+                                            "required" : false,
+                                            "fcType" : "IQBIDType",
+                                            "xmlType" : "IDTYPE",
+                                            "count" : "0 - 1",
+                                            "MasterImage" : "None",
+                                            "fcNameHtml" : "ListID.html",
+                                            "Height" : 0,
+                                            "xmlNameHtml" : "ListID.html",
+                                            "fcName" : "ListID"
+                                        },
+                                        {
+                                            "fcTypeHtml" : "IQBStringType.html",
+                                            "xmlName" : "FullName",
+                                            "Width" : 258,
+                                            "TopLeftX" : 75,
+                                            "xmlTypeHtml" : "STRTYPE.html",
+                                            "supports" : {
+                                                "US" : true,
+                                                "OE" : true,
+                                                "CA" : true,
+                                                "UK" : true,
+                                                "AU" : true
+                                            },
+                                            "TopLeftY" : 267,
+                                            "required" : false,
+                                            "fcType" : "IQBStringType",
+                                            "xmlType" : "STRTYPE",
+                                            "count" : "0 - 1",
+                                            "MasterImage" : "billingrate_custom.jpg",
+                                            "fcNameHtml" : "FullName.html",
+                                            "Height" : 17,
+                                            "xmlNameHtml" : "FullName.html",
+                                            "fcName" : "FullName"
+                                        }
+                                    ],
+                                    "fcNameHtml" : "Item.html",
+                                    "Height" : 0,
+                                    "xmlNameHtml" : "Item.html",
+                                    "fcName" : "ItemRef"
+                                },
+                                {
+                                    "fcTypeHtml" : "QBFC-IORBillingRateItem.html",
+                                    "xmlName" : "OR",
+                                    "Width" : 0,
+                                    "TopLeftX" : 0,
+                                    "supports" : {
+                                        "US" : true,
+                                        "OE" : true,
+                                        "CA" : true,
+                                        "UK" : true,
+                                        "AU" : true
+                                    },
+                                    "TopLeftY" : 0,
+                                    "required" : true,
+                                    "fcType" : "IORBillingRateItem",
+                                    "xmlType" : "OR",
+                                    "count" : 1,
+                                    "MasterImage" : "None",
+                                    "elements" : [
+                                        {
+                                            "xmlName" : "nothing",
+                                            "Width" : 0,
+                                            "TopLeftX" : 0,
+                                            "supports" : {
+                                                "US" : true,
+                                                "OE" : true,
+                                                "CA" : true,
+                                                "UK" : true,
+                                                "AU" : true
+                                            },
+                                            "TopLeftY" : 0,
+                                            "required" : false,
+                                            "fcType" : "IORCustomRate",
+                                            "xmlType" : "skip",
+                                            "count" : "0 - 1",
+                                            "MasterImage" : "None",
+                                            "elements" : [
+                                                {
+                                                    "fcTypeHtml" : "QBFC-IORORCustomRate.html",
+                                                    "xmlName" : "OR",
+                                                    "Width" : 0,
+                                                    "TopLeftX" : 0,
+                                                    "supports" : {
+                                                        "US" : true,
+                                                        "UK" : true,
+                                                        "CA" : true,
+                                                        "AU" : true,
+                                                        "OE" : true
+                                                    },
+                                                    "TopLeftY" : 0,
+                                                    "required" : true,
+                                                    "fcType" : "IORORCustomRate",
+                                                    "xmlType" : "OR",
+                                                    "count" : 1,
+                                                    "MasterImage" : "None",
+                                                    "elements" : [
+                                                        {
+                                                            "fcTypeHtml" : "IQBPriceType.html",
+                                                            "xmlName" : "CustomRate",
+                                                            "Width" : 120,
+                                                            "TopLeftX" : 452,
+                                                            "xmlTypeHtml" : "PRICETYPE.html",
+                                                            "supports" : {
+                                                                "US" : true,
+                                                                "UK" : true,
+                                                                "CA" : true,
+                                                                "AU" : true,
+                                                                "OE" : true
+                                                            },
+                                                            "TopLeftY" : 267,
+                                                            "required" : false,
+                                                            "fcType" : "IQBPriceType",
+                                                            "xmlType" : "PRICETYPE",
+                                                            "count" : "0 - 1",
+                                                            "MasterImage" : "billingrate_custom.jpg",
+                                                            "fcNameHtml" : "CustomRate.html",
+                                                            "Height" : 17,
+                                                            "xmlNameHtml" : "CustomRate.html",
+                                                            "fcName" : "CustomRate"
+                                                        },
+                                                        {
+                                                            "fcTypeHtml" : "IQBPercentType.html",
+                                                            "xmlName" : "CustomRatePercent",
+                                                            "Width" : 120,
+                                                            "TopLeftX" : 452,
+                                                            "xmlTypeHtml" : "PERCENTTYPE.html",
+                                                            "supports" : {
+                                                                "US" : true,
+                                                                "UK" : true,
+                                                                "CA" : true,
+                                                                "AU" : true,
+                                                                "OE" : true
+                                                            },
+                                                            "TopLeftY" : 301,
+                                                            "required" : false,
+                                                            "fcType" : "IQBPercentType",
+                                                            "xmlType" : "PERCENTTYPE",
+                                                            "count" : "0 - 1",
+                                                            "MasterImage" : "billingrate_custom.jpg",
+                                                            "fcNameHtml" : "CustomRatePercent.html",
+                                                            "Height" : 17,
+                                                            "xmlNameHtml" : "CustomRatePercent.html",
+                                                            "fcName" : "CustomRatePercent"
+                                                        }
+                                                    ],
+                                                    "Height" : 0,
+                                                    "fcName" : "ORORCustomRate"
+                                                }
+                                            ],
+                                            "fcNameHtml" : "ORCustomRate.html",
+                                            "Height" : 0,
+                                            "fcName" : "ORCustomRate"
+                                        },
+                                        {
+                                            "xmlName" : "nothing",
+                                            "Width" : 0,
+                                            "TopLeftX" : 0,
+                                            "supports" : {
+                                                "US" : true,
+                                                "OE" : true,
+                                                "CA" : true,
+                                                "UK" : true,
+                                                "AU" : true
+                                            },
+                                            "TopLeftY" : 0,
+                                            "required" : false,
+                                            "fcType" : "IBillingRateAdjustment",
+                                            "xmlType" : "skip",
+                                            "count" : "0 - 1",
+                                            "MasterImage" : "None",
+                                            "elements" : [
+                                                {
+                                                    "fcTypeHtml" : "IQBPercentType.html",
+                                                    "xmlName" : "AdjustPercentage",
+                                                    "Width" : 0,
+                                                    "TopLeftX" : 0,
+                                                    "xmlTypeHtml" : "PERCENTTYPE.html",
+                                                    "supports" : {
+                                                        "US" : true,
+                                                        "OE" : true,
+                                                        "CA" : true,
+                                                        "UK" : true,
+                                                        "AU" : true
+                                                    },
+                                                    "TopLeftY" : 0,
+                                                    "required" : true,
+                                                    "fcType" : "IQBPercentType",
+                                                    "xmlType" : "PERCENTTYPE",
+                                                    "count" : 1,
+                                                    "MasterImage" : "None",
+                                                    "fcNameHtml" : "AdjustPercentage.html",
+                                                    "Height" : 0,
+                                                    "xmlNameHtml" : "AdjustPercentage.html",
+                                                    "fcName" : "AdjustPercentage"
+                                                },
+                                                {
+                                                    "fcTypeHtml" : "QBFC-IQBENAdjustBillingRateRelativeToType.html",
+                                                    "xmlName" : "AdjustBillingRateRelativeTo",
+                                                    "Width" : 0,
+                                                    "TopLeftX" : 0,
+                                                    "xmlTypeHtml" : "ENUMTYPE.html",
+                                                    "supports" : {
+                                                        "US" : true,
+                                                        "OE" : true,
+                                                        "CA" : true,
+                                                        "UK" : true,
+                                                        "AU" : true
+                                                    },
+                                                    "TopLeftY" : 0,
+                                                    "required" : true,
+                                                    "fcType" : "IQBENAdjustBillingRateRelativeToType",
+                                                    "xmlType" : "ENUMTYPE",
+                                                    "xmlEnumValues" : [
+                                                        "StandardRate",
+                                                        "CurrentCustomRate"
+                                                    ],
+                                                    "count" : 1,
+                                                    "MasterImage" : "None",
+                                                    "fcNameHtml" : "QBFC-AdjustBillingRateRelativeTo.html",
+                                                    "fcEnumValues" : [
+                                                        "abrrtStandardRate",
+                                                        "abrrtCurrentCustomRate"
+                                                    ],
+                                                    "Height" : 0,
+                                                    "xmlNameHtml" : "AdjustBillingRateRelativeTo.html",
+                                                    "fcName" : "AdjustBillingRateRelativeTo"
+                                                }
+                                            ],
+                                            "fcNameHtml" : "BillingRateAdjustment.html",
+                                            "Height" : 0,
+                                            "fcName" : "BillingRateAdjustment"
+                                        }
+                                    ],
+                                    "Height" : 0,
+                                    "fcName" : "ORBillingRateItem"
+                                }
+                            ],
+                            "fcNameHtml" : "QBFC-BillingRatePerItemList.html",
+                            "Height" : 0,
+                            "xmlNameHtml" : "BillingRatePerItem.html",
+                            "fcListOf" : {
+                                "fcType" : "IBillingRatePerItem"
+                            },
+                            "fcName" : "BillingRatePerItemList"
+                        }
+                    ],
+                    "Height" : 0,
+                    "fcName" : "ORBillingRate"
+                }
+            ],
+            "Height" : 0,
+            "xmlNameHtml" : "BillingRate.html",
+            "fcName" : "nothing"
+        },
+        {
+            "fcTypeHtml" : "IBSTRList.html",
+            "xmlName" : "IncludeRetElement",
+            "maxCA" : 50,
+            "Width" : 0,
+            "TopLeftX" : 0,
+            "xmlTypeHtml" : "STRTYPE.html",
+            "supports" : {
+                "US" : true,
+                "OE" : true,
+                "CA" : true,
+                "UK" : true,
+                "AU" : true
+            },
+            "TopLeftY" : 0,
+            "required" : false,
+            "fcType" : "IBSTRList",
+            "xmlType" : "STRTYPE",
+            "count" : "0 - n",
+            "MasterImage" : "None",
+            "maxUK" : 50,
+            "maxAU" : 50,
+            "fcNameHtml" : "QBFC-IncludeRetElementList.html",
+            "maxDT" : 50,
+            "Height" : 0,
+            "xmlNameHtml" : "IncludeRetElement.html",
+            "fcName" : "IncludeRetElementList"
+        }
+    ],
+    "fcNameHtml" : "BillingRateAdd.html",
+    "Height" : 0,
+    "xmlNameHtml" : "BillingRateAdd.html",
+    "fcName" : "IBillingRateAdd"
+}

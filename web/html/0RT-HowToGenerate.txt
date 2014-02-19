@@ -1,0 +1,111 @@
+=================================================================
+
+How to generate the Online Reference Manual
+
+Jennifer Wortman
+August, 2002
+
+This file is for internal use only--Intuit confidential.
+
+=================================================================
+
+CREATING THE ONLINE REFERENCE MANUAL FOR QBXML:
+
+The tool used to create the QBXML Online Reference Manual is 
+docgen, which can be found in CVS under 
+platform/java/com/intuit/util/docgen.  This can create
+either the QBD or QBO version of the tool.  Its usage is
+
+java com/intuit/util/docgen/docgen -docs <output_directory> 
+-ex <exceptions_file> <product_flag> <input_xml_files>
+
+For example, I run it as
+
+java -DSBNHome=/v/inclink.com/jwortman/ com/intuit/util/docgen/docgen 
+-docs /v/inclink.com/jwortman/www/output/doc -ex ./ORTexceptions.xml 
+-qbd /u/jwortman/qbn/platform/xml/source/qbxml20.xml+/u/jwortman/qbn/platform/xml/source/qbxmlext20.xml
+
+to create QBD documentation, and
+
+java -DSBNHome=/v/inclink.com/jwortman/ com/intuit/util/docgen/docgen 
+-docs /v/inclink.com/jwortman/www/output/doc -ex ./ORTexceptions.xml 
+-qbo /u/jwortman/qbn/platform/xml/source/qbxml20.xml+/u/jwortman/qbn/platform/xml/source/qbxmlext20.xml 
+
+to create QBO documentation.
+
+The exceptions file is optional, but in all practical cases 
+ORTexceptions.xml should be used.  This file is checked into CVS 
+in the same directory.
+
+It is important that a few files are in the output directory when
+docgen is run.  These are requests-QBD.html.xp and requests-QBO.html.xp.
+
+In addition, the files index.html, index-QBD.html, index-QBO.html, and
+styleguide.css must be present in the output directory to view the
+manual.  These files and the xp files are stored in Perforce under the
+same directory as the rest of the tool.
+
+==================================================================
+
+CREATING THE OBJECT REFERENCE MANUAL FOR QBFC:
+
+The tool used to create the QBFC Version of the Object Reference 
+Manual is codegen, which can be found in CVS under
+platform/java/com/intuit/util/codegen.  It is important to note 
+that codegen has other uses besides creating the QBFC Object Help, 
+and needs to be run as described below in order to create the doc.  
+It is also important that dtdgen (qbn/platform/java/com/intuit/util/dtdgen)
+is run before codegen as it generates some files which are needed 
+for codegen to function properly.
+
+The usage of this tool for the purpose of creating doc is
+
+java com/intuit/util/codegen/codegen -o <output_directory> -ex <exceptions_file> 
+-ort <input_file_from_dtdgen>
+
+For example, I run it as
+
+java -DSBNHome=/v/inclink.com/jwortman/ com/intuit/util/codegen/codegen 
+-o /v/inclink.com/jwortman/www/output/doc -ex ../docgen/ORTexceptions.xml 
+-ort /v/inclink.com/jwortman/www/output/java/qbXMLCOM-j.xml
+
+Again, the exceptions file is optional but really should always be used.
+
+Before this tool is run, the file requests-QBFC-QBD.html.xp must be
+present in the output directory.
+
+In order to view the manual, index.html, index-QBFC-QBD.html, and
+styleguide.css must be in the output directory.  These files are
+all stored in Perforce.
+
+===================================================================
+
+RESULTS:
+
+The latest versions of the generated tools can be found in Perforce 
+under //IDN/QBSDK/Gecko/ORT.  All versions of the tool are stored 
+in this directory as they share many files.
+
+It is best to make sure that all of the latest files from Perforce
+are in your outout directory BEFORE running docgen or codegen to
+update the tool.  Having the latest version of the Online Reference
+Manual in the output directory will prevent hand-written 
+description files from being replaced by stub files.
+
+===================================================================
+
+RELEASING THE MANUAL:
+
+When the Online Reference Manual is being released for a new version
+of the SDK, the latest versions of all files should be copied from
+//IDN/QBSDK/Gecko/ORT.  However, the following files in this 
+directory should be excluded from the release:
+requests-QBD.html.xp
+requests-QBO.html.xp
+requests-QBFC-QBD.html.xp
+0RT-HowToGenerate.txt
+0RT-ReadMe.doc
+ORTexceptions.xml
+
+
+

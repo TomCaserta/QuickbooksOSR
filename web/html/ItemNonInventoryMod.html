@@ -1,0 +1,24 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+  <link rel="stylesheet" href="styleguide.css" type="text/css" />
+  <title>ItemNonInventoryMod.html</title>
+</head>
+<body>
+<b><i>ItemNonInventoryMod</i></b><br />
+Modifies a non inventory item.  About SalesOrPurchaseMod versus SalesAndPurchaseMod in an ItemNonInventoryMod request:<br /><br />
+You cannot change the reimbursable status of a non-inventory item through the SDK. For example, if a non-inventory item is marked as non-reimbursable in QuickBooks, you cannot send a modify request that includes a SalesAndPurchaseMod aggregate. Similarly, if you send an ItemNonInventoryAdd request that includes a SalesOrPurchase aggregate, you cannot later modify that item using a SalesAndPurchaseMod aggregate.<br /><br />
+Click on ItemNonInventoryMod or ItemNonInventoryRet for more information about non-inventory items in QuickBooks.
+<br /> 
+<br />
+Starting with qbXML spec 7.0, you can modify the various account references using the appropriate account reference aggregate and the matching Apply Account RefToExistingTxns boolean.  You need to use the boolean when you change an account ref because the QuickBooks UI displays a prompt asking whether the change should apply to existing transactions or not.  Specifying True for the boolean basically dismisses this with a "Yes" answer, allowing your changes to be made and changes any existing transactions that use the item with that AccountRef.  Specifying "False" means that the mod will not take affect if there are existing transactions.<br />
+<br />
+ 
+ Setting this to "True" should be used with caution and normally only after some user has indicated that they want those changes made to all those existing transactions!<br />
+<br  />
+ 
+ If any affected transactions are protected by a closing date and password, the AccountRef changes will not be made and so the Mod request will return an error without making the requested Mod. 
+</body>
+</html>

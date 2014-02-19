@@ -1,0 +1,24 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<link rel="stylesheet" href="styleguide.css" type="text/css" />
+<title>DeliveryPolicy.html.xp</title>
+</head>
+<body>
+<b><i>DeliveryPolicy</i></b><br />
+  Determines whether or not an application should be launched to receive events:
+<ul>
+  <li>DeliverAlways--QuickBooks will always deliver events to the application, 
+    starting it through COM if necessary. The application's COM pointer is released 
+    by QuickBooks when the company file closes.</li>
+  <li> DeliverOnlyIfRunning--QuickBooks will deliver events to an application 
+    only when it is already running. The application's COM pointer is released 
+    by QuickBooks when the company file closes.<br />
+  </li>
+</ul>
+$$include.ENUM.DeliveryPolicy$$
+
+</body>
+</html>
