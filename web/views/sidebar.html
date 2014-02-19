@@ -1,23 +1,23 @@
 <nav class="sidebar">
-  <form class="well well-sm">
-     <div class="formgroup">
-        <label for="sdkCommandReq">Requests</label>
+  <form>    
+    <fieldset>
+      <div class="formgroup">
+        <label for="sdkCommandReq">Messages</label>
         
-        <select id="sdkCommandReq" class="form-control">
-           <option ng-repeat="request in sidebar.requests">{{request}}</option>
+        <select ng-model="sidebar.activeMessage" id="sdkCommandReq" class="form-control">
+           <option ng-repeat="request in sidebar.messages">{{request}}</option>
         </select>
       </div>
        <div class="formgroup">
-        <label for="sdkCommandResp">Responses</label>
+        <label for="sdkCommandResp">Subscriptions</label>
         
-        <select id="sdkCommandResp]" class="form-control">
-           <option ng-repeat="request in sidebar.responses">{{request}}</option>
+        <select ng-model="sidebar.activeMessage" id="sdkCommandResp" class="form-control">
+           <option ng-repeat="subscription in sidebar.subscriptions">{{subscription}}</option>
         </select>
       </div>
-  </form>
-  <form class="well well-sm form-horizontal">
+     </fieldset>
     <fieldset>
-      <div class="formgroup">
+      <div class="formgroup row">
         <label class="col-sm-7" for="sdkVersion">Max SDK Version</label>
         
         <div class="col-sm-5">
@@ -27,27 +27,22 @@
         </div>
       </div>
     </fieldset>
-    <fieldset class="row">
-      <div class="formgroup col-sm-6">
-        <label class="col-sm-6" for="qbXML">qbXML</label>
-        <div class="col-sm-6">
-        <input type="radio" name="qbType[]" id="qbXML" ng-model="sidebar.qbXML" class="form-control" />
-        </div>
-      </div>
-      <div class="formgroup col-sm-6">
-        <label class="col-sm-6" for="qbFC">QBFC</label>
-        <div class="col-sm-6">
-        <input type="radio" name="qbType[]" id="qbFC" ng-model="sidebar.qbFC"  class="form-control" />
-        </div>
-      </div>
+    
+    <fieldset>
+        <label class="radio-inline">
+          <input ng-model="sidebar.qbXML" type="radio" name="qbType"> qbXML
+        </label>
+        <label class="radio-inline">
+          <input ng-model="sidebar.qbFC" type="radio" name="qbType"> qbFC
+        </label>
     </fieldset>
     <fieldset>
-      <div class="formgroup" ng-repeat="country in sidebar.countries">
-        <label class="col-sm-7" for="{{country.country}}Version">{{country.country}} Version</label>
-        <div class="col-sm-5">
-        <input id="{{country.country}}Version" class="form-control" ng-model="country.use"  type="checkbox" />
-        </div>
+      <div class="checkbox" ng-repeat="country in sidebar.countries">
+        <label>
+          <input ng-model="country.use" ng-value="country.isDefault" type="checkbox"> {{country.country}} 
+        </label>
       </div>
+      
     </fieldset>
     
     
