@@ -1,0 +1,26 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <link rel="stylesheet" href="styleguide.css" type="text/css" />
+  <title>DataEventSubscriptionQuery.html</title>
+</head>
+<body>
+<p>Queries for all data event subscriptions that (a) match the specified SubscriberID, and (b) were originally created
+using the same qbXML spec version as the one used to make the subscription query. That is, if you make a qbXML 4.0 subscription query
+you will only get subscriptions originally made with qbXML 4.0! To get subscriptions made with qbXML 5.0,
+your subscription query must itself use qbXML 5.0.</p>
+<p>The subscriberID you supply to this query is the one that was used to make the original data
+event subscription, and which should have been written down by the person who made the subscription. (There is no way to get
+the SubscriberID if you don't already know it.)</p>
+
+<p>For details about the event-notification feature, see the chapter called &quot;Event
+Notification&quot; in the <i>QB SDK Programmer's Guide</i>. </p>
+
+<p>This request must be invoked using the request processor method ProcessSubscription(), if you use qbXML.
+
+If you use QBFC, this request must be appended to an ISubscriptionMsgSetRequest object instantiated by the
+QBSessionManager method CreateSubscriptionMsgSetRequest() and invoked by the method DoSubscriptionRequests().</p>
+</body>
+</html>

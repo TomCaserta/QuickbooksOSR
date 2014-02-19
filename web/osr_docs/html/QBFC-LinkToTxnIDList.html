@@ -1,0 +1,17 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+  <link rel="stylesheet" href="styleguide.css" type="text/css" />
+  <title>QBFC-LinkToTxnIDList.html</title>
+</head>
+<body>
+<b><i>LinkToTxnIDList</i></b><br /><br />
+The LinkToTxnID aggregate allows to link an entire transaction. If you want to link individual lines in a transaction, use the LinkToTxn aggregate.
+<br />
+<br />
+You can use both LinkToTxnID and LinkToTxn aggregates in the same request, as long as these aggregates do NOT link to the same TxnID. If both aggregates are used and do link to the same TxnID, you receive an error 3000. <br />
+<br />Also, if you attempt to invoke LinkToTxnID with the same TxnID, more than once, you get an error 3177.  If the transaction specified by LinkToTxnID is already closed or fully received and the ItemReceiptAdd request does not contain any other lines, you get error 3180 for attempting to save an empty transaction.  You get a warning if you attempt to link to a transaction that's already closed.
+</body>
+</html>

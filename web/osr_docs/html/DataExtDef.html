@@ -1,0 +1,41 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<link rel="stylesheet" href="styleguide.css" type="text/css" />
+<title>DataExtDef.html</title>
+</head>
+<body>
+<b><i>DataExtDef</i></b><br />
+This request adds a data extension definition to the specified object type (e.g. Customer)
+so that extension data can be written to a particular object of that type 
+(e.g., <i>this</i> customer, John Smith. A data 
+extension definition must be created before data can be written to the data extension.<br />
+<br />
+Notice that a custom field data extension definition can be created either by using DataExtDefAdd
+as already described, or via the QuickBooks UI by the user specifying a custom field for
+an object. Only
+custom fields can be defined through the UI, however, not private data extensions.<br />
+<br />
+You create a custom field definition by setting the OwnerID to 0. You create a private 
+data definition by setting OwnerID to a GUID that only your application owns or shares
+with other applications. Custom fields are available and visible within the QuickBooks UI,
+whereas private data extensions are seen and used only by your own application or other
+applications that know the OwnerID GUID.<br />
+<br />
+Data can be written to custom fields either via the SDK DataExtAdd/Mod requests or via 
+the QuickBooks UI directly by the end user. Data can be written to private data
+extensions only via the SDK DataExtAdd/Mod requests. You should be careful not to
+use private data extensions in transaction line items because queries will not return
+that private data (use only custom fields on transaction line items).<br />
+<br />
+
+Notice that creating a custom field data extension definition for Customer and Item
+causes an automatic propagation of that definition to certain transaction objects.
+See "AssignToObject" for more details. A full description of this behavior and its 
+usefulness is provided in the QB SDK Programmer's Guide.<br />
+<br />
+DataExtDefAdd or Mod does not cause any events to be generated
+</body>
+</html>

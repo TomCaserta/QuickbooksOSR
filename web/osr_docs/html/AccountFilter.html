@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<link rel="stylesheet" href="styleguide.css" type="text/css" />
+<title>AccountFilter.html</title>
+</head>
+<body>
+<b><i>AccountFilter</i></b><br />
+Filters according to the account name or ListID. If the &quot;Use account numbers&quot; 
+preference is enabled in the QuickBooks company file, you can specify an account 
+number (instead of an account name) for FullName and get the account you're looking 
+for. <br />
+<br />
+But if numbers have been used as account <em>names</em>, confusion could arise. 
+For example, if you queried for an account named 2050, and 2050 happened to be 
+the account number of a totally different account, the query would not return 
+what you asked for (the account named 2050), but instead would return the account 
+with the account number 2050.<br />
+<br />
+This problem will not happen if
+  <ul> 
+    <li>the &quot;Use account numbers&quot; preference is turned off in the QuickBooks 
+      file, or</li>
+
+    <li>the account name exactly matches the account number. (In this case, query 
+      would return the correct account either way.)</li>
+</ul>
+
+To avoid this problem:
+<ul>
+
+    <li>Do not name an account using a number unless the number exactly matches 
+      the account&#146;s account number. </li>
+ 
+    <li>If an account name must contain a number that does not match its own account 
+      number, have the QuickBooks user change the account&#146;s name slightly, 
+      for example to 2050a. </li>
+  </ul>
+</body>
+</html>

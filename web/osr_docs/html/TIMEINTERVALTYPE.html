@@ -1,0 +1,77 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+  <link rel="stylesheet" href="styleguide.css" type="text/css" />
+  <title>TIMEINTERVALTYPE.html</title>
+</head>
+<body>
+<b><i>TIMEINTERVALTYPE</i></b><br />
+Time-interval values take the form PT<i>n</i>H<i>n</i>M<i>n</i>S:<br />
+<table width="100%" border="0">
+  <tr> 
+    <td width="7">&#149;</td>
+    <td>The characters P and T are always present.</td>
+  </tr>
+  <tr> 
+    <td>&#149;</td>
+    <td>The character H follows the number of hours. If the number of hours is 
+      0, a sent value does not have to include the H. (A returned value will always 
+      include it.)</td>
+  </tr>
+  <tr> 
+    <td>&#149;<br /></td>
+    <td>The character M follows the number of minutes. If the number of minutes 
+      is 0, a sent value does not have to include the M. (A returned value will 
+      always include it.)</td>
+  </tr>
+  <tr> 
+    <td>&#149;<br /></td>
+    <td>The character S follows the number of seconds. If the number of seconds 
+      is 0, a sent value does not have to include the S. (A returned value will 
+      always include it.)</td>
+  </tr>
+  <tr>
+    <td>&#149;<br /></td>
+    <td><i>n</i> is an integer that represents the number of hours, minutes, or 
+      seconds. </td>
+  </tr>
+</table>
+<br />
+For SDK v1.0 and v1.1, TIMEINTERVALTYPE does not support seconds, and the format 
+is PT<i>n</i>H<i>n</i>M. The following table shows examples of TIMEINTERVALTYPE 
+constructs that are valid with SDK v2.0:<br />
+<table width="70%" border="1" cellspacing="3" cellpadding="3">
+  <tr> 
+    <td><b>Valid returned or sent values:</b></td>
+    <td><b>Meaning:</b></td>
+  </tr>
+  <tr> 
+    <td>PT2H30M0S</td>
+    <td>2 hours, 30 minutes</td>
+  </tr>
+  <tr> 
+    <td>PT2H0M0S</td>
+    <td>2 hours</td>
+  </tr>
+  <tr> 
+    <td>PT0H0M5S</td>
+    <td>5 seconds</td>
+  </tr>
+  <tr> 
+    <td><b>Valid sent values:</b></td>
+    <td><b>  </b></td>
+  </tr>
+  <tr> 
+    <td>PT2H</td>
+    <td>2 hours</td>
+  </tr>
+  <tr> 
+    <td>PT30S</td>
+    <td>30 seconds</td>
+  </tr>
+</table>
+<p> </p>
+</body>
+</html>

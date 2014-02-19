@@ -1,0 +1,41 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+  <link rel="stylesheet" href="styleguide.css" type="text/css" />
+  <title>IGUIDList.html</title>
+</head>
+<body>
+<pre>
+<b><i>IGUIDList</i></b>
+  
+- addValue is a globally unique identifier that you generate using GUIDGEN.EXE, 
+a tool that comes with Microsoft Visual Studio. A GUIDTYPE value takes the 
+form {XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX}, where X is a hexadecimal digit. 
+For example: {6B063959-81B0-4622-85D6-F548C8CCB517}. Note that GUIDTYPE 
+values are not case-sensitive, meaning that if you enter a GUIDTYPE value 
+with lower-case letters, the value will be saved and returned with upper-case 
+letters. 
+ 
+' VB6 Methods and Properties
+Add ( addValue As String )
+Count As Long
+GetAt (index As Long ) As String
+Type As IObjectType
+ 
+// C++ Wrapper methods for error-handling and Property data
+long Count;
+HRESULT Add ( _bstr_t addValue );
+long GetCount ( );
+_bstr_t GetAt ( long index );
+IObjectTypePtr Type;
+IObjectTypePtr GetType ( );
+ 
+// IDL Definition
+HRESULT Add(BSTR addValue);
+HRESULT Count([out, retval] long *pVal);
+HRESULT GetAt(long index, [out, retval] BSTR* retVal);
+HRESULT Type([out, retval] IObjectType **pVal);
+</pre>
+</body></html>

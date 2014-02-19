@@ -1,0 +1,20 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<link rel="stylesheet" href="styleguide.css" type="text/css" />
+<title>ApplyIncomeAccountRefToExistingTxns.html</title>
+</head>
+<body>
+<b><i>ApplyIncomeAccountRefToExistingTxns</i></b><br />
+Used to support changing the AccountRef in the Mod request. When you do this, the QuickBooks UI
+normally displays a prompt asking whether the change should apply to existing transactions or not. Specifying False basically dismisses this with a "No" answer; specifying True dismisses it with a "Yes" answer and then changes the existing transactions that use the item with that
+AccountRef. <br />
+<br />
+Setting this to "True" should be used with caution and normally only after some user has indicated 
+that they want those changes made to all those existing transactions!<br />
+<br />
+If any affected transactions are protected by a closing date and password, the AccountRef changes will not be made and so the Mod request will return an error without making the requested Mod.
+</body>
+</html>

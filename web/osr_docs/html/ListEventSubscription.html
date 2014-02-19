@@ -1,0 +1,28 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+  <link rel="stylesheet" href="styleguide.css" type="text/css" />
+  <title>ListEventSubscription.html</title>
+</head>
+<body>
+<b><i>ListEventSubscription</i></b><br />
+A subscription to a QuickBooks list event. ListEventType and ListEventOperation 
+can be repeated to subscribe to different combinations of list event type and 
+operation. For example, to subscribe to Customer add and modify, Account add and 
+modify, and Account delete, you could use the following two qbXML ListEventSubscription 
+aggregates: 
+<p>&lt;ListEventSubscription&gt;<br />
+    &lt;ListEventType&gt;Customer&lt;/ListEventType&gt;<br />
+    &lt;ListEventType&gt;Account&lt;/ListEventType&gt;<br />
+    &lt;ListEventOperation&gt;Add&lt;/ListEventOperation&gt;<br />
+    &lt;ListEventOperation&gt;Modify&lt;/ListEventOperation&gt;<br />
+  &lt;/ListEventSubscription&gt;</p>
+<p>&lt;ListEventSubscription&gt;<br />
+    &lt;ListEventType&gt;Account&lt;/ListEventType&gt;<br />
+    &lt;ListEventOperation&gt;Delete&lt;/ListEventOperation&gt;<br />
+  &lt;/ListEventSubscription&gt;<br />
+</p>
+</body>
+</html>

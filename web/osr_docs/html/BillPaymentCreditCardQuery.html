@@ -1,0 +1,41 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+  <link rel="stylesheet" href="styleguide.css" type="text/css" />
+  <title>BillPaymentCreditCardQuery.html</title>
+</head>
+<body>
+<b><i>BillPaymentCreditCardQuery</i></b><br /><br />
+Provides functionality found in the Find/Advanced Find window to find bill payments that were paid by
+credit card. The Find/Advanced Find windows can be reached by clicking the Find
+button on the main QuickBooks menubar, by selecting Edit->Find, or simply by using the shortcut
+CTRL-F. Notice that you can use the metaData attribute inside the query tag if you want only a
+count of the bill payments that will be returned from the query.<br />
+<br />
+If you know the bill's transaction ID or reference number, you could use these, or search by transaction date,
+or search by the date where the bill was last modified.<br />
+<br />
+<b>Important:</b><br />
+If you made a bill payment by credit card, and ONLY applied a credit using SetCredit (no funds
+were applied other than the credit), then that payment will not be returned in this query because it is
+not considered a separate transaction and has no TxnID. To get that kind of payment, you must do a
+BillQuery on the original bill and specify IncludeLinkedTxns. Any applied credit will be linked directly
+to the bill.<br />
+<br />
+If you need additional filters, you can use the entity filter to search for bills from a specific vendor
+or vendor sub (using the ListIDWithChildren or FullNameWithChildren tags). You can also 
+search for bills entered against a particular account (the APAccountRef specified in the originating
+BillAdd request). You can specify all subaccounts by using the various *WithChildren tags. For example,
+to find all bills entered against Checking where you have multiple checking accounts, you would use
+the ListIDWithChildren or FullNameWithChildren tags inside your AccountFilter tags. Finally, you can
+filter on the RefNumber or RefNumber range. Notice that all of these 
+filters can be used together (ANDed) if desired.<br />
+<br />
+To prevent the return of too much data, you can use MaxReturned to limit the total number of bills returned
+from the query. In addition, you can limit the type of data that is returned for each bill, using
+IncludeRetElement. Finally, you can specify whether each bill contains line items using the IncludeLineItems,
+which by default is False (no line item data).
+</body>
+</html>

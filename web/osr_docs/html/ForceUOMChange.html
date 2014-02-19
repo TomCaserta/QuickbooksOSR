@@ -1,0 +1,19 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<link rel="stylesheet" href="styleguide.css" type="text/css" />
+<title>ForceUOMChange.html</title>
+</head>
+<body>
+<b><i>ForceUOMChange</i></b><br />
+By Default ForceUOMChange is false.  However, in item Mod requests, you need to set the ForceUOMChange field to True if you are changing the UOM set and the base unit of the new set does not match the base unit of the UOM set currently assigned to the item. This does the same 
+thing as the user accepting the warning prompt in the UI.  If you don't set ForceUOMChange to 
+True, you'll get an error when you invoke the Item* Mod request.<br />
+<br />Y
+
+You should be aware that if you change the base unit for an item, you should also change the item's quantities on hand and cost to reflect the new unit; otherwise the values will be 
+inaccurate.  An alternative to handle such UOM changes to an item is to create a new item with the desired UOM set and inactivate the old item. 
+</body>
+</html>

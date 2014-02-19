@@ -1,0 +1,16 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+  <link rel="stylesheet" href="styleguide.css" type="text/css" />
+  <title>GeneralDetailReportType.html.xp</title>
+</head>
+<body>
+<b><i>GeneralDetailReportType</i></b><br />
+The type of general detail report being queried. The report types listed below map almost directly to named reports in QuickBooks. 
+
+$$include.ENUM.GeneralDetailReportType$$
+
+</body>
+</html>

@@ -1,49 +1,32 @@
 import 'dart:html';
 import 'dart:convert';
+import 'package:intl/intl.dart';
+import 'package:logging/logging.dart';
 import 'package:angular/angular.dart';
 
+
+import 'dart/utils/fse_tree.dart';
+
+Logger log = new Logger("QuickbooksOSR");
 void main() {
-  print("Requesting");
+  log.onRecord.listen((LogRecord r) { 
+    print("[${new DateFormat("hh:mm:ss").format(r.time)}][${r.level}][${r.loggerName != "" ? r.loggerName : "ROOT"}]: ${r.message}");
+  });
+  log.info("Retreiving directory contents...");
   HttpRequest http = new HttpRequest();
   http.open("GET", "fileList.json");
   http.send();
   http.onReadyStateChange.listen((ProgressEvent ev) { 
     if (http.readyState == 4) {
-      print(http.responseText);
+      FSETree rootDir = new FSETree.fromJson(http.responseText);
+      log.info("Got root directory contents");
+      
     }
-    else print(http.readyState);
   });
 }
 
-
-
-class FSETree {
-  String treeName = "";
-  FSETree parent;
-  List<String> files = new List<String>();
-  Map<String, FSETree> directory = new Map<String, FSETree>();
-  FSETree (this.treeName, [this.parent]) {
+class QuickbooksOsrModule extends Module {
+  QuickbooksOsrModule () {
     
-  }
-  
-  FSETree.fromJson (String json) {
-    
-  }
-  
-  FSETree getChild (String childName) {
-    if (directory.containsKey(childName)) {
-      return directory[childName];
-    }
-    else {
-      FSETree tempTree = new FSETree(childName, this);
-      directory[childName]  = tempTree;
-      return tempTree;
-    }
-  }
-  String toString () {
-    return toJson().toString();
-  }
-  Map toJson() { 
-    return { "treeName": treeName, "files": files, "directories": directory }; 
   }
 }

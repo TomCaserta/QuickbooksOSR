@@ -1,0 +1,30 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+  <link rel="stylesheet" href="styleguide.css" type="text/css" />
+  <title>QBFC-IncludeRetElementList.html</title>
+</head>
+<body>
+<b><i>IncludeRetElementList</i></b><br /><br />
+You use this if you want to limit the data that will be returned in the response. 
+In this list, you specify the name of each top-level element or aggregate that 
+you want to be returned in the 
+response to the request. You cannot specify fields within an aggregate, 
+for example, you cannot
+specify a City within an Address: you must specify Address and will get 
+the entire address.<br />
+<br />
+
+The names specified in the list are not parsed, so you must be especially careful 
+to supply valid names, properly cased. No error is returned in the status code if 
+you specify an invalid name.<br />
+
+<br />
+Notice that if you want to return custom data or private data extensions,
+you must specify the DataExtRet element 
+and you must supply the OwnerID set to either a value of 0 (custom data) 
+or the GUID for the private data.
+</body>
+</html>

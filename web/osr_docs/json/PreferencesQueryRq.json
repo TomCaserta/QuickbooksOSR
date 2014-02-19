@@ -1,0 +1,20 @@
+{"xmlName":"PreferencesQueryRq","xmlNameHtml":"PreferencesQuery.html",
+ "xmlType":"Aggregate",
+ "fcName":"IPreferencesQuery","fcNameHtml":"PreferencesQuery.html",
+ "fcType":"nothing",
+ "minVerUS":"1.1",
+ "supports":{"US":true,"CA":true,"UK":true,"AU":true,"OE":false},
+ "required":false,
+ "elements":[
+    {"xmlName":"IncludeRetElement","xmlNameHtml":"IncludeRetElement.html",
+     "xmlType":"STRTYPE","xmlTypeHtml":"STRTYPE.html",
+     "fcName":"IncludeRetElementList","fcNameHtml":"QBFC-IncludeRetElementList.html",
+     "fcType":"IBSTRList","fcTypeHtml":"IBSTRList.html",
+     "maxDT":"50",
+     "maxCA":"50",
+     "maxUK":"50",
+     "maxAU":"50",
+     "minVerUS":"4",
+     "supports":{"US":true,"CA":true,"UK":true,"AU":true,"OE":false},
+     "required":false,"count":"0 - n"}
+ ]}

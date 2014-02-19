@@ -1,0 +1,7 @@
+{"xmlName":"QBXMLEventsRq","xmlNameHtml":"QBXMLEvents.html",
+ "xmlType":"Aggregate",
+ "fcName":"IQBXMLEvents","fcNameHtml":"QBXMLEvents.html",
+ "fcType":"nothing",
+ "minVerUS":"3",
+ "supports":{"US":true,"CA":true,"UK":true,"AU":true,"OE":false},
+ "required":false}

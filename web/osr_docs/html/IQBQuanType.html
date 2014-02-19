@@ -1,0 +1,41 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+  <link rel="stylesheet" href="styleguide.css" type="text/css" />
+  <title>IQBQuanType.html</title>
+</head>
+<body><pre>
+<b><i>IQBQuanType</i></b>
+ 
+' VB6 methods
+SetValue(val As Double)
+GetValue() As Double
+SetAsString(val As String)
+GetAsString() As String
+IsSet ( ) As Boolean
+IsEmpty ( ) As Boolean
+Unset ( )
+SetEmpty ( )
+ 
+// C++ Wrapper methods for error-handling
+HRESULT SetValue ( double val );
+double GetValue ( );
+HRESULT SetAsString ( _bstr_t val );
+_bstr_t GetAsString ( );
+VARIANT_BOOL IsSet ( );
+VARIANT_BOOL IsEmpty ( );
+HRESULT Unset ( );
+HRESULT SetEmpty ( );
+ 
+// IDL Definition
+HRESULT SetValue(double val);
+HRESULT GetValue([out, retval] double *pVal);
+HRESULT SetAsString(BSTR val);
+HRESULT GetAsString([out, retval] BSTR *pVal);
+HRESULT IsSet([out, retval] VARIANT_BOOL* pVal);
+HRESULT IsEmpty([out, retval] VARIANT_BOOL* pVal);
+HRESULT Unset();
+HRESULT SetEmpty();
+</pre></body></html>

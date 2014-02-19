@@ -1,0 +1,30 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<link rel="stylesheet" href="styleguide.css" type="text/css" />
+<title>Entity.html</title>
+</head>
+<body>
+<b><i>Entity</i></b><br />
+  A QuickBooks "entity" is a customer, vendor, employee, or person on the 
+  QuickBooks &quot;other names&quot; list. <br />
+Special cases to note: <br />
+
+  <ul> 
+   
+    <li>In a <i>BillToPayQuery</i> message, EntityRef refers to the vendor name.</li>
+
+
+    <li>In <i>JournalCreditLine</i> and <i>JournalDebitLine</i> messages for A/R 
+      accounts, EntityRef must refer to a customer, or else the transaction will 
+      not be recorded. For A/P accounts the EntityRef must refer to a vendor, 
+      or else the transaction will not be recorded.</li>
+
+    <li>In a <em>TimeTracking</em> message, EntityRef cannot refer to a customer, 
+      only to an employee, vendor, or person on the &quot;other names&quot; list 
+      whose time is being tracked. </li>
+  </ul>
+</body>
+</html>

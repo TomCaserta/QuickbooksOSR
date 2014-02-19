@@ -1,0 +1,34 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+  <link rel="stylesheet" href="styleguide.css" type="text/css" />
+  <title>SalesTaxCodeAdd.html</title>
+</head>
+<body>
+<b><i>SalesTaxCodeAdd</i></b><br />
+  Adds a sales tax code. Each item on a sales form is assigned a sales-tax code that indicates whether 
+  the item is taxable or non-taxable, and why. Two general codes, which can be 
+  modified but not deleted, appear on the sales-tax code list by default:<br />
+
+  <ul> 
+    
+    <li>Non-taxable (Name = NON; Desc = Non-Taxable; IsTaxable = false)</li>
+
+    <li>Taxable (Name = TAX; Desc = Taxable; IsTaxable = true)</li>
+  </ul>
+
+  A sales-tax code can be deleted only if it is no longer associated with any 
+customer, item, or transaction. If the &quot;Do You Charge Sales Tax?&quot; preference 
+within QuickBooks is set to No, QuickBooks will assign the default non-taxable 
+sales-tax code to all sales.<br />
+<br /> 
+A <i>SalesTaxCodeRef</i> aggregate refers to a sales-tax code on the list. 
+  In a request, if a SalesTaxCodeRef aggregate includes both FullName and ListID, FullName will 
+  be ignored. In a <i>Customer</i> message, SalesTaxCodeRef refers to the sales-tax 
+  code that will be used for items related to this customer. In an <i>ItemInventory</i> 
+  message, SalesTaxCodeRef refers to the type of sales tax that will be charged 
+  for this item, if it is a taxable item and if sales tax is set up within QuickBooks.
+</body>
+</html>

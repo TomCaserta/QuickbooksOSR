@@ -1,0 +1,23 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <link rel="stylesheet" href="styleguide.css" type="text/css" />
+  <title>CurrencyAdd.html</title>
+</head>
+<body>
+<b><i>CurrencyAdd</i></b><br />
+ Creates a user defined currency with the specified name and currency code, both of which will show
+ up in the QuickBooks UI. <br />
+<br />
+Currencies created by users, whether via the UI or via SDK using this request, are distinguished from the built-in QB currencies
+in the Currency Ret object: they are identified as user defined. User defined currencies do not get their exchange rates
+updated automatically by QuickBooks via the Download Current Exchange Rates feature. You'll always need to manually update
+the exchange rates. However, other than this, these type of currencies function within QB in the same way as the
+built-in currencies.<br />
+<br />
+If you have not used a user defined currency in a transaction, you can delete it using ListDel. You cannot delete
+the built-in QB currencies.
+</body>
+</html>

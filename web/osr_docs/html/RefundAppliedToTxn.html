@@ -1,0 +1,18 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+  <link rel="stylesheet" href="styleguide.css" type="text/css" />
+  <title>RefundAppliedToTxn.html</title>
+</head>
+<body>
+<b><i>RefundAppliedToTxn</i></b><br /><br />
+This aggregate links a specific credit transaction to this credit card refund, thus applying its credit to the refund. You must specify at least one credit transaction of the supported types: credit memo, receive payment, and general journal entry. You can specify as many as you want, in any combination, but you must specify at least one. You can supply one or more of these aggregates and they may be full or partial refunds<br />
+<br />
+Notice that you do not specify the type (credit memo, receive payment, and general journal entry). The TxnID contained in this aggregate is unique across all three types.<br />
+<br />
+Notice also that the amount specified in this aggregate cannot exceed the amount of the credit transaction you are linking. If you supply an amount that exceeds, you'll get a runtime error.
+
+</body>
+</html>

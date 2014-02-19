@@ -1,0 +1,77 @@
+{
+    "xmlName" : "CompanyQueryRq",
+    "Width" : 0,
+    "TopLeftX" : 0,
+    "supports" : {
+        "US" : true,
+        "OE" : true,
+        "CA" : true,
+        "UK" : true,
+        "AU" : true
+    },
+    "TopLeftY" : 0,
+    "required" : false,
+    "fcType" : "nothing",
+    "xmlType" : "Aggregate",
+    "MasterImage" : "None",
+    "elements" : [
+        {
+            "fcTypeHtml" : "IBSTRList.html",
+            "xmlName" : "IncludeRetElement",
+            "maxCA" : 50,
+            "Width" : 0,
+            "TopLeftX" : 0,
+            "xmlTypeHtml" : "STRTYPE.html",
+            "supports" : {
+                "US" : true,
+                "OE" : false,
+                "CA" : true,
+                "UK" : true,
+                "AU" : true
+            },
+            "TopLeftY" : 0,
+            "required" : false,
+            "fcType" : "IBSTRList",
+            "minVerUS" : 4,
+            "xmlType" : "STRTYPE",
+            "count" : "0 - n",
+            "MasterImage" : "None",
+            "maxUK" : 50,
+            "maxAU" : 50,
+            "fcNameHtml" : "QBFC-IncludeRetElementList.html",
+            "maxDT" : 50,
+            "Height" : 0,
+            "xmlNameHtml" : "IncludeRetElement.html",
+            "fcName" : "IncludeRetElementList"
+        },
+        {
+            "fcTypeHtml" : "IGUIDList.html",
+            "xmlName" : "OwnerID",
+            "Width" : 0,
+            "TopLeftX" : 0,
+            "xmlTypeHtml" : "GUIDTYPE.html",
+            "supports" : {
+                "US" : true,
+                "OE" : true,
+                "CA" : true,
+                "UK" : true,
+                "AU" : true
+            },
+            "TopLeftY" : 0,
+            "required" : false,
+            "fcType" : "IGUIDList",
+            "minVerUS" : 2,
+            "xmlType" : "GUIDTYPE",
+            "count" : "0 - n",
+            "MasterImage" : "None",
+            "fcNameHtml" : "QBFC-OwnerIDList.html",
+            "Height" : 0,
+            "xmlNameHtml" : "OwnerID.html",
+            "fcName" : "OwnerIDList"
+        }
+    ],
+    "fcNameHtml" : "CompanyQuery.html",
+    "Height" : 0,
+    "xmlNameHtml" : "CompanyQuery.html",
+    "fcName" : "ICompanyQuery"
+}

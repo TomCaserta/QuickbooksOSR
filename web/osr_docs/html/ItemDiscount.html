@@ -1,0 +1,35 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+  <link rel="stylesheet" href="styleguide.css" type="text/css" />
+  <title>ItemDiscount.html</title>
+</head>
+<body>
+<b><i>ItemDiscount</i></b><br />
+  A discount item is a percentage or a fixed amount that will be subtracted from 
+  a total or subtotal. Items should be subtotaled (using an ItemSubtotal item) 
+  before a discount item is applied to them, because a discount only acts on the 
+  line that is directly above it.<br /><br />
+A discount item is different from a discount for early payment, which is represented 
+  as part of a StandardTerms object or DateDrivenTerms object. <b>Note:</b> When 
+  you specify an ItemDiscount item in any transaction (by using an ItemRef), do 
+  not specify a Quantity in the transaction. If you do, you will receive an error. <br />
+<br />
+<b>Be Sharp When Using Flat Discounts </b> <br />
+Flat rate discounts are treated VERY differently vs. percentage discounts. A percentage discount only applies to the line right above it, so all of the tax implications for discounts apply ONLY to that line (Note that the story gets more complicated here for group items, subtotal lines, etc). A flat rate discount applies to EVERY line that is recorded above the discount. Thus, the $10.00 off you see is applied equally to the $100.00 Nontaxable target and the $100.00 Taxable target. Thus, the sales tax for the 10.00 discount totals up to -$5.00. <br />
+<br />
+Therefore, for the desired behavior, the user must fill out the invoice like this: <br />
+
+Item $100.00 Non <br />
+Item $100.00 Tax <br />
+Discount $20.00 Tax  <br />
+<br />
+In this scenario, the $20.00 discount is properly distributed to be half taxed and half not taxed, so the taxable amount for the discount line is only -$10.00. <br />
+<br />
+
+The moral of the story: <i>Non-Taxable Discounts are VERY dangerous</i>. You should almost never use them unless discounts in your state are never applied to sales tax.
+
+</body>
+</html>

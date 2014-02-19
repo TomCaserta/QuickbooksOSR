@@ -1,0 +1,17 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<link rel="stylesheet" href="styleguide.css" type="text/css" />
+<title>PaymentMethod.html</title>
+</head>
+<body>
+<b><i>PaymentMethod</i></b><br />
+A customer's payment method, for example, cash, check, or Master Card. A PaymentMethodRef 
+aggregate refers to an item on the PaymentMethod list. In a request, if a PaymentMethodRef aggregate 
+includes both FullName and ListID, FullName will be ignored. <br />
+<br />
+In a SalesReceiptAdd, ReceivePaymentAdd, or ARRefundCreditCard request that contains credit card transaction data supplied from QBMS transaction responses, you must specify the payment method, and the payment method must be a credit card type.
+</body>
+</html>

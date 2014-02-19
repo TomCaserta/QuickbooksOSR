@@ -1,0 +1,32 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<link rel="stylesheet" href="styleguide.css" type="text/css" />
+<title>Customer.html</title>
+</head>
+<body>
+<b><i>Customer</i></b><br />
+  The customer list includes information about the QuickBooks user's customers 
+  and the individual jobs that are being performed for them. A CustomerRef aggregate 
+  refers to one of the customers (or customer jobs) on the list. In a request, 
+  if a CustomerRef aggregate includes both FullName and ListID, FullName will 
+  be ignored.
+  Special cases to note:<br />
+
+  <ul> 
+    <li>In <i>SalesReceipt</i> and <i>ReceivePayment</i> requests, CustomerRef 
+      refers to the customer or customer job to which the payment is credited.</li>
+
+    <li>In a <i>TimeTracking</i> request, CustomerRef refers to the customer or 
+      customer job to which this time could be billed. If IsBillable is set to 
+      true, CustomerRef is required in TimeTrackingAdd. </li>
+ 
+    <li>In an <i>ExpenseLineAdd</i> request, if AccountRef refers to an A/P account, 
+      CustomerRef must refer to a vendor (not to a customer). If AccountRef refers 
+      to any other type of account, the CustomerRef must refer to a customer. 
+    </li>
+  </ul>
+</body>
+</html>

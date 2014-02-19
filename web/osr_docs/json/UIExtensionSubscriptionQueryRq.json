@@ -1,0 +1,15 @@
+{"xmlName":"UIExtensionSubscriptionQueryRq","xmlNameHtml":"UIExtensionSubscriptionQuery.html",
+ "xmlType":"Aggregate",
+ "fcName":"IUIExtensionSubscriptionQuery","fcNameHtml":"UIExtensionSubscriptionQuery.html",
+ "fcType":"nothing",
+ "minVerUS":"3",
+ "supports":{"US":true,"CA":true,"UK":true,"AU":true,"OE":false},
+ "required":false,
+ "elements":[
+    {"xmlName":"SubscriberID","xmlNameHtml":"SubscriberID.html",
+     "xmlType":"GUIDTYPE","xmlTypeHtml":"GUIDTYPE.html",
+     "fcName":"SubscriberID","fcNameHtml":"SubscriberID.html",
+     "fcType":"IQBGUIDType","fcTypeHtml":"IQBGUIDType.html",
+     "supports":{"US":true,"CA":true,"UK":true,"AU":true,"OE":true},
+     "required":true,"count":"1"}
+ ]}

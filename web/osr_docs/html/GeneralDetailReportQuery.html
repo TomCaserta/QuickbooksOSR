@@ -1,0 +1,27 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+  <link rel="stylesheet" href="styleguide.css" type="text/css" />
+  <title>GeneralDetailReportQuery.html</title>
+</head>
+<body>
+<b><i>GeneralDetailReportQuery</i></b><br />
+You use this report query to get any of the supported QuickBooks detail reports, which you specify in the GeneralDetailReportType. You can optionally display the report within QB by setting DisplayReport to True.<br />
+<br />
+You can also use this detail report to get information not obtainable from various SDK queries. For example, suppose you wanted the cleared status from a BillPaymentCheck; the BillPaymentCheckQuery wouldn't have this info, but you could use this general detail report and specify the column ClearedStatus to find that information.<br />
+<br />
+Also, if you wanted to query the accounts receivable directly, you could do a General Detail Report Query with the report type set to  Open Invoices. <br />
+<br />
+You could also use this report if you needed to run a report on all invoice changes made in a specific day, and only include changes to invoices from a given past month, if the audit trail is on in QuickBooks.  You would  use a GeneralDetailReport query with the report type set to AuditTrail. <br />
+<br />
+Notice that if a line is paid, PaidStatus == "X".  If a line is not paid, no entry for PaidStatus is returned.<br />
+
+However, in the same report run within the QB GUI, the following behavior is observed:
+This differs from the UI, where if the line is paid, an entry of "Paid" is displayed and
+if the line is not paid, an entry of "Unpaid" is displayed.
+
+
+</body>
+</html>

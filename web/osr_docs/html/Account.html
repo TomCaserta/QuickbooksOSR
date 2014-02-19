@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<link rel="stylesheet" href="styleguide.css" type="text/css" />
+<title>Account.html</title>
+</head>
+<body>
+<b><i>Account</i></b><br />
+  The Account list is the company file&#146;s list of accounts. An AccountRef 
+  aggregate refers to one of these accounts. (If an AccountRef aggregate includes 
+  both FullName and ListID, FullName will be ignored.)<br />
+  <br />
+  Special cases to note:<br />
+
+<ul>
+    <li>In a <i>Check</i> message, AccountRef refers to the account from which 
+      the funds are being drawn for this check, for example, Checking or Savings.</li>
+
+    <li>In an <i>ExpenseLineAdd</i> message, you must include AccountRef if the 
+      &#147;Require accounts&#148; check box is selected in the QuickBooks Accounting 
+      preferences. (It is selected by default.) </li>
+
+    <li>In a <i>CreditCardCredit</i> message, AccountRef refers to the bank account 
+      or credit card account to which the credit is applied.</li>
+ 
+    <li>In a <i>CreditCardCharge</i> message, AccountRef refers to the bank or 
+      credit card company to whom money is owed. </li>
+  </ul>
+<b>How do you increase and decrease amounts in bank accounts?</b><br />
+The following requests increase the balance in a bank account:<br />
+Deposit Add <br />
+ReceivePaymentAdd <br /> 
+Journal Entry Add  <br />
+Sales ReceiptAdd  <br />
+<br />
+The following requests decrease the balance in a bank account:<br />
+CheckAdd  <br />
+Bill PaymentCheckAdd  <br />
+JournalEntryAdd 
+
+</body>
+</html>

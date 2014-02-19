@@ -1,0 +1,25 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+  <link rel="stylesheet" href="styleguide.css" type="text/css" />
+  <title>RefNumber.html</title>
+</head>
+<body>
+<b><i>RefNumber</i></b><br />
+
+A string of characters that refers to this transaction and that can be arbitrarily 
+changed by the QuickBooks user. <br />
+<br />
+In a BillPaymentCheckAdd request, if you want to set the check number, use RefNumber.<br />
+<br />
+<strong>Note (especially relevant to CheckAdd requests): </strong>When RefNumber 
+is left blank in an SDK transaction add request (that is, &lt;RefNumber/&gt; or 
+&lt;RefNumber&gt;&lt;/RefNumber&gt;), the RefNumber will be left blank in QuickBooks. 
+This behavior is new as of QBFC3. It used to select the next sequential reference 
+number since the last one used by QuickBooks, as though no RefNumber had been 
+provided. This is especially relevant to CheckAdd requests because with the current 
+behavior, you will not know the number until the check is printed. 
+</body>
+</html>

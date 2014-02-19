@@ -1,0 +1,7 @@
+<html><head><link rel="stylesheet" href="styleguide.css" type="text/css"></link></head>
+<body><table><tr><td><b><i>IORTermsRet</i></b></td></tr>
+<tr><td>typedef enum {ortrNA, ortrStandardTermsRet, ortrDateDrivenTermsRet} ENORTermsRet</td></tr>
+<tr><td> </td></tr><tr><td>'VB6 Methods and Properties</td></tr><tr><td>ortype As ENORTermsRet</td></tr><tr><td>StandardTermsRet As IIStandardTermsRet</td></tr><tr><td>DateDrivenTermsRet As IIDateDrivenTermsRet</td></tr><tr><td>Type As IObjectType</td></tr>
+<tr><td> </td></tr><tr><td>// C++ Wrapper methods for error-handling and Property data</td></tr><tr><td>enum ENORTermsRet ortype;</td></tr><tr><td>enum ENORTermsRet Getortype ( );</td></tr><tr><td>IStandardTermsRetPtr StandardTermsRet;</td></tr><tr><td>IStandardTermsRetPtr GetStandardTermsRet ( );</td></tr><tr><td>IDateDrivenTermsRetPtr DateDrivenTermsRet;</td></tr><tr><td>IDateDrivenTermsRetPtr GetDateDrivenTermsRet ( );</td></tr><tr><td>IObjectTypePtr Type;</td></tr><tr><td>IObjectTypePtr GetType ( );</td></tr>
+<tr><td> </td></tr><tr><td>// IDL Definition</td></tr><tr><td>HRESULT ortype([out, retval] ENORTermsRet* pVal) </td></tr><tr><td>HRESULT StandardTermsRet([out, retval] IIStandardTermsRet** pVal)</td></tr><tr><td>HRESULT DateDrivenTermsRet([out, retval] IIDateDrivenTermsRet** pVal)</td></tr><tr><td>HRESULT Type([out, retval] IObjectType **pVal);</td></tr>
+</table></body></html>

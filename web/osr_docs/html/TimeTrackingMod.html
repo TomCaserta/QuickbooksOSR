@@ -1,0 +1,20 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+  <link rel="stylesheet" href="styleguide.css" type="text/css" />
+  <title>TimeTrackingMod.html</title>
+</head>
+<body>
+<b><i>TimeTrackingMod</i></b><br />
+Modifies a time tracking transaction. This allows you to modify time entry and mark time entered as billed.<br />
+<br />
+
+Applications using qbXML spec levels less than 6.0 aren't able to Modify a time tracking transaction. However, those applications can achieve the results of a modify operation by deleting the time tracking transaction (using TxnDelRq) and then re-adding it with the desired values. You can do this only if no other downstream transactions have used that particular time tracking transaction. (Otherwise, the TxnDel request will fail.) <br />
+<br />
+This differs slightly from the UI, which allows these transactions to be edited directly. However, even in the UI, modifying a time tracking transaction does not result in changes to any downstream transactions that use it.<br />
+<br />
+There is no link between an invoice and the time entries. However when you do the invoicing from QuickBooks, QuickBooks does mark the time entries as "billed." If you don't record the time entries as billed properly, then you get into a user workflow issue where everytime the user creates an invoice for a customer, QB pops up a dialog asking if they want to bill the unbilled time (which you already billed from your app). That's why beginning with QB2007 and qbXML spec 6.0 we added support for the "BillableStatus" field *and* add TimeTrackingMod so that you can mark the time as billed when you create an invoice for it. 
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+  <link rel="stylesheet" href="styleguide.css" type="text/css" />
+  <title>ClassAdd.html</title>
+</head>
+<body>
+<b><i>ClassAdd</i></b>
+  <p>Classes can be used to separate transactions into meaningful categories. (For 
+  example, transactions could be classified according to department, business 
+  location, or type of work.) In QuickBooks, class tracking is off by default.</p>
+
+  <p> A ClassRef aggregate refers to one of these named classes. For example, in a 
+  <i>TimeTracking</i> message, ClassRef refers to the QuickBooks class into which 
+  the timed activity falls. If a ClassRef aggregate includes both FullName and 
+  ListID, FullName will be ignored.</p>
+
+<p>In an InvoiceAdd request, if you specify a ClassRef for the whole invoice, that same ClassRef is automatically used in the line items. If you want to clear that (that is, have NO ClassRef for the line item, you can clear it in the line item by simply not specifying it in the line item.</p>
+</body>
+</html>

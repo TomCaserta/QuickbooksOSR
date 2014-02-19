@@ -1,0 +1,468 @@
+{
+    "xmlName" : "ItemSalesTaxAddRq",
+    "Width" : 0,
+    "TopLeftX" : 0,
+    "supports" : {
+        "US" : true,
+        "OE" : false,
+        "CA" : true,
+        "UK" : true,
+        "AU" : true
+    },
+    "TopLeftY" : 0,
+    "required" : false,
+    "fcType" : "nothing",
+    "xmlType" : "Aggregate",
+    "MasterImage" : "None",
+    "elements" : [
+        {
+            "xmlName" : "ItemSalesTaxAdd",
+            "Width" : 0,
+            "TopLeftX" : 0,
+            "supports" : {
+                "US" : true,
+                "OE" : true,
+                "CA" : true,
+                "UK" : true,
+                "AU" : true
+            },
+            "TopLeftY" : 0,
+            "required" : true,
+            "fcType" : "skip",
+            "xmlType" : "Aggregate",
+            "count" : 1,
+            "MasterImage" : "None",
+            "elements" : [
+                {
+                    "fcTypeHtml" : "IQBStringType.html",
+                    "xmlName" : "Name",
+                    "maxCA" : 31,
+                    "Width" : 130,
+                    "TopLeftX" : 12,
+                    "xmlTypeHtml" : "STRTYPE.html",
+                    "supports" : {
+                        "US" : true,
+                        "OE" : true,
+                        "CA" : true,
+                        "UK" : true,
+                        "AU" : true
+                    },
+                    "TopLeftY" : 130,
+                    "required" : true,
+                    "fcType" : "IQBStringType",
+                    "xmlType" : "STRTYPE",
+                    "count" : 1,
+                    "MasterImage" : "item_salestax.jpg",
+                    "maxUK" : 31,
+                    "maxAU" : 31,
+                    "fcNameHtml" : "Name.html",
+                    "maxDT" : 31,
+                    "Height" : 17,
+                    "xmlNameHtml" : "Name.html",
+                    "fcName" : "Name"
+                },
+                {
+                    "xmlName" : "BarCode",
+                    "supports" : {
+                        "US" : true,
+                        "OE" : false,
+                        "CA" : true,
+                        "UK" : true,
+                        "AU" : false
+                    },
+                    "required" : false,
+                    "fcType" : "IBarCode",
+                    "minVerUS" : 12,
+                    "xmlType" : "Aggregate",
+                    "count" : "0 - 1",
+                    "elements" : [
+                        {
+                            "fcTypeHtml" : "IQBStringType.html",
+                            "xmlName" : "BarCodeValue",
+                            "maxCA" : 50,
+                            "xmlTypeHtml" : "STRTYPE.html",
+                            "supports" : {
+                                "US" : true,
+                                "OE" : true,
+                                "CA" : true,
+                                "UK" : true,
+                                "AU" : true
+                            },
+                            "required" : false,
+                            "fcType" : "IQBStringType",
+                            "xmlType" : "STRTYPE",
+                            "count" : "0 - 1",
+                            "maxUK" : 50,
+                            "maxAU" : 50,
+                            "fcNameHtml" : "BarCodeValue.html",
+                            "maxDT" : 50,
+                            "xmlNameHtml" : "BarCodeValue.html",
+                            "fcName" : "BarCodeValue"
+                        },
+                        {
+                            "fcTypeHtml" : "IQBBoolType.html",
+                            "xmlName" : "AssignEvenIfUsed",
+                            "xmlTypeHtml" : "BOOLTYPE.html",
+                            "supports" : {
+                                "US" : true,
+                                "OE" : true,
+                                "CA" : true,
+                                "UK" : true,
+                                "AU" : true
+                            },
+                            "required" : false,
+                            "fcType" : "IQBBoolType",
+                            "xmlType" : "BOOLTYPE",
+                            "count" : "0 - 1",
+                            "fcNameHtml" : "AssignEvenIfUsed.html",
+                            "xmlNameHtml" : "AssignEvenIfUsed.html",
+                            "fcName" : "AssignEvenIfUsed"
+                        },
+                        {
+                            "fcTypeHtml" : "IQBBoolType.html",
+                            "xmlName" : "AllowOverride",
+                            "xmlTypeHtml" : "BOOLTYPE.html",
+                            "supports" : {
+                                "US" : true,
+                                "OE" : true,
+                                "CA" : true,
+                                "UK" : true,
+                                "AU" : true
+                            },
+                            "required" : false,
+                            "fcType" : "IQBBoolType",
+                            "xmlType" : "BOOLTYPE",
+                            "count" : "0 - 1",
+                            "fcNameHtml" : "AllowOverride.html",
+                            "xmlNameHtml" : "AllowOverride.html",
+                            "fcName" : "AllowOverride"
+                        }
+                    ],
+                    "fcNameHtml" : "BarCode.html",
+                    "xmlNameHtml" : "BarCode.html",
+                    "fcName" : "BarCode"
+                },
+                {
+                    "fcTypeHtml" : "IQBBoolType.html",
+                    "xmlName" : "IsActive",
+                    "Width" : 95,
+                    "TopLeftX" : 416,
+                    "xmlTypeHtml" : "BOOLTYPE.html",
+                    "supports" : {
+                        "US" : true,
+                        "OE" : true,
+                        "CA" : true,
+                        "UK" : true,
+                        "AU" : true
+                    },
+                    "TopLeftY" : 154,
+                    "required" : false,
+                    "fcType" : "IQBBoolType",
+                    "xmlType" : "BOOLTYPE",
+                    "count" : "0 - 1",
+                    "MasterImage" : "item_salestax.jpg",
+                    "fcNameHtml" : "IsActive.html",
+                    "Height" : 18,
+                    "xmlNameHtml" : "IsActive.html",
+                    "fcName" : "IsActive"
+                },
+                {
+                    "xmlName" : "ClassRef",
+                    "supports" : {
+                        "US" : true,
+                        "OE" : true,
+                        "CA" : true,
+                        "UK" : true,
+                        "AU" : true
+                    },
+                    "required" : false,
+                    "fcType" : "IQBBaseRef",
+                    "minVerUS" : 12,
+                    "xmlType" : "Aggregate",
+                    "count" : "0 - 1",
+                    "elements" : [
+                        {
+                            "fcTypeHtml" : "IQBIDType.html",
+                            "xmlName" : "ListID",
+                            "xmlTypeHtml" : "IDTYPE.html",
+                            "supports" : {
+                                "US" : true,
+                                "OE" : true,
+                                "CA" : true,
+                                "UK" : true,
+                                "AU" : true
+                            },
+                            "required" : false,
+                            "fcType" : "IQBIDType",
+                            "xmlType" : "IDTYPE",
+                            "count" : "0 - 1",
+                            "fcNameHtml" : "ListID.html",
+                            "xmlNameHtml" : "ListID.html",
+                            "fcName" : "ListID"
+                        },
+                        {
+                            "fcTypeHtml" : "IQBStringType.html",
+                            "xmlName" : "FullName",
+                            "maxCA" : 159,
+                            "xmlTypeHtml" : "STRTYPE.html",
+                            "supports" : {
+                                "US" : true,
+                                "OE" : true,
+                                "CA" : true,
+                                "UK" : true,
+                                "AU" : true
+                            },
+                            "required" : false,
+                            "fcType" : "IQBStringType",
+                            "xmlType" : "STRTYPE",
+                            "count" : "0 - 1",
+                            "maxUK" : 159,
+                            "maxAU" : 159,
+                            "fcNameHtml" : "FullName.html",
+                            "maxDT" : 159,
+                            "xmlNameHtml" : "FullName.html",
+                            "maxOE" : 1000,
+                            "fcName" : "FullName"
+                        }
+                    ],
+                    "fcNameHtml" : "Class.html",
+                    "xmlNameHtml" : "Class.html",
+                    "fcName" : "ClassRef"
+                },
+                {
+                    "fcTypeHtml" : "IQBStringType.html",
+                    "xmlName" : "ItemDesc",
+                    "maxCA" : 4095,
+                    "xmlTypeHtml" : "STRTYPE.html",
+                    "supports" : {
+                        "US" : true,
+                        "OE" : true,
+                        "CA" : true,
+                        "UK" : true,
+                        "AU" : true
+                    },
+                    "required" : false,
+                    "fcType" : "IQBStringType",
+                    "xmlType" : "STRTYPE",
+                    "count" : "0 - 1",
+                    "maxUK" : 4095,
+                    "maxAU" : 4095,
+                    "fcNameHtml" : "ItemDesc.html",
+                    "maxDT" : 4095,
+                    "xmlNameHtml" : "ItemDesc.html",
+                    "fcName" : "ItemDesc"
+                },
+                {
+                    "fcTypeHtml" : "IQBPercentType.html",
+                    "xmlName" : "TaxRate",
+                    "xmlTypeHtml" : "PERCENTTYPE.html",
+                    "supports" : {
+                        "US" : true,
+                        "OE" : true,
+                        "CA" : true,
+                        "UK" : true,
+                        "AU" : true
+                    },
+                    "required" : false,
+                    "fcType" : "IQBPercentType",
+                    "xmlType" : "PERCENTTYPE",
+                    "count" : "0 - 1",
+                    "fcNameHtml" : "TaxRate.html",
+                    "xmlNameHtml" : "TaxRate.html",
+                    "fcName" : "TaxRate"
+                },
+                {
+                    "xmlName" : "TaxVendorRef",
+                    "supports" : {
+                        "US" : true,
+                        "OE" : true,
+                        "CA" : true,
+                        "UK" : true,
+                        "AU" : true
+                    },
+                    "required" : false,
+                    "fcType" : "IQBBaseRef",
+                    "xmlType" : "Aggregate",
+                    "count" : "0 - 1",
+                    "elements" : [
+                        {
+                            "fcTypeHtml" : "IQBIDType.html",
+                            "xmlName" : "ListID",
+                            "xmlTypeHtml" : "IDTYPE.html",
+                            "supports" : {
+                                "US" : true,
+                                "OE" : true,
+                                "CA" : true,
+                                "UK" : true,
+                                "AU" : true
+                            },
+                            "required" : false,
+                            "fcType" : "IQBIDType",
+                            "xmlType" : "IDTYPE",
+                            "count" : "0 - 1",
+                            "fcNameHtml" : "ListID.html",
+                            "xmlNameHtml" : "ListID.html",
+                            "fcName" : "ListID"
+                        },
+                        {
+                            "fcTypeHtml" : "IQBStringType.html",
+                            "xmlName" : "FullName",
+                            "maxCA" : 41,
+                            "xmlTypeHtml" : "STRTYPE.html",
+                            "supports" : {
+                                "US" : true,
+                                "OE" : true,
+                                "CA" : true,
+                                "UK" : true,
+                                "AU" : true
+                            },
+                            "required" : false,
+                            "fcType" : "IQBStringType",
+                            "xmlType" : "STRTYPE",
+                            "count" : "0 - 1",
+                            "maxUK" : 41,
+                            "maxAU" : 41,
+                            "fcNameHtml" : "FullName.html",
+                            "maxDT" : 41,
+                            "xmlNameHtml" : "FullName.html",
+                            "maxOE" : 1000,
+                            "fcName" : "FullName"
+                        }
+                    ],
+                    "fcNameHtml" : "TaxVendor.html",
+                    "xmlNameHtml" : "TaxVendor.html",
+                    "fcName" : "TaxVendorRef"
+                },
+                {
+                    "xmlName" : "SalesTaxReturnLineRef",
+                    "supports" : {
+                        "US" : false,
+                        "OE" : false,
+                        "CA" : true,
+                        "UK" : true,
+                        "AU" : true
+                    },
+                    "required" : false,
+                    "fcType" : "IQBBaseRef",
+                    "minVerUS" : 8,
+                    "xmlType" : "Aggregate",
+                    "count" : "0 - 1",
+                    "elements" : [
+                        {
+                            "fcTypeHtml" : "IQBIDType.html",
+                            "xmlName" : "ListID",
+                            "xmlTypeHtml" : "IDTYPE.html",
+                            "supports" : {
+                                "US" : true,
+                                "OE" : true,
+                                "CA" : true,
+                                "UK" : true,
+                                "AU" : true
+                            },
+                            "required" : false,
+                            "fcType" : "IQBIDType",
+                            "xmlType" : "IDTYPE",
+                            "count" : "0 - 1",
+                            "fcNameHtml" : "ListID.html",
+                            "xmlNameHtml" : "ListID.html",
+                            "fcName" : "ListID"
+                        },
+                        {
+                            "fcTypeHtml" : "IQBStringType.html",
+                            "xmlName" : "FullName",
+                            "maxCA" : 91,
+                            "xmlTypeHtml" : "STRTYPE.html",
+                            "supports" : {
+                                "US" : true,
+                                "OE" : true,
+                                "CA" : true,
+                                "UK" : true,
+                                "AU" : true
+                            },
+                            "required" : false,
+                            "fcType" : "IQBStringType",
+                            "xmlType" : "STRTYPE",
+                            "count" : "0 - 1",
+                            "maxUK" : 91,
+                            "maxAU" : 91,
+                            "fcNameHtml" : "FullName.html",
+                            "xmlNameHtml" : "FullName.html",
+                            "fcName" : "FullName"
+                        }
+                    ],
+                    "fcNameHtml" : "SalesTaxReturnLine.html",
+                    "xmlNameHtml" : "SalesTaxReturnLine.html",
+                    "fcName" : "SalesTaxReturnLineRef"
+                },
+                {
+                    "fcTypeHtml" : "IQBGUIDType.html",
+                    "xmlName" : "ExternalGUID",
+                    "xmlTypeHtml" : "GUIDTYPE.html",
+                    "supports" : {
+                        "US" : true,
+                        "OE" : false,
+                        "CA" : true,
+                        "UK" : true,
+                        "AU" : true
+                    },
+                    "required" : false,
+                    "fcType" : "IQBGUIDType",
+                    "minVerUS" : 8,
+                    "xmlType" : "GUIDTYPE",
+                    "count" : "0 - 1",
+                    "fcNameHtml" : "ExternalGUID.html",
+                    "xmlNameHtml" : "ExternalGUID.html",
+                    "fcName" : "ExternalGUID"
+                },
+                null,
+                {
+                    
+                },
+                null,
+                {
+                    
+                },
+                null,
+                {
+                    
+                }
+            ],
+            "Height" : 0,
+            "xmlNameHtml" : "ItemSalesTax.html",
+            "fcName" : "nothing"
+        },
+        {
+            "fcTypeHtml" : "IBSTRList.html",
+            "xmlName" : "IncludeRetElement",
+            "maxCA" : 50,
+            "Width" : 0,
+            "TopLeftX" : 0,
+            "xmlTypeHtml" : "STRTYPE.html",
+            "supports" : {
+                "US" : true,
+                "OE" : false,
+                "CA" : true,
+                "UK" : true,
+                "AU" : true
+            },
+            "TopLeftY" : 0,
+            "required" : false,
+            "fcType" : "IBSTRList",
+            "minVerUS" : 4,
+            "xmlType" : "STRTYPE",
+            "count" : "0 - n",
+            "MasterImage" : "None",
+            "maxUK" : 50,
+            "maxAU" : 50,
+            "fcNameHtml" : "QBFC-IncludeRetElementList.html",
+            "maxDT" : 50,
+            "Height" : 0,
+            "xmlNameHtml" : "IncludeRetElement.html",
+            "fcName" : "IncludeRetElementList"
+        }
+    ],
+    "fcNameHtml" : "ItemSalesTaxAdd.html",
+    "Height" : 0,
+    "xmlNameHtml" : "ItemSalesTaxAdd.html",
+    "fcName" : "IItemSalesTaxAdd"
+}

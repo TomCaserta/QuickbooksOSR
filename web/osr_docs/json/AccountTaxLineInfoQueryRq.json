@@ -1,0 +1,7 @@
+{"xmlName":"AccountTaxLineInfoQueryRq","xmlNameHtml":"AccountTaxLineInfoQuery.html",
+ "xmlType":"Aggregate",
+ "fcName":"IAccountTaxLineInfoQuery","fcNameHtml":"AccountTaxLineInfoQuery.html",
+ "fcType":"nothing",
+ "minVerUS":"7",
+ "supports":{"US":true,"CA":true,"UK":false,"AU":true,"OE":false},
+ "required":false}

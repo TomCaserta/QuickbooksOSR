@@ -1,0 +1,31 @@
+<!--   $Id: docexceptions.dtd,v 1.3 2002/07/09 18:22:52 jwortman Exp $    -->
+<!--                                                           -->
+<!--   docexceptions.dtd                                       -->
+<!--   Jennifer Wortman, June 2002                             -->
+<!--                                                           -->
+<!--   This is the DTD for the Exceptions xml file used        -->
+<!--   by docgen to determine which links to element           -->
+<!--   and aggregate descriptions should be exceptions         -->
+<!--   to the default format.                                  -->
+<!--                                                           -->
+
+<!-- Top level -->
+<!ELEMENT DocExceptions ((ElementException | AggregateException | AttributeException)+)>
+
+<!-- ElementException must contain an Element plus either one Aggregate, -->
+<!-- one Product, or one Aggregate and one Product -->
+<!ELEMENT ElementException (Element, ((Aggregate, (Product*)) | Product))>
+
+<!-- AggregateException must contain both Aggregate and Product -->
+<!ELEMENT AggregateException (Aggregate, Product)>
+
+<!-- AttributeException must contain an Attribute and a Product -->
+<!ELEMENT AttributeException (Attribute, Product)>
+
+<!-- Attribute, Element, Product, and Aggregate are the three lowest level elements -->
+<!ELEMENT Attribute (#PCDATA)>
+<!ELEMENT Element (#PCDATA)>
+<!ELEMENT Aggregate (#PCDATA)>
+<!ELEMENT Product (#PCDATA)>
+
+

@@ -1,0 +1,29 @@
+{"xmlName":"TemplateQueryRq","xmlNameHtml":"TemplateQuery.html",
+ "xmlType":"Aggregate",
+ "fcName":"ITemplateQuery","fcNameHtml":"TemplateQuery.html",
+ "fcType":"nothing",
+ "minVerUS":"3",
+ "supports":{"US":true,"CA":true,"UK":true,"AU":true,"OE":false},
+ "required":false,
+ "attributes":[
+    {"xmlName":"metaData","xmlNameHtml":"metaData.html",
+     "xmlType":"ENUMTYPE","xmlTypeHtml":"ENUMTYPE.html",
+     "fcName":"metaData","fcNameHtml":"metaData.html",
+     "fcType":"IQBENmetaDataType","fcTypeHtml":"QBFC-IQBENmetaDataType.html",
+     "minVerUS":"4",
+     "supports":{"US":true,"CA":false,"UK":false,"AU":false,"OE":false},
+     "required":false}
+ ],
+ "elements":[
+    {"xmlName":"IncludeRetElement","xmlNameHtml":"IncludeRetElement.html",
+     "xmlType":"STRTYPE","xmlTypeHtml":"STRTYPE.html",
+     "fcName":"IncludeRetElementList","fcNameHtml":"QBFC-IncludeRetElementList.html",
+     "fcType":"IBSTRList","fcTypeHtml":"IBSTRList.html",
+     "maxDT":"50",
+     "maxCA":"50",
+     "maxUK":"50",
+     "maxAU":"50",
+     "minVerUS":"4",
+     "supports":{"US":true,"CA":true,"UK":true,"AU":true,"OE":false},
+     "required":false,"count":"0 - n"}
+ ]}

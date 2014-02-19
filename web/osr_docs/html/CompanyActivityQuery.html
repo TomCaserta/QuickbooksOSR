@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+  <link rel="stylesheet" href="styleguide.css" type="text/css" />
+  <title>CompanyActivityQuery.html</title>
+</head>
+<body>
+<p>A CompanyActivityQueryRq request message returns LastRestoreTime (the time 
+  when the company file was last restored from a back up), and LastCondenseTime 
+  (the time the company file was last condensed). It returns the default date 
+  of 1970-01-01 (UTC) for these elements if a restore or condense hasn't happened 
+  for this company file. (For example, 1970-01-01 will be represented as 1969-12-31T16:00:00-08:00 
+  in a time zone that is eight hours behind UTC.)<b> Note:</b> If you include 
+  an explicit end tag in a CompanyActivityQuery request, you will receive an error 
+  if there is any space between the opening tag and the end tag. The following 
+  table shows valid and invalid ways of constructing this request:</p>
+<table width="80%" border="1" cellspacing="3" cellpadding="3">
+  <tr> 
+    <td>Valid</td>
+    <td>&lt;CompanyActivityQueryRq&gt;&lt;/CompanyActivityQueryRq&gt;<br />
+      <i>(no space between opening and closing tags)</i></td>
+  </tr>
+  <tr> 
+    <td>Valid</td>
+    <td> 
+      <p>&lt;CompanyActivityQueryRq /&gt;<br />
+        <i>(combined opening and closing tag)</i></p>
+    </td>
+  </tr>
+  <tr> 
+    <td>Invalid</td>
+    <td>&lt;CompanyActivityQueryRq&gt;<br />
+      &lt;/CompanyActivityQueryRq&gt;<br />
+      <i>(space between opening and closing tags)</i></td>
+  </tr>
+</table>
+</body>
+</html>

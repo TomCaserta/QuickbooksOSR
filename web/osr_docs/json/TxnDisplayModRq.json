@@ -1,0 +1,23 @@
+{"xmlName":"TxnDisplayModRq","xmlNameHtml":"TxnDisplayMod.html",
+ "xmlType":"Aggregate",
+ "fcName":"ITxnDisplayMod","fcNameHtml":"TxnDisplayMod.html",
+ "fcType":"nothing",
+ "minVerUS":"3",
+ "supports":{"US":true,"CA":true,"UK":true,"AU":true,"OE":false},
+ "required":false,
+ "elements":[
+    {"xmlName":"TxnDisplayModType","xmlNameHtml":"TxnDisplayModType.html",
+     "xmlType":"ENUMTYPE","xmlTypeHtml":"ENUMTYPE.html",
+     "xmlEnumValues":["Bill","BillPaymentCheck","BillPaymentCreditCard","BuildAssembly","Charge","Check","CreditCardCharge","CreditCardCredit","CreditMemo","Deposit","Estimate","InventoryAdjustment","Invoice","ItemReceipt","JournalEntry","PurchaseOrder","ReceivePayment","SalesOrder","SalesReceipt","SalesTaxPaymentCheck","VendorCredit"],
+     "fcName":"TxnDisplayModType","fcNameHtml":"QBFC-TxnDisplayModType.html",
+     "fcType":"IQBENTxnDisplayModTypeType","fcTypeHtml":"QBFC-IQBENTxnDisplayModTypeType.html",
+     "fcEnumValues":["tdmtBill","tdmtBillPaymentCheck","tdmtBillPaymentCreditCard","tdmtBuildAssembly","tdmtCharge","tdmtCheck","tdmtCreditCardCharge","tdmtCreditCardCredit","tdmtCreditMemo","tdmtDeposit","tdmtEstimate","tdmtInventoryAdjustment","tdmtInvoice","tdmtItemReceipt","tdmtJournalEntry","tdmtPurchaseOrder","tdmtReceivePayment","tdmtSalesOrder","tdmtSalesReceipt","tdmtSalesTaxPaymentCheck","tdmtVendorCredit"],
+     "supports":{"US":true,"CA":true,"UK":true,"AU":true,"OE":true},
+     "required":true,"count":"1"},
+    {"xmlName":"TxnID","xmlNameHtml":"TxnID.html",
+     "xmlType":"IDTYPE","xmlTypeHtml":"IDTYPE.html",
+     "fcName":"TxnID","fcNameHtml":"TxnID.html",
+     "fcType":"IQBIDType","fcTypeHtml":"IQBIDType.html",
+     "supports":{"US":true,"CA":true,"UK":true,"AU":true,"OE":true},
+     "required":true,"count":"1"}
+ ]}

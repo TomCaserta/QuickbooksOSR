@@ -1,0 +1,34 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<link rel="stylesheet" href="styleguide.css" type="text/css" />
+<title>ToModifiedDate.html</title>
+</head>
+<body>
+
+<b><i>ToModifiedDate</i></b><br />
+Selects objects modified on or before this date. See the note below on QBFC usage.<br />
+<br />
+<b><i>For desktop versions of QuickBooks,</i></b> the ToModifiedDate and FromModifiedDate 
+must be between 01/01/1970 and 2038-01-19T03:14:07 (2038-01-18T19:14:07-08:00 
+PST). (Note that the time portion of the field was not supported in qbXML version 
+1.0 or 1.1.) If ToModifiedDate includes a date but not a time (for example, if you set ToModifiedDate 
+to 2003-02-14), the time is assumed to be the end of the day (2003-02-14T23:59:59). 
+If you omit ToModifiedDate altogether, it will be set to 2038-01-19T03:14:07 (2038-01-18T19:14:07-08:00 PST).<br />
+<br />
+<b><i>For QBOE,</i></b> the ToModifiedDate and FromModifiedDate 
+must be between 01/01/1900 and 9999-12-31T00:00:00. If ToModifiedDate includes a date but not a time 
+(for example, if you set ToModifiedDate to 2003-02-14), the time is assumed to be the end 
+of the day (2003-02-14T23:59:59). If you omit ToModifiedDate altogether, it will be set to 
+9999-12-31T00:00:00.<br />
+<br />
+<b><i>Note: When specifying this in QBFC,</i></b> you need to supply the parameter asDateOnly,
+which is a Boolean. If asDateOnly is true, the date value will be represented as a date only (without a time). If asDateOnly is false, the date value will be represented as date and time, padded with zeros if necessary, and set to the beginning of the day if no time is provided. 
+The asDateOnly parameter is especially useful in the ToModifiedDate field of a query: 
+
+If asDateOnly is set to true in the ToModifiedDate field of a query, then the query includes elements modified up to the end of the day.  If asDateOnly is false, the query includes elements modified up to the specified time (or up to the beginning of the day if no time is included).
+
+</body>
+</html>

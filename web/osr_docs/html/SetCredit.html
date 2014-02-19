@@ -1,0 +1,27 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<link rel="stylesheet" href="styleguide.css" type="text/css" />
+<title>SetCredit.html</title>
+</head>
+<body>
+<b><i>SetCredit</i></b><br />
+Setting, or applying, a credit means using an available credit to lower the balance 
+of a transaction such as an invoice or a bill. (<i>Creating</i> a credit, on the 
+other hand, means making a credit available to be applied in the future.) <br />
+<br />
+Notice that if you use a credit (SetCredit) only, in your ReceivePaymentAdd or
+BillPaymentCreditCardAdd request, then no transaction ID is created, because, 
+from the viewpoint of QuickBooks, there was no transaction. Setting a credit 
+merely creates links between existing transactions (for example, 
+between a credit memo transaction and an invoice transaction), and no 
+information about these links will be returned to you in the response.<br />
+<br />
+If you need to retrieve which transactions were linked in the SetCredit, for
+Bill Payment, you must do a BillQuery and specify IncludeLinkedTxns. For more
+information, including information on breaking the links (voiding the credit
+payment), see the QuickBooks SDK Programmer's Guide chapter on Receiving payments, bill payments, and deposits.
+</body>
+</html>

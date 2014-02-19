@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+  <link rel="stylesheet" href="styleguide.css" type="text/css" />
+  <title>CheckAdd.html</title>
+</head>
+<body>
+<b><i>CheckAdd</i></b><br />
+The amount of a check is the total of the amounts assigned to expense lines and 
+item lines.  You can write a check for:
+<ul>
+<li>Any expense that you track through expense accounts.</li>
+<li>The following types of items: fixed asset, non-inventory part, service, and other charge.</li>
+<li>Putting money into your petty cash account.</li>
+<li>Inventory part items (if you use the inventory/purchase order feature).</li>
+</ul>
+
+You <b><i>cannot</i></b> use a CheckAdd for any of the following:
+<ul>
+<li>paying a bill by check; instead, use a BillPaymentCheckAdd.</li>
+<li>paying employees or create paychecks.</li>
+<li>paying payroll taxes and liabilities.</li>
+<li>paying sales tax.</li>
+<li>paying for received items.</li>
+</ul>
+<b>Note:</b> The ApplyCheckToTxnAdd aggregate added in qbXML spec 7.0 is actually implemented beginning with the R3 patch to QB2008. It is not available in earlier releases of QB2008. This feature is useful for doing direct refunds. If you use this feature, please note the following:<br />
+<br />
+<ul>
+<li>The ARAccountRef will be obtained from the ExpenseLineAdd</li>
+<li>The sum of the ApplyCheckToTxn amounts MUST equal the amount of the ExpenseLine</li>
+<li>Any transactions linked from a check in the ApplyToTxnAdd aggregate MUST use the 
+same AR account specified in the ExpenseLineAdd AccountRef, which MUST be an ARAccount</li>
+<li>Any transactions linked from a check in the ApplyToTxnAdd aggregate must apply to the same entity 
+referred to in the check PayeeEntityRef.</li>      
+</ul>
+
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+  <link rel="stylesheet" href="styleguide.css" type="text/css" />
+  <title>JournalEntryAdd.html</title>
+</head>
+<body>
+In versions 1.0 and 1.1, all debit lines in a JournalEntryAdd request had
+to appear first, followed by all credit lines. But in versions 2.0 and above,
+the debit and credit lines can be intermingled. A credit line can legally come
+first in thejournal entry add.<br />
+<br />
+In traditional accounting, transactions are entered into the general journal and
+categorized exclusively by account. In QuickBooks, most transactions can be categorized
+either by account or by type (invoice, check, and so on). For a few activities
+in QuickBooks, you must use the general journal directly, for example for recording
+depreciation.<br />
+<br />
+Notice that you must supply the credit line and a corresponding debit line in the same request.
+ It will not work to supply them in two distinct requests. You can supply as many credit lines and
+debit lines in one single request as you want so long as the total monetary amount from the credits
+equals the total monetary amount from the debits in that request.<br />
+<br />
+Finally, DO NOT supply negative sign for the monetary amounts. QuickBooks does that for you. If
+you do supply the negative sign amounts will add instead of cancel and you'll get a runtime error.<br />
+<br />
+<b>Querying for Condensed Transactions</b><br /><br />
+If you need the query to return condensed transactions, you can do this by using either an Entity
+or Account filter in the journal query request. Alternatively, you could use the The generic
+TransactionQuery, which can return condensed transactions.<br />
+<br />
+If the transaction is a home currency adjustment,
+QuickBooks will ignore the IsAmountsEnteredInHomeCurrency, CurrencyRef, and
+ExchangeRate elements.
+</body>
+</html>

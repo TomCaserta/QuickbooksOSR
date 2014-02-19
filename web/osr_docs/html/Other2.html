@@ -1,0 +1,35 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+  <link rel="stylesheet" href="styleguide.css" type="text/css" />
+  <title>Other2.html</title>
+</head>
+<body>
+<b><i>Other2</i></b><br /><br />
+Other, Other1, and Other2 are standard QuickBooks custom fields available to transactions. 
+The Other field is a transaction-level field, like the FOB field, PO Number field, and so forth.
+This field appears only once for the transaction: you can write to it and modify it. 
+<br />
+<br />
+The Other1 and Other2 fields exist at the line item level; each line item has them, and
+you can write or modify the value in each line.
+<br />
+<br />
+These custom
+fields are available for immediate use: you don't need to enable these in the transaction template 
+to be able to access them via SDK. (However, those Other, Other1, Other2 fields and their values
+are <b><i>viewable </i></b>and <b><i>printable </i></b>in QuickBooks only if the transaction template has these enabled!) 
+<br />
+<br /><b>Note: </b>you cannot use DataExtDef to define Other, Other1, Other2 for the transaction. 
+There is no need to in any case. Those are automatically available.
+<br />
+<br />
+Notice that the Other, Other1, and Other2 names are the real SDK names for those custom fields: that is, their 
+DataExtName value will always be Other, Other1, or Other2. Even if the user has re-labelled those custom fields 
+to something else, such as "Barracks Number", or "Max Headroom", or even "Pleni Potentiary". 
+This re-labelling has no effect on the SDK. You'll always write to them or 
+modify them as Other, Other1, or Other2.
+</body>
+</html>

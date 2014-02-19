@@ -1,0 +1,22 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<link rel="stylesheet" href="styleguide.css" type="text/css" />
+<title>DataExtDefDel.html</title>
+</head>
+<body>
+<b><i>DataExtDefDel</i></b><br />
+Deletes the private data extension definition specified by OwnerID and DataExtName. 
+This delete will be successful only for private data extensions. <br />
+
+You cannot use this to delete any custom field definition, whether the custom field was created by
+the user via the QB UI or via the SDK DataExtDefAdd request.<br />
+<br />
+This request should be exercised with caution. Once you invoke this on your private extension,
+you will not be able to re-add a private extension with that same name and OwnerID. (If you want
+to re-use the name from a deleted definition, you'll have to supply a different OwnerID.)
+
+</body>
+</html>

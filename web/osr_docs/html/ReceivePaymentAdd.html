@@ -1,0 +1,30 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+  <link rel="stylesheet" href="styleguide.css" type="text/css" />
+  <title>ReceivePaymentAdd.html</title>
+</head>
+<body>
+<b><i>ReceivePaymentAdd</i></b><br />
+Receives a customer payment into QuickBooks. A receive payment transaction is used for one or more of these purposes: 
+<ol>
+  <li>To record a customer&#146;s payment against an invoice for one or more jobs,</li>
+  <li>To set a discount (for early payment, for example), </li>
+  <li>To set a credit (from previously returned merchandise, for example).</li>
+</ol>
+If full payment is received at the time of sale, it is recorded using a sales 
+receipt transaction, not a receive payments transaction.<br />
+<br />
+Notice that access to sensitive data permissions are not required to use this request. However, if the application does not have access to sensitive data permission, then the response returned will not contain certain sensitive data. For example, even if credit card data is supplied in the ReceivePaymentAdd request via the CreditCardTxnInfo aggregate, the response will not contain the corresponding aggregate.<br />
+<br />
+This request can be used to record QBMS credit card transaction data, via the CreditCardTxnInfo aggregate. You can record charges and also authorizations. (You can later respond to a QBMS capture of authorized charges by doing a ReceivePaymentMod and changing the CreditCardTxnType to "Charge".) Notice that the reconciliation data fields (ReconBatchID, PaymentGroupingCode, PaymentStatus, TxnAuthorizationTime, TxnAuthorizationStamp, ClientTransID) are optional ONLY if the CreditCardTxnType is "Authorization".  If the type is "Charge", then those reconciliation fields must be supplied or you will get a runtime error. <br />
+<br />
+
+<b><i>IMPORTANT</i></b><br />
+In a SalesReceiptAdd or ReceivePaymentAdd request that contains credit card transaction data supplied from QBMS transaction responses, you must specify the payment method (using the PaymentMethodRef aggregate). <br />
+<br />
+
+</body>
+</html>

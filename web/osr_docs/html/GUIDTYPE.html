@@ -1,0 +1,24 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+  <link rel="stylesheet" href="styleguide.css" type="text/css" />
+  <title>GUIDTYPE.html</title>
+</head>
+<body>
+<p><b><i>GUIDTYPE</i></b><br />
+  A GUIDTYPE value can be zero (0), or it can take the form<br />
+       {XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX}<br />
+  where X is a hexadecimal digit. For example: <br />
+       {6B063959-81B0-4622-85D6-F548C8CCB517}<br />
+  <br />
+  GUIDTYPE strings are globally unique. To generate them, you can use GUIDGEN.EXE, 
+  a tool that comes with Microsoft Visual Studio. GUIDTYPE values are not case-sensitive, 
+  so if you enter a value with lower-case letters, it will be saved and returned 
+  with upper-case letters. <br />
+  <br />
+   The requestID in the qbXML message is a UUIDTYPE, which is a GUIDTYPE, but one that
+   QuickBooks treats in a special way, such as relaxing the format requirements in the    RequestID.</p>
+</body>
+</html>

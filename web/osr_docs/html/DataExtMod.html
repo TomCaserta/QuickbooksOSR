@@ -1,0 +1,25 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+  <link rel="stylesheet" href="styleguide.css" type="text/css" />
+  <title>DataExtMod.html</title>
+</head>
+<body>
+<b><i>DataExtMod</i></b><br />
+This request can only be invoked if a data extension definition has already been added 
+to the target object (for example, the customer John Henry) by a DataExtDefAdd or by 
+the user specifying a custom field value for that object via the QuickBooks UI.<br />
+<br />
+
+If you want to clear the data extension value (to make the custom field or private extension
+blank), you must use DataExtDel. The DataExtMod request cannot be used to clear the field.<br />
+<br />
+Both DataExtAdd and DataExtMod cause a Modify event to be generated for the parent object.
+For example invoking one of these on a Customer causes a Customer Modify event. The Time Modified
+value for that parent object is also updated.<br />
+<br />
+Notice that the Mod operation does not support macros like DataExtAdd does.
+</body>
+</html>

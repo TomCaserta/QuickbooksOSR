@@ -1,0 +1,31 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+  <link rel="stylesheet" href="styleguide.css" type="text/css" />
+  <title>TxnDeletedQuery.html</title>
+</head>
+<body>
+A TxnDeletedQuery will return all transaction elements deleted within the last 
+90 days, grouped according to object type. (For example, if the request specifies 
+TxnDelType elements of Bill and then Check, it will return all the Bill deletes 
+first, then all the Check deletes.) By default, the records are returned in ascending 
+order, according to the "real" delete time. For example:<br />
+<table width="100%" border="0">
+  <tr> 
+    <td width="7">&#149;</td>
+    <td>If transaction A is deleted at 10 a.m. and B is deleted at 11 a.m., the 
+      query request will return A first, then B.</td>
+  </tr>
+  <tr> 
+    <td>&#149;<br />
+      <br />
+    </td>
+    <td>However, if the QuickBooks user moves the clock back before deleting B 
+      (for example, B is deleted at 9 a.m.), the query will still return first 
+      A then B, because B was deleted after A in "real" time.</td>
+  </tr>
+</table>
+</body>
+</html>

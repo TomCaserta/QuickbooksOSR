@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+  <link rel="stylesheet" href="styleguide.css" type="text/css" />
+  <title>Transaction.html</title>
+</head>
+<body>
+<b><i>Transaction</i></b><br /><br />
+TransactionQuery is a generic transaction query that provides functionality (e.g. filters) 
+similar to the Advanced Find window in the QuickBooks UI. It allows you to search for 
+transactions across different transaction types. In contrast to the other transaction-specific 
+queries, the TransactionQuery only returns data common to all transactions, such as TxnID, 
+type, dates, accountRef, and so on. This query does return condensed transactions.<br />
+<br />
+Accordingly, if additional and more transaction-specific data is required, a subsequent 
+call to the desired query can be used to get that transaction-specific data. For example, 
+the TransactionQuery can be used to present all transactions in a certain date range, then 
+the user can select a particular transaction, say an invoice transaction. In response to this 
+choice, you could do an InvoiceQuery to pull up all of the invoice data, similar to QuickZoom 
+in the QuickBooks UI.
+
+<b>Important</b><br /><br />
+You should be aware that permissions are obeyed in this query. So, if you set the transaction
+ type filter to "All" (or if you don't set it at all), the query will be searching only those 
+transaction types that are permissible types for the user currently logged in. Accordingly, if 
+instead of "all," you specify a transaction type that the currently logged in user is not permitted
+to access, you will get a runtime error, even if other permissible transaction types were specified 
+as well.<br />
+<br />
+
+Finally, the transaction query is subject to sensitive data access level restrictions
+and payroll subscription status. 
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<link rel="stylesheet" href="styleguide.css" type="text/css" />
+<title>ReceivePayment.html</title>
+</head>
+<body>
+<b><i>ReceivePayment</i></b><br />
+A receive payment transaction is used for one or more of these purposes: 
+<ol>
+  <li>To record a customer&#146;s payment against an invoice for one or more jobs,</li>
+  <li>To set a discount (for early payment, for example), </li>
+  <li>To set a credit (from previously returned merchandise, for example).</li>
+</ol>
+If full payment is received at the time of sale, it is recorded using a sales 
+receipt transaction, not a receive payments transaction.<br />
+<br />
+<b><i>IMPORTANT</i></b><br />
+In a SalesReceiptAdd or ReceivePaymentAdd request that contains credit card transaction data supplied from QBMS transaction responses, you must specify the payment method (using the PaymentMethodRef aggregate). 
+</body>
+</html>

@@ -1,0 +1,17 @@
+{"xmlName":"ListDisplayAddRq","xmlNameHtml":"ListDisplayAdd.html",
+ "xmlType":"Aggregate",
+ "fcName":"IListDisplayAdd","fcNameHtml":"ListDisplayAdd.html",
+ "fcType":"nothing",
+ "minVerUS":"3",
+ "supports":{"US":true,"CA":true,"UK":true,"AU":true,"OE":false},
+ "required":false,
+ "elements":[
+    {"xmlName":"ListDisplayAddType","xmlNameHtml":"ListDisplayAddType.html",
+     "xmlType":"ENUMTYPE","xmlTypeHtml":"ENUMTYPE.html",
+     "xmlEnumValues":["Account","Customer","Employee","Item","OtherName","Vendor"],
+     "fcName":"ListDisplayAddType","fcNameHtml":"QBFC-ListDisplayAddType.html",
+     "fcType":"IQBENListDisplayAddTypeType","fcTypeHtml":"QBFC-IQBENListDisplayAddTypeType.html",
+     "fcEnumValues":["ldatAccount","ldatCustomer","ldatEmployee","ldatItem","ldatOtherName","ldatVendor"],
+     "supports":{"US":true,"CA":true,"UK":true,"AU":true,"OE":true},
+     "required":true,"count":"1"}
+ ]}

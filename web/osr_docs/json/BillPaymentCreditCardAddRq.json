@@ -1,0 +1,946 @@
+{
+    "xmlName" : "BillPaymentCreditCardAddRq",
+    "Width" : 0,
+    "TopLeftX" : 0,
+    "supports" : {
+        "US" : true,
+        "OE" : false,
+        "CA" : true,
+        "UK" : true,
+        "AU" : true
+    },
+    "TopLeftY" : 0,
+    "required" : false,
+    "fcType" : "nothing",
+    "minVerUS" : 2,
+    "xmlType" : "Aggregate",
+    "attributes" : [
+        {
+            "fcTypeHtml" : "IQBStringType.html",
+            "xmlName" : "nothing",
+            "supports" : {
+                "US" : true,
+                "OE" : true,
+                "CA" : true,
+                "UK" : true,
+                "AU" : true
+            },
+            "required" : false,
+            "fcType" : "IQBStringType",
+            "minVerUS" : 2,
+            "xmlType" : "skip",
+            "fcNameHtml" : "defMacro.html",
+            "fcName" : "defMacro"
+        }
+    ],
+    "MasterImage" : "None",
+    "elements" : [
+        {
+            "xmlName" : "BillPaymentCreditCardAdd",
+            "Width" : 0,
+            "TopLeftX" : 0,
+            "supports" : {
+                "US" : true,
+                "OE" : true,
+                "CA" : true,
+                "UK" : true,
+                "AU" : true
+            },
+            "TopLeftY" : 0,
+            "required" : true,
+            "fcType" : "skip",
+            "xmlType" : "Aggregate",
+            "count" : 1,
+            "attributes" : [
+                {
+                    "xmlName" : "defMacro",
+                    "xmlTypeHtml" : "MACROTYPE.html",
+                    "supports" : {
+                        "US" : true,
+                        "OE" : true,
+                        "CA" : true,
+                        "UK" : true,
+                        "AU" : true
+                    },
+                    "required" : false,
+                    "fcType" : "skip",
+                    "minVerUS" : 2,
+                    "xmlType" : "MACROTYPE",
+                    "xmlNameHtml" : "defMacro.html",
+                    "fcName" : "nothing"
+                }
+            ],
+            "MasterImage" : "None",
+            "elements" : [
+                {
+                    "xmlName" : "PayeeEntityRef",
+                    "Width" : 0,
+                    "TopLeftX" : 0,
+                    "supports" : {
+                        "US" : true,
+                        "OE" : true,
+                        "CA" : true,
+                        "UK" : true,
+                        "AU" : true
+                    },
+                    "TopLeftY" : 0,
+                    "required" : true,
+                    "fcType" : "IQBBaseRef",
+                    "xmlType" : "Aggregate",
+                    "count" : 1,
+                    "MasterImage" : "None",
+                    "elements" : [
+                        {
+                            "fcTypeHtml" : "IQBIDType.html",
+                            "xmlName" : "ListID",
+                            "Width" : 0,
+                            "TopLeftX" : 0,
+                            "xmlTypeHtml" : "IDTYPE.html",
+                            "supports" : {
+                                "US" : true,
+                                "OE" : true,
+                                "CA" : true,
+                                "UK" : true,
+                                "AU" : true
+                            },
+                            "TopLeftY" : 0,
+                            "required" : false,
+                            "fcType" : "IQBIDType",
+                            "xmlType" : "IDTYPE",
+                            "count" : "0 - 1",
+                            "MasterImage" : "None",
+                            "fcNameHtml" : "ListID.html",
+                            "Height" : 0,
+                            "xmlNameHtml" : "ListID.html",
+                            "fcName" : "ListID"
+                        },
+                        {
+                            "fcTypeHtml" : "IQBStringType.html",
+                            "xmlName" : "FullName",
+                            "maxCA" : 209,
+                            "Width" : 162,
+                            "TopLeftX" : 120,
+                            "xmlTypeHtml" : "STRTYPE.html",
+                            "supports" : {
+                                "US" : true,
+                                "OE" : true,
+                                "CA" : true,
+                                "UK" : true,
+                                "AU" : true
+                            },
+                            "TopLeftY" : 138,
+                            "required" : false,
+                            "fcType" : "IQBStringType",
+                            "xmlType" : "STRTYPE",
+                            "count" : "0 - 1",
+                            "MasterImage" : "BillPaymentCC.jpg",
+                            "maxUK" : 209,
+                            "maxAU" : 209,
+                            "fcNameHtml" : "FullName.html",
+                            "maxDT" : 209,
+                            "Height" : 17,
+                            "xmlNameHtml" : "FullName.html",
+                            "maxOE" : 1000,
+                            "fcName" : "FullName"
+                        }
+                    ],
+                    "fcNameHtml" : "PayeeEntity.html",
+                    "Height" : 0,
+                    "xmlNameHtml" : "PayeeEntity.html",
+                    "fcName" : "PayeeEntityRef"
+                },
+                {
+                    "xmlName" : "APAccountRef",
+                    "Width" : 0,
+                    "TopLeftX" : 0,
+                    "supports" : {
+                        "US" : true,
+                        "OE" : true,
+                        "CA" : true,
+                        "UK" : true,
+                        "AU" : true
+                    },
+                    "TopLeftY" : 0,
+                    "required" : false,
+                    "fcType" : "IQBBaseRef",
+                    "xmlType" : "Aggregate",
+                    "count" : "0 - 1",
+                    "MasterImage" : "None",
+                    "elements" : [
+                        {
+                            "fcTypeHtml" : "IQBIDType.html",
+                            "xmlName" : "ListID",
+                            "Width" : 0,
+                            "TopLeftX" : 0,
+                            "xmlTypeHtml" : "IDTYPE.html",
+                            "supports" : {
+                                "US" : true,
+                                "OE" : true,
+                                "CA" : true,
+                                "UK" : true,
+                                "AU" : true
+                            },
+                            "TopLeftY" : 0,
+                            "required" : false,
+                            "fcType" : "IQBIDType",
+                            "xmlType" : "IDTYPE",
+                            "count" : "0 - 1",
+                            "MasterImage" : "None",
+                            "fcNameHtml" : "ListID.html",
+                            "Height" : 0,
+                            "xmlNameHtml" : "ListID.html",
+                            "fcName" : "ListID"
+                        },
+                        {
+                            "fcTypeHtml" : "IQBStringType.html",
+                            "xmlName" : "FullName",
+                            "maxCA" : 159,
+                            "Width" : 0,
+                            "TopLeftX" : 0,
+                            "xmlTypeHtml" : "STRTYPE.html",
+                            "supports" : {
+                                "US" : true,
+                                "OE" : true,
+                                "CA" : true,
+                                "UK" : true,
+                                "AU" : true
+                            },
+                            "TopLeftY" : 0,
+                            "required" : false,
+                            "fcType" : "IQBStringType",
+                            "xmlType" : "STRTYPE",
+                            "count" : "0 - 1",
+                            "MasterImage" : "None",
+                            "maxUK" : 159,
+                            "maxAU" : 159,
+                            "fcNameHtml" : "FullName.html",
+                            "maxDT" : 159,
+                            "Height" : 0,
+                            "xmlNameHtml" : "FullName.html",
+                            "maxOE" : 1000,
+                            "fcName" : "FullName"
+                        }
+                    ],
+                    "fcNameHtml" : "APAccount.html",
+                    "Height" : 0,
+                    "xmlNameHtml" : "APAccount.html",
+                    "fcName" : "APAccountRef"
+                },
+                {
+                    "fcTypeHtml" : "IQBDateType.html",
+                    "xmlName" : "TxnDate",
+                    "Width" : 84,
+                    "TopLeftX" : 383,
+                    "xmlTypeHtml" : "DATETYPE.html",
+                    "supports" : {
+                        "US" : true,
+                        "OE" : true,
+                        "CA" : true,
+                        "UK" : true,
+                        "AU" : true
+                    },
+                    "TopLeftY" : 139,
+                    "required" : false,
+                    "fcType" : "IQBDateType",
+                    "xmlType" : "DATETYPE",
+                    "count" : "0 - 1",
+                    "MasterImage" : "BillPaymentCC.jpg",
+                    "fcNameHtml" : "TxnDate.html",
+                    "Height" : 17,
+                    "xmlNameHtml" : "TxnDate.html",
+                    "fcName" : "TxnDate"
+                },
+                {
+                    "xmlName" : "CreditCardAccountRef",
+                    "Width" : 0,
+                    "TopLeftX" : 0,
+                    "supports" : {
+                        "US" : true,
+                        "OE" : true,
+                        "CA" : true,
+                        "UK" : true,
+                        "AU" : true
+                    },
+                    "TopLeftY" : 0,
+                    "required" : true,
+                    "fcType" : "IQBBaseRef",
+                    "xmlType" : "Aggregate",
+                    "count" : 1,
+                    "MasterImage" : "None",
+                    "elements" : [
+                        {
+                            "fcTypeHtml" : "IQBIDType.html",
+                            "xmlName" : "ListID",
+                            "Width" : 0,
+                            "TopLeftX" : 0,
+                            "xmlTypeHtml" : "IDTYPE.html",
+                            "supports" : {
+                                "US" : true,
+                                "OE" : true,
+                                "CA" : true,
+                                "UK" : true,
+                                "AU" : true
+                            },
+                            "TopLeftY" : 0,
+                            "required" : false,
+                            "fcType" : "IQBIDType",
+                            "xmlType" : "IDTYPE",
+                            "count" : "0 - 1",
+                            "MasterImage" : "None",
+                            "fcNameHtml" : "ListID.html",
+                            "Height" : 0,
+                            "xmlNameHtml" : "ListID.html",
+                            "fcName" : "ListID"
+                        },
+                        {
+                            "fcTypeHtml" : "IQBStringType.html",
+                            "xmlName" : "FullName",
+                            "maxCA" : 159,
+                            "Width" : 173,
+                            "TopLeftX" : 74,
+                            "xmlTypeHtml" : "STRTYPE.html",
+                            "supports" : {
+                                "US" : true,
+                                "OE" : true,
+                                "CA" : true,
+                                "UK" : true,
+                                "AU" : true
+                            },
+                            "TopLeftY" : 59,
+                            "required" : false,
+                            "fcType" : "IQBStringType",
+                            "xmlType" : "STRTYPE",
+                            "count" : "0 - 1",
+                            "MasterImage" : "BillPaymentCC.jpg",
+                            "maxUK" : 159,
+                            "maxAU" : 159,
+                            "fcNameHtml" : "FullName.html",
+                            "maxDT" : 159,
+                            "Height" : 17,
+                            "xmlNameHtml" : "FullName.html",
+                            "maxOE" : 1000,
+                            "fcName" : "FullName"
+                        }
+                    ],
+                    "fcNameHtml" : "CreditCardAccount.html",
+                    "Height" : 0,
+                    "xmlNameHtml" : "CreditCardAccount.html",
+                    "fcName" : "CreditCardAccountRef"
+                },
+                {
+                    "fcTypeHtml" : "IQBStringType.html",
+                    "xmlName" : "RefNumber",
+                    "maxCA" : 11,
+                    "Width" : 84,
+                    "TopLeftX" : 383,
+                    "xmlTypeHtml" : "STRTYPE.html",
+                    "supports" : {
+                        "US" : true,
+                        "OE" : true,
+                        "CA" : true,
+                        "UK" : true,
+                        "AU" : true
+                    },
+                    "TopLeftY" : 161,
+                    "required" : false,
+                    "fcType" : "IQBStringType",
+                    "xmlType" : "STRTYPE",
+                    "count" : "0 - 1",
+                    "MasterImage" : "BillPaymentCC.jpg",
+                    "maxUK" : 11,
+                    "maxAU" : 11,
+                    "fcNameHtml" : "RefNumber.html",
+                    "maxDT" : 11,
+                    "Height" : 17,
+                    "xmlNameHtml" : "RefNumber.html",
+                    "maxOE" : 21,
+                    "fcName" : "RefNumber"
+                },
+                {
+                    "fcTypeHtml" : "IQBStringType.html",
+                    "xmlName" : "Memo",
+                    "maxCA" : 4095,
+                    "Width" : 395,
+                    "TopLeftX" : 74,
+                    "xmlTypeHtml" : "STRTYPE.html",
+                    "supports" : {
+                        "US" : true,
+                        "OE" : true,
+                        "CA" : true,
+                        "UK" : true,
+                        "AU" : true
+                    },
+                    "TopLeftY" : 211,
+                    "required" : false,
+                    "fcType" : "IQBStringType",
+                    "minVerUS" : 3,
+                    "xmlType" : "STRTYPE",
+                    "count" : "0 - 1",
+                    "MasterImage" : "BillPaymentCC.jpg",
+                    "maxUK" : 4095,
+                    "maxAU" : 4095,
+                    "fcNameHtml" : "Memo.html",
+                    "maxDT" : 4095,
+                    "Height" : 17,
+                    "xmlNameHtml" : "Memo.html",
+                    "maxOE" : 4000,
+                    "fcName" : "Memo"
+                },
+                {
+                    "fcTypeHtml" : "IQBFloatType.html",
+                    "xmlName" : "ExchangeRate",
+                    "xmlTypeHtml" : "FLOATTYPE.html",
+                    "supports" : {
+                        "US" : true,
+                        "OE" : false,
+                        "CA" : true,
+                        "UK" : true,
+                        "AU" : true
+                    },
+                    "required" : false,
+                    "fcType" : "IQBFloatType",
+                    "minVerUS" : 8,
+                    "xmlType" : "FLOATTYPE",
+                    "count" : "0 - 1",
+                    "fcNameHtml" : "ExchangeRate.html",
+                    "xmlNameHtml" : "ExchangeRate.html",
+                    "fcName" : "ExchangeRate"
+                },
+                {
+                    "fcTypeHtml" : "IQBGUIDType.html",
+                    "xmlName" : "ExternalGUID",
+                    "xmlTypeHtml" : "GUIDTYPE.html",
+                    "supports" : {
+                        "US" : true,
+                        "OE" : false,
+                        "CA" : true,
+                        "UK" : true,
+                        "AU" : true
+                    },
+                    "required" : false,
+                    "fcType" : "IQBGUIDType",
+                    "minVerUS" : 9,
+                    "xmlType" : "GUIDTYPE",
+                    "count" : "0 - 1",
+                    "fcNameHtml" : "ExternalGUID.html",
+                    "xmlNameHtml" : "ExternalGUID.html",
+                    "fcName" : "ExternalGUID"
+                },
+                {
+                    "fcTypeHtml" : "QBFC-IAppliedToTxnAddList.html",
+                    "xmlName" : "AppliedToTxnAdd",
+                    "Width" : 0,
+                    "TopLeftX" : 0,
+                    "supports" : {
+                        "US" : true,
+                        "OE" : true,
+                        "CA" : true,
+                        "UK" : true,
+                        "AU" : true
+                    },
+                    "TopLeftY" : 0,
+                    "required" : true,
+                    "fcType" : "IAppliedToTxnAddList",
+                    "xmlType" : "Aggregate",
+                    "count" : "1 - n",
+                    "MasterImage" : "None",
+                    "elements" : [
+                        {
+                            "fcTypeHtml" : "IQBIDType.html",
+                            "xmlName" : "TxnID",
+                            "Width" : 0,
+                            "TopLeftX" : 0,
+                            "xmlTypeHtml" : "IDTYPE.html",
+                            "supports" : {
+                                "US" : true,
+                                "OE" : true,
+                                "CA" : true,
+                                "UK" : true,
+                                "AU" : true
+                            },
+                            "TopLeftY" : 0,
+                            "required" : true,
+                            "fcType" : "IQBIDType",
+                            "xmlType" : "IDTYPE",
+                            "count" : 1,
+                            "attributes" : [
+                                {
+                                    "fcTypeHtml" : "IQBStringType.html",
+                                    "xmlName" : "useMacro",
+                                    "xmlTypeHtml" : "MACROTYPE.html",
+                                    "supports" : {
+                                        "US" : true,
+                                        "OE" : true,
+                                        "CA" : true,
+                                        "UK" : true,
+                                        "AU" : true
+                                    },
+                                    "required" : false,
+                                    "fcType" : "IQBStringType",
+                                    "minVerUS" : 2,
+                                    "xmlType" : "MACROTYPE",
+                                    "fcNameHtml" : "useMacro.html",
+                                    "xmlNameHtml" : "useMacro.html",
+                                    "fcName" : "useMacro"
+                                }
+                            ],
+                            "MasterImage" : "None",
+                            "fcNameHtml" : "TxnID.html",
+                            "Height" : 0,
+                            "xmlNameHtml" : "TxnID.html",
+                            "fcName" : "TxnID"
+                        },
+                        {
+                            "fcTypeHtml" : "IQBAmountType.html",
+                            "xmlName" : "PaymentAmount",
+                            "Width" : 60,
+                            "TopLeftX" : 295,
+                            "xmlTypeHtml" : "AMTTYPE.html",
+                            "supports" : {
+                                "US" : true,
+                                "OE" : true,
+                                "CA" : true,
+                                "UK" : true,
+                                "AU" : true
+                            },
+                            "TopLeftY" : 397,
+                            "required" : false,
+                            "fcType" : "IQBAmountType",
+                            "xmlType" : "AMTTYPE",
+                            "count" : "0 - 1",
+                            "MasterImage" : "BillPaymentCC_linked.jpg",
+                            "fcNameHtml" : "PaymentAmount.html",
+                            "Height" : 15,
+                            "xmlNameHtml" : "PaymentAmount.html",
+                            "fcName" : "PaymentAmount"
+                        },
+                        {
+                            "fcTypeHtml" : "QBFC-ITxnLineDetailList.html",
+                            "xmlName" : "TxnLineDetail",
+                            "Width" : 0,
+                            "TopLeftX" : 0,
+                            "supports" : {
+                                "US" : false,
+                                "OE" : true,
+                                "CA" : false,
+                                "UK" : false,
+                                "AU" : false
+                            },
+                            "TopLeftY" : 0,
+                            "required" : false,
+                            "fcType" : "ITxnLineDetailList",
+                            "xmlType" : "Aggregate",
+                            "count" : "0 - n",
+                            "MasterImage" : "None",
+                            "elements" : [
+                                {
+                                    "fcTypeHtml" : "IQBIDType.html",
+                                    "xmlName" : "TxnLineID",
+                                    "Width" : 0,
+                                    "TopLeftX" : 0,
+                                    "xmlTypeHtml" : "IDTYPE.html",
+                                    "supports" : {
+                                        "US" : true,
+                                        "OE" : true,
+                                        "CA" : true,
+                                        "UK" : true,
+                                        "AU" : true
+                                    },
+                                    "TopLeftY" : 0,
+                                    "required" : true,
+                                    "fcType" : "IQBIDType",
+                                    "xmlType" : "IDTYPE",
+                                    "count" : 1,
+                                    "MasterImage" : "None",
+                                    "fcNameHtml" : "TxnLineID.html",
+                                    "Height" : 0,
+                                    "xmlNameHtml" : "TxnLineID.html",
+                                    "fcName" : "TxnLineID"
+                                },
+                                {
+                                    "fcTypeHtml" : "IQBAmountType.html",
+                                    "xmlName" : "Amount",
+                                    "Width" : 0,
+                                    "TopLeftX" : 0,
+                                    "xmlTypeHtml" : "AMTTYPE.html",
+                                    "supports" : {
+                                        "US" : true,
+                                        "OE" : true,
+                                        "CA" : true,
+                                        "UK" : true,
+                                        "AU" : true
+                                    },
+                                    "TopLeftY" : 0,
+                                    "required" : true,
+                                    "fcType" : "IQBAmountType",
+                                    "xmlType" : "AMTTYPE",
+                                    "count" : 1,
+                                    "MasterImage" : "None",
+                                    "fcNameHtml" : "Amount.html",
+                                    "Height" : 0,
+                                    "xmlNameHtml" : "Amount.html",
+                                    "fcName" : "Amount"
+                                }
+                            ],
+                            "fcNameHtml" : "QBFC-TxnLineDetailList.html",
+                            "Height" : 0,
+                            "xmlNameHtml" : "TxnLineDetail.html",
+                            "fcListOf" : {
+                                "fcType" : "ITxnLineDetail"
+                            },
+                            "fcName" : "TxnLineDetailList"
+                        },
+                        {
+                            "fcTypeHtml" : "QBFC-ISetCreditList.html",
+                            "xmlName" : "SetCredit",
+                            "Width" : 0,
+                            "TopLeftX" : 0,
+                            "supports" : {
+                                "US" : true,
+                                "OE" : true,
+                                "CA" : true,
+                                "UK" : true,
+                                "AU" : true
+                            },
+                            "TopLeftY" : 0,
+                            "required" : false,
+                            "fcType" : "ISetCreditList",
+                            "xmlType" : "Aggregate",
+                            "count" : "0 - n",
+                            "MasterImage" : "None",
+                            "elements" : [
+                                {
+                                    "fcTypeHtml" : "IQBIDType.html",
+                                    "xmlName" : "CreditTxnID",
+                                    "Width" : 0,
+                                    "TopLeftX" : 0,
+                                    "xmlTypeHtml" : "IDTYPE.html",
+                                    "supports" : {
+                                        "US" : true,
+                                        "OE" : true,
+                                        "CA" : true,
+                                        "UK" : true,
+                                        "AU" : true
+                                    },
+                                    "TopLeftY" : 0,
+                                    "required" : true,
+                                    "fcType" : "IQBIDType",
+                                    "xmlType" : "IDTYPE",
+                                    "count" : 1,
+                                    "attributes" : [
+                                        {
+                                            "fcTypeHtml" : "IQBStringType.html",
+                                            "xmlName" : "useMacro",
+                                            "xmlTypeHtml" : "MACROTYPE.html",
+                                            "supports" : {
+                                                "US" : true,
+                                                "OE" : true,
+                                                "CA" : true,
+                                                "UK" : true,
+                                                "AU" : true
+                                            },
+                                            "required" : false,
+                                            "fcType" : "IQBStringType",
+                                            "minVerUS" : 2,
+                                            "xmlType" : "MACROTYPE",
+                                            "fcNameHtml" : "useMacro.html",
+                                            "xmlNameHtml" : "useMacro.html",
+                                            "fcName" : "useMacro"
+                                        }
+                                    ],
+                                    "MasterImage" : "None",
+                                    "fcNameHtml" : "CreditTxnID.html",
+                                    "Height" : 0,
+                                    "xmlNameHtml" : "CreditTxnID.html",
+                                    "fcName" : "CreditTxnID"
+                                },
+                                {
+                                    "fcTypeHtml" : "IQBIDType.html",
+                                    "xmlName" : "TxnLineID",
+                                    "Width" : 0,
+                                    "TopLeftX" : 0,
+                                    "xmlTypeHtml" : "IDTYPE.html",
+                                    "supports" : {
+                                        "US" : false,
+                                        "OE" : true,
+                                        "CA" : false,
+                                        "UK" : false,
+                                        "AU" : false
+                                    },
+                                    "TopLeftY" : 0,
+                                    "required" : false,
+                                    "fcType" : "IQBIDType",
+                                    "xmlType" : "IDTYPE",
+                                    "count" : "0 - 1",
+                                    "MasterImage" : "None",
+                                    "fcNameHtml" : "TxnLineID.html",
+                                    "Height" : 0,
+                                    "xmlNameHtml" : "TxnLineID.html",
+                                    "fcName" : "TxnLineID"
+                                },
+                                {
+                                    "fcTypeHtml" : "IQBAmountType.html",
+                                    "xmlName" : "AppliedAmount",
+                                    "Width" : 0,
+                                    "TopLeftX" : 0,
+                                    "xmlTypeHtml" : "AMTTYPE.html",
+                                    "supports" : {
+                                        "US" : true,
+                                        "OE" : true,
+                                        "CA" : true,
+                                        "UK" : true,
+                                        "AU" : true
+                                    },
+                                    "TopLeftY" : 0,
+                                    "required" : true,
+                                    "fcType" : "IQBAmountType",
+                                    "xmlType" : "AMTTYPE",
+                                    "count" : 1,
+                                    "MasterImage" : "None",
+                                    "fcNameHtml" : "AppliedAmount.html",
+                                    "Height" : 0,
+                                    "xmlNameHtml" : "AppliedAmount.html",
+                                    "fcName" : "AppliedAmount"
+                                },
+                                {
+                                    "fcTypeHtml" : "IQBBoolType.html",
+                                    "xmlName" : "Override",
+                                    "xmlTypeHtml" : "BOOLTYPE.html",
+                                    "supports" : {
+                                        "US" : true,
+                                        "OE" : false,
+                                        "CA" : true,
+                                        "UK" : true,
+                                        "AU" : true
+                                    },
+                                    "required" : false,
+                                    "fcType" : "IQBBoolType",
+                                    "minVerUS" : 10,
+                                    "xmlType" : "BOOLTYPE",
+                                    "count" : "0 - 1",
+                                    "fcNameHtml" : "Override.html",
+                                    "xmlNameHtml" : "Override.html",
+                                    "fcName" : "Override"
+                                }
+                            ],
+                            "fcNameHtml" : "QBFC-SetCreditList.html",
+                            "Height" : 0,
+                            "xmlNameHtml" : "SetCredit.html",
+                            "fcListOf" : {
+                                "fcType" : "ISetCredit"
+                            },
+                            "fcName" : "SetCreditList"
+                        },
+                        {
+                            "fcTypeHtml" : "IQBAmountType.html",
+                            "xmlName" : "DiscountAmount",
+                            "Width" : 74,
+                            "TopLeftX" : 139,
+                            "xmlTypeHtml" : "AMTTYPE.html",
+                            "supports" : {
+                                "US" : true,
+                                "OE" : true,
+                                "CA" : true,
+                                "UK" : true,
+                                "AU" : true
+                            },
+                            "TopLeftY" : 197,
+                            "required" : false,
+                            "fcType" : "IQBAmountType",
+                            "xmlType" : "AMTTYPE",
+                            "count" : "0 - 1",
+                            "MasterImage" : "BillPaymentCC_discount.jpg",
+                            "fcNameHtml" : "DiscountAmount.html",
+                            "Height" : 17,
+                            "xmlNameHtml" : "DiscountAmount.html",
+                            "fcName" : "DiscountAmount"
+                        },
+                        {
+                            "xmlName" : "DiscountAccountRef",
+                            "Width" : 0,
+                            "TopLeftX" : 0,
+                            "supports" : {
+                                "US" : true,
+                                "OE" : true,
+                                "CA" : true,
+                                "UK" : true,
+                                "AU" : true
+                            },
+                            "TopLeftY" : 0,
+                            "required" : false,
+                            "fcType" : "IQBBaseRef",
+                            "xmlType" : "Aggregate",
+                            "count" : "0 - 1",
+                            "MasterImage" : "None",
+                            "elements" : [
+                                {
+                                    "fcTypeHtml" : "IQBIDType.html",
+                                    "xmlName" : "ListID",
+                                    "Width" : 0,
+                                    "TopLeftX" : 0,
+                                    "xmlTypeHtml" : "IDTYPE.html",
+                                    "supports" : {
+                                        "US" : true,
+                                        "OE" : true,
+                                        "CA" : true,
+                                        "UK" : true,
+                                        "AU" : true
+                                    },
+                                    "TopLeftY" : 0,
+                                    "required" : false,
+                                    "fcType" : "IQBIDType",
+                                    "xmlType" : "IDTYPE",
+                                    "count" : "0 - 1",
+                                    "MasterImage" : "None",
+                                    "fcNameHtml" : "ListID.html",
+                                    "Height" : 0,
+                                    "xmlNameHtml" : "ListID.html",
+                                    "fcName" : "ListID"
+                                },
+                                {
+                                    "fcTypeHtml" : "IQBStringType.html",
+                                    "xmlName" : "FullName",
+                                    "maxCA" : 159,
+                                    "Width" : 160,
+                                    "TopLeftX" : 139,
+                                    "xmlTypeHtml" : "STRTYPE.html",
+                                    "supports" : {
+                                        "US" : true,
+                                        "OE" : true,
+                                        "CA" : true,
+                                        "UK" : true,
+                                        "AU" : true
+                                    },
+                                    "TopLeftY" : 220,
+                                    "required" : false,
+                                    "fcType" : "IQBStringType",
+                                    "xmlType" : "STRTYPE",
+                                    "count" : "0 - 1",
+                                    "MasterImage" : "BillPaymentCC_discount.jpg",
+                                    "maxUK" : 159,
+                                    "maxAU" : 159,
+                                    "fcNameHtml" : "FullName.html",
+                                    "maxDT" : 159,
+                                    "Height" : 17,
+                                    "xmlNameHtml" : "FullName.html",
+                                    "maxOE" : 1000,
+                                    "fcName" : "FullName"
+                                }
+                            ],
+                            "fcNameHtml" : "DiscountAccount.html",
+                            "Height" : 0,
+                            "xmlNameHtml" : "DiscountAccount.html",
+                            "fcName" : "DiscountAccountRef"
+                        },
+                        {
+                            "xmlName" : "DiscountClassRef",
+                            "supports" : {
+                                "US" : true,
+                                "OE" : true,
+                                "CA" : true,
+                                "UK" : true,
+                                "AU" : true
+                            },
+                            "required" : false,
+                            "fcType" : "IQBBaseRef",
+                            "minVerUS" : 11,
+                            "xmlType" : "Aggregate",
+                            "count" : "0 - 1",
+                            "elements" : [
+                                {
+                                    "fcTypeHtml" : "IQBIDType.html",
+                                    "xmlName" : "ListID",
+                                    "xmlTypeHtml" : "IDTYPE.html",
+                                    "supports" : {
+                                        "US" : true,
+                                        "OE" : true,
+                                        "CA" : true,
+                                        "UK" : true,
+                                        "AU" : true
+                                    },
+                                    "required" : false,
+                                    "fcType" : "IQBIDType",
+                                    "xmlType" : "IDTYPE",
+                                    "count" : "0 - 1",
+                                    "fcNameHtml" : "ListID.html",
+                                    "xmlNameHtml" : "ListID.html",
+                                    "fcName" : "ListID"
+                                },
+                                {
+                                    "fcTypeHtml" : "IQBStringType.html",
+                                    "xmlName" : "FullName",
+                                    "maxCA" : 159,
+                                    "xmlTypeHtml" : "STRTYPE.html",
+                                    "supports" : {
+                                        "US" : true,
+                                        "OE" : true,
+                                        "CA" : true,
+                                        "UK" : true,
+                                        "AU" : true
+                                    },
+                                    "required" : false,
+                                    "fcType" : "IQBStringType",
+                                    "xmlType" : "STRTYPE",
+                                    "count" : "0 - 1",
+                                    "maxUK" : 159,
+                                    "maxAU" : 159,
+                                    "fcNameHtml" : "FullName.html",
+                                    "maxDT" : 159,
+                                    "xmlNameHtml" : "FullName.html",
+                                    "maxOE" : 1000,
+                                    "fcName" : "FullName"
+                                }
+                            ],
+                            "fcNameHtml" : "DiscountClass.html",
+                            "xmlNameHtml" : "DiscountClass.html",
+                            "fcName" : "DiscountClassRef"
+                        }
+                    ],
+                    "fcNameHtml" : "QBFC-AppliedToTxnList.html",
+                    "Height" : 0,
+                    "xmlNameHtml" : "AppliedToTxn.html",
+                    "fcListOf" : {
+                        "fcType" : "IAppliedToTxnAdd"
+                    },
+                    "fcName" : "AppliedToTxnAddList"
+                }
+            ],
+            "Height" : 0,
+            "xmlNameHtml" : "BillPaymentCreditCard.html",
+            "fcName" : "nothing"
+        },
+        {
+            "fcTypeHtml" : "IBSTRList.html",
+            "xmlName" : "IncludeRetElement",
+            "maxCA" : 50,
+            "Width" : 0,
+            "TopLeftX" : 0,
+            "xmlTypeHtml" : "STRTYPE.html",
+            "supports" : {
+                "US" : true,
+                "OE" : false,
+                "CA" : true,
+                "UK" : true,
+                "AU" : true
+            },
+            "TopLeftY" : 0,
+            "required" : false,
+            "fcType" : "IBSTRList",
+            "minVerUS" : 4,
+            "xmlType" : "STRTYPE",
+            "count" : "0 - n",
+            "MasterImage" : "None",
+            "maxUK" : 50,
+            "maxAU" : 50,
+            "fcNameHtml" : "QBFC-IncludeRetElementList.html",
+            "maxDT" : 50,
+            "Height" : 0,
+            "xmlNameHtml" : "IncludeRetElement.html",
+            "fcName" : "IncludeRetElementList"
+        }
+    ],
+    "fcNameHtml" : "BillPaymentCreditCardAdd.html",
+    "Height" : 0,
+    "xmlNameHtml" : "BillPaymentCreditCardAdd.html",
+    "fcName" : "IBillPaymentCreditCardAdd"
+}

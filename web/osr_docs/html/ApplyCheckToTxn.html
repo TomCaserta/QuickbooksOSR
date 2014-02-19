@@ -1,0 +1,20 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <link rel="stylesheet" href="styleguide.css" type="text/css" />
+  <title>ApplyCheckToTxn.html</title>
+</head>
+<body>
+<b><i>ApplyCheckToTxn</i></b><br />
+If the check is being written to refund for some transaction, you need to supply the transaction ID and amount.
+<br />
+<br />
+Allows you to specify a transaction to be paid by this check. <br />
+Any transactions linked from a check in the ApplyToTxnAdd aggregate MUST:<br />
+a.Use the same AR account specified in the ExpenseLineAdd/AccountRef which MUST be an ARAccount.<br />
+b. Apply to the same Entity referred to in the Check’s PayeeEntityRef
+</body>
+</html>
+

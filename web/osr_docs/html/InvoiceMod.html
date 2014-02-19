@@ -1,0 +1,83 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+  <link rel="stylesheet" href="styleguide.css" type="text/css" />
+  <title>InvoiceMod.html</title>
+</head>
+<body>
+<b><i>InvoiceMod</i></b><br />
+Modifies an existing invoice. If you are modifying existing line items, supply an InvoiceLineMod and TxnLineID for each line you want to modify. If you want to add a new line, supply an InvoiceLineMod with its TxnLineID value set to -1.<br />
+<br />
+Some fields in an InvoiceMod request cannot be cleared. If any of the following 
+fields is included in an invoice modify request, it must contain a value:<br />
+<table width="100%" border="0">
+  <tr> 
+    <td>&#149;</td>
+    <td>CustomerRef</td>
+  </tr>
+  <tr> 
+    <td>&#149;</td>
+    <td>ARAccountRef</td>
+  </tr>
+  <tr> 
+    <td>&#149;</td>
+    <td>TemplateRef</td>
+  </tr>
+  <tr> 
+    <td width="7">&#149;</td>
+    <td>TxnDate</td>
+  </tr>
+  <tr> 
+    <td>&#149;</td>
+    <td>IsPending</td>
+  </tr>
+  <tr> 
+    <td>&#149;<br /> </td>
+    <td>DueDate</td>
+  </tr>
+  <tr> 
+    <td>&#149;</td>
+    <td>ItemSalesTaxRef</td>
+  </tr>
+  <tr> 
+    <td>&#149;</td>
+    <td>ShipDate</td>
+  </tr>
+  <tr> 
+    <td>&#149;</td>
+    <td>IsToBePrinted</td>
+  </tr>
+</table>
+Within InvoiceLineMod or InvoiceLineGroupMod:<br />
+<table width="100%" border="0">
+  <tr> 
+    <td width="7">&#149;</td>
+    <td>ItemRef</td>
+  </tr>
+  <tr> 
+    <td>&#149;<br /> </td>
+    <td>Quantity</td>
+  </tr>
+  <tr> 
+    <td>&#149;</td>
+    <td>Rate</td>
+  </tr>
+  <tr> 
+    <td>&#149;</td>
+    <td>Amount</td>
+  </tr>
+  <tr> 
+    <td>&#149;</td>
+    <td>SalesTaxCodeRef</td>
+  </tr>
+  <tr> 
+    <td>&#149;</td>
+    <td>OverrideItemAccountRef</td>
+  </tr>
+</table>
+(For more details about what it means for a field to be clearable or not clearable, 
+see the <i>QuickBooks SDK Programmer's Guide</i>.) 
+</body>
+</html>

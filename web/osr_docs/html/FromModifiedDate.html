@@ -1,0 +1,33 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<link rel="stylesheet" href="styleguide.css" type="text/css" />
+<title>FromModifiedDate.html</title>
+</head>
+<body>
+<b><i>FromModifiedDate</i></b><br />
+Selects objects modified on or after this date. See the note below regarding QBFC usage.<br />
+
+
+<b><i>For desktop versions of QuickBooks,</i></b> the FromModifiedDate and ToModifiedDate 
+must be between 1970-01-01 and 2038-01-19T03:14:07 (2038-01-18T19:14:07-08:00 
+PST). (The time portion of the field was not supported in qbXML version 
+1.0 or 1.1.) Also, for desktop versions of QuickBooks, if FromModifiedDate includes a date but not a time (for example, if you set 
+  FromModifiedDate to 2003-02-14), the time is assumed to be zero (2003-02-14T00:00:00). 
+If you omit FromModifiedDate, it will be set to 1970-01-01T00:00:00 (1969-12-31T16:00:00-08:00 PST).<br />
+<br />
+<b><i>For QBOE,</i></b> the FromModifiedDate and ToModifiedDate 
+must be between 1900-01-01T00:00:00 and 9999-12-31T00:00:00. If FromModifiedDate includes a date but not a time (for example, if you set 
+  FromModifiedDate to 2003-02-14), the time is assumed to be zero (2003-02-14T00:00:00). 
+If you omit FromModifiedDate, it will be set to 1900-01-01T00:00:00.<br />
+<br />
+<b><i>Note: When specifying this in QBFC,</i></b> you need to supply the parameter asDateOnly,
+which is a Boolean. If asDateOnly is true, the date value will be represented as a date only (without a time). If asDateOnly is false, the date value will be represented as date and time, padded with zeros if necessary, and set to the beginning of the day if no time is provided. 
+The asDateOnly parameter is especially useful in the ToModifiedDate field of a query: 
+
+If asDateOnly is set to true in the ToModifiedDate field of a query, then the query includes elements modified up to the end of the day.  If asDateOnly is false, the query includes elements modified up to the specified time (or up to the beginning of the day if no time is included).
+
+</body>
+</html>

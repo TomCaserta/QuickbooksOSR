@@ -1,0 +1,1230 @@
+{
+    "xmlName" : "JournalEntryAddRq",
+    "Width" : 0,
+    "TopLeftX" : 0,
+    "supports" : {
+        "US" : true,
+        "OE" : true,
+        "CA" : true,
+        "UK" : true,
+        "AU" : true
+    },
+    "TopLeftY" : 0,
+    "required" : false,
+    "fcType" : "nothing",
+    "xmlType" : "Aggregate",
+    "attributes" : [
+        {
+            "fcTypeHtml" : "IQBStringType.html",
+            "xmlName" : "nothing",
+            "supports" : {
+                "US" : true,
+                "OE" : true,
+                "CA" : true,
+                "UK" : true,
+                "AU" : true
+            },
+            "required" : false,
+            "fcType" : "IQBStringType",
+            "minVerUS" : 2,
+            "xmlType" : "skip",
+            "fcNameHtml" : "defMacro.html",
+            "fcName" : "defMacro"
+        }
+    ],
+    "MasterImage" : "None",
+    "elements" : [
+        {
+            "xmlName" : "JournalEntryAdd",
+            "Width" : 0,
+            "TopLeftX" : 0,
+            "supports" : {
+                "US" : true,
+                "OE" : true,
+                "CA" : true,
+                "UK" : true,
+                "AU" : true
+            },
+            "TopLeftY" : 0,
+            "required" : true,
+            "fcType" : "skip",
+            "xmlType" : "Aggregate",
+            "count" : 1,
+            "attributes" : [
+                {
+                    "xmlName" : "defMacro",
+                    "xmlTypeHtml" : "MACROTYPE.html",
+                    "supports" : {
+                        "US" : true,
+                        "OE" : true,
+                        "CA" : true,
+                        "UK" : true,
+                        "AU" : true
+                    },
+                    "required" : false,
+                    "fcType" : "skip",
+                    "minVerUS" : 2,
+                    "xmlType" : "MACROTYPE",
+                    "xmlNameHtml" : "defMacro.html",
+                    "fcName" : "nothing"
+                }
+            ],
+            "MasterImage" : "None",
+            "elements" : [
+                {
+                    "fcTypeHtml" : "IQBDateType.html",
+                    "xmlName" : "TxnDate",
+                    "Width" : 82,
+                    "TopLeftX" : 58,
+                    "xmlTypeHtml" : "DATETYPE.html",
+                    "supports" : {
+                        "US" : true,
+                        "OE" : true,
+                        "CA" : true,
+                        "UK" : true,
+                        "AU" : true
+                    },
+                    "TopLeftY" : 71,
+                    "required" : false,
+                    "fcType" : "IQBDateType",
+                    "xmlType" : "DATETYPE",
+                    "count" : "0 - 1",
+                    "MasterImage" : "journal_entry.jpg",
+                    "fcNameHtml" : "TxnDate.html",
+                    "Height" : 17,
+                    "xmlNameHtml" : "TxnDate.html",
+                    "fcName" : "TxnDate"
+                },
+                {
+                    "fcTypeHtml" : "IQBStringType.html",
+                    "xmlName" : "RefNumber",
+                    "maxCA" : 11,
+                    "Width" : 85,
+                    "TopLeftX" : 212,
+                    "xmlTypeHtml" : "STRTYPE.html",
+                    "supports" : {
+                        "US" : true,
+                        "OE" : true,
+                        "CA" : true,
+                        "UK" : true,
+                        "AU" : true
+                    },
+                    "TopLeftY" : 71,
+                    "required" : false,
+                    "fcType" : "IQBStringType",
+                    "xmlType" : "STRTYPE",
+                    "count" : "0 - 1",
+                    "MasterImage" : "journal_entry.jpg",
+                    "maxUK" : 11,
+                    "maxAU" : 11,
+                    "fcNameHtml" : "RefNumber.html",
+                    "maxDT" : 11,
+                    "Height" : 17,
+                    "xmlNameHtml" : "RefNumber.html",
+                    "maxOE" : 21,
+                    "fcName" : "RefNumber"
+                },
+                {
+                    "fcTypeHtml" : "IQBStringType.html",
+                    "xmlName" : "Memo",
+                    "Width" : 0,
+                    "TopLeftX" : 0,
+                    "xmlTypeHtml" : "STRTYPE.html",
+                    "supports" : {
+                        "US" : false,
+                        "OE" : true,
+                        "CA" : false,
+                        "UK" : false,
+                        "AU" : false
+                    },
+                    "TopLeftY" : 0,
+                    "required" : false,
+                    "fcType" : "IQBStringType",
+                    "xmlType" : "STRTYPE",
+                    "count" : "0 - 1",
+                    "MasterImage" : "None",
+                    "fcNameHtml" : "Memo.html",
+                    "Height" : 0,
+                    "xmlNameHtml" : "Memo.html",
+                    "maxOE" : 4000,
+                    "fcName" : "Memo"
+                },
+                {
+                    "fcTypeHtml" : "IQBBoolType.html",
+                    "xmlName" : "IsAdjustment",
+                    "Width" : 100,
+                    "TopLeftX" : 316,
+                    "xmlTypeHtml" : "BOOLTYPE.html",
+                    "supports" : {
+                        "US" : true,
+                        "OE" : false,
+                        "CA" : true,
+                        "UK" : true,
+                        "AU" : true
+                    },
+                    "TopLeftY" : 71,
+                    "required" : false,
+                    "fcType" : "IQBBoolType",
+                    "minVerUS" : 3,
+                    "xmlType" : "BOOLTYPE",
+                    "count" : "0 - 1",
+                    "MasterImage" : "journal_entry.jpg",
+                    "fcNameHtml" : "IsAdjustment.html",
+                    "Height" : 18,
+                    "xmlNameHtml" : "IsAdjustment.html",
+                    "fcName" : "IsAdjustment"
+                },
+                {
+                    "fcTypeHtml" : "QBFC-IORHomeCurrencyAdjustment.html",
+                    "xmlName" : "OR",
+                    "Width" : 0,
+                    "TopLeftX" : 0,
+                    "supports" : {
+                        "US" : true,
+                        "OE" : false,
+                        "CA" : true,
+                        "UK" : true,
+                        "AU" : true
+                    },
+                    "TopLeftY" : 0,
+                    "required" : false,
+                    "fcType" : "IORHomeCurrencyAdjustment",
+                    "minVerUS" : 8,
+                    "xmlType" : "OR",
+                    "count" : "0 - 1",
+                    "MasterImage" : "None",
+                    "elements" : [
+                        {
+                            "fcTypeHtml" : "IQBBoolType.html",
+                            "xmlName" : "IsHomeCurrencyAdjustment",
+                            "xmlTypeHtml" : "BOOLTYPE.html",
+                            "supports" : {
+                                "US" : true,
+                                "OE" : false,
+                                "CA" : true,
+                                "UK" : true,
+                                "AU" : true
+                            },
+                            "required" : false,
+                            "fcType" : "IQBBoolType",
+                            "minVerUS" : 8,
+                            "xmlType" : "BOOLTYPE",
+                            "count" : "0 - 1",
+                            "fcNameHtml" : "IsHomeCurrencyAdjustment.html",
+                            "xmlNameHtml" : "IsHomeCurrencyAdjustment.html",
+                            "fcName" : "IsHomeCurrencyAdjustment"
+                        },
+                        {
+                            "xmlName" : "nothing",
+                            "supports" : {
+                                "US" : true,
+                                "OE" : true,
+                                "CA" : true,
+                                "UK" : true,
+                                "AU" : true
+                            },
+                            "required" : false,
+                            "fcType" : "ICurrencyExchangeRate",
+                            "xmlType" : "skip",
+                            "count" : "0 - 1",
+                            "elements" : [
+                                {
+                                    "fcTypeHtml" : "IQBBoolType.html",
+                                    "xmlName" : "IsAmountsEnteredInHomeCurrency",
+                                    "xmlTypeHtml" : "BOOLTYPE.html",
+                                    "supports" : {
+                                        "US" : true,
+                                        "OE" : false,
+                                        "CA" : true,
+                                        "UK" : true,
+                                        "AU" : true
+                                    },
+                                    "required" : false,
+                                    "fcType" : "IQBBoolType",
+                                    "minVerUS" : 8,
+                                    "xmlType" : "BOOLTYPE",
+                                    "count" : "0 - 1",
+                                    "fcNameHtml" : "IsAmountsEnteredInHomeCurrency.html",
+                                    "xmlNameHtml" : "IsAmountsEnteredInHomeCurrency.html",
+                                    "fcName" : "IsAmountsEnteredInHomeCurrency"
+                                },
+                                {
+                                    "xmlName" : "CurrencyRef",
+                                    "supports" : {
+                                        "US" : true,
+                                        "OE" : false,
+                                        "CA" : true,
+                                        "UK" : true,
+                                        "AU" : true
+                                    },
+                                    "required" : false,
+                                    "fcType" : "IQBBaseRef",
+                                    "minVerUS" : 8,
+                                    "xmlType" : "Aggregate",
+                                    "count" : "0 - 1",
+                                    "elements" : [
+                                        {
+                                            "fcTypeHtml" : "IQBIDType.html",
+                                            "xmlName" : "ListID",
+                                            "xmlTypeHtml" : "IDTYPE.html",
+                                            "supports" : {
+                                                "US" : true,
+                                                "OE" : true,
+                                                "CA" : true,
+                                                "UK" : true,
+                                                "AU" : true
+                                            },
+                                            "required" : false,
+                                            "fcType" : "IQBIDType",
+                                            "xmlType" : "IDTYPE",
+                                            "count" : "0 - 1",
+                                            "fcNameHtml" : "ListID.html",
+                                            "xmlNameHtml" : "ListID.html",
+                                            "fcName" : "ListID"
+                                        },
+                                        {
+                                            "fcTypeHtml" : "IQBStringType.html",
+                                            "xmlName" : "FullName",
+                                            "maxCA" : 64,
+                                            "xmlTypeHtml" : "STRTYPE.html",
+                                            "supports" : {
+                                                "US" : true,
+                                                "OE" : true,
+                                                "CA" : true,
+                                                "UK" : true,
+                                                "AU" : true
+                                            },
+                                            "required" : false,
+                                            "fcType" : "IQBStringType",
+                                            "xmlType" : "STRTYPE",
+                                            "count" : "0 - 1",
+                                            "maxUK" : 64,
+                                            "maxAU" : 64,
+                                            "fcNameHtml" : "FullName.html",
+                                            "maxDT" : 64,
+                                            "xmlNameHtml" : "FullName.html",
+                                            "fcName" : "FullName"
+                                        }
+                                    ],
+                                    "fcNameHtml" : "Currency.html",
+                                    "xmlNameHtml" : "Currency.html",
+                                    "fcName" : "CurrencyRef"
+                                },
+                                {
+                                    "fcTypeHtml" : "IQBFloatType.html",
+                                    "xmlName" : "ExchangeRate",
+                                    "xmlTypeHtml" : "FLOATTYPE.html",
+                                    "supports" : {
+                                        "US" : true,
+                                        "OE" : false,
+                                        "CA" : true,
+                                        "UK" : true,
+                                        "AU" : true
+                                    },
+                                    "required" : false,
+                                    "fcType" : "IQBFloatType",
+                                    "minVerUS" : 8,
+                                    "xmlType" : "FLOATTYPE",
+                                    "count" : "0 - 1",
+                                    "fcNameHtml" : "ExchangeRate.html",
+                                    "xmlNameHtml" : "ExchangeRate.html",
+                                    "fcName" : "ExchangeRate"
+                                }
+                            ],
+                            "fcNameHtml" : "CurrencyExchangeRate.html",
+                            "fcName" : "CurrencyExchangeRate"
+                        },
+                        {
+                            
+                        }
+                    ],
+                    "Height" : 0,
+                    "fcName" : "ORHomeCurrencyAdjustment"
+                },
+                {
+                    "fcTypeHtml" : "IQBGUIDType.html",
+                    "xmlName" : "ExternalGUID",
+                    "xmlTypeHtml" : "GUIDTYPE.html",
+                    "supports" : {
+                        "US" : true,
+                        "OE" : false,
+                        "CA" : true,
+                        "UK" : true,
+                        "AU" : true
+                    },
+                    "required" : false,
+                    "fcType" : "IQBGUIDType",
+                    "minVerUS" : 9,
+                    "xmlType" : "GUIDTYPE",
+                    "count" : "0 - 1",
+                    "fcNameHtml" : "ExternalGUID.html",
+                    "xmlNameHtml" : "ExternalGUID.html",
+                    "fcName" : "ExternalGUID"
+                },
+                {
+                    "fcTypeHtml" : "QBFC-IORJournalLineList.html",
+                    "xmlName" : "OR",
+                    "supports" : {
+                        "US" : true,
+                        "OE" : true,
+                        "CA" : true,
+                        "UK" : true,
+                        "AU" : true
+                    },
+                    "required" : true,
+                    "fcType" : "IORJournalLineList",
+                    "xmlType" : "OR",
+                    "count" : "1 - n",
+                    "elements" : [
+                        {
+                            "xmlName" : "JournalDebitLine",
+                            "supports" : {
+                                "US" : true,
+                                "OE" : true,
+                                "CA" : true,
+                                "UK" : true,
+                                "AU" : true
+                            },
+                            "required" : false,
+                            "fcType" : "IJournalDebitLine",
+                            "xmlType" : "Aggregate",
+                            "count" : "0 - 1",
+                            "attributes" : [
+                                {
+                                    "fcTypeHtml" : "IQBStringType.html",
+                                    "xmlName" : "defMacro",
+                                    "xmlTypeHtml" : "MACROTYPE.html",
+                                    "supports" : {
+                                        "US" : true,
+                                        "OE" : true,
+                                        "CA" : true,
+                                        "UK" : true,
+                                        "AU" : true
+                                    },
+                                    "required" : false,
+                                    "fcType" : "IQBStringType",
+                                    "minVerUS" : 2,
+                                    "xmlType" : "MACROTYPE",
+                                    "fcNameHtml" : "defMacro.html",
+                                    "xmlNameHtml" : "defMacro.html",
+                                    "fcName" : "defMacro"
+                                }
+                            ],
+                            "elements" : [
+                                {
+                                    "fcTypeHtml" : "IQBIDType.html",
+                                    "xmlName" : "TxnLineID",
+                                    "xmlTypeHtml" : "IDTYPE.html",
+                                    "supports" : {
+                                        "US" : true,
+                                        "OE" : true,
+                                        "CA" : true,
+                                        "UK" : true,
+                                        "AU" : true
+                                    },
+                                    "required" : false,
+                                    "fcType" : "IQBIDType",
+                                    "xmlType" : "IDTYPE",
+                                    "count" : "0 - 1",
+                                    "fcNameHtml" : "TxnLineID.html",
+                                    "xmlNameHtml" : "TxnLineID.html",
+                                    "fcName" : "TxnLineID"
+                                },
+                                {
+                                    "xmlName" : "AccountRef",
+                                    "supports" : {
+                                        "US" : true,
+                                        "OE" : true,
+                                        "CA" : true,
+                                        "UK" : true,
+                                        "AU" : true
+                                    },
+                                    "required" : false,
+                                    "fcType" : "IQBBaseRef",
+                                    "xmlType" : "Aggregate",
+                                    "count" : "0 - 1",
+                                    "elements" : [
+                                        {
+                                            "fcTypeHtml" : "IQBIDType.html",
+                                            "xmlName" : "ListID",
+                                            "xmlTypeHtml" : "IDTYPE.html",
+                                            "supports" : {
+                                                "US" : true,
+                                                "OE" : true,
+                                                "CA" : true,
+                                                "UK" : true,
+                                                "AU" : true
+                                            },
+                                            "required" : false,
+                                            "fcType" : "IQBIDType",
+                                            "xmlType" : "IDTYPE",
+                                            "count" : "0 - 1",
+                                            "fcNameHtml" : "ListID.html",
+                                            "xmlNameHtml" : "ListID.html",
+                                            "fcName" : "ListID"
+                                        },
+                                        {
+                                            "fcTypeHtml" : "IQBStringType.html",
+                                            "xmlName" : "FullName",
+                                            "maxCA" : 159,
+                                            "xmlTypeHtml" : "STRTYPE.html",
+                                            "supports" : {
+                                                "US" : true,
+                                                "OE" : true,
+                                                "CA" : true,
+                                                "UK" : true,
+                                                "AU" : true
+                                            },
+                                            "required" : false,
+                                            "fcType" : "IQBStringType",
+                                            "xmlType" : "STRTYPE",
+                                            "count" : "0 - 1",
+                                            "maxUK" : 159,
+                                            "maxAU" : 159,
+                                            "fcNameHtml" : "FullName.html",
+                                            "maxDT" : 159,
+                                            "xmlNameHtml" : "FullName.html",
+                                            "maxOE" : 1000,
+                                            "fcName" : "FullName"
+                                        }
+                                    ],
+                                    "fcNameHtml" : "Account.html",
+                                    "xmlNameHtml" : "Account.html",
+                                    "fcName" : "AccountRef"
+                                },
+                                {
+                                    "fcTypeHtml" : "IQBAmountType.html",
+                                    "xmlName" : "Amount",
+                                    "xmlTypeHtml" : "AMTTYPE.html",
+                                    "supports" : {
+                                        "US" : true,
+                                        "OE" : true,
+                                        "CA" : true,
+                                        "UK" : true,
+                                        "AU" : true
+                                    },
+                                    "required" : false,
+                                    "fcType" : "IQBAmountType",
+                                    "xmlType" : "AMTTYPE",
+                                    "count" : "0 - 1",
+                                    "fcNameHtml" : "Amount.html",
+                                    "xmlNameHtml" : "Amount.html",
+                                    "fcName" : "Amount"
+                                },
+                                {
+                                    "fcTypeHtml" : "IQBAmountType.html",
+                                    "xmlName" : "TaxAmount",
+                                    "xmlTypeHtml" : "AMTTYPE.html",
+                                    "supports" : {
+                                        "US" : false,
+                                        "OE" : false,
+                                        "CA" : false,
+                                        "UK" : false,
+                                        "AU" : true
+                                    },
+                                    "required" : false,
+                                    "fcType" : "IQBAmountType",
+                                    "minVerUS" : 6.1,
+                                    "xmlType" : "AMTTYPE",
+                                    "count" : "0 - 1",
+                                    "fcNameHtml" : "TaxAmount.html",
+                                    "xmlNameHtml" : "TaxAmount.html",
+                                    "fcName" : "TaxAmount"
+                                },
+                                {
+                                    "fcTypeHtml" : "IQBStringType.html",
+                                    "xmlName" : "Memo",
+                                    "maxCA" : 4095,
+                                    "xmlTypeHtml" : "STRTYPE.html",
+                                    "supports" : {
+                                        "US" : true,
+                                        "OE" : true,
+                                        "CA" : true,
+                                        "UK" : true,
+                                        "AU" : true
+                                    },
+                                    "required" : false,
+                                    "fcType" : "IQBStringType",
+                                    "xmlType" : "STRTYPE",
+                                    "count" : "0 - 1",
+                                    "maxUK" : 4095,
+                                    "maxAU" : 4095,
+                                    "fcNameHtml" : "Memo.html",
+                                    "maxDT" : 4095,
+                                    "xmlNameHtml" : "Memo.html",
+                                    "maxOE" : 4000,
+                                    "fcName" : "Memo"
+                                },
+                                {
+                                    "xmlName" : "EntityRef",
+                                    "supports" : {
+                                        "US" : true,
+                                        "OE" : true,
+                                        "CA" : true,
+                                        "UK" : true,
+                                        "AU" : true
+                                    },
+                                    "required" : false,
+                                    "fcType" : "IQBBaseRef",
+                                    "xmlType" : "Aggregate",
+                                    "count" : "0 - 1",
+                                    "elements" : [
+                                        {
+                                            "fcTypeHtml" : "IQBIDType.html",
+                                            "xmlName" : "ListID",
+                                            "xmlTypeHtml" : "IDTYPE.html",
+                                            "supports" : {
+                                                "US" : true,
+                                                "OE" : true,
+                                                "CA" : true,
+                                                "UK" : true,
+                                                "AU" : true
+                                            },
+                                            "required" : false,
+                                            "fcType" : "IQBIDType",
+                                            "xmlType" : "IDTYPE",
+                                            "count" : "0 - 1",
+                                            "fcNameHtml" : "ListID.html",
+                                            "xmlNameHtml" : "ListID.html",
+                                            "fcName" : "ListID"
+                                        },
+                                        {
+                                            "fcTypeHtml" : "IQBStringType.html",
+                                            "xmlName" : "FullName",
+                                            "maxCA" : 209,
+                                            "xmlTypeHtml" : "STRTYPE.html",
+                                            "supports" : {
+                                                "US" : true,
+                                                "OE" : true,
+                                                "CA" : true,
+                                                "UK" : true,
+                                                "AU" : true
+                                            },
+                                            "required" : false,
+                                            "fcType" : "IQBStringType",
+                                            "xmlType" : "STRTYPE",
+                                            "count" : "0 - 1",
+                                            "maxUK" : 209,
+                                            "maxAU" : 209,
+                                            "fcNameHtml" : "FullName.html",
+                                            "maxDT" : 209,
+                                            "xmlNameHtml" : "FullName.html",
+                                            "maxOE" : 1000,
+                                            "fcName" : "FullName"
+                                        }
+                                    ],
+                                    "fcNameHtml" : "Entity.html",
+                                    "xmlNameHtml" : "Entity.html",
+                                    "fcName" : "EntityRef"
+                                },
+                                {
+                                    "xmlName" : "ClassRef",
+                                    "supports" : {
+                                        "US" : true,
+                                        "OE" : true,
+                                        "CA" : true,
+                                        "UK" : true,
+                                        "AU" : true
+                                    },
+                                    "required" : false,
+                                    "fcType" : "IQBBaseRef",
+                                    "xmlType" : "Aggregate",
+                                    "count" : "0 - 1",
+                                    "elements" : [
+                                        {
+                                            "fcTypeHtml" : "IQBIDType.html",
+                                            "xmlName" : "ListID",
+                                            "xmlTypeHtml" : "IDTYPE.html",
+                                            "supports" : {
+                                                "US" : true,
+                                                "OE" : true,
+                                                "CA" : true,
+                                                "UK" : true,
+                                                "AU" : true
+                                            },
+                                            "required" : false,
+                                            "fcType" : "IQBIDType",
+                                            "xmlType" : "IDTYPE",
+                                            "count" : "0 - 1",
+                                            "fcNameHtml" : "ListID.html",
+                                            "xmlNameHtml" : "ListID.html",
+                                            "fcName" : "ListID"
+                                        },
+                                        {
+                                            "fcTypeHtml" : "IQBStringType.html",
+                                            "xmlName" : "FullName",
+                                            "maxCA" : 159,
+                                            "xmlTypeHtml" : "STRTYPE.html",
+                                            "supports" : {
+                                                "US" : true,
+                                                "OE" : true,
+                                                "CA" : true,
+                                                "UK" : true,
+                                                "AU" : true
+                                            },
+                                            "required" : false,
+                                            "fcType" : "IQBStringType",
+                                            "xmlType" : "STRTYPE",
+                                            "count" : "0 - 1",
+                                            "maxUK" : 159,
+                                            "maxAU" : 159,
+                                            "fcNameHtml" : "FullName.html",
+                                            "maxDT" : 159,
+                                            "xmlNameHtml" : "FullName.html",
+                                            "maxOE" : 1000,
+                                            "fcName" : "FullName"
+                                        }
+                                    ],
+                                    "fcNameHtml" : "Class.html",
+                                    "xmlNameHtml" : "Class.html",
+                                    "fcName" : "ClassRef"
+                                },
+                                {
+                                    "xmlName" : "ItemSalesTaxRef",
+                                    "supports" : {
+                                        "US" : false,
+                                        "OE" : false,
+                                        "CA" : true,
+                                        "UK" : true,
+                                        "AU" : true
+                                    },
+                                    "required" : false,
+                                    "fcType" : "IQBBaseRef",
+                                    "minVerUS" : 6,
+                                    "xmlType" : "Aggregate",
+                                    "count" : "0 - 1",
+                                    "elements" : [
+                                        {
+                                            "fcTypeHtml" : "IQBIDType.html",
+                                            "xmlName" : "ListID",
+                                            "xmlTypeHtml" : "IDTYPE.html",
+                                            "supports" : {
+                                                "US" : true,
+                                                "OE" : true,
+                                                "CA" : true,
+                                                "UK" : true,
+                                                "AU" : true
+                                            },
+                                            "required" : false,
+                                            "fcType" : "IQBIDType",
+                                            "xmlType" : "IDTYPE",
+                                            "count" : "0 - 1",
+                                            "fcNameHtml" : "ListID.html",
+                                            "xmlNameHtml" : "ListID.html",
+                                            "fcName" : "ListID"
+                                        },
+                                        {
+                                            "fcTypeHtml" : "IQBStringType.html",
+                                            "xmlName" : "FullName",
+                                            "maxCA" : 31,
+                                            "xmlTypeHtml" : "STRTYPE.html",
+                                            "supports" : {
+                                                "US" : true,
+                                                "OE" : true,
+                                                "CA" : true,
+                                                "UK" : true,
+                                                "AU" : true
+                                            },
+                                            "required" : false,
+                                            "fcType" : "IQBStringType",
+                                            "xmlType" : "STRTYPE",
+                                            "count" : "0 - 1",
+                                            "maxUK" : 31,
+                                            "maxAU" : 31,
+                                            "fcNameHtml" : "FullName.html",
+                                            "maxDT" : 31,
+                                            "xmlNameHtml" : "FullName.html",
+                                            "maxOE" : 100,
+                                            "fcName" : "FullName"
+                                        }
+                                    ],
+                                    "fcNameHtml" : "ItemSalesTax.html",
+                                    "xmlNameHtml" : "ItemSalesTax.html",
+                                    "fcName" : "ItemSalesTaxRef"
+                                },
+                                {
+                                    "fcTypeHtml" : "QBFC-IQBENBillableStatusType.html",
+                                    "xmlName" : "BillableStatus",
+                                    "xmlTypeHtml" : "ENUMTYPE.html",
+                                    "supports" : {
+                                        "US" : true,
+                                        "OE" : false,
+                                        "CA" : true,
+                                        "UK" : true,
+                                        "AU" : true
+                                    },
+                                    "required" : false,
+                                    "fcType" : "IQBENBillableStatusType",
+                                    "minVerUS" : 3,
+                                    "xmlType" : "ENUMTYPE",
+                                    "xmlEnumValues" : [
+                                        "Billable",
+                                        "NotBillable",
+                                        "HasBeenBilled"
+                                    ],
+                                    "count" : "0 - 1",
+                                    "fcNameHtml" : "QBFC-BillableStatus.html",
+                                    "fcEnumValues" : [
+                                        "bsBillable",
+                                        "bsNotBillable",
+                                        "bsHasBeenBilled"
+                                    ],
+                                    "xmlNameHtml" : "BillableStatus.html",
+                                    "fcName" : "BillableStatus"
+                                }
+                            ],
+                            "fcNameHtml" : "JournalDebitLine.html",
+                            "xmlNameHtml" : "JournalDebitLine.html",
+                            "fcName" : "JournalDebitLine"
+                        },
+                        {
+                            "xmlName" : "JournalCreditLine",
+                            "supports" : {
+                                "US" : true,
+                                "OE" : true,
+                                "CA" : true,
+                                "UK" : true,
+                                "AU" : true
+                            },
+                            "required" : false,
+                            "fcType" : "IJournalCreditLine",
+                            "xmlType" : "Aggregate",
+                            "count" : "0 - 1",
+                            "attributes" : [
+                                {
+                                    "fcTypeHtml" : "IQBStringType.html",
+                                    "xmlName" : "defMacro",
+                                    "xmlTypeHtml" : "MACROTYPE.html",
+                                    "supports" : {
+                                        "US" : true,
+                                        "OE" : true,
+                                        "CA" : true,
+                                        "UK" : true,
+                                        "AU" : true
+                                    },
+                                    "required" : false,
+                                    "fcType" : "IQBStringType",
+                                    "minVerUS" : 2,
+                                    "xmlType" : "MACROTYPE",
+                                    "fcNameHtml" : "defMacro.html",
+                                    "xmlNameHtml" : "defMacro.html",
+                                    "fcName" : "defMacro"
+                                }
+                            ],
+                            "elements" : [
+                                {
+                                    "fcTypeHtml" : "IQBIDType.html",
+                                    "xmlName" : "TxnLineID",
+                                    "xmlTypeHtml" : "IDTYPE.html",
+                                    "supports" : {
+                                        "US" : true,
+                                        "OE" : true,
+                                        "CA" : true,
+                                        "UK" : true,
+                                        "AU" : true
+                                    },
+                                    "required" : false,
+                                    "fcType" : "IQBIDType",
+                                    "xmlType" : "IDTYPE",
+                                    "count" : "0 - 1",
+                                    "fcNameHtml" : "TxnLineID.html",
+                                    "xmlNameHtml" : "TxnLineID.html",
+                                    "fcName" : "TxnLineID"
+                                },
+                                {
+                                    "xmlName" : "AccountRef",
+                                    "supports" : {
+                                        "US" : true,
+                                        "OE" : true,
+                                        "CA" : true,
+                                        "UK" : true,
+                                        "AU" : true
+                                    },
+                                    "required" : false,
+                                    "fcType" : "IQBBaseRef",
+                                    "xmlType" : "Aggregate",
+                                    "count" : "0 - 1",
+                                    "elements" : [
+                                        {
+                                            "fcTypeHtml" : "IQBIDType.html",
+                                            "xmlName" : "ListID",
+                                            "xmlTypeHtml" : "IDTYPE.html",
+                                            "supports" : {
+                                                "US" : true,
+                                                "OE" : true,
+                                                "CA" : true,
+                                                "UK" : true,
+                                                "AU" : true
+                                            },
+                                            "required" : false,
+                                            "fcType" : "IQBIDType",
+                                            "xmlType" : "IDTYPE",
+                                            "count" : "0 - 1",
+                                            "fcNameHtml" : "ListID.html",
+                                            "xmlNameHtml" : "ListID.html",
+                                            "fcName" : "ListID"
+                                        },
+                                        {
+                                            "fcTypeHtml" : "IQBStringType.html",
+                                            "xmlName" : "FullName",
+                                            "maxCA" : 159,
+                                            "xmlTypeHtml" : "STRTYPE.html",
+                                            "supports" : {
+                                                "US" : true,
+                                                "OE" : true,
+                                                "CA" : true,
+                                                "UK" : true,
+                                                "AU" : true
+                                            },
+                                            "required" : false,
+                                            "fcType" : "IQBStringType",
+                                            "xmlType" : "STRTYPE",
+                                            "count" : "0 - 1",
+                                            "maxUK" : 159,
+                                            "maxAU" : 159,
+                                            "fcNameHtml" : "FullName.html",
+                                            "maxDT" : 159,
+                                            "xmlNameHtml" : "FullName.html",
+                                            "maxOE" : 1000,
+                                            "fcName" : "FullName"
+                                        }
+                                    ],
+                                    "fcNameHtml" : "Account.html",
+                                    "xmlNameHtml" : "Account.html",
+                                    "fcName" : "AccountRef"
+                                },
+                                {
+                                    "fcTypeHtml" : "IQBAmountType.html",
+                                    "xmlName" : "Amount",
+                                    "xmlTypeHtml" : "AMTTYPE.html",
+                                    "supports" : {
+                                        "US" : true,
+                                        "OE" : true,
+                                        "CA" : true,
+                                        "UK" : true,
+                                        "AU" : true
+                                    },
+                                    "required" : false,
+                                    "fcType" : "IQBAmountType",
+                                    "xmlType" : "AMTTYPE",
+                                    "count" : "0 - 1",
+                                    "fcNameHtml" : "Amount.html",
+                                    "xmlNameHtml" : "Amount.html",
+                                    "fcName" : "Amount"
+                                },
+                                {
+                                    "fcTypeHtml" : "IQBAmountType.html",
+                                    "xmlName" : "TaxAmount",
+                                    "xmlTypeHtml" : "AMTTYPE.html",
+                                    "supports" : {
+                                        "US" : false,
+                                        "OE" : false,
+                                        "CA" : false,
+                                        "UK" : false,
+                                        "AU" : true
+                                    },
+                                    "required" : false,
+                                    "fcType" : "IQBAmountType",
+                                    "minVerUS" : 6.1,
+                                    "xmlType" : "AMTTYPE",
+                                    "count" : "0 - 1",
+                                    "fcNameHtml" : "TaxAmount.html",
+                                    "xmlNameHtml" : "TaxAmount.html",
+                                    "fcName" : "TaxAmount"
+                                },
+                                {
+                                    "fcTypeHtml" : "IQBStringType.html",
+                                    "xmlName" : "Memo",
+                                    "maxCA" : 4095,
+                                    "xmlTypeHtml" : "STRTYPE.html",
+                                    "supports" : {
+                                        "US" : true,
+                                        "OE" : true,
+                                        "CA" : true,
+                                        "UK" : true,
+                                        "AU" : true
+                                    },
+                                    "required" : false,
+                                    "fcType" : "IQBStringType",
+                                    "xmlType" : "STRTYPE",
+                                    "count" : "0 - 1",
+                                    "maxUK" : 4095,
+                                    "maxAU" : 4095,
+                                    "fcNameHtml" : "Memo.html",
+                                    "maxDT" : 4095,
+                                    "xmlNameHtml" : "Memo.html",
+                                    "maxOE" : 4000,
+                                    "fcName" : "Memo"
+                                },
+                                {
+                                    "xmlName" : "EntityRef",
+                                    "supports" : {
+                                        "US" : true,
+                                        "OE" : true,
+                                        "CA" : true,
+                                        "UK" : true,
+                                        "AU" : true
+                                    },
+                                    "required" : false,
+                                    "fcType" : "IQBBaseRef",
+                                    "xmlType" : "Aggregate",
+                                    "count" : "0 - 1",
+                                    "elements" : [
+                                        {
+                                            "fcTypeHtml" : "IQBIDType.html",
+                                            "xmlName" : "ListID",
+                                            "xmlTypeHtml" : "IDTYPE.html",
+                                            "supports" : {
+                                                "US" : true,
+                                                "OE" : true,
+                                                "CA" : true,
+                                                "UK" : true,
+                                                "AU" : true
+                                            },
+                                            "required" : false,
+                                            "fcType" : "IQBIDType",
+                                            "xmlType" : "IDTYPE",
+                                            "count" : "0 - 1",
+                                            "fcNameHtml" : "ListID.html",
+                                            "xmlNameHtml" : "ListID.html",
+                                            "fcName" : "ListID"
+                                        },
+                                        {
+                                            "fcTypeHtml" : "IQBStringType.html",
+                                            "xmlName" : "FullName",
+                                            "maxCA" : 209,
+                                            "xmlTypeHtml" : "STRTYPE.html",
+                                            "supports" : {
+                                                "US" : true,
+                                                "OE" : true,
+                                                "CA" : true,
+                                                "UK" : true,
+                                                "AU" : true
+                                            },
+                                            "required" : false,
+                                            "fcType" : "IQBStringType",
+                                            "xmlType" : "STRTYPE",
+                                            "count" : "0 - 1",
+                                            "maxUK" : 209,
+                                            "maxAU" : 209,
+                                            "fcNameHtml" : "FullName.html",
+                                            "maxDT" : 209,
+                                            "xmlNameHtml" : "FullName.html",
+                                            "maxOE" : 1000,
+                                            "fcName" : "FullName"
+                                        }
+                                    ],
+                                    "fcNameHtml" : "Entity.html",
+                                    "xmlNameHtml" : "Entity.html",
+                                    "fcName" : "EntityRef"
+                                },
+                                {
+                                    "xmlName" : "ClassRef",
+                                    "supports" : {
+                                        "US" : true,
+                                        "OE" : true,
+                                        "CA" : true,
+                                        "UK" : true,
+                                        "AU" : true
+                                    },
+                                    "required" : false,
+                                    "fcType" : "IQBBaseRef",
+                                    "xmlType" : "Aggregate",
+                                    "count" : "0 - 1",
+                                    "elements" : [
+                                        {
+                                            "fcTypeHtml" : "IQBIDType.html",
+                                            "xmlName" : "ListID",
+                                            "xmlTypeHtml" : "IDTYPE.html",
+                                            "supports" : {
+                                                "US" : true,
+                                                "OE" : true,
+                                                "CA" : true,
+                                                "UK" : true,
+                                                "AU" : true
+                                            },
+                                            "required" : false,
+                                            "fcType" : "IQBIDType",
+                                            "xmlType" : "IDTYPE",
+                                            "count" : "0 - 1",
+                                            "fcNameHtml" : "ListID.html",
+                                            "xmlNameHtml" : "ListID.html",
+                                            "fcName" : "ListID"
+                                        },
+                                        {
+                                            "fcTypeHtml" : "IQBStringType.html",
+                                            "xmlName" : "FullName",
+                                            "maxCA" : 159,
+                                            "xmlTypeHtml" : "STRTYPE.html",
+                                            "supports" : {
+                                                "US" : true,
+                                                "OE" : true,
+                                                "CA" : true,
+                                                "UK" : true,
+                                                "AU" : true
+                                            },
+                                            "required" : false,
+                                            "fcType" : "IQBStringType",
+                                            "xmlType" : "STRTYPE",
+                                            "count" : "0 - 1",
+                                            "maxUK" : 159,
+                                            "maxAU" : 159,
+                                            "fcNameHtml" : "FullName.html",
+                                            "maxDT" : 159,
+                                            "xmlNameHtml" : "FullName.html",
+                                            "maxOE" : 1000,
+                                            "fcName" : "FullName"
+                                        }
+                                    ],
+                                    "fcNameHtml" : "Class.html",
+                                    "xmlNameHtml" : "Class.html",
+                                    "fcName" : "ClassRef"
+                                },
+                                {
+                                    "xmlName" : "ItemSalesTaxRef",
+                                    "supports" : {
+                                        "US" : false,
+                                        "OE" : false,
+                                        "CA" : true,
+                                        "UK" : true,
+                                        "AU" : true
+                                    },
+                                    "required" : false,
+                                    "fcType" : "IQBBaseRef",
+                                    "minVerUS" : 6,
+                                    "xmlType" : "Aggregate",
+                                    "count" : "0 - 1",
+                                    "elements" : [
+                                        {
+                                            "fcTypeHtml" : "IQBIDType.html",
+                                            "xmlName" : "ListID",
+                                            "xmlTypeHtml" : "IDTYPE.html",
+                                            "supports" : {
+                                                "US" : true,
+                                                "OE" : true,
+                                                "CA" : true,
+                                                "UK" : true,
+                                                "AU" : true
+                                            },
+                                            "required" : false,
+                                            "fcType" : "IQBIDType",
+                                            "xmlType" : "IDTYPE",
+                                            "count" : "0 - 1",
+                                            "fcNameHtml" : "ListID.html",
+                                            "xmlNameHtml" : "ListID.html",
+                                            "fcName" : "ListID"
+                                        },
+                                        {
+                                            "fcTypeHtml" : "IQBStringType.html",
+                                            "xmlName" : "FullName",
+                                            "maxCA" : 31,
+                                            "xmlTypeHtml" : "STRTYPE.html",
+                                            "supports" : {
+                                                "US" : true,
+                                                "OE" : true,
+                                                "CA" : true,
+                                                "UK" : true,
+                                                "AU" : true
+                                            },
+                                            "required" : false,
+                                            "fcType" : "IQBStringType",
+                                            "xmlType" : "STRTYPE",
+                                            "count" : "0 - 1",
+                                            "maxUK" : 31,
+                                            "maxAU" : 31,
+                                            "fcNameHtml" : "FullName.html",
+                                            "maxDT" : 31,
+                                            "xmlNameHtml" : "FullName.html",
+                                            "maxOE" : 100,
+                                            "fcName" : "FullName"
+                                        }
+                                    ],
+                                    "fcNameHtml" : "ItemSalesTax.html",
+                                    "xmlNameHtml" : "ItemSalesTax.html",
+                                    "fcName" : "ItemSalesTaxRef"
+                                },
+                                {
+                                    "fcTypeHtml" : "QBFC-IQBENBillableStatusType.html",
+                                    "xmlName" : "BillableStatus",
+                                    "xmlTypeHtml" : "ENUMTYPE.html",
+                                    "supports" : {
+                                        "US" : true,
+                                        "OE" : false,
+                                        "CA" : true,
+                                        "UK" : true,
+                                        "AU" : true
+                                    },
+                                    "required" : false,
+                                    "fcType" : "IQBENBillableStatusType",
+                                    "minVerUS" : 3,
+                                    "xmlType" : "ENUMTYPE",
+                                    "xmlEnumValues" : [
+                                        "Billable",
+                                        "NotBillable",
+                                        "HasBeenBilled"
+                                    ],
+                                    "count" : "0 - 1",
+                                    "fcNameHtml" : "QBFC-BillableStatus.html",
+                                    "fcEnumValues" : [
+                                        "bsBillable",
+                                        "bsNotBillable",
+                                        "bsHasBeenBilled"
+                                    ],
+                                    "xmlNameHtml" : "BillableStatus.html",
+                                    "fcName" : "BillableStatus"
+                                }
+                            ],
+                            "fcNameHtml" : "JournalCreditLine.html",
+                            "xmlNameHtml" : "JournalCreditLine.html",
+                            "fcName" : "JournalCreditLine"
+                        }
+                    ],
+                    "fcListOf" : {
+                        "fcTypeHtml" : "QBFC-IORJournalLine.html",
+                        "fcType" : "IORJournalLine"
+                    },
+                    "fcName" : "ORJournalLineList"
+                },
+                {
+                    
+                }
+            ],
+            "Height" : 0,
+            "xmlNameHtml" : "JournalEntry.html",
+            "fcName" : "nothing"
+        },
+        {
+            "fcTypeHtml" : "IBSTRList.html",
+            "xmlName" : "IncludeRetElement",
+            "maxCA" : 50,
+            "Width" : 0,
+            "TopLeftX" : 0,
+            "xmlTypeHtml" : "STRTYPE.html",
+            "supports" : {
+                "US" : true,
+                "OE" : false,
+                "CA" : true,
+                "UK" : true,
+                "AU" : true
+            },
+            "TopLeftY" : 0,
+            "required" : false,
+            "fcType" : "IBSTRList",
+            "minVerUS" : 4,
+            "xmlType" : "STRTYPE",
+            "count" : "0 - n",
+            "MasterImage" : "None",
+            "maxUK" : 50,
+            "maxAU" : 50,
+            "fcNameHtml" : "QBFC-IncludeRetElementList.html",
+            "maxDT" : 50,
+            "Height" : 0,
+            "xmlNameHtml" : "IncludeRetElement.html",
+            "fcName" : "IncludeRetElementList"
+        }
+    ],
+    "fcNameHtml" : "JournalEntryAdd.html",
+    "Height" : 0,
+    "xmlNameHtml" : "JournalEntryAdd.html",
+    "fcName" : "IJournalEntryAdd"
+}

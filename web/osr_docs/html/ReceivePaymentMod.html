@@ -1,0 +1,59 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+  <link rel="stylesheet" href="styleguide.css" type="text/css" />
+  <title>ReceivePaymentMod.html</title>
+</head>
+<body>
+<b><i>ReceivePaymentMod</i></b><br />
+ Modifies a receive payment transaction. If you save QBMS credit card data in your ReceivePayments, this Mod request allows you to capture a previously authorized credit card charge. The way this works is that the ReceivePaymentAdd would contain the QBMS CreditCardTxnInfo aggregate with the CreditCardTxnType set to "Authorization," which causes QB to internally mark the transaction as pending. When the capture transaction is performed later, in QBMS, that capture transaction can be saved into QuickBooks via this Mod request, as you are modifying the original ReceivePayment  but changing its CreditCardTxnType from"Authorization" to "Capture."  This mod operation results in the removal of the pending status and the posting of this receive payment. <br />
+<br />
+ Notice that the reconciliation data fields (ReconBatchID, PaymentGroupingCode, PaymentStatus, TxnAuthorizationTime, TxnAuthorizationStamp, ClientTransID) are optional ONLY if the CreditCardTxnType is "Authorization" because authorizations don't have such data.  If the type is "Charge", then those reconciliation fields must be supplied or you will get a runtime error. <br />
+<br />
+The following list describes what you can and can't do with this request. 
+<ul>
+<li>Modify RefNumber or Memo. </li>
+<li>Modify (not clear) the CustomerRef field for a payment that was not electronically processed.</li>
+<li>Modify (not clear) the ARAccountRef.</li>
+<li>Modify (not clear) the TxnDate.</li>
+<li>Modify or clear the TotalAmount.</li>
+<li>Modify or clear the PaymentMethodRef.</li>
+<li>Modify, (not clear) the DepositToAccountRef</li>
+<li>Change the payment amount applied to an invoice. For a receive payment transaction that has been applied to several existing invoices, redistribute the payment amounts applied to the invoices.</li>
+<li>Change the discount amount applied to particular invoice.</li>
+<li>You cannot change the credit amount applied to an invoice.</li>
+<li>Apply the payment to a different invoice, including a discount and a credit.	Apply the payment amount to a different invoice. Apply a discount, and a credit. The existing distribution is cleared, except for any credit that may have been applied.</li>
+<li>Modify QBMS credit card information</li>
+<li>You cannot auto apply payment.</li>
+<li>Apply an additional credit to an invoice.</li>
+</ul>
+The following notes might be of use to you:<br />
+<br />
+<b>Changing the A/R account</b><br />
+If a ReceivePaymentMod specifies the ARAccountRef field without specifying any change to the way the payment amount is applied (no AppliedToTxnMod aggregates are specified), then the request will fail. The A/R account on the receive payment transaction must match the A/R account on the invoices you are paying.<br /><br />
+
+<b>Links</b><br />
+Links between transactions need a particular attention.  Received Payments can be linked with receivables, such as invoices. Make sure that after modifying a received payment which is linked to another transaction, the links are not damaged. Changing a simple field, such as Memo,  preserves existing links. Specifying the AppliedToTxnMod aggregate clears existing links, as described in the QB SDK Programmer's Guide chapter on modifying transactions.<br /><br />
+
+<b>The impact of permissions settings</b><br />
+Users must have Sales and Accounts Receivable and Changing and deleting transactions permissions set to yes to modify a receive payment transaction. Otherwise, SDK returns an INSUFFICIENT_PERMISSIONS error (status ID = 3260).
+If the transaction date is before the closing date, they need also the Changing and deleting transactions before closing date permission. Otherwise, SDK will returns CANNOT_MODIFY_BEFORE_CLOSING_DATE error (status ID = 3171).<br />
+<br />
+<b>Impact of preference settings</b>
+There are 3 preference settings that affect the behavior of the Receive Payment form in the UI. They are: Automatically apply payments, Automatically calculate payments, and Use Undeposited Funds as a default deposit to account. None of these preference settings affects the processing of the ReceivePaymentMod request.<br />
+<br />
+<b>Other Considerations</b><br />
+If you want to change the payment amount, you must specify the new amount. The amount will not be calculated based on the selected invoices.<br /><br />
+
+Conversely, this request does not auto apply the payment amount to the unpaid invoices. If you want to to edit the existing payment distribution, you must specify the individual invoices to which the payment should be applied.<br />
+<br />
+The "Use Undeposited Funds as Default" option does not affect this request. If you want to edit the existing DepositToAccountRef, you must specify the new account--this field cannot simply be cleared. <br />
+<br />
+<b>Specific error conditions that pertain to this feature</b><br />
+If user tries to clear a field that cannot be cleared, this request returns error 3190: Cannot clear required element.
+
+
+</body>
+</html>

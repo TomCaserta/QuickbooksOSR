@@ -1,0 +1,22 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<link rel="stylesheet" href="styleguide.css" type="text/css" />
+<title>ShipAddress.html</title>
+</head>
+<body>
+<b><i>ShipAddress</i></b><br />
+Whatever address you specify in this aggregate must not result in an address greater than 5 lines, otherwise you'll get a runtime error, because QuickBooks doesn't support addresses more than 5 lines.
+<br />
+<br />
+There are two ways to specify an address within this aggregate:
+<ol>
+<li>Using Addr1 through Addr3 along with the other possible aggregate elements, such as City, State, Postalcode.</li>
+<li>Using Addr1, Addr2, Addr3, Addr4, and Addr5 to fully specify the address. If you use this so called "address block" approach, you <b><i>cannot</i></b> use any other address elements, such as City, State, etc. (Note: this approach is not valid for EmployeeAdd/Mod/Query) </li>
+</ol>
+
+If you use the address block approach above, the lines Addr1...Addr5 are each printed as a separate line on the transaction, and the values are returned in the Ret object under the aggregate ShipAddressBlock or BillAddressBlock.  
+</body>
+</html>

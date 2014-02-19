@@ -1,0 +1,23 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+  <link rel="stylesheet" href="styleguide.css" type="text/css" />
+  <title>CreditMemoAdd.html</title>
+</head>
+<body>
+<b><i>CreditMemoAdd</i></b><br />
+Adds a credit memo. A credit memo specifies an amount that you owe your customer for some reason, such as overpayment against an invoice, returned merchandise, or for some pre-payment. It reduces a customer&#146;s outstanding balance.  The CreditMemo doesn't actually get applied until  is referenced in a ReceivePayment transaction inside the SetCredit aggregate.<br />
+<br />
+The CreditMemo should not be confused with a VendorCredit, which specifies an amount that a vendor owes you.<br />
+<br />
+<b>Using Credit Memos for Pre-Payments </b> <br />
+Occasionally an application will need to record pre-payments for a job that is invoiced or paid for only when it is complete. One can create sales receipts for pre-payments using an item other charge named something like "Pre-payment". If the customer will eventually be sent an invoice for the total job, create credit memos for that customer for the pre-payment amount on each sales receipt. If the customer will be paying for the final job when it is completed and will be issued a sales receipt, do not create the credit memos. The credit memos are only used for invoice transactions. <br />
+<br />
+When the work order is complete add the invoice to QuickBooks and then apply the credit memos with a ReceivePaymentAdd request. The amount due on the invoice will be reduced properly and all of the transactions will be properly recorded in QuickBooks. <br />
+<br />
+
+If a sales receipt will be issued at the end of the job, include pre-payment information in multiple lines or as a summary line. Use the description field to list the existing pre-payment sales receipt or receipts so all transactions can be tied together on the final sales receipt. 
+</body>
+</html>

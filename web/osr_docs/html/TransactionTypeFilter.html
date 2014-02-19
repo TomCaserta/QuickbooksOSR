@@ -1,0 +1,23 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+  <link rel="stylesheet" href="styleguide.css" type="text/css" />
+  <title>TransactionTypeFilter.html</title>
+</head>
+<body>
+<b><i>TransactionTypeFilter</i></b><br /><br />
+Filters the transactions based on the transaction's type.  You can specify one or more transaction 
+types in the filter. Notice that TimeTracking transactions are not supported. <br />
+<br />
+
+If you set the transaction
+type filter to "All" (or if you don't set it at all), the query will be searching only those 
+transaction types that are permissible types for the user currently logged in. 
+ 
+If instead of "all,"  you specify a transaction type that the currently logged in user is not 
+permitted to access, you will get a runtime error, even if other permissible transaction types
+were specified as well.
+</body>
+</html>

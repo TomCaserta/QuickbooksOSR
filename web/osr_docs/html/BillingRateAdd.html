@@ -1,0 +1,24 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+  <link rel="stylesheet" href="styleguide.css" type="text/css" />
+  <title>BillingRateAdd.html</title>
+</head>
+<body>
+<b><i>BillingRateAdd</i></b><br />
+Adds a billing rate to the billing rate level list. After a billing rate is created, it can
+be assigned to an employee or vendor (VendorAdd/Mod, EmployeeAdd/Mod) via the BillingRateRef
+element in the appropriate request. Then, once the billing rate is assigned to an
+employee or vendor, if you use that employee or vendor in a time transaction (TimeTrackingAdd),
+then the billing rate will override the rate specified by the service item used in the
+time transaction.
+<br />
+<br />
+Use FixedBillingRate to override all service items with a fixed rate.
+ Use BillingRatePerItem to override a
+specific service item. If you want to specify more than one service item, 
+you'll need to use one BillingRatePerItem aggregate for each service item.
+</body>
+</html>

@@ -1,0 +1,199 @@
+{
+    "xmlName" : "VendorTypeAddRq",
+    "Width" : 0,
+    "TopLeftX" : 0,
+    "supports" : {
+        "US" : true,
+        "OE" : false,
+        "CA" : true,
+        "UK" : true,
+        "AU" : true
+    },
+    "TopLeftY" : 0,
+    "required" : false,
+    "fcType" : "nothing",
+    "xmlType" : "Aggregate",
+    "MasterImage" : "None",
+    "elements" : [
+        {
+            "xmlName" : "VendorTypeAdd",
+            "Width" : 0,
+            "TopLeftX" : 0,
+            "supports" : {
+                "US" : true,
+                "OE" : true,
+                "CA" : true,
+                "UK" : true,
+                "AU" : true
+            },
+            "TopLeftY" : 0,
+            "required" : true,
+            "fcType" : "skip",
+            "xmlType" : "Aggregate",
+            "count" : 1,
+            "MasterImage" : "None",
+            "elements" : [
+                {
+                    "fcTypeHtml" : "IQBStringType.html",
+                    "xmlName" : "Name",
+                    "maxCA" : 31,
+                    "Width" : 149,
+                    "TopLeftX" : 102,
+                    "xmlTypeHtml" : "STRTYPE.html",
+                    "supports" : {
+                        "US" : true,
+                        "OE" : true,
+                        "CA" : true,
+                        "UK" : true,
+                        "AU" : true
+                    },
+                    "TopLeftY" : 44,
+                    "required" : true,
+                    "fcType" : "IQBStringType",
+                    "xmlType" : "STRTYPE",
+                    "count" : 1,
+                    "MasterImage" : "vendortype.jpg",
+                    "maxUK" : 31,
+                    "maxAU" : 31,
+                    "fcNameHtml" : "Name.html",
+                    "maxDT" : 31,
+                    "Height" : 17,
+                    "xmlNameHtml" : "Name.html",
+                    "fcName" : "Name"
+                },
+                {
+                    "fcTypeHtml" : "IQBBoolType.html",
+                    "xmlName" : "IsActive",
+                    "Width" : 94,
+                    "TopLeftX" : 255,
+                    "xmlTypeHtml" : "BOOLTYPE.html",
+                    "supports" : {
+                        "US" : true,
+                        "OE" : true,
+                        "CA" : true,
+                        "UK" : true,
+                        "AU" : true
+                    },
+                    "TopLeftY" : 125,
+                    "required" : false,
+                    "fcType" : "IQBBoolType",
+                    "xmlType" : "BOOLTYPE",
+                    "count" : "0 - 1",
+                    "MasterImage" : "vendortype.jpg",
+                    "fcNameHtml" : "IsActive.html",
+                    "Height" : 35,
+                    "xmlNameHtml" : "IsActive.html",
+                    "fcName" : "IsActive"
+                },
+                {
+                    "xmlName" : "ParentRef",
+                    "Width" : 0,
+                    "TopLeftX" : 0,
+                    "supports" : {
+                        "US" : true,
+                        "OE" : true,
+                        "CA" : true,
+                        "UK" : true,
+                        "AU" : true
+                    },
+                    "TopLeftY" : 0,
+                    "required" : false,
+                    "fcType" : "IQBBaseRef",
+                    "xmlType" : "Aggregate",
+                    "count" : "0 - 1",
+                    "MasterImage" : "None",
+                    "elements" : [
+                        {
+                            "fcTypeHtml" : "IQBIDType.html",
+                            "xmlName" : "ListID",
+                            "Width" : 0,
+                            "TopLeftX" : 0,
+                            "xmlTypeHtml" : "IDTYPE.html",
+                            "supports" : {
+                                "US" : true,
+                                "OE" : true,
+                                "CA" : true,
+                                "UK" : true,
+                                "AU" : true
+                            },
+                            "TopLeftY" : 0,
+                            "required" : false,
+                            "fcType" : "IQBIDType",
+                            "xmlType" : "IDTYPE",
+                            "count" : "0 - 1",
+                            "MasterImage" : "None",
+                            "fcNameHtml" : "ListID.html",
+                            "Height" : 0,
+                            "xmlNameHtml" : "ListID.html",
+                            "fcName" : "ListID"
+                        },
+                        {
+                            "fcTypeHtml" : "IQBStringType.html",
+                            "xmlName" : "FullName",
+                            "Width" : 156,
+                            "TopLeftX" : 62,
+                            "xmlTypeHtml" : "STRTYPE.html",
+                            "supports" : {
+                                "US" : true,
+                                "OE" : true,
+                                "CA" : true,
+                                "UK" : true,
+                                "AU" : true
+                            },
+                            "TopLeftY" : 96,
+                            "required" : false,
+                            "fcType" : "IQBStringType",
+                            "xmlType" : "STRTYPE",
+                            "count" : "0 - 1",
+                            "MasterImage" : "vendortype.jpg",
+                            "fcNameHtml" : "FullName.html",
+                            "Height" : 17,
+                            "xmlNameHtml" : "FullName.html",
+                            "fcName" : "FullName"
+                        }
+                    ],
+                    "fcNameHtml" : "Parent.html",
+                    "Height" : 0,
+                    "xmlNameHtml" : "Parent.html",
+                    "fcName" : "ParentRef"
+                }
+            ],
+            "Height" : 0,
+            "xmlNameHtml" : "VendorType.html",
+            "fcName" : "nothing"
+        },
+        {
+            "fcTypeHtml" : "IBSTRList.html",
+            "xmlName" : "IncludeRetElement",
+            "maxCA" : 50,
+            "Width" : 0,
+            "TopLeftX" : 0,
+            "xmlTypeHtml" : "STRTYPE.html",
+            "supports" : {
+                "US" : true,
+                "OE" : false,
+                "CA" : true,
+                "UK" : true,
+                "AU" : true
+            },
+            "TopLeftY" : 0,
+            "required" : false,
+            "fcType" : "IBSTRList",
+            "minVerUS" : 4,
+            "xmlType" : "STRTYPE",
+            "count" : "0 - n",
+            "MasterImage" : "None",
+            "maxUK" : 50,
+            "maxAU" : 50,
+            "fcNameHtml" : "QBFC-IncludeRetElementList.html",
+            "maxDT" : 50,
+            "Height" : 0,
+            "xmlNameHtml" : "IncludeRetElement.html",
+            "fcName" : "IncludeRetElementList"
+        }
+    ],
+    "fcNameHtml" : "VendorTypeAdd.html",
+    "Height" : 0,
+    "xmlNameHtml" : "VendorTypeAdd.html",
+    "fcName" : "IVendorTypeAdd"
+}

@@ -1,0 +1,17 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<link rel="stylesheet" href="styleguide.css" type="text/css" />
+<title>ARAccount.html</title>
+</head>
+<body>
+<b><i>ARAccountRef</i></b><br />
+Refers to an accounts receivable account in the QuickBooks file. (The AccountType 
+of this account will be AccountsReceivable.) If an ARAccountRef aggregate includes 
+both FullName and ListID, FullName will be ignored. <br />
+<br />
+If this field is in a transaction that links to other transactions, make sure this ARAccountRef matches the ARAccountRef used in the other transactions. For example, in an ARRefundCreditCard transaction, the ARAccountRef of the credit card refund transaction must match the ARAccountRef used in each of the linked credit transactions.
+</body>
+</html>

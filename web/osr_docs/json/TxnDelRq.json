@@ -1,0 +1,23 @@
+{"xmlName":"TxnDelRq","xmlNameHtml":"TxnDel.html",
+ "xmlType":"Aggregate",
+ "fcName":"ITxnDel","fcNameHtml":"TxnDel.html",
+ "fcType":"nothing",
+ "minVerUS":"1.1",
+ "supports":{"US":true,"CA":true,"UK":true,"AU":true,"OE":true},
+ "required":false,
+ "elements":[
+    {"xmlName":"TxnDelType","xmlNameHtml":"TxnDelType.html",
+     "xmlType":"ENUMTYPE","xmlTypeHtml":"ENUMTYPE.html",
+     "xmlEnumValues":["ARRefundCreditCard","Bill","BillPaymentCheck","BillPaymentCreditCard","BuildAssembly","Charge","Check","CreditCardCharge","CreditCardCredit","CreditMemo","Deposit","Estimate","InventoryAdjustment","Invoice","ItemReceipt","JournalEntry","PayrollLiabilityAdjustment [PRIVATE]","PayrollPriorPayment [PRIVATE]","PayrollYearToDateAdjustment [PRIVATE]","PurchaseOrder","ReceivePayment","SalesOrder","SalesReceipt","SalesTaxPaymentCheck","TimeTracking","TransferInventory","VehicleMileage","VendorCredit"],
+     "fcName":"TxnDelType","fcNameHtml":"QBFC-TxnDelType.html",
+     "fcType":"IQBENTxnDelTypeType","fcTypeHtml":"QBFC-IQBENTxnDelTypeType.html",
+     "fcEnumValues":["tdtARRefundCreditCard","tdtBill","tdtBillPaymentCheck","tdtBillPaymentCreditCard","tdtBuildAssembly","tdtCharge","tdtCheck","tdtCreditCardCharge","tdtCreditCardCredit","tdtCreditMemo","tdtDeposit","tdtEstimate","tdtInventoryAdjustment","tdtInvoice","tdtItemReceipt","tdtJournalEntry","tdtPayrollLiabilityAdjustment [PRIVATE]","tdtPayrollPriorPayment [PRIVATE]","tdtPayrollYearToDateAdjustment [PRIVATE]","tdtPurchaseOrder","tdtReceivePayment","tdtSalesOrder","tdtSalesReceipt","tdtSalesTaxPaymentCheck","tdtTimeTracking","tdtTransferInventory","tdtVehicleMileage","tdtVendorCredit"],
+     "supports":{"US":true,"CA":true,"UK":true,"AU":true,"OE":true},
+     "required":true,"count":"1"},
+    {"xmlName":"TxnID","xmlNameHtml":"TxnID.html",
+     "xmlType":"IDTYPE","xmlTypeHtml":"IDTYPE.html",
+     "fcName":"TxnID","fcNameHtml":"TxnID.html",
+     "fcType":"IQBIDType","fcTypeHtml":"IQBIDType.html",
+     "supports":{"US":true,"CA":true,"UK":true,"AU":true,"OE":true},
+     "required":true,"count":"1"}
+ ]}

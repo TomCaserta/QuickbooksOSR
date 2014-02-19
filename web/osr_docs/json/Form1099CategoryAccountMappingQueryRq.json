@@ -1,0 +1,17 @@
+{"xmlName":"Form1099CategoryAccountMappingQueryRq","xmlNameHtml":"Form1099CategoryAccountMappingQuery.html",
+ "xmlType":"Aggregate",
+ "fcName":"IForm1099CategoryAccountMappingQuery","fcNameHtml":"Form1099CategoryAccountMappingQuery.html",
+ "fcType":"nothing",
+ "minVerUS":"8",
+ "supports":{"US":true,"CA":false,"UK":false,"AU":true,"OE":false},
+ "required":false,
+ "elements":[
+    {"xmlName":"MappingCategory","xmlNameHtml":"MappingCategory.html",
+     "xmlType":"ENUMTYPE","xmlTypeHtml":"ENUMTYPE.html",
+     "xmlEnumValues":["BOX1","BOX2","BOX3","BOX4","BOX5","BOX6","BOX7","BOX8","BOX9","BOX10","BOX13","BOX14"],
+     "fcName":"MappingCategoryList","fcNameHtml":"QBFC-MappingCategoryList.html",
+     "fcType":"IENMappingCategoryList","fcTypeHtml":"QBFC-IENMappingCategoryList.html",
+     "fcEnumValues":["mclBOX1","mclBOX2","mclBOX3","mclBOX4","mclBOX5","mclBOX6","mclBOX7","mclBOX8","mclBOX9","mclBOX10","mclBOX13","mclBOX14"],
+     "supports":{"US":true,"CA":true,"UK":true,"AU":true,"OE":true},
+     "required":false,"count":"0 - n"}
+ ]}

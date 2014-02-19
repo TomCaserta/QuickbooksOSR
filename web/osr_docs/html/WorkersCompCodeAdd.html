@@ -1,0 +1,14 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+  <link rel="stylesheet" href="styleguide.css" type="text/css" />
+  <title>WorkersCompCodeAdd.html</title>
+</head>
+<body>
+Adds a workers' compensation code with one or more rate entries (each rate entry has an effective date and a rate). You can assign effective dates in the past, present or future. However, only one future date will be used. If a future date exists and you write a new one (using the Mod request) then the most recently written code wins; if you have multiple future dates in the Add request, the last one wins.<br />
+<br />
+This request requires the company to be subscribed to Intuit Payroll service. Also, you cannot currently assign codes to employees in the SDK. You have to use the UI to do that.
+</body>
+</html>

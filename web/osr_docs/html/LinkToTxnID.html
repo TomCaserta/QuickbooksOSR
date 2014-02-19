@@ -1,0 +1,33 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+  <link rel="stylesheet" href="styleguide.css" type="text/css" />
+  <title>LinkToTxnID.html</title>
+</head>
+<body>
+<b><i>LinkToTxnID</i></b><br />
+When used with InvoiceAdd, the transaction you are linking to via this field must be a SalesOrder; links to other transactions, such as to estimates, are not currently supported.<br />
+<br />
+When used with BillAdd or ItemReceiptAdd, the transaction you are linking to via this field must be a PurchaseOrder: links to other transactions are not currently supported.<br />
+<br />
+The LinkToTxnID aggregate allows you to link to an entire transaction, pulling in all of its line items. 
+If you want to pull in only some of the lines from a linked transaction, you would not use this element,
+but would instead use the LinkToTxn aggregate within the line item. You can use the LinktoTxnID element along
+with the line item LintToTxn aggregate, but they cannot point to the same linked transaction, for example,
+they can't both refer to the same purchase order or the same sales order. (That is, the TxnID in the
+LinkToTxnID element cannot match any TxnID in any of the LinkToTxn line item aggregates.) If you do this, you'll
+get a runtime error.
+<br />
+<br />
+You will get a runtime error if the transaction specified by LinkToTxnID is 
+already closed or fully received and the request does not contain any other lines. 
+You get error if you attempt to save an empty transaction. You get a warning if you attempt to link 
+to a transaction that's already closed.
+<br />
+<br />
+For a complete set of rules and instructions on linking transactions, see the chapter on transaction
+Linking in the QuickBooks SDK Programmer's Guide.
+</body>
+</html>
