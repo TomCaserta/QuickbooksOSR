@@ -7,18 +7,27 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
     <link href="css/main.css" rel="stylesheet" media="screen">
-  </head>
-  <body ng-app class="">
- 
     
+<link href="css/themes/prettify.css" type="text/css" rel="stylesheet" />
+  </head>
+  
+  <body ng-app class="">
     <ng-view class="col-md-12">
           
     </ng-view>
     <script type="application/dart" src="main.dart"></script>
     <script src="packages/browser/dart.js"></script>
+    <script src="packages/browser/interop.js"></script>
     <script src="packages/shadow_dom/shadow_dom.min.js"></script>
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/google-code-prettify/prettify.js"></script>
+    <script>
+      function recomputeStyles ( ) {
+        console.log("Recoloured");
+        prettyPrint();
+      }
+    </script>
   </body>
 </html>
