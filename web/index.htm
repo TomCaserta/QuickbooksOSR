@@ -12,16 +12,27 @@
   </head>
   
   <body class="container-fluid">
-      <section class="" ng-cloak>
-        <div class="alert text-center alert-warning col-md-12">Please note this SDK viewer is currently in <strong>heavy</strong> development. You may find issues, please report them to the Github issue tracker @ <a href="https://github.com/Plornt/QuickbooksOSR">https://github.com/Plornt/QuickbooksOSR</a>. The SDK viewer is open source, feel free to send pull requests if you notice anything wrong.</div>
+      <section ng-cloak>
+        <div class="alert text-center alert-warning col-md-12">Please note this SDK viewer is currently in <strong>heavy</strong> development. You may find issues, please report them to the Github issue tracker @ <a href="https://github.com/Plornt/QuickbooksOSR">https://github.com/Plornt/QuickbooksOSR</a>. The SDK viewer is open source, feel free to send pull requests if you notice anything wrong. 
+       
+       </div>
+       
       </section>
-      <section class="" ng-if="false">
+      <section ng-if="false">
         
         <div class="col-md-12 text-center alert alert-info">
           Please wait... Downloading application files. This may take a while whilst the application is in development...
+         
         </div>
+        
       </section>
-      <section ng-cloak class="">
+      <section>
+          <div class="col-md-12 text-center alert alert-danger">
+            <p>Due to issues with the shadow dom polyfill I was using, this will only work on webkit browsers until the library has been fixed</p>
+            <p><strong>IT WILL NOT WORK ON FIREFOX UNTIL THIS IS FIXED</strong></p>
+          </div>
+      </section>
+      <section ng-cloak>
         <ng-view class="col-md-12">
               
         </ng-view>
@@ -29,7 +40,6 @@
       <script type="application/dart" src="main.dart"></script>
       <script src="packages/browser/dart.js"></script>
       <script src="packages/browser/interop.js"></script>
-      <script src="packages/shadow_dom/shadow_dom.debug.js"></script>
       <script src="js/jquery.min.js"></script>
       <script src="js/bootstrap.min.js"></script>
       <script src="js/main.js"></script>

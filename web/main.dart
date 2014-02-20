@@ -5,7 +5,8 @@ library QuickbooksOSR;
                              'QBCountryVersion',
                              'QBJsonReader',
                              'QBMessageSubscription',
-                             'QBRequestsJsonReader'
+                             'QBRequestsJsonReader',
+                             'NgZone' 
                              ],override: '*')
 import 'dart:mirrors';
 import 'dart:html';

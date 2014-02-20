@@ -17,7 +17,7 @@
         
       <div ng-if="!view.loaded" class="well">Please wait whilst the data is loaded</div>
       
-      <pre class="prettyprint" ng-show="!view.loaded" id="requestData" data-language="html">
+      <pre class="prettyprint" ng-show="view.loaded" id="requestData" data-language="html">
       
       </pre>
     </div>
@@ -26,7 +26,7 @@
       <h3>Response</h3>
       <div ng-if="!view.loaded" class="well">Please wait whilst the data is loaded</div>
       
-      <pre class="prettyprint" ng-show="!view.loaded" id="responseData" data-language="html">
+      <pre class="prettyprint" ng-show="view.loaded" id="responseData" data-language="html">
       </pre>
     </div>
     
