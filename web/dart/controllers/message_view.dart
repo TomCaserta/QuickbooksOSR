@@ -1,7 +1,7 @@
 part of QuickbooksOSR;
 
 @NgController (
-    selector: "view",
+    selector: "[view]",
     publishAs: "view"
 )
 class MessageViewController {

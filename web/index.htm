@@ -11,26 +11,33 @@
 <link href="css/themes/prettify.css" type="text/css" rel="stylesheet" />
   </head>
   
-  <body ng-app class="">
-    <div class="col-md-12 hideapp" ng-if="hide.doHide" unload>
-      Please wait... Downloading application files.
-    </div>
-    <ng-view ng-cloak class="col-md-12">
-          
-    </ng-view>
-    <script type="application/dart" src="main.dart"></script>
-    <script src="packages/browser/dart.js"></script>
-    <script src="packages/browser/interop.js"></script>
-    <script src="packages/shadow_dom/shadow_dom.min.js"></script>
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/main.js"></script>
-    <script src="js/google-code-prettify/prettify.js"></script>
-    <script>
-      function recomputeStyles ( ) {
-        console.log("Recoloured");
-        prettyPrint();
-      }
-    </script>
+  <body class="container-fluid">
+      <section class="" ng-cloak>
+        <div class="alert text-center alert-warning col-md-12">Please note this SDK viewer is currently in <strong>heavy</strong> development. You may find issues, please report them to the Github issue tracker @ <a href="https://github.com/Plornt/QuickbooksOSR">https://github.com/Plornt/QuickbooksOSR</a>. The SDK viewer is open source, feel free to send pull requests if you notice anything wrong.</div>
+      </section>
+      <section class="" ng-if="false">
+        
+        <div class="col-md-12 text-center alert alert-info">
+          Please wait... Downloading application files. This may take a while whilst the application is in development...
+        </div>
+      </section>
+      <section ng-cloak class="">
+        <ng-view class="col-md-12">
+              
+        </ng-view>
+      </section>
+      <script type="application/dart" src="main.dart"></script>
+      <script src="packages/browser/dart.js"></script>
+      <script src="packages/browser/interop.js"></script>
+      <script src="packages/shadow_dom/shadow_dom.debug.js"></script>
+      <script src="js/jquery.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/main.js"></script>
+      <script src="js/google-code-prettify/prettify.js"></script>
+      <script>
+        function recomputeStyles ( ) {
+          prettyPrint();
+        }
+      </script>
   </body>
 </html>

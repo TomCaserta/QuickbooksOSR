@@ -2,24 +2,33 @@
 
 </sidebar>
 
-<view class="col-md-10">
-  <h3><Strong>{{view.messageName}}</Strong></h3>
+<section view class="col-md-10">
+  <h2><Strong>{{view.messageName}}</Strong></h2>
+  <hr>
+  <ul class="nav nav-tabs">
+    <li class="active"><a href="javascript:void(0)" data-target="#xmlRequest" data-toggle="tab">XML Request</a></li>
+    <li><a href="javascript:void(0)" data-target="#xmlResponse" data-toggle="tab">XML Response</a></li>
+    <li><a href="javascript:void(0)" data-target="#fieldViewer" data-toggle="tab">Field Viewer</a></li>
+  </ul>
   
-  <h4>Request</h4>
-  
-  <div ng-if="!view.loaded" class="well">Please wait whilst the data is loaded</div>
-  
-  <pre class="prettyprint" ng-show="view.loaded" id="requestData" data-language="html">
-  
-  </pre>
-  
-  <h4>Response</h4>
-  <div ng-if="!view.loaded" class="well">Please wait whilst the data is loaded</div>
-  
-  <pre  class="prettyprint" ng-show="view.loaded" id="responseData" data-language="html">
-  </pre>
-
-  <table class="table-responsive table-striped col-md-12">
-     <thead><TR><th>Element</th></TR></thead>
-  </table>
-</view>
+  <div class="tab-content">
+    <div class="tab-pane active" id="xmlRequest">
+      <h3>Request</h3>
+        
+      <div ng-if="!view.loaded" class="well">Please wait whilst the data is loaded</div>
+      
+      <pre class="prettyprint" ng-show="!view.loaded" id="requestData" data-language="html">
+      
+      </pre>
+    </div>
+    
+    <div class="tab-pane" id="xmlResponse">
+      <h3>Response</h3>
+      <div ng-if="!view.loaded" class="well">Please wait whilst the data is loaded</div>
+      
+      <pre class="prettyprint" ng-show="!view.loaded" id="responseData" data-language="html">
+      </pre>
+    </div>
+    
+  </div>
+</section>
