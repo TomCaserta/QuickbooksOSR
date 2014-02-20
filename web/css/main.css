@@ -10,3 +10,13 @@
 [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
   display: none !important;
 }
+
+.sidebar .formgroup {
+  padding-top: 10px;
+}
+
+.hideapp {
+  text-align: center;
+  font-size: 30px;
+  
+}

@@ -8,7 +8,7 @@ class MessageViewController {
   String messageName;
   bool isQBXml = false;
   num maxVersion = 13;
-  
+  bool loaded = false;
   String xml = "";
   MessageViewController (OsrState state, RouteProvider provider) {
     messageName = provider.parameters["type"];
@@ -31,6 +31,7 @@ class MessageViewController {
       Element elem2 = querySelectorAll("#responseData").first;
       elem2.text= response.toXML(maxVersion, countryValues);
       context.callMethod("recomputeStyles", []);//.color();
+      this.loaded = true;
     });
   }
 }

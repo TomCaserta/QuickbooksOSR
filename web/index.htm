@@ -12,7 +12,10 @@
   </head>
   
   <body ng-app class="">
-    <ng-view class="col-md-12">
+    <div class="col-md-12 hideapp" ng-if="hide.doHide" unload>
+      Please wait... Downloading application files.
+    </div>
+    <ng-view ng-cloak class="col-md-12">
           
     </ng-view>
     <script type="application/dart" src="main.dart"></script>

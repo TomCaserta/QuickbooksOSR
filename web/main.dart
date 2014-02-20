@@ -1,5 +1,13 @@
 library QuickbooksOSR;
-
+@MirrorsUsed(targets: const [
+                             'QuickbooksOsrModule',
+                             'OsrState',
+                             'QBCountryVersion',
+                             'QBJsonReader',
+                             'QBMessageSubscription',
+                             'QBRequestsJsonReader'
+                             ],override: '*')
+import 'dart:mirrors';
 import 'dart:html';
 import 'dart:async';
 import 'dart:js';
@@ -12,6 +20,7 @@ import 'dart/utils/fse_tree.dart';
 
 part 'dart/components/sidebar.dart';
 part 'dart/controllers/message_view.dart';
+part 'dart/controllers/unload.dart';
 part 'dart/qb_structures/country_version.dart';
 part 'dart/qb_structures/json_attribute_tree.dart';
 part 'dart/qb_structures/message_or_subscription.dart';
@@ -42,8 +51,8 @@ quickbooksOsrRouteInitializer(Router router, ViewFactory views) {
 class QuickbooksOsrModule extends Module {
   
   QuickbooksOsrModule () {
-    
     type(OsrState);
+    type(UnloadViewer);
     type(SidebarComponent);
     type(MessageViewController);
     value(RouteInitializerFn, quickbooksOsrRouteInitializer);

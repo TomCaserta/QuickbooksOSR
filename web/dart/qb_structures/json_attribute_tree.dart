@@ -106,6 +106,7 @@ class QBJsonReader {
       }
       else return "";
     }
+    else return "";
   }
   
   QBJsonReader.fromJson (dynamic jsonDat) {
